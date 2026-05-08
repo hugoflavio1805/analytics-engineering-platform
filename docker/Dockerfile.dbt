@@ -1,0 +1,17 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir \
+    dbt-core==1.8.* \
+    dbt-duckdb==1.8.* \
+    dbt-snowflake==1.8.* \
+    duckdb \
+    sqlfluff==3.0.*
+
+COPY dbt /app/dbt
+
+WORKDIR /app/dbt
+
+ENTRYPOINT ["dbt"]
+CMD ["build", "--profiles-dir", ".", "--target", "duckdb"]

@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "CSV files landed in the warehouse via Airflow daily."
+    loaded_at_field: _loaded_at
+    freshness:
+      warn_after: { count: 26, period: hour }
+      error_after: { count: 48, period: hour }
+    tables:
+      - name: customers
+        description: "One row per customer. Enriched at landing with tenure / mrr_band / churn_risk_score."
+        columns:
+          - name: customer_id
+            tests: [not_null, unique]
+          - name: plan
+            tests:
+              - accepted_values:
+                  values: ['starter', 'growth', 'enterprise']
+          - name: segment
+            tests:
+              - accepted_values:
+                  values: ['SMB', 'Mid-Market', 'Enterprise']
+
+      - name: subscriptions
+        description: "Subscription history with MRR and lifecycle dates."
+        columns:
+          - name: subscription_id
+            tests: [not_null, unique]
+          - name: customer_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'customers')
+                  field: customer_id
+
+      - name: feedbacks
+        description: "Customer feedback events from form, support, platform, email and NPS channels."
+        columns:
+          - name: feedback_id
+            tests: [not_null, unique]
+          - name: type
+            tests:
+              - accepted_values:
+                  values: ['praise', 'complaint', 'bug', 'feature_request', 'support']
+          - name: channel
+            tests:
+              - accepted_values:
+                  values: ['nps', 'suporte', 'formulario', 'email', 'plataforma']
+          - name: sentiment
+            tests:
+              - accepted_values:
+                  values: ['positive', 'negative', 'neutral']

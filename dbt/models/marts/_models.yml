@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Conformed customer dimension joining customer master with subscription rollup."
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: segment
+        tests:
+          - accepted_values:
+              values: ['SMB', 'Mid-Market', 'Enterprise']
+      - name: current_mrr
+        tests:
+          - not_null
+
+  - name: fct_feedbacks
+    description: "Fact table — one row per feedback event, enriched with customer plan/segment."
+    columns:
+      - name: feedback_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+  - name: fct_subscriptions
+    description: "Fact table — one row per subscription."
+    columns:
+      - name: subscription_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+  - name: customer_feedback_churn
+    description: "Analytical mart that answers the obligatory question. Used directly by the Tableau dashboard."
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: negative_feedback_ratio
+        description: "(bugs + complaints) / total_feedbacks. NULL-safe (0 when no feedback)."

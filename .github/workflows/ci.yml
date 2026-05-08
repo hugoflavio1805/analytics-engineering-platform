@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: SQL lint (sqlfluff)
+        run: |
+          sqlfluff lint dbt/models --dialect duckdb || true
+
+      - name: dbt deps & parse
+        working-directory: dbt
+        run: |
+          dbt deps
+          dbt parse --profiles-dir . --target ci
+
+      - name: dbt build (run + test) on DuckDB
+        working-directory: dbt
+        env:
+          DBT_PROFILES_DIR: .
+        run: |
+          dbt build --profiles-dir . --target ci
+
+      - name: Upload dbt artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dbt-target
+          path: dbt/target
+
+  docs:
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - working-directory: dbt
+        run: |
+          dbt deps
+          dbt docs generate --profiles-dir . --target ci
+      - name: Deploy docs to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dbt/target

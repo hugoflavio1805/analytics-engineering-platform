@@ -1,0 +1,35 @@
+name: 'feedback_revenue'
+version: '1.0.0'
+config-version: 2
+
+profile: 'feedback_revenue'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  feedback_revenue:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: ephemeral
+    marts:
+      core:
+        +materialized: table
+        +schema: marts_core
+      analytics:
+        +materialized: table
+        +schema: marts_analytics
+
+vars:
+  feedback_pre_churn_window_days: 90
