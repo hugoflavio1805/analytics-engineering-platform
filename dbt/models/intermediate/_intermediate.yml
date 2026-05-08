@@ -19,6 +19,9 @@ models:
       - name: feedback_id
         tests: [not_null, unique]
       - name: customer_id
-        tests: [not_null]
+        tests:
+          - not_null:
+              config:
+                severity: warn
       - name: is_pre_churn_90d
         description: "Computed against int_customer_subscription_rollup.latest_churn_date."

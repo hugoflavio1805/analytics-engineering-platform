@@ -54,7 +54,7 @@ def kpi_overview() -> dict:
                 sum(case when order_status = 'returned' then 1 else 0 end) as returns_total,
                 sum(case when payment_status = 'chargeback' then 1 else 0 end) as chargebacks_total,
                 avg(total)                                       as avg_order_value
-            from marketplace_core.fct_orders
+            from main_marketplace_core.fct_orders
         )
         select
             orders_total,
@@ -80,7 +80,7 @@ def gmv_by_month() -> pd.DataFrame:
             count(*)                         as orders,
             sum(case when is_black_friday_order or is_cyber_monday_order then 1 else 0 end)
                                              as promo_peak_orders
-        from marketplace_core.fct_orders
+        from main_marketplace_core.fct_orders
         group by 1
         order by 1
         """
@@ -89,17 +89,17 @@ def gmv_by_month() -> pd.DataFrame:
 
 @st.cache_data(ttl=300, show_spinner=False)
 def category_region_returns() -> pd.DataFrame:
-    return _q("select * from marketplace_analytics.category_region_return_rate")
+    return _q("select * from main_marketplace_analytics.category_region_return_rate")
 
 
 @st.cache_data(ttl=300, show_spinner=False)
 def gmv_by_promotion() -> pd.DataFrame:
-    return _q("select * from marketplace_analytics.gmv_by_promotion")
+    return _q("select * from main_marketplace_analytics.gmv_by_promotion")
 
 
 @st.cache_data(ttl=300, show_spinner=False)
 def sla_by_carrier() -> pd.DataFrame:
-    return _q("select * from marketplace_analytics.sla_by_carrier")
+    return _q("select * from main_marketplace_analytics.sla_by_carrier")
 
 
 @st.cache_data(ttl=300, show_spinner=False)
@@ -107,7 +107,7 @@ def top_sellers(limit: int = 10) -> pd.DataFrame:
     return _q(
         f"""
         select seller_id, seller_name, country_code, region, gmv, orders_count, products_count
-        from marketplace_core.dim_seller
+        from main_marketplace_core.dim_seller
         order by gmv desc
         limit {int(limit)}
         """
@@ -120,7 +120,7 @@ def chargeback_by_method() -> pd.DataFrame:
         """
         select method_code, method_name, transactions, total_processed,
                chargeback_rate, chargeback_risk
-        from marketplace_core.dim_payment_method
+        from main_marketplace_core.dim_payment_method
         order by chargeback_rate desc
         """
     )
@@ -132,7 +132,7 @@ def reviews_distribution() -> pd.DataFrame:
         """
         select rating, count(*) as reviews_count,
                sum(case when order_status = 'returned' then 1 else 0 end) as returned_count
-        from marketplace_core.fct_reviews
+        from main_marketplace_core.fct_reviews
         group by rating
         order by rating
         """
@@ -148,7 +148,7 @@ def anomalies_summary(top_n: int = 5) -> pd.DataFrame:
         f"""
         with cr as (
             select category, region, return_rate, gmv_loss_rate, refund_total
-            from marketplace_analytics.category_region_return_rate
+            from main_marketplace_analytics.category_region_return_rate
         ),
         baseline as (
             select avg(return_rate) as global_return_rate

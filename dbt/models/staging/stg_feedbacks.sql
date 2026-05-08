@@ -14,11 +14,7 @@ select
     message,
     try_cast(created_at as date)                  as created_at,
     try_cast(nps_score as integer)                as nps_score,
-    case lower(trim(resolved))
-        when 'true'  then true
-        when 'false' then false
-        else null
-    end                                           as resolved
+    try_cast(resolved as boolean)                 as resolved
 from src
 
 -- Drop hard duplicates: same customer + same message + same date.

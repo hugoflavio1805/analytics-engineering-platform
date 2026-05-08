@@ -12,7 +12,7 @@ with o as (
 ),
 c as (
     select customer_id, country, is_prime, has_valid_email
-    from {{ ref('stg_customers') }}
+    from {{ ref('stg_mkt_customers') }}
 ),
 primary_cat as (
     select

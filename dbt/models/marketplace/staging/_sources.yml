@@ -2,11 +2,9 @@ version: 2
 
 sources:
   - name: marketplace_raw
-    description: "Raw CSVs from the marketplace platform. 6 fact sources + 10 dimension sources, supporting a Kimball-style model. Quality issues are intentional and handled in staging."
-    loaded_at_field: _loaded_at
-    freshness:
-      warn_after:  { count: 26, period: hour }
-      error_after: { count: 48, period: hour }
+    description: "Raw CSVs from the marketplace platform. 6 fact sources + 10 dimension sources, supporting a Kimball-style model. On DuckDB, sources are wired directly to the CSV files via dbt-duckdb's external_location."
+    meta:
+      external_location: "read_csv_auto('{{ env_var('CASE2_RAW_DIR', '../cases/marketplace/data/raw') }}/{name}.csv', header=true)"
     tables:
 
       # -------- Fact-grade sources --------

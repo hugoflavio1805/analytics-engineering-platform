@@ -7,5 +7,5 @@ select
     continent,
     upper(currency)             as currency,
     lower(language)             as language,
-    case lower(trim(is_eu)) when 'true' then true when 'false' then false else null end as is_eu
+    try_cast(is_eu as boolean)  as is_eu
 from {{ source('marketplace_raw', 'geography') }}

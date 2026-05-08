@@ -11,9 +11,5 @@ select
     try_cast(refund_amount as decimal(12, 2))     as refund_amount,
     category_primary,
     ship_region,
-    case lower(trim(processed))
-        when 'true'  then true
-        when 'false' then false
-        else null
-    end                                           as processed
+    try_cast(processed as boolean)                as processed
 from src

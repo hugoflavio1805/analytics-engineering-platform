@@ -57,6 +57,6 @@ select
     coalesce(r.return_rate, 0)                      as return_rate
 from order_agg a
 left join {{ ref('stg_promotions') }} p on a.promotion_id = p.promotion_id
-left join chargeback_agg c using (promotion_id)
-left join returns_agg r using (promotion_id)
+left join chargeback_agg c on a.promotion_id = c.promotion_id
+left join returns_agg r    on a.promotion_id = r.promotion_id
 order by gmv desc

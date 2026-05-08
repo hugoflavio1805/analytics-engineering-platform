@@ -7,9 +7,9 @@ select
     try_cast(day as integer)                as day,
     day_of_week,
     quarter,
-    case lower(is_weekend)        when 'true' then true else false end as is_weekend,
-    case lower(is_black_friday)   when 'true' then true else false end as is_black_friday,
-    case lower(is_cyber_monday)   when 'true' then true else false end as is_cyber_monday,
-    case lower(is_christmas_eve)  when 'true' then true else false end as is_christmas_eve,
-    case lower(is_new_year)       when 'true' then true else false end as is_new_year
+    cast(is_weekend       as boolean) as is_weekend,
+    cast(is_black_friday  as boolean) as is_black_friday,
+    cast(is_cyber_monday  as boolean) as is_cyber_monday,
+    cast(is_christmas_eve as boolean) as is_christmas_eve,
+    cast(is_new_year      as boolean) as is_new_year
 from {{ source('marketplace_raw', 'dates') }}

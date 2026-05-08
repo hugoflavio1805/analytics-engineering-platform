@@ -4,8 +4,8 @@ models:
   # =============================================================
   # Dimensions (10 — full Kimball)
   # =============================================================
-  - name: dim_customer
-    description: "Customer dimension conformed with geography. Includes lifetime_gmv and returned_orders_count rollups."
+  - name: dim_mkt_customer
+    description: "Customer dimension (marketplace case) conformed with geography. Includes lifetime_gmv and returned_orders_count rollups."
     columns:
       - name: customer_id
         tests: [not_null, unique]
@@ -86,7 +86,7 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('dim_customer')
+              to: ref('dim_mkt_customer')
               field: customer_id
       - name: order_date
         tests: [not_null]

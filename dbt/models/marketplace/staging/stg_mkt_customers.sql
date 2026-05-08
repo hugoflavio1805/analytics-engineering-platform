@@ -15,9 +15,5 @@ select
     end                                          as has_valid_email,
     upper(trim(country))                         as country,
     try_cast(signup_date as date)                as signup_date,
-    case lower(trim(is_prime))
-        when 'true' then true
-        when 'false' then false
-        else null
-    end                                          as is_prime
+    try_cast(is_prime as boolean)                as is_prime
 from src

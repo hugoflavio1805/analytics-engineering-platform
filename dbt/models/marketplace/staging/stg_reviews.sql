@@ -11,9 +11,5 @@ select
     title,
     body,
     try_cast(review_date as date)                 as review_date,
-    case lower(trim(verified_purchase))
-        when 'true'  then true
-        when 'false' then false
-        else null
-    end                                           as verified_purchase
+    try_cast(verified_purchase as boolean)        as verified_purchase
 from src

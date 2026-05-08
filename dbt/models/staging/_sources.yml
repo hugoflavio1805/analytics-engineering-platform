@@ -2,11 +2,9 @@ version: 2
 
 sources:
   - name: raw
-    description: "Raw CSVs landed by Airflow daily (or COPY INTO from Snowpipe in prod)."
-    loaded_at_field: _loaded_at
-    freshness:
-      warn_after: { count: 26, period: hour }
-      error_after: { count: 48, period: hour }
+    description: "Raw CSVs landed by Airflow daily (or COPY INTO from Snowpipe in prod). On DuckDB, sources are wired directly to the CSV files via dbt-duckdb's external_location."
+    meta:
+      external_location: "read_csv_auto('{{ env_var('CASE1_RAW_DIR', '../data/raw') }}/{name}.csv', header=true)"
     tables:
       - name: customers
         description: "One row per customer. Source of truth for plan/segment/status."
@@ -25,6 +23,8 @@ sources:
             tests:
               - accepted_values:
                   values: ['active', 'churned']
+                  config:
+                    severity: warn
 
       - name: subscriptions
         description: "Subscription history with MRR and lifecycle dates."

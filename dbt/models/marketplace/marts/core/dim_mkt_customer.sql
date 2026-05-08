@@ -3,7 +3,7 @@
 -- Customer dim, conformed with geography (region/continent/currency).
 
 with c as (
-    select * from {{ ref('stg_customers') }}
+    select * from {{ ref('stg_mkt_customers') }}
 ),
 g as (
     select * from {{ ref('stg_geography') }}

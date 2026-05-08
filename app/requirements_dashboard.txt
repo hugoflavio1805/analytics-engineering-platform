@@ -1,5 +1,10 @@
-# Dashboard runtime — separate from the dbt requirements.txt at the repo root
-streamlit==1.36.*
+# Dashboard runtime — separate from the dbt requirements.txt at the repo root.
+#
+# Streamlit pinned to >=1.40 because earlier versions cap protobuf at <6,
+# which conflicts with dbt-core 1.9 (requires protobuf >=6).
+# Tested with Python 3.11.
+
+streamlit>=1.40
 duckdb>=0.10.0
 pandas>=2.0
 plotly>=5.20
