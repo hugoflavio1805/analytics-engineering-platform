@@ -275,6 +275,15 @@ On merge to `main`:
 
 ---
 
-## 14. License & Contact
+## 14. Author
 
-MIT. Built by **Hugo Flávio** — [hugoflavio1805@hotmail.com](mailto:hugoflavio1805@hotmail.com) · [github.com/hugoflavio1805](https://github.com/hugoflavio1805).
+Developed by **Hugo Flávio Santos**
+Data Engineer | Analytics Engineering | Data Platform
+
+[hugoflavio1805@hotmail.com](mailto:hugoflavio1805@hotmail.com) · [github.com/hugoflavio1805](https://github.com/hugoflavio1805)
+
+## 15. License
+
+The source code developed in this repository is licensed under the MIT License.
+
+The dataset and original challenge description are used only for educational and portfolio purposes and belong to their respective authors.
