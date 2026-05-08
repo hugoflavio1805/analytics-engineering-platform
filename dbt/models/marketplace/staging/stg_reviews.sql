@@ -1,0 +1,19 @@
+{{ config(materialized='view') }}
+
+with src as (
+    select * from {{ source('marketplace_raw', 'reviews') }}
+)
+select
+    review_id,
+    order_id,
+    customer_id,
+    try_cast(rating as integer)                   as rating,
+    title,
+    body,
+    try_cast(review_date as date)                 as review_date,
+    case lower(trim(verified_purchase))
+        when 'true'  then true
+        when 'false' then false
+        else null
+    end                                           as verified_purchase
+from src

@@ -1,0 +1,16 @@
+country_code,country_name,region,continent,currency,language,is_eu
+US,United States,North America,Americas,USD,en,false
+CA,Canada,North America,Americas,CAD,en,false
+MX,Mexico,North America,Americas,MXN,es,false
+BR,Brazil,LATAM,Americas,BRL,pt,false
+AR,Argentina,LATAM,Americas,ARS,es,false
+CL,Chile,LATAM,Americas,CLP,es,false
+CO,Colombia,LATAM,Americas,COP,es,false
+GB,United Kingdom,Europe,Europe,GBP,en,false
+DE,Germany,Europe,Europe,EUR,de,true
+FR,France,Europe,Europe,EUR,fr,true
+ES,Spain,Europe,Europe,EUR,es,true
+IT,Italy,Europe,Europe,EUR,it,true
+PT,Portugal,Europe,Europe,EUR,pt,true
+JP,Japan,APAC,Asia,JPY,ja,false
+AU,Australia,APAC,Oceania,AUD,en,false

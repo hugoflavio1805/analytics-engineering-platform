@@ -1,0 +1,9 @@
+method_code,method_name,processor_fee_pct,settlement_days,chargeback_risk
+credit_card,Credit Card,0.029,2,medium
+debit_card,Debit Card,0.015,1,low
+pix,PIX (BR),0.005,0,very_low
+boleto,Boleto (BR),0.02,3,very_low
+paypal,PayPal,0.034,2,medium
+apple_pay,Apple Pay,0.029,2,low
+google_pay,Google Pay,0.029,2,low
+crypto,Crypto (BTC),0.01,1,high

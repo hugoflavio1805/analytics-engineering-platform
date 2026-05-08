@@ -1,12 +1,29 @@
-# Customer Feedback × Revenue Analytics — Data Engineering Challenge
+# Analytics Engineering Platform
 
-> End-to-end analytics engineering pipeline that integrates customer, subscription and multi-channel feedback data to answer one strategic question:
-> **"Is there a relationship between feedback type and customer churn, and how does that vary by plan segment?"**
+> Multi-case data platform demonstrating production-grade analytics engineering across two business domains.
+> Built around the discipline: **raw stays raw, dashboards stay dumb, every metric has one definition in dbt**.
 
-[![CI](https://github.com/hugoflavio1805/customer-feedback-revenue-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/hugoflavio1805/customer-feedback-revenue-analytics/actions)
+[![CI](https://github.com/hugoflavio1805/analytics-engineering-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/hugoflavio1805/analytics-engineering-platform/actions)
 [![dbt](https://img.shields.io/badge/dbt-1.8-orange)](https://www.getdbt.com/)
 [![Snowflake](https://img.shields.io/badge/Snowflake-ready-29B5E8)](https://www.snowflake.com/)
 [![Airflow](https://img.shields.io/badge/Airflow-2.9-017CEE)](https://airflow.apache.org/)
+
+## Cases
+
+| # | Case | Domain | Question |
+|---|---|---|---|
+| 1 | [SaaS Feedback × Revenue](#case-1) | B2B SaaS retention | Is there a relationship between feedback type and customer churn, and how does that vary by plan segment? |
+| 2 | [Generic Marketplace](cases/marketplace/) | E-commerce returns | Which categories and regions have the highest return rates, and what is the financial impact? |
+
+Both cases share the same dbt project, CI pipeline, Docker stack and quality discipline — separation is logical (different schemas, sources, marts), not physical.
+
+---
+
+<a id="case-1"></a>
+
+# Case 1 — Customer Feedback × Revenue Analytics
+
+> *"Is there a relationship between feedback type and customer churn, and how does that vary by plan segment?"*
 
 ---
 

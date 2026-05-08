@@ -1,0 +1,10 @@
+reason_code,reason_label,reason_category,is_actionable_by_seller
+defective,Item arrived defective,product_issue,true
+damaged,Damaged in transit,product_issue,false
+wrong_item,Wrong item shipped,product_issue,true
+not_as_described,Item differs from listing,product_issue,true
+quality_issue,Lower quality than expected,product_issue,true
+size_mismatch,Wrong size,fit_issue,true
+color_different,Color different from photo,fit_issue,true
+changed_mind,Changed my mind,customer_driven,false
+arrived_late,Delivery took too long,fulfillment_issue,false

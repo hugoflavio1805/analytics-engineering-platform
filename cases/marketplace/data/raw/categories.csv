@@ -1,0 +1,10 @@
+category_id,category_name,parent_category,return_window_days,is_high_return
+CAT-01,Electronics,Tech & Electronics,30,true
+CAT-02,Fashion,Apparel,45,true
+CAT-03,Home & Kitchen,Home & Living,30,false
+CAT-04,Beauty & Personal Care,Health & Beauty,14,false
+CAT-05,Books,Media & Entertainment,30,false
+CAT-06,Toys & Games,Kids & Toys,30,false
+CAT-07,Sports & Outdoors,Sports & Fitness,30,false
+CAT-08,Automotive Parts,Automotive,15,false
+CAT-09,Health & Wellness,Health & Beauty,14,false

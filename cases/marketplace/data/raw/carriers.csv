@@ -1,0 +1,11 @@
+carrier_id,carrier_name,origin_country,sla_promised_days,reliability_score
+CARR-001,UPS,US,3,0.92
+CARR-002,FedEx,US,2,0.94
+CARR-003,USPS,US,5,0.86
+CARR-004,DHL,DE,4,0.9
+CARR-005,Correios,BR,8,0.72
+CARR-006,Sedex,BR,4,0.83
+CARR-007,Royal Mail,GB,3,0.88
+CARR-008,Loomis,CA,5,0.81
+CARR-009,Aramex,AU,6,0.78
+CARR-010,SF Express,JP,4,0.91

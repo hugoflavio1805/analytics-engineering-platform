@@ -1,0 +1,123 @@
+version: 2
+
+sources:
+  - name: marketplace_raw
+    description: "Raw CSVs from the marketplace platform. 6 fact sources + 10 dimension sources, supporting a Kimball-style model. Quality issues are intentional and handled in staging."
+    loaded_at_field: _loaded_at
+    freshness:
+      warn_after:  { count: 26, period: hour }
+      error_after: { count: 48, period: hour }
+    tables:
+
+      # -------- Fact-grade sources --------
+      - name: orders
+        description: "Order header. order_date arrives in mixed yyyy-MM-dd and dd/MM/yyyy formats."
+        columns:
+          - name: order_id
+            tests: [not_null, unique]
+          - name: status
+            tests:
+              - accepted_values:
+                  values: ['delivered','shipped','processing','cancelled','returned']
+
+      - name: order_items
+        description: "Order line items. Composite key (order_id, line_no)."
+
+      - name: payments
+        description: "Payment events; ~1% have amount mismatch with order total."
+        columns:
+          - name: payment_id
+            tests: [not_null, unique]
+
+      - name: returns
+        description: "Return requests. ~5% are filed outside the 30-day return policy."
+        columns:
+          - name: return_id
+            tests: [not_null, unique]
+
+      - name: reviews
+        description: "Customer reviews tied to delivered/returned orders. rating is 1-5."
+        columns:
+          - name: review_id
+            tests: [not_null, unique]
+          - name: rating
+            tests:
+              - accepted_values:
+                  values: [1, 2, 3, 4, 5]
+
+      - name: shipping_events
+        description: "Logistics event log: created -> label_printed -> handed_to_carrier -> in_transit -> delivered."
+        columns:
+          - name: event_id
+            tests: [not_null, unique]
+          - name: event_type
+            tests:
+              - accepted_values:
+                  values: ['order_created','label_printed','handed_to_carrier','in_transit','delivered']
+
+      # -------- Dimension-grade sources --------
+      - name: customers
+        description: "End customers. Some emails are missing/malformed — flagged but not dropped."
+        columns:
+          - name: customer_id
+            tests: [not_null, unique]
+
+      - name: sellers
+        description: "Marketplace sellers. seller_id has mixed separators (- vs _)."
+        columns:
+          - name: seller_id
+            tests: [not_null]
+
+      - name: products
+        description: "Product catalog. Contains intentional duplicate SKUs and ~1% negative prices."
+        columns:
+          - name: product_id
+            tests: [not_null, unique]
+
+      - name: categories
+        description: "Category catalog with parent hierarchy and per-category return policy."
+        columns:
+          - name: category_id
+            tests: [not_null, unique]
+          - name: category_name
+            tests: [not_null, unique]
+
+      - name: geography
+        description: "Country master with region, continent, currency and EU flag."
+        columns:
+          - name: country_code
+            tests: [not_null, unique]
+          - name: region
+            tests:
+              - accepted_values:
+                  values: ['North America','LATAM','Europe','APAC']
+
+      - name: dates
+        description: "Calendar dimension with weekend / Black Friday / Cyber Monday flags."
+        columns:
+          - name: date_key
+            tests: [not_null, unique]
+
+      - name: carriers
+        description: "Shipping carriers with promised SLA and historical reliability score (0-1)."
+        columns:
+          - name: carrier_id
+            tests: [not_null, unique]
+
+      - name: payment_methods
+        description: "Payment methods with processor fee, settlement days and chargeback risk tier."
+        columns:
+          - name: method_code
+            tests: [not_null, unique]
+
+      - name: return_reasons
+        description: "Return reason taxonomy with reason_category and is_actionable_by_seller flag."
+        columns:
+          - name: reason_code
+            tests: [not_null, unique]
+
+      - name: promotions
+        description: "Marketing campaigns / coupons with date range and aggressive flag."
+        columns:
+          - name: promotion_id
+            tests: [not_null, unique]

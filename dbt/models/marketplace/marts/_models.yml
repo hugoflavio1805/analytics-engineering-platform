@@ -1,0 +1,146 @@
+version: 2
+
+models:
+  # =============================================================
+  # Dimensions (10 — full Kimball)
+  # =============================================================
+  - name: dim_customer
+    description: "Customer dimension conformed with geography. Includes lifetime_gmv and returned_orders_count rollups."
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: region
+        tests:
+          - accepted_values:
+              values: ['North America','LATAM','Europe','APAC']
+
+  - name: dim_seller
+    description: "Seller dimension with country/region, GMV and product/order rollups."
+    columns:
+      - name: seller_id
+        tests: [not_null, unique]
+
+  - name: dim_product
+    description: "Product dimension with category linkage, sales rollup and DQ flags."
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+      - name: category
+        tests:
+          - accepted_values:
+              values: ['Electronics','Fashion','Home & Kitchen','Beauty & Personal Care','Books','Toys & Games','Sports & Outdoors','Automotive Parts','Health & Wellness']
+
+  - name: dim_category
+    description: "Category dimension with parent hierarchy, return policy window and high-return flag."
+    columns:
+      - name: category_id
+        tests: [not_null, unique]
+      - name: category_name
+        tests: [not_null]
+
+  - name: dim_geography
+    description: "Country master with region, continent, currency, language, EU flag."
+    columns:
+      - name: country_code
+        tests: [not_null, unique]
+
+  - name: dim_date
+    description: "Calendar dim. Includes weekend, Black Friday, Cyber Monday, Christmas Eve, New Year flags."
+    columns:
+      - name: date_key
+        tests: [not_null, unique]
+
+  - name: dim_carrier
+    description: "Carrier dim with promised SLA, reliability score and derived sla_miss_rate / avg_transit_days."
+    columns:
+      - name: carrier_id
+        tests: [not_null, unique]
+
+  - name: dim_payment_method
+    description: "Payment method dim with processor fee, settlement days, and observed chargeback_rate rollup."
+    columns:
+      - name: method_code
+        tests: [not_null, unique]
+
+  - name: dim_return_reason
+    description: "Return reason taxonomy with reason_category and is_actionable_by_seller flag."
+    columns:
+      - name: reason_code
+        tests: [not_null, unique]
+
+  - name: dim_promotion
+    description: "Promotion dim with campaign type, aggressive flag, and observed orders_count, gmv, chargeback_rate."
+    columns:
+      - name: promotion_id
+        tests: [not_null, unique]
+
+  # =============================================================
+  # Facts (6)
+  # =============================================================
+  - name: fct_orders
+    description: "Order header fact (incremental). FKs to customer, geography, carrier, promotion, category, payment_method, date."
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+      - name: order_date
+        tests: [not_null]
+
+  - name: fct_order_items
+    description: "Order line-item fact. Composite grain (order_id, line_no). One row per item shipped."
+
+  - name: fct_payments
+    description: "Payment-event fact. One row per payment record. Surfaces chargebacks and amount mismatches."
+    columns:
+      - name: payment_id
+        tests: [not_null, unique]
+
+  - name: fct_returns
+    description: "Return fact joined to dim_return_reason. Includes is_within_policy, refund_pct, reason_category."
+    columns:
+      - name: return_id
+        tests: [not_null, unique]
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('fct_orders')
+              field: order_id
+
+  - name: fct_reviews
+    description: "Review fact joined to fct_orders. is_negative_review (rating <= 2) is a churn proxy."
+    columns:
+      - name: review_id
+        tests: [not_null, unique]
+
+  - name: fct_shipping_events
+    description: "Logistics event-grain fact. One row per shipment lifecycle event. Used for transit-time analysis."
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+
+  # =============================================================
+  # Analytical marts (3)
+  # =============================================================
+  - name: category_region_return_rate
+    description: "One row per (category × region). Answers the obligatory question: which categories/regions leak GMV via returns?"
+    columns:
+      - name: category_id
+        tests: [not_null]
+      - name: return_rate
+        description: "returns_total / orders_total within delivered+returned scope."
+      - name: gmv_loss_rate
+        description: "refund_total / gmv. Direct financial impact metric."
+
+  - name: gmv_by_promotion
+    description: "Promotion ROI: GMV vs chargeback/refund/return rate per campaign. 'NO_PROMOTION' is the baseline bucket."
+    columns:
+      - name: promotion_id
+        tests: [not_null, unique]
+
+  - name: sla_by_carrier
+    description: "Carrier SLA performance per ship_country. Surfaces sla_miss_rate and late_return_rate together."

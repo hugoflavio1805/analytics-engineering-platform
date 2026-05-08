@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_orders_clean
+    description: "Cleaned orders: parses both ISO and dd/MM/yyyy formats, drops self-cancelled orders without payment."
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: order_date
+        tests: [not_null]
+
+  - name: int_returns_classified
+    description: "Returns enriched with days_to_return, is_within_policy and reason_category."
+    columns:
+      - name: return_id
+        tests: [not_null, unique]

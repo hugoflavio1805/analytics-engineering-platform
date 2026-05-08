@@ -18,6 +18,7 @@ clean-targets:
 
 models:
   feedback_revenue:
+    # Case 1 — SaaS feedback × revenue (Prevision-style challenge)
     staging:
       +materialized: view
       +schema: staging
@@ -31,5 +32,21 @@ models:
         +materialized: table
         +schema: marts_analytics
 
+    # Case 2 — Generic marketplace (returns, fraud, GMV)
+    marketplace:
+      staging:
+        +materialized: view
+        +schema: marketplace_staging
+      intermediate:
+        +materialized: ephemeral
+      marts:
+        core:
+          +materialized: table
+          +schema: marketplace_core
+        analytics:
+          +materialized: table
+          +schema: marketplace_analytics
+
 vars:
   feedback_pre_churn_window_days: 90
+  marketplace_return_window_days: 30

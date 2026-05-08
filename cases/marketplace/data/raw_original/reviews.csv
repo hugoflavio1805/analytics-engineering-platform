@@ -1,0 +1,1017 @@
+review_id,order_id,customer_id,rating,title,body,review_date,verified_purchase
+REV-0000001,ORD-0001277,CUST-000304,5,Quality issue,Customer service was very responsive.,2023-12-12,true
+REV-0000002,ORD-0000566,CUST-000214,4,Could be better,Customer service was very responsive.,2025-11-15,true
+REV-0000003,ORD-0000409,CUST-000347,4,Would buy again,Arrived on time and matches the description.,2023-07-29,true
+REV-0000004,ORD-0001079,CUST-000029,4,Would buy again,"Five stars, would recommend.",2023-12-13,true
+REV-0000005,ORD-0000375,CUST-000338,5,Could be better,Build quality is excellent.,2024-12-09,true
+REV-0000006,ORD-0000226,CUST-000621,2,Excellent,Customer service was very responsive.,2023-12-10,true
+REV-0000007,ORD-0000881,CUST-000799,2,Excellent,Better than I expected for the price.,2025-05-28,true
+REV-0000008,ORD-0001214,CUST-000104,2,Disappointed,Build quality is excellent.,2023-02-13,true
+REV-0000009,ORD-0000675,CUST-000614,3,Loved it!,Customer service was very responsive.,2024-09-13,true
+REV-0000010,ORD-0000315,CUST-000759,4,Excellent,Item was different from the photos.,2026-01-20,true
+REV-0000011,ORD-0000124,CUST-000356,5,Loved it!,Better than I expected for the price.,2025-10-30,true
+REV-0000012,ORD-0000177,CUST-000017,2,Great purchase,Not worth the price.,2024-12-20,true
+REV-0000013,ORD-0001449,CUST-000018,5,Could be better,"Damaged when it arrived, returned right away.",2026-01-11,true
+REV-0000014,ORD-0001443,CUST-000088,4,Disappointed,Better than I expected for the price.,2025-06-07,true
+REV-0000015,ORD-0000322,CUST-000424,4,Highly recommend,Arrived on time and matches the description.,2023-12-30,true
+REV-0000016,ORD-0000234,CUST-000416,4,Could be better,"Average quality, decent value.",2024-06-22,true
+REV-0000017,ORD-0001337,CUST-000366,5,Not what I expected,Customer service was very responsive.,2025-05-02,true
+REV-0000018,ORD-0001042,CUST-000251,5,Returned,Item was different from the photos.,2023-06-05,true
+REV-0000019,ORD-0000588,CUST-000504,3,Could be better,Build quality is excellent.,2025-03-06,true
+REV-0000020,ORD-0000943,CUST-000521,4,Not what I expected,Customer service was very responsive.,2025-01-05,true
+REV-0000021,ORD-0000068,CUST-000718,4,Returned,Not worth the price.,2025-01-23,true
+REV-0000022,ORD-0001253,CUST-000076,3,Disappointed,Item was different from the photos.,2023-11-17,true
+REV-0000023,ORD-0001320,CUST-000500,4,Could be better,Customer service was very responsive.,2024-12-16,true
+REV-0000024,ORD-0000529,CUST-000254,5,Would buy again,Shipping took longer than promised.,2024-12-01,true
+REV-0000025,ORD-0000461,CUST-000775,4,Excellent,Not worth the price.,2024-05-09,true
+REV-0000026,ORD-0000724,CUST-000789,4,Great purchase,"Damaged when it arrived, returned right away.",2023-12-02,true
+REV-0000027,ORD-0001440,CUST-000394,4,Could be better,"Five stars, would recommend.",2025-12-28,true
+REV-0000028,ORD-0000797,CUST-000625,4,Excellent,Arrived on time and matches the description.,2023-12-19,true
+REV-0000029,ORD-0001005,CUST-000497,5,Highly recommend,Better than I expected for the price.,2023-09-27,true
+REV-0000030,ORD-0000082,CUST-000780,5,Would buy again,"Five stars, would recommend.",2023-12-12,true
+REV-0000031,ORD-0000001,CUST-000614,5,Could be better,Shipping took longer than promised.,2023-10-16,true
+REV-0000032,ORD-0000979,CUST-000506,4,Not what I expected,"Five stars, would recommend.",2025-04-12,true
+REV-0000033,ORD-0000910,CUST-000648,5,Returned,Item was different from the photos.,2024-12-29,true
+REV-0000034,ORD-0000913,CUST-000482,4,Great purchase,"Damaged when it arrived, returned right away.",2023-10-24,true
+REV-0000035,ORD-0000308,CUST-000787,5,Could be better,Customer service was very responsive.,2024-02-20,true
+REV-0000036,ORD-0000624,CUST-000527,5,Returned,Not worth the price.,2023-12-23,true
+REV-0000037,ORD-0000030,CUST-000519,5,Would buy again,"Damaged when it arrived, returned right away.",2024-12-27,true
+REV-0000038,ORD-0000741,CUST-000352,5,Highly recommend,Not worth the price.,2024-11-12,true
+REV-0000039,ORD-0000169,CUST-000257,5,Highly recommend,"Five stars, would recommend.",2024-12-03,true
+REV-0000040,ORD-0001452,CUST-000532,4,Would buy again,Shipping took longer than promised.,2023-02-05,true
+REV-0000041,ORD-0000943,CUST-000521,5,Excellent,Better than I expected for the price.,2024-12-21,true
+REV-0000042,ORD-0000782,CUST-000719,3,Would buy again,Better than I expected for the price.,2024-01-01,true
+REV-0000043,ORD-0001031,CUST-000501,4,Excellent,"Damaged when it arrived, returned right away.",2024-12-10,true
+REV-0000044,ORD-0001344,CUST-000218,3,Would buy again,Shipping took longer than promised.,2024-12-27,true
+REV-0000045,ORD-0001027,CUST-000789,3,Excellent,Better than I expected for the price.,2023-04-08,true
+REV-0000046,ORD-0000421,CUST-000115,4,Not what I expected,Customer service was very responsive.,2024-12-22,true
+REV-0000047,ORD-0000315,CUST-000759,5,Excellent,Item was different from the photos.,2026-01-09,true
+REV-0000048,ORD-0000368,CUST-000277,4,Loved it!,Not worth the price.,2026-03-08,true
+REV-0000049,ORD-0000719,CUST-000127,1,Would buy again,Item was different from the photos.,2024-04-07,true
+REV-0000050,ORD-0001180,CUST-000672,3,Loved it!,"Average quality, decent value.",2023-09-23,true
+REV-0000051,ORD-0001350,CUST-000654,4,Great purchase,Customer service was very responsive.,2023-06-12,true
+REV-0000052,ORD-0000933,CUST-000081,5,Great purchase,Customer service was very responsive.,2025-09-09,true
+REV-0000053,ORD-0000192,CUST-000618,2,Would buy again,Arrived on time and matches the description.,2023-12-24,true
+REV-0000054,ORD-0000221,CUST-000698,4,Not what I expected,Item was different from the photos.,2025-08-30,true
+REV-0000055,ORD-0000959,CUST-000441,5,Quality issue,Item was different from the photos.,2023-05-26,true
+REV-0000056,ORD-0000809,CUST-000715,4,Not what I expected,"Five stars, would recommend.",2024-03-12,true
+REV-0000057,ORD-0001008,CUST-000479,5,Could be better,Arrived on time and matches the description.,2024-12-06,true
+REV-0000058,ORD-0001482,CUST-000580,5,Disappointed,"Average quality, decent value.",2023-03-29,true
+REV-0000059,ORD-0000461,CUST-000775,3,Could be better,Build quality is excellent.,2024-04-22,true
+REV-0000060,ORD-0000068,CUST-000718,5,Could be better,Customer service was very responsive.,2025-01-14,true
+REV-0000061,ORD-0001325,CUST-000631,2,Disappointed,Not worth the price.,2024-01-25,true
+REV-0000062,ORD-0000322,CUST-000424,5,Highly recommend,"Five stars, would recommend.",2023-12-06,true
+REV-0000063,ORD-0000603,CUST-000764,5,Could be better,Better than I expected for the price.,2026-04-30,true
+REV-0000064,ORD-0000722,CUST-000053,4,Would buy again,Arrived on time and matches the description.,2023-12-09,true
+REV-0000065,ORD-0000583,CUST-000725,2,Could be better,Not worth the price.,2024-01-02,true
+REV-0000066,ORD-0000958,CUST-000567,4,Great purchase,Item was different from the photos.,2024-12-07,true
+REV-0000067,ORD-0000087,CUST-000540,1,Not what I expected,"Average quality, decent value.",2023-02-05,true
+REV-0000068,ORD-0000212,CUST-000736,5,Would buy again,Not worth the price.,2024-07-06,true
+REV-0000069,ORD-0000458,CUST-000603,5,Returned,Item was different from the photos.,2024-12-26,true
+REV-0000070,ORD-0000899,CUST-000306,5,Excellent,Better than I expected for the price.,2024-10-04,true
+REV-0000071,ORD-0000979,CUST-000506,4,Could be better,"Average quality, decent value.",2025-04-18,true
+REV-0000072,ORD-0000599,CUST-000623,5,Could be better,Better than I expected for the price.,2025-06-19,true
+REV-0000073,ORD-0001300,CUST-000382,5,Quality issue,"Damaged when it arrived, returned right away.",2023-12-11,true
+REV-0000074,ORD-0000425,CUST-000572,1,Returned,Item was different from the photos.,2023-02-23,true
+REV-0000075,ORD-0000782,CUST-000719,5,Highly recommend,Build quality is excellent.,2023-12-21,true
+REV-0000076,ORD-0001031,CUST-000501,5,Loved it!,Better than I expected for the price.,2024-12-25,true
+REV-0000077,ORD-0001193,CUST-000592,5,Quality issue,"Five stars, would recommend.",2025-08-12,true
+REV-0000078,ORD-0000956,CUST-000700,5,Could be better,Item was different from the photos.,2023-06-15,true
+REV-0000079,ORD-0000475,CUST-000729,5,Loved it!,Customer service was very responsive.,2025-03-01,true
+REV-0000080,ORD-0000951,CUST-000467,3,Could be better,Not worth the price.,2024-05-30,true
+REV-0000081,ORD-0000861,CUST-000485,5,Not what I expected,Build quality is excellent.,2025-03-18,true
+REV-0000082,ORD-0001490,CUST-000459,1,Quality issue,Not worth the price.,2025-01-08,true
+REV-0000083,ORD-0000703,CUST-000671,5,Disappointed,"Five stars, would recommend.",2023-12-31,true
+REV-0000084,ORD-0000478,CUST-000798,5,Excellent,Shipping took longer than promised.,2024-02-28,true
+REV-0000085,ORD-0000927,CUST-000405,5,Highly recommend,Build quality is excellent.,2025-11-10,true
+REV-0000086,ORD-0000995,CUST-000199,5,Highly recommend,Arrived on time and matches the description.,2024-09-26,true
+REV-0000087,ORD-0000043,CUST-000511,3,Could be better,Shipping took longer than promised.,2025-01-18,true
+REV-0000088,ORD-0001425,CUST-000276,5,Great purchase,"Five stars, would recommend.",2023-12-15,true
+REV-0000089,ORD-0000930,CUST-000148,1,Would buy again,Shipping took longer than promised.,2025-07-01,true
+REV-0000090,ORD-0000499,CUST-000169,4,Great purchase,Shipping took longer than promised.,2025-09-17,true
+REV-0000091,ORD-0001076,CUST-000586,4,Highly recommend,Better than I expected for the price.,2024-05-05,true
+REV-0000092,ORD-0001068,CUST-000654,4,Disappointed,Arrived on time and matches the description.,2025-05-31,true
+REV-0000093,ORD-0000710,CUST-000354,3,Would buy again,Not worth the price.,2026-03-31,true
+REV-0000094,ORD-0000553,CUST-000799,5,Quality issue,"Five stars, would recommend.",2023-12-17,true
+REV-0000095,ORD-0000888,CUST-000733,4,Highly recommend,Arrived on time and matches the description.,2025-10-17,true
+REV-0000096,ORD-0000907,CUST-000039,5,Not what I expected,"Five stars, would recommend.",2025-10-14,true
+REV-0000097,ORD-0000751,CUST-000406,5,Excellent,"Damaged when it arrived, returned right away.",2024-12-26,true
+REV-0000098,ORD-0000882,CUST-000455,2,Disappointed,Not worth the price.,2024-02-03,true
+REV-0000099,ORD-0000823,CUST-000345,5,Great purchase,Customer service was very responsive.,2025-04-01,true
+REV-0000100,ORD-0000805,CUST-000523,4,Highly recommend,"Damaged when it arrived, returned right away.",2026-03-12,true
+REV-0000101,ORD-0000929,CUST-000776,3,Could be better,Arrived on time and matches the description.,2025-06-01,true
+REV-0000102,ORD-0000548,CUST-000029,1,Highly recommend,"Average quality, decent value.",2023-08-29,true
+REV-0000103,ORD-0000388,CUST-000204,3,Returned,"Average quality, decent value.",2026-03-06,true
+REV-0000104,ORD-0001196,CUST-000315,4,Disappointed,Better than I expected for the price.,2024-01-07,true
+REV-0000105,ORD-0001205,CUST-000084,4,Highly recommend,Customer service was very responsive.,2024-12-25,true
+REV-0000106,ORD-0001344,CUST-000218,4,Highly recommend,"Average quality, decent value.",2024-12-01,true
+REV-0000107,ORD-0000550,CUST-000718,3,Quality issue,Not worth the price.,2024-10-03,true
+REV-0000108,ORD-0000655,CUST-000215,5,Excellent,Customer service was very responsive.,2023-02-15,true
+REV-0000109,ORD-0000477,CUST-000202,5,Quality issue,Shipping took longer than promised.,2025-12-19,true
+REV-0000110,ORD-0001373,CUST-000142,5,Could be better,Item was different from the photos.,2024-11-03,true
+REV-0000111,ORD-0000519,CUST-000754,5,Would buy again,"Average quality, decent value.",2025-03-11,true
+REV-0000112,ORD-0000495,CUST-000410,2,Would buy again,Item was different from the photos.,2025-04-28,true
+REV-0000113,ORD-0000282,CUST-000013,4,Excellent,Better than I expected for the price.,2023-03-10,true
+REV-0000114,ORD-0000783,CUST-000197,3,Not what I expected,Arrived on time and matches the description.,2024-10-05,true
+REV-0000115,ORD-0000327,CUST-000452,5,Disappointed,Customer service was very responsive.,2025-05-09,true
+REV-0000116,ORD-0001409,CUST-000207,5,Not what I expected,Arrived on time and matches the description.,2026-03-18,true
+REV-0000117,ORD-0000183,CUST-000784,5,Would buy again,Item was different from the photos.,2023-11-28,true
+REV-0000118,ORD-0000941,CUST-000709,4,Excellent,"Five stars, would recommend.",2025-04-06,true
+REV-0000119,ORD-0000173,CUST-000115,4,Not what I expected,Not worth the price.,2025-11-25,true
+REV-0000120,ORD-0000228,CUST-000438,3,Could be better,Item was different from the photos.,2026-05-09,true
+REV-0000121,ORD-0000297,CUST-000185,5,Loved it!,Customer service was very responsive.,2023-10-26,true
+REV-0000122,ORD-0000767,CUST-000448,5,Would buy again,"Average quality, decent value.",2026-03-26,true
+REV-0000123,ORD-0000952,CUST-000355,4,Would buy again,Customer service was very responsive.,2023-11-02,true
+REV-0000124,ORD-0000327,CUST-000452,5,Not what I expected,"Average quality, decent value.",2025-05-05,true
+REV-0000125,ORD-0000333,CUST-000220,4,Would buy again,Customer service was very responsive.,2025-03-05,true
+REV-0000126,ORD-0001390,CUST-000723,3,Could be better,Build quality is excellent.,2024-11-30,true
+REV-0000127,ORD-0001370,CUST-000502,2,Great purchase,Not worth the price.,2023-12-20,true
+REV-0000128,ORD-0000675,CUST-000614,5,Quality issue,Shipping took longer than promised.,2024-08-31,true
+REV-0000129,ORD-0000293,CUST-000779,4,Quality issue,Not worth the price.,2025-08-10,true
+REV-0000130,ORD-0001094,CUST-000343,4,Not what I expected,"Average quality, decent value.",2025-12-07,true
+REV-0000131,ORD-0000776,CUST-000749,5,Returned,Not worth the price.,2024-10-09,true
+REV-0000132,ORD-0001168,CUST-000556,5,Could be better,Arrived on time and matches the description.,2025-11-24,true
+REV-0000133,ORD-0000624,CUST-000527,4,Returned,Shipping took longer than promised.,2024-01-07,true
+REV-0000134,ORD-0000408,CUST-000383,5,Highly recommend,"Average quality, decent value.",2024-12-07,true
+REV-0000135,ORD-0000465,CUST-000121,5,Could be better,"Damaged when it arrived, returned right away.",2025-12-22,true
+REV-0000136,ORD-0000043,CUST-000511,5,Highly recommend,Better than I expected for the price.,2025-01-14,true
+REV-0000137,ORD-0001107,CUST-000772,5,Returned,Better than I expected for the price.,2025-10-22,true
+REV-0000138,ORD-0000050,CUST-000735,4,Not what I expected,Arrived on time and matches the description.,2024-04-05,true
+REV-0000139,ORD-0000940,CUST-000586,2,Quality issue,Better than I expected for the price.,2023-07-14,true
+REV-0000140,ORD-0001337,CUST-000366,5,Great purchase,"Average quality, decent value.",2025-05-18,true
+REV-0000141,ORD-0001110,CUST-000606,4,Would buy again,Better than I expected for the price.,2023-05-26,true
+REV-0000142,ORD-0001461,CUST-000502,2,Would buy again,Not worth the price.,2023-03-23,true
+REV-0000143,ORD-0001475,CUST-000409,3,Disappointed,Better than I expected for the price.,2024-12-15,true
+REV-0000144,ORD-0000655,CUST-000215,4,Would buy again,Shipping took longer than promised.,2023-02-24,true
+REV-0000145,ORD-0000129,CUST-000554,5,Quality issue,Not worth the price.,2026-05-16,true
+REV-0000146,ORD-0001186,CUST-000780,3,Excellent,"Five stars, would recommend.",2024-12-19,true
+REV-0000147,ORD-0000635,CUST-000138,3,Disappointed,"Five stars, would recommend.",2025-12-29,true
+REV-0000148,ORD-0000878,CUST-000159,5,Would buy again,Better than I expected for the price.,2023-12-23,true
+REV-0000149,ORD-0000785,CUST-000064,5,Disappointed,Arrived on time and matches the description.,2024-07-07,true
+REV-0000150,ORD-0001405,CUST-000081,3,Loved it!,Build quality is excellent.,2023-12-10,true
+REV-0000151,ORD-0000929,CUST-000776,5,Loved it!,"Five stars, would recommend.",2025-05-29,true
+REV-0000152,ORD-0000246,CUST-000124,4,Quality issue,"Five stars, would recommend.",2023-12-22,true
+REV-0000153,ORD-0001424,CUST-000363,5,Not what I expected,"Five stars, would recommend.",2023-04-30,true
+REV-0000154,ORD-0001332,CUST-000457,3,Highly recommend,Shipping took longer than promised.,2025-07-10,true
+REV-0000155,ORD-0001167,CUST-000168,5,Loved it!,Arrived on time and matches the description.,2023-06-18,true
+REV-0000156,ORD-0000851,CUST-000563,3,Quality issue,Customer service was very responsive.,2024-02-05,true
+REV-0000157,ORD-0001157,CUST-000191,5,Could be better,Not worth the price.,2026-03-18,true
+REV-0000158,ORD-0000766,CUST-000132,3,Highly recommend,Better than I expected for the price.,2026-03-30,true
+REV-0000159,ORD-0000406,CUST-000768,4,Not what I expected,"Damaged when it arrived, returned right away.",2024-02-07,true
+REV-0000160,ORD-0001008,CUST-000479,4,Returned,Item was different from the photos.,2024-12-23,true
+REV-0000161,ORD-0000412,CUST-000586,5,Quality issue,Customer service was very responsive.,2026-03-26,true
+REV-0000162,ORD-0001186,CUST-000780,5,Disappointed,Not worth the price.,2024-12-18,true
+REV-0000163,ORD-0000534,CUST-000210,5,Quality issue,Build quality is excellent.,2025-06-19,true
+REV-0000164,ORD-0000173,CUST-000115,5,Excellent,Not worth the price.,2025-11-28,true
+REV-0000165,ORD-0001233,CUST-000514,3,Could be better,"Damaged when it arrived, returned right away.",2024-06-20,true
+REV-0000166,ORD-0000933,CUST-000081,4,Not what I expected,"Damaged when it arrived, returned right away.",2025-09-26,true
+REV-0000167,ORD-0000646,CUST-000148,4,Would buy again,Shipping took longer than promised.,2025-12-26,true
+REV-0000168,ORD-0001386,CUST-000476,2,Could be better,Arrived on time and matches the description.,2024-12-15,true
+REV-0000169,ORD-0000934,CUST-000792,5,Great purchase,Customer service was very responsive.,2024-01-31,true
+REV-0000170,ORD-0000630,CUST-000796,4,Loved it!,Item was different from the photos.,2023-12-14,true
+REV-0000171,ORD-0000042,CUST-000103,2,Great purchase,"Damaged when it arrived, returned right away.",2023-06-30,true
+REV-0000172,ORD-0000299,CUST-000657,2,Disappointed,"Damaged when it arrived, returned right away.",2024-12-24,true
+REV-0000173,ORD-0000966,CUST-000104,3,Great purchase,"Five stars, would recommend.",2023-07-06,true
+REV-0000174,ORD-0000349,CUST-000732,4,Not what I expected,Build quality is excellent.,2023-12-31,true
+REV-0000175,ORD-0000880,CUST-000791,1,Excellent,Better than I expected for the price.,2023-12-28,true
+REV-0000176,ORD-0000529,CUST-000254,5,Would buy again,Customer service was very responsive.,2024-11-18,true
+REV-0000177,ORD-0000408,CUST-000383,4,Returned,"Damaged when it arrived, returned right away.",2024-12-17,true
+REV-0000178,ORD-0000221,CUST-000698,3,Excellent,"Five stars, would recommend.",2025-09-12,true
+REV-0000179,ORD-0000538,CUST-000523,5,Excellent,"Damaged when it arrived, returned right away.",2023-12-12,true
+REV-0000180,ORD-0000881,CUST-000799,4,Could be better,Shipping took longer than promised.,2025-05-27,true
+REV-0000181,ORD-0000199,CUST-000446,4,Quality issue,"Average quality, decent value.",2023-04-01,true
+REV-0000182,ORD-0001145,CUST-000789,3,Highly recommend,Customer service was very responsive.,2026-03-21,true
+REV-0000183,ORD-0000448,CUST-000272,1,Loved it!,Arrived on time and matches the description.,2025-11-07,true
+REV-0000184,ORD-0000683,CUST-000776,5,Would buy again,Better than I expected for the price.,2025-12-27,true
+REV-0000185,ORD-0000713,CUST-000071,5,Would buy again,"Five stars, would recommend.",2026-03-12,true
+REV-0000186,ORD-0001202,CUST-000550,4,Highly recommend,Shipping took longer than promised.,2023-02-23,true
+REV-0000187,ORD-0000583,CUST-000725,3,Returned,Not worth the price.,2024-01-01,true
+REV-0000188,ORD-0000150,CUST-000213,4,Disappointed,"Average quality, decent value.",2024-06-16,true
+REV-0000189,ORD-0000164,CUST-000706,5,Disappointed,Item was different from the photos.,2024-04-21,true
+REV-0000190,ORD-0000127,CUST-000254,5,Not what I expected,Customer service was very responsive.,2023-07-15,true
+REV-0000191,ORD-0001381,CUST-000552,2,Excellent,Better than I expected for the price.,2025-02-18,true
+REV-0000192,ORD-0000459,CUST-000710,4,Disappointed,Build quality is excellent.,2025-05-16,true
+REV-0000193,ORD-0000745,CUST-000479,3,Not what I expected,"Average quality, decent value.",2024-12-07,true
+REV-0000194,ORD-0000885,CUST-000478,5,Could be better,Customer service was very responsive.,2025-12-03,true
+REV-0000195,ORD-0000169,CUST-000257,3,Great purchase,Item was different from the photos.,2024-12-09,true
+REV-0000196,ORD-0001336,CUST-000615,4,Loved it!,"Damaged when it arrived, returned right away.",2025-01-05,true
+REV-0000197,ORD-0000128,CUST-000728,5,Returned,Build quality is excellent.,2026-01-05,true
+REV-0000198,ORD-0000016,CUST-000675,4,Quality issue,"Average quality, decent value.",2025-05-18,true
+REV-0000199,ORD-0001221,CUST-000432,1,Could be better,Arrived on time and matches the description.,2023-09-22,true
+REV-0000200,ORD-0000154,CUST-000590,4,Quality issue,"Average quality, decent value.",2023-08-02,true
+REV-0000201,ORD-0000733,CUST-000133,5,Excellent,Not worth the price.,2025-06-10,true
+REV-0000202,ORD-0001350,CUST-000654,4,Not what I expected,"Damaged when it arrived, returned right away.",2023-06-03,true
+REV-0000203,ORD-0000260,CUST-000271,5,Returned,Build quality is excellent.,2023-05-11,true
+REV-0000204,ORD-0001237,CUST-000649,4,Loved it!,"Average quality, decent value.",2023-10-07,true
+REV-0000205,ORD-0000644,CUST-000092,4,Great purchase,Item was different from the photos.,2023-07-16,true
+REV-0000206,ORD-0001436,CUST-000111,5,Returned,Arrived on time and matches the description.,2024-12-20,true
+REV-0000207,ORD-0000923,CUST-000694,5,Returned,Not worth the price.,2025-12-29,true
+REV-0000208,ORD-0000694,CUST-000327,5,Great purchase,Not worth the price.,2024-05-12,true
+REV-0000209,ORD-0001316,CUST-000053,3,Loved it!,"Damaged when it arrived, returned right away.",2024-10-16,true
+REV-0000210,ORD-0000152,CUST-000305,2,Highly recommend,Better than I expected for the price.,2026-01-25,true
+REV-0000211,ORD-0001423,CUST-000250,5,Excellent,Item was different from the photos.,2025-04-11,true
+REV-0000212,ORD-0000461,CUST-000775,4,Great purchase,Not worth the price.,2024-05-08,true
+REV-0000213,ORD-0000371,CUST-000223,2,Great purchase,Shipping took longer than promised.,2023-12-18,true
+REV-0000214,ORD-0000821,CUST-000533,5,Not what I expected,Better than I expected for the price.,2023-12-29,true
+REV-0000215,ORD-0000223,CUST-000682,5,Would buy again,Shipping took longer than promised.,2024-08-21,true
+REV-0000216,ORD-0001164,CUST-000641,5,Quality issue,Arrived on time and matches the description.,2024-08-05,true
+REV-0000217,ORD-0000799,CUST-000302,4,Quality issue,Item was different from the photos.,2025-03-19,true
+REV-0000218,ORD-0001160,CUST-000152,5,Quality issue,"Average quality, decent value.",2025-07-11,true
+REV-0000219,ORD-0000323,CUST-000759,5,Excellent,"Average quality, decent value.",2026-01-09,true
+REV-0000220,ORD-0000720,CUST-000200,4,Quality issue,Build quality is excellent.,2025-04-08,true
+REV-0000221,ORD-0000249,CUST-000305,5,Could be better,Item was different from the photos.,2023-08-26,true
+REV-0000222,ORD-0000641,CUST-000293,5,Could be better,"Damaged when it arrived, returned right away.",2023-05-10,true
+REV-0000223,ORD-0000589,CUST-000458,4,Great purchase,"Damaged when it arrived, returned right away.",2024-12-21,true
+REV-0000224,ORD-0001453,CUST-000492,5,Returned,Not worth the price.,2025-07-19,true
+REV-0000225,ORD-0000045,CUST-000724,4,Would buy again,Arrived on time and matches the description.,2023-10-27,true
+REV-0000226,ORD-0000578,CUST-000566,5,Great purchase,Item was different from the photos.,2025-12-18,true
+REV-0000227,ORD-0000934,CUST-000792,5,Returned,Not worth the price.,2024-01-29,true
+REV-0000228,ORD-0001402,CUST-000792,3,Would buy again,Shipping took longer than promised.,2023-10-13,true
+REV-0000229,ORD-0000351,CUST-000601,3,Loved it!,Item was different from the photos.,2025-09-21,true
+REV-0000230,ORD-0001265,CUST-000683,5,Returned,"Average quality, decent value.",2025-06-08,true
+REV-0000231,ORD-0000016,CUST-000675,4,Highly recommend,Build quality is excellent.,2025-05-15,true
+REV-0000232,ORD-0001150,CUST-000318,5,Could be better,Build quality is excellent.,2024-06-19,true
+REV-0000233,ORD-0000738,CUST-000647,2,Loved it!,Build quality is excellent.,2025-01-07,true
+REV-0000234,ORD-0001047,CUST-000671,4,Not what I expected,"Damaged when it arrived, returned right away.",2024-12-15,true
+REV-0000235,ORD-0001360,CUST-000277,4,Excellent,Shipping took longer than promised.,2024-08-01,true
+REV-0000236,ORD-0001477,CUST-000672,4,Could be better,Item was different from the photos.,2024-02-18,true
+REV-0000237,ORD-0001278,CUST-000611,4,Loved it!,Item was different from the photos.,2026-03-16,true
+REV-0000238,ORD-0000457,CUST-000312,4,Not what I expected,Item was different from the photos.,2024-08-10,true
+REV-0000239,ORD-0000522,CUST-000383,2,Returned,Item was different from the photos.,2024-10-29,true
+REV-0000240,ORD-0001157,CUST-000191,5,Quality issue,"Damaged when it arrived, returned right away.",2026-03-28,true
+REV-0000241,ORD-0000871,CUST-000481,4,Could be better,Shipping took longer than promised.,2024-12-15,true
+REV-0000242,ORD-0001256,CUST-000014,4,Excellent,Build quality is excellent.,2024-06-01,true
+REV-0000243,ORD-0000490,CUST-000790,1,Loved it!,Not worth the price.,2024-10-16,true
+REV-0000244,ORD-0000164,CUST-000706,4,Excellent,"Damaged when it arrived, returned right away.",2024-04-30,true
+REV-0000245,ORD-0000445,CUST-000596,3,Great purchase,Arrived on time and matches the description.,2025-12-06,true
+REV-0000246,ORD-0000616,CUST-000029,4,Great purchase,Not worth the price.,2025-01-07,true
+REV-0000247,ORD-0000561,CUST-000467,5,Not what I expected,"Average quality, decent value.",2024-03-16,true
+REV-0000248,ORD-0000923,CUST-000694,5,Quality issue,"Damaged when it arrived, returned right away.",2025-12-23,true
+REV-0000249,ORD-0000272,CUST-000623,4,Disappointed,Build quality is excellent.,2024-03-29,true
+REV-0000250,ORD-0000515,CUST-000440,5,Great purchase,Arrived on time and matches the description.,2023-06-26,true
+REV-0000251,ORD-0000653,CUST-000042,5,Disappointed,Arrived on time and matches the description.,2025-07-17,true
+REV-0000252,ORD-0000823,CUST-000345,3,Could be better,Better than I expected for the price.,2025-04-07,true
+REV-0000253,ORD-0000600,CUST-000251,5,Disappointed,"Damaged when it arrived, returned right away.",2024-10-06,true
+REV-0000254,ORD-0000657,CUST-000405,4,Highly recommend,Better than I expected for the price.,2025-12-30,true
+REV-0000255,ORD-0000165,CUST-000675,3,Returned,Better than I expected for the price.,2024-06-09,true
+REV-0000256,ORD-0001384,CUST-000060,3,Excellent,Shipping took longer than promised.,2023-12-25,true
+REV-0000257,ORD-0001427,CUST-000263,4,Great purchase,"Five stars, would recommend.",2024-03-09,true
+REV-0000258,ORD-0001134,CUST-000756,5,Great purchase,Arrived on time and matches the description.,2024-07-21,true
+REV-0000259,ORD-0000829,CUST-000790,5,Could be better,Customer service was very responsive.,2025-04-25,true
+REV-0000260,ORD-0000507,CUST-000684,4,Returned,"Damaged when it arrived, returned right away.",2025-10-18,true
+REV-0000261,ORD-0000256,CUST-000165,5,Highly recommend,Customer service was very responsive.,2025-11-11,true
+REV-0000262,ORD-0001016,CUST-000258,4,Not what I expected,Item was different from the photos.,2023-09-08,true
+REV-0000263,ORD-0000758,CUST-000248,4,Returned,"Damaged when it arrived, returned right away.",2026-02-15,true
+REV-0000264,ORD-0000418,CUST-000473,5,Returned,Shipping took longer than promised.,2025-07-20,true
+REV-0000265,ORD-0001267,CUST-000740,5,Highly recommend,Shipping took longer than promised.,2025-12-25,true
+REV-0000266,ORD-0000675,CUST-000614,5,Great purchase,Not worth the price.,2024-09-19,true
+REV-0000267,ORD-0000719,CUST-000127,2,Returned,"Five stars, would recommend.",2024-04-08,true
+REV-0000268,ORD-0000511,CUST-000765,5,Great purchase,Build quality is excellent.,2023-03-28,true
+REV-0000269,ORD-0000520,CUST-000413,4,Highly recommend,"Five stars, would recommend.",2026-03-03,true
+REV-0000270,ORD-0000415,CUST-000767,5,Not what I expected,Shipping took longer than promised.,2025-01-09,true
+REV-0000271,ORD-0001143,CUST-000150,2,Disappointed,"Five stars, would recommend.",2023-12-26,true
+REV-0000272,ORD-0000648,CUST-000396,5,Not what I expected,"Five stars, would recommend.",2023-05-21,true
+REV-0000273,ORD-0001424,CUST-000363,5,Excellent,Shipping took longer than promised.,2023-04-28,true
+REV-0000274,ORD-0000215,CUST-000177,2,Loved it!,Customer service was very responsive.,2023-07-07,true
+REV-0000275,ORD-0000910,CUST-000648,4,Not what I expected,Better than I expected for the price.,2025-01-04,true
+REV-0000276,ORD-0000880,CUST-000791,2,Disappointed,"Damaged when it arrived, returned right away.",2024-01-16,true
+REV-0000277,ORD-0001323,CUST-000682,5,Loved it!,Item was different from the photos.,2023-12-19,true
+REV-0000278,ORD-0001479,CUST-000159,5,Loved it!,Arrived on time and matches the description.,2023-07-11,true
+REV-0000279,ORD-0000817,CUST-000609,3,Could be better,Build quality is excellent.,2023-08-19,true
+REV-0000280,ORD-0000982,CUST-000527,5,Excellent,"Damaged when it arrived, returned right away.",2023-09-02,true
+REV-0000281,ORD-0001227,CUST-000517,5,Excellent,Customer service was very responsive.,2023-04-22,true
+REV-0000282,ORD-0000889,CUST-000344,5,Great purchase,Not worth the price.,2023-12-23,true
+REV-0000283,ORD-0000060,CUST-000291,4,Quality issue,Shipping took longer than promised.,2023-11-03,true
+REV-0000284,ORD-0000473,CUST-000739,4,Not what I expected,Shipping took longer than promised.,2024-01-06,true
+REV-0000285,ORD-0000755,CUST-000383,5,Disappointed,"Five stars, would recommend.",2025-12-25,true
+REV-0000286,ORD-0000857,CUST-000149,5,Disappointed,Shipping took longer than promised.,2026-01-28,true
+REV-0000287,ORD-0000942,CUST-000221,4,Returned,"Average quality, decent value.",2026-01-24,true
+REV-0000288,ORD-0000646,CUST-000148,5,Loved it!,"Five stars, would recommend.",2025-12-18,true
+REV-0000289,ORD-0000515,CUST-000440,3,Would buy again,Customer service was very responsive.,2023-06-29,true
+REV-0000290,ORD-0000968,CUST-000304,5,Returned,"Five stars, would recommend.",2025-12-21,true
+REV-0000291,ORD-0000726,CUST-000100,3,Could be better,Not worth the price.,2026-01-02,true
+REV-0000292,ORD-0001262,CUST-000709,5,Highly recommend,"Five stars, would recommend.",2024-09-22,true
+REV-0000293,ORD-0001034,CUST-000163,4,Loved it!,Better than I expected for the price.,2024-12-17,true
+REV-0000294,ORD-0000988,CUST-000712,4,Excellent,Item was different from the photos.,2025-12-13,true
+REV-0000295,ORD-0000568,CUST-000320,5,Would buy again,"Damaged when it arrived, returned right away.",2023-11-13,true
+REV-0000296,ORD-0000714,CUST-000177,5,Disappointed,Build quality is excellent.,2025-11-30,true
+REV-0000297,ORD-0001224,CUST-000483,4,Highly recommend,Item was different from the photos.,2024-08-04,true
+REV-0000298,ORD-0000848,CUST-000688,5,Not what I expected,Build quality is excellent.,2025-12-05,true
+REV-0000299,ORD-0000938,CUST-000123,5,Great purchase,Build quality is excellent.,2024-12-26,true
+REV-0000300,ORD-0000022,CUST-000109,5,Disappointed,"Damaged when it arrived, returned right away.",2026-03-29,true
+REV-0000301,ORD-0000650,CUST-000410,5,Highly recommend,Arrived on time and matches the description.,2025-02-10,true
+REV-0000302,ORD-0000869,CUST-000451,5,Excellent,"Damaged when it arrived, returned right away.",2024-12-09,true
+REV-0000303,ORD-0000439,CUST-000261,3,Not what I expected,"Average quality, decent value.",2024-03-10,true
+REV-0000304,ORD-0000400,CUST-000372,3,Disappointed,Shipping took longer than promised.,2024-06-08,true
+REV-0000305,ORD-0000257,CUST-000539,1,Could be better,"Average quality, decent value.",2024-05-25,true
+REV-0000306,ORD-0001162,CUST-000182,5,Highly recommend,"Damaged when it arrived, returned right away.",2023-08-26,true
+REV-0000307,ORD-0001027,CUST-000789,5,Great purchase,Better than I expected for the price.,2023-04-02,true
+REV-0000308,ORD-0000508,CUST-000029,4,Highly recommend,"Average quality, decent value.",2023-02-17,true
+REV-0000309,ORD-0001436,CUST-000111,4,Highly recommend,"Five stars, would recommend.",2024-12-25,true
+REV-0000310,ORD-0001288,CUST-000675,5,Loved it!,"Average quality, decent value.",2025-01-10,true
+REV-0000311,ORD-0001499,CUST-000394,5,Quality issue,Item was different from the photos.,2025-09-24,true
+REV-0000312,ORD-0000546,CUST-000709,4,Disappointed,"Damaged when it arrived, returned right away.",2025-02-03,true
+REV-0000313,ORD-0000163,CUST-000556,1,Highly recommend,Shipping took longer than promised.,2023-12-18,true
+REV-0000314,ORD-0001076,CUST-000586,4,Highly recommend,Better than I expected for the price.,2024-05-15,true
+REV-0000315,ORD-0000114,CUST-000536,5,Highly recommend,Shipping took longer than promised.,2025-06-26,true
+REV-0000316,ORD-0001253,CUST-000076,4,Not what I expected,Shipping took longer than promised.,2023-11-04,true
+REV-0000317,ORD-0000157,CUST-000380,4,Disappointed,"Damaged when it arrived, returned right away.",2024-02-11,true
+REV-0000318,ORD-0000368,CUST-000277,5,Highly recommend,Customer service was very responsive.,2026-03-24,true
+REV-0000319,ORD-0000023,CUST-000735,2,Could be better,"Five stars, would recommend.",2023-12-15,true
+REV-0000320,ORD-0001203,CUST-000545,3,Not what I expected,Shipping took longer than promised.,2024-12-07,true
+REV-0000321,ORD-0001086,CUST-000539,5,Not what I expected,"Five stars, would recommend.",2025-03-20,true
+REV-0000322,ORD-0000720,CUST-000200,5,Great purchase,"Damaged when it arrived, returned right away.",2025-04-25,true
+REV-0000323,ORD-0000323,CUST-000759,5,Would buy again,Better than I expected for the price.,2026-01-10,true
+REV-0000324,ORD-0001423,CUST-000250,3,Could be better,"Five stars, would recommend.",2025-05-05,true
+REV-0000325,ORD-0001188,CUST-000595,4,Highly recommend,Better than I expected for the price.,2026-04-20,true
+REV-0000326,ORD-0000880,CUST-000791,2,Loved it!,Not worth the price.,2023-12-21,true
+REV-0000327,ORD-0001197,CUST-000185,1,Loved it!,Customer service was very responsive.,2024-12-08,true
+REV-0000328,ORD-0000479,CUST-000464,3,Returned,Not worth the price.,2026-05-14,true
+REV-0000329,ORD-0000480,CUST-000143,4,Could be better,Build quality is excellent.,2024-06-20,true
+REV-0000330,ORD-0000026,CUST-000508,5,Disappointed,"Five stars, would recommend.",2023-05-10,true
+REV-0000331,ORD-0001022,CUST-000430,4,Quality issue,Not worth the price.,2025-07-20,true
+REV-0000332,ORD-0000755,CUST-000383,5,Returned,Not worth the price.,2025-12-24,true
+REV-0000333,ORD-0000293,CUST-000779,5,Not what I expected,"Average quality, decent value.",2025-08-04,true
+REV-0000334,ORD-0000136,CUST-000184,5,Quality issue,Not worth the price.,2024-03-29,true
+REV-0000335,ORD-0000436,CUST-000720,1,Quality issue,Arrived on time and matches the description.,2025-03-27,true
+REV-0000336,ORD-0000998,CUST-000181,4,Not what I expected,Better than I expected for the price.,2023-07-10,true
+REV-0000337,ORD-0001050,CUST-000162,5,Returned,Item was different from the photos.,2024-06-22,true
+REV-0000338,ORD-0000998,CUST-000181,5,Could be better,"Damaged when it arrived, returned right away.",2023-07-11,true
+REV-0000339,ORD-0000793,CUST-000766,3,Great purchase,Shipping took longer than promised.,2024-07-30,true
+REV-0000340,ORD-0000632,CUST-000758,5,Great purchase,Shipping took longer than promised.,2026-04-10,true
+REV-0000341,ORD-0000300,CUST-000135,5,Loved it!,Item was different from the photos.,2024-12-26,true
+REV-0000342,ORD-0000683,CUST-000776,4,Would buy again,Better than I expected for the price.,2025-12-30,true
+REV-0000343,ORD-0000252,CUST-000243,4,Quality issue,Item was different from the photos.,2025-11-06,true
+REV-0000344,ORD-0000660,CUST-000173,4,Returned,Not worth the price.,2024-04-06,true
+REV-0000345,ORD-0000593,CUST-000318,4,Disappointed,"Damaged when it arrived, returned right away.",2024-02-17,true
+REV-0000346,ORD-0000392,CUST-000367,4,Not what I expected,Shipping took longer than promised.,2023-12-28,true
+REV-0000347,ORD-0001473,CUST-000725,5,Could be better,Arrived on time and matches the description.,2023-12-13,true
+REV-0000348,ORD-0001477,CUST-000672,5,Quality issue,Build quality is excellent.,2024-02-10,true
+REV-0000349,ORD-0000840,CUST-000317,1,Disappointed,Better than I expected for the price.,2025-12-20,true
+REV-0000350,ORD-0000234,CUST-000416,5,Returned,Item was different from the photos.,2024-06-26,true
+REV-0000351,ORD-0000392,CUST-000367,4,Excellent,Better than I expected for the price.,2023-12-22,true
+REV-0000352,ORD-0001205,CUST-000084,4,Great purchase,Not worth the price.,2024-12-18,true
+REV-0000353,ORD-0000294,CUST-000041,4,Great purchase,Better than I expected for the price.,2023-12-25,true
+REV-0000354,ORD-0000778,CUST-000386,3,Quality issue,Item was different from the photos.,2023-08-04,true
+REV-0000355,ORD-0000787,CUST-000485,5,Excellent,Better than I expected for the price.,2025-10-15,true
+REV-0000356,ORD-0000583,CUST-000725,3,Not what I expected,Item was different from the photos.,2023-12-19,true
+REV-0000357,ORD-0000967,CUST-000262,1,Returned,"Damaged when it arrived, returned right away.",2024-01-08,true
+REV-0000358,ORD-0001122,CUST-000412,5,Disappointed,Better than I expected for the price.,2025-05-11,true
+REV-0000359,ORD-0001288,CUST-000675,4,Highly recommend,"Average quality, decent value.",2025-01-06,true
+REV-0000360,ORD-0000565,CUST-000591,5,Not what I expected,Build quality is excellent.,2026-04-03,true
+REV-0000361,ORD-0000148,CUST-000719,5,Quality issue,Shipping took longer than promised.,2025-08-16,true
+REV-0000362,ORD-0000568,CUST-000320,5,Returned,Not worth the price.,2023-11-14,true
+REV-0000363,ORD-0000245,CUST-000185,5,Returned,Better than I expected for the price.,2025-01-05,true
+REV-0000364,ORD-0000234,CUST-000416,4,Would buy again,"Five stars, would recommend.",2024-07-06,true
+REV-0000365,ORD-0000937,CUST-000552,5,Loved it!,Better than I expected for the price.,2023-03-26,true
+REV-0000366,ORD-0000163,CUST-000556,3,Quality issue,Not worth the price.,2024-01-02,true
+REV-0000367,ORD-0001396,CUST-000424,5,Disappointed,Arrived on time and matches the description.,2025-06-11,true
+REV-0000368,ORD-0001364,CUST-000627,2,Disappointed,Customer service was very responsive.,2023-12-18,true
+REV-0000369,ORD-0000310,CUST-000647,4,Could be better,Arrived on time and matches the description.,2024-12-05,true
+REV-0000370,ORD-0001483,CUST-000492,3,Would buy again,"Damaged when it arrived, returned right away.",2026-03-26,true
+REV-0000371,ORD-0000305,CUST-000172,4,Would buy again,Arrived on time and matches the description.,2023-08-03,true
+REV-0000372,ORD-0000189,CUST-000526,4,Could be better,"Average quality, decent value.",2025-02-09,true
+REV-0000373,ORD-0001047,CUST-000671,5,Not what I expected,Not worth the price.,2024-12-29,true
+REV-0000374,ORD-0000318,CUST-000756,5,Highly recommend,"Damaged when it arrived, returned right away.",2024-01-03,true
+REV-0000375,ORD-0000950,CUST-000601,5,Would buy again,Better than I expected for the price.,2023-12-24,true
+REV-0000376,ORD-0000368,CUST-000277,5,Loved it!,Better than I expected for the price.,2026-03-25,true
+REV-0000377,ORD-0000107,CUST-000184,4,Disappointed,Shipping took longer than promised.,2025-12-05,true
+REV-0000378,ORD-0000081,CUST-000061,4,Disappointed,Customer service was very responsive.,2024-12-13,true
+REV-0000379,ORD-0000970,CUST-000720,5,Quality issue,Better than I expected for the price.,2024-09-15,true
+REV-0000380,ORD-0000662,CUST-000458,5,Would buy again,Not worth the price.,2026-01-08,true
+REV-0000381,ORD-0000343,CUST-000575,3,Disappointed,Build quality is excellent.,2024-05-24,true
+REV-0000382,ORD-0000339,CUST-000690,5,Loved it!,Not worth the price.,2026-03-26,true
+REV-0000383,ORD-0000364,CUST-000406,4,Excellent,"Five stars, would recommend.",2025-11-22,true
+REV-0000384,ORD-0000463,CUST-000619,5,Loved it!,Not worth the price.,2024-12-16,true
+REV-0000385,ORD-0000436,CUST-000720,2,Highly recommend,Shipping took longer than promised.,2025-04-14,true
+REV-0000386,ORD-0000268,CUST-000673,4,Loved it!,Build quality is excellent.,2024-08-18,true
+REV-0000387,ORD-0000933,CUST-000081,5,Would buy again,Arrived on time and matches the description.,2025-09-10,true
+REV-0000388,ORD-0000035,CUST-000213,5,Would buy again,"Five stars, would recommend.",2024-12-21,true
+REV-0000389,ORD-0000641,CUST-000293,5,Could be better,Build quality is excellent.,2023-04-27,true
+REV-0000390,ORD-0000521,CUST-000620,5,Disappointed,Customer service was very responsive.,2024-06-02,true
+REV-0000391,ORD-0001253,CUST-000076,4,Highly recommend,"Average quality, decent value.",2023-11-11,true
+REV-0000392,ORD-0001351,CUST-000301,2,Would buy again,"Average quality, decent value.",2023-12-20,true
+REV-0000393,ORD-0001438,CUST-000652,4,Would buy again,Item was different from the photos.,2024-02-04,true
+REV-0000394,ORD-0000513,CUST-000648,3,Not what I expected,"Five stars, would recommend.",2026-05-31,true
+REV-0000395,ORD-0000538,CUST-000523,5,Returned,"Damaged when it arrived, returned right away.",2024-01-04,true
+REV-0000396,ORD-0001079,CUST-000029,4,Not what I expected,Better than I expected for the price.,2023-12-09,true
+REV-0000397,ORD-0000420,CUST-000007,3,Loved it!,Customer service was very responsive.,2024-12-01,true
+REV-0000398,ORD-0000671,CUST-000531,4,Great purchase,Item was different from the photos.,2026-01-17,true
+REV-0000399,ORD-0000922,CUST-000263,4,Great purchase,"Five stars, would recommend.",2024-06-05,true
+REV-0000400,ORD-0000436,CUST-000720,3,Disappointed,"Damaged when it arrived, returned right away.",2025-04-07,true
+REV-0000401,ORD-0000486,CUST-000037,5,Returned,"Average quality, decent value.",2026-01-15,true
+REV-0000402,ORD-0000052,CUST-000548,4,Loved it!,Not worth the price.,2025-12-19,true
+REV-0000403,ORD-0000883,CUST-000779,4,Disappointed,Better than I expected for the price.,2024-07-02,true
+REV-0000404,ORD-0000277,CUST-000333,3,Would buy again,Build quality is excellent.,2023-12-15,true
+REV-0000405,ORD-0000026,CUST-000508,5,Great purchase,Not worth the price.,2023-05-19,true
+REV-0000406,ORD-0001477,CUST-000672,5,Could be better,Arrived on time and matches the description.,2024-02-23,true
+REV-0000407,ORD-0000140,CUST-000747,5,Highly recommend,Customer service was very responsive.,2024-01-03,true
+REV-0000408,ORD-0000529,CUST-000254,5,Highly recommend,Customer service was very responsive.,2024-11-16,true
+REV-0000409,ORD-0000140,CUST-000747,5,Excellent,"Average quality, decent value.",2024-01-09,true
+REV-0000410,ORD-0000538,CUST-000523,5,Highly recommend,Better than I expected for the price.,2024-01-02,true
+REV-0000411,ORD-0000433,CUST-000340,4,Would buy again,"Damaged when it arrived, returned right away.",2023-07-20,true
+REV-0000412,ORD-0001101,CUST-000639,3,Great purchase,Shipping took longer than promised.,2025-10-15,true
+REV-0000413,ORD-0000516,CUST-000199,5,Disappointed,Build quality is excellent.,2024-12-08,true
+REV-0000414,ORD-0000998,CUST-000181,5,Loved it!,Not worth the price.,2023-07-16,true
+REV-0000415,ORD-0001073,CUST-000229,3,Quality issue,Shipping took longer than promised.,2026-04-07,true
+REV-0000416,ORD-0000365,CUST-000213,5,Loved it!,"Five stars, would recommend.",2023-02-11,true
+REV-0000417,ORD-0000025,CUST-000188,5,Excellent,Build quality is excellent.,2023-05-11,true
+REV-0000418,ORD-0001400,CUST-000706,4,Loved it!,Better than I expected for the price.,2024-05-28,true
+REV-0000419,ORD-0000478,CUST-000798,4,Excellent,"Average quality, decent value.",2024-02-26,true
+REV-0000420,ORD-0000670,CUST-000009,5,Could be better,Not worth the price.,2025-08-14,true
+REV-0000421,ORD-0001329,CUST-000488,4,Returned,"Average quality, decent value.",2025-12-24,true
+REV-0000422,ORD-0000783,CUST-000197,2,Great purchase,Arrived on time and matches the description.,2024-10-30,true
+REV-0000423,ORD-0000194,CUST-000239,4,Would buy again,"Average quality, decent value.",2023-08-31,true
+REV-0000424,ORD-0000617,CUST-000752,5,Could be better,Build quality is excellent.,2025-12-29,true
+REV-0000425,ORD-0000724,CUST-000789,4,Not what I expected,"Average quality, decent value.",2023-11-28,true
+REV-0000426,ORD-0000858,CUST-000505,5,Not what I expected,Item was different from the photos.,2025-10-22,true
+REV-0000427,ORD-0000769,CUST-000790,3,Would buy again,"Average quality, decent value.",2025-11-02,true
+REV-0000428,ORD-0000946,CUST-000726,5,Would buy again,Better than I expected for the price.,2024-03-16,true
+REV-0000429,ORD-0000579,CUST-000152,4,Disappointed,Arrived on time and matches the description.,2023-08-13,true
+REV-0000430,ORD-0001332,CUST-000457,2,Would buy again,Item was different from the photos.,2025-07-19,true
+REV-0000431,ORD-0001105,CUST-000484,4,Quality issue,"Damaged when it arrived, returned right away.",2024-08-02,true
+REV-0000432,ORD-0000853,CUST-000729,4,Disappointed,Customer service was very responsive.,2023-12-16,true
+REV-0000433,ORD-0001353,CUST-000077,1,Highly recommend,"Average quality, decent value.",2026-06-03,true
+REV-0000434,ORD-0000176,CUST-000587,4,Not what I expected,Customer service was very responsive.,2023-09-04,true
+REV-0000435,ORD-0001216,CUST-000092,5,Disappointed,"Damaged when it arrived, returned right away.",2023-07-15,true
+REV-0000436,ORD-0000433,CUST-000340,4,Not what I expected,Shipping took longer than promised.,2023-07-21,true
+REV-0000437,ORD-0000412,CUST-000586,4,Great purchase,"Five stars, would recommend.",2026-04-05,true
+REV-0000438,ORD-0000951,CUST-000467,4,Excellent,Customer service was very responsive.,2024-05-14,true
+REV-0000439,ORD-0000610,CUST-000497,5,Would buy again,"Damaged when it arrived, returned right away.",2025-12-17,true
+REV-0000440,ORD-0000310,CUST-000647,4,Quality issue,Customer service was very responsive.,2024-12-12,true
+REV-0000441,ORD-0000748,CUST-000702,3,Quality issue,"Damaged when it arrived, returned right away.",2023-05-20,true
+REV-0000442,ORD-0000050,CUST-000735,5,Loved it!,Arrived on time and matches the description.,2024-04-14,true
+REV-0000443,ORD-0000611,CUST-000659,5,Would buy again,Build quality is excellent.,2024-06-29,true
+REV-0000444,ORD-0001147,CUST-000434,5,Loved it!,Customer service was very responsive.,2024-07-11,true
+REV-0000445,ORD-0000204,CUST-000212,1,Not what I expected,"Average quality, decent value.",2025-12-12,true
+REV-0000446,ORD-0000488,CUST-000511,3,Returned,Item was different from the photos.,2024-06-12,true
+REV-0000447,ORD-0001370,CUST-000502,3,Not what I expected,Item was different from the photos.,2024-01-06,true
+REV-0000448,ORD-0000326,CUST-000328,5,Would buy again,"Damaged when it arrived, returned right away.",2023-08-10,true
+REV-0000449,ORD-0001452,CUST-000532,4,Not what I expected,"Average quality, decent value.",2023-02-18,true
+REV-0000450,ORD-0001439,CUST-000276,5,Returned,"Average quality, decent value.",2026-01-04,true
+REV-0000451,ORD-0001025,CUST-000275,5,Highly recommend,Not worth the price.,2026-01-03,true
+REV-0000452,ORD-0000562,CUST-000432,3,Excellent,Customer service was very responsive.,2025-06-04,true
+REV-0000453,ORD-0001461,CUST-000502,1,Excellent,Item was different from the photos.,2023-03-24,true
+REV-0000454,ORD-0000850,CUST-000244,2,Could be better,"Five stars, would recommend.",2024-05-27,true
+REV-0000455,ORD-0001473,CUST-000725,5,Great purchase,Customer service was very responsive.,2023-12-06,true
+REV-0000456,ORD-0001261,CUST-000603,4,Would buy again,"Average quality, decent value.",2023-03-07,true
+REV-0000457,ORD-0001298,CUST-000234,3,Loved it!,"Five stars, would recommend.",2025-12-30,true
+REV-0000458,ORD-0000486,CUST-000037,5,Excellent,Build quality is excellent.,2026-01-09,true
+REV-0000459,ORD-0000254,CUST-000010,3,Quality issue,"Five stars, would recommend.",2025-11-24,true
+REV-0000460,ORD-0001251,CUST-000430,2,Great purchase,Customer service was very responsive.,2025-05-13,true
+REV-0000461,ORD-0000713,CUST-000071,5,Loved it!,"Average quality, decent value.",2026-02-27,true
+REV-0000462,ORD-0000191,CUST-000264,5,Returned,Customer service was very responsive.,2026-04-09,true
+REV-0000463,ORD-0000156,CUST-000709,1,Would buy again,Item was different from the photos.,2025-12-28,true
+REV-0000464,ORD-0001338,CUST-000100,5,Quality issue,Not worth the price.,2023-01-17,true
+REV-0000465,ORD-0000921,CUST-000426,2,Quality issue,"Damaged when it arrived, returned right away.",2023-07-14,true
+REV-0000466,ORD-0000602,CUST-000356,5,Would buy again,Item was different from the photos.,2024-12-15,true
+REV-0000467,ORD-0000408,CUST-000383,5,Would buy again,Arrived on time and matches the description.,2024-12-31,true
+REV-0000468,ORD-0000429,CUST-000216,3,Highly recommend,"Damaged when it arrived, returned right away.",2026-05-06,true
+REV-0000469,ORD-0001256,CUST-000014,3,Excellent,Shipping took longer than promised.,2024-06-06,true
+REV-0000470,ORD-0001444,CUST-000525,5,Could be better,"Average quality, decent value.",2025-11-25,true
+REV-0000471,ORD-0000457,CUST-000312,4,Not what I expected,"Damaged when it arrived, returned right away.",2024-08-29,true
+REV-0000472,ORD-0000189,CUST-000526,5,Not what I expected,Item was different from the photos.,2025-03-02,true
+REV-0000473,ORD-0000400,CUST-000372,3,Highly recommend,Build quality is excellent.,2024-06-05,true
+REV-0000474,ORD-0000655,CUST-000215,4,Could be better,Not worth the price.,2023-03-04,true
+REV-0000475,ORD-0000435,CUST-000187,2,Disappointed,Customer service was very responsive.,2023-03-31,true
+REV-0000476,ORD-0000804,CUST-000170,1,Great purchase,"Damaged when it arrived, returned right away.",2025-12-16,true
+REV-0000477,ORD-0000632,CUST-000758,5,Not what I expected,Not worth the price.,2026-04-13,true
+REV-0000478,ORD-0000033,CUST-000267,5,Excellent,Customer service was very responsive.,2023-11-15,true
+REV-0000479,ORD-0000455,CUST-000406,4,Would buy again,Arrived on time and matches the description.,2023-11-04,true
+REV-0000480,ORD-0001103,CUST-000406,5,Could be better,Better than I expected for the price.,2024-10-27,true
+REV-0000481,ORD-0000901,CUST-000196,1,Quality issue,Better than I expected for the price.,2025-12-20,true
+REV-0000482,ORD-0001389,CUST-000390,5,Excellent,Build quality is excellent.,2026-02-04,true
+REV-0000483,ORD-0001406,CUST-000683,5,Quality issue,Build quality is excellent.,2023-12-28,true
+REV-0000484,ORD-0000684,CUST-000496,4,Great purchase,Shipping took longer than promised.,2023-06-07,true
+REV-0000485,ORD-0000968,CUST-000304,5,Would buy again,"Average quality, decent value.",2025-12-27,true
+REV-0000486,ORD-0000635,CUST-000138,4,Disappointed,Better than I expected for the price.,2026-01-22,true
+REV-0000487,ORD-0001032,CUST-000515,5,Highly recommend,Build quality is excellent.,2023-12-19,true
+REV-0000488,ORD-0000616,CUST-000029,4,Returned,Not worth the price.,2024-12-31,true
+REV-0000489,ORD-0000412,CUST-000586,4,Loved it!,Arrived on time and matches the description.,2026-03-30,true
+REV-0000490,ORD-0000900,CUST-000366,4,Highly recommend,Shipping took longer than promised.,2025-08-20,true
+REV-0000491,ORD-0000661,CUST-000518,5,Highly recommend,"Average quality, decent value.",2025-12-11,true
+REV-0000492,ORD-0001386,CUST-000476,2,Excellent,Build quality is excellent.,2024-12-27,true
+REV-0000493,ORD-0000835,CUST-000134,5,Returned,Arrived on time and matches the description.,2025-10-13,true
+REV-0000494,ORD-0000207,CUST-000457,5,Great purchase,"Damaged when it arrived, returned right away.",2026-01-16,true
+REV-0000495,ORD-0000184,CUST-000286,4,Not what I expected,"Five stars, would recommend.",2026-02-20,true
+REV-0000496,ORD-0000504,CUST-000028,4,Would buy again,Customer service was very responsive.,2024-08-24,true
+REV-0000497,ORD-0000394,CUST-000718,4,Quality issue,Build quality is excellent.,2023-11-27,true
+REV-0000498,ORD-0001473,CUST-000725,4,Excellent,Not worth the price.,2023-12-27,true
+REV-0000499,ORD-0000118,CUST-000279,5,Not what I expected,"Damaged when it arrived, returned right away.",2025-09-20,true
+REV-0000500,ORD-0000617,CUST-000752,4,Loved it!,Not worth the price.,2025-12-19,true
+REV-0000501,ORD-0000925,CUST-000388,4,Could be better,"Five stars, would recommend.",2025-09-11,true
+REV-0000502,ORD-0000325,CUST-000514,5,Loved it!,Better than I expected for the price.,2025-05-14,true
+REV-0000503,ORD-0001034,CUST-000163,4,Disappointed,"Average quality, decent value.",2024-12-15,true
+REV-0000504,ORD-0000644,CUST-000092,5,Not what I expected,Item was different from the photos.,2023-07-19,true
+REV-0000505,ORD-0001025,CUST-000275,4,Excellent,Better than I expected for the price.,2025-12-26,true
+REV-0000506,ORD-0000844,CUST-000137,4,Highly recommend,Customer service was very responsive.,2023-05-19,true
+REV-0000507,ORD-0000272,CUST-000623,5,Quality issue,Better than I expected for the price.,2024-03-23,true
+REV-0000508,ORD-0001434,CUST-000177,4,Excellent,"Average quality, decent value.",2026-04-18,true
+REV-0000509,ORD-0000722,CUST-000053,4,Great purchase,Item was different from the photos.,2023-12-16,true
+REV-0000510,ORD-0001351,CUST-000301,2,Would buy again,Not worth the price.,2023-12-18,true
+REV-0000511,ORD-0000860,CUST-000680,5,Excellent,Item was different from the photos.,2026-02-03,true
+REV-0000512,ORD-0000683,CUST-000776,5,Excellent,Customer service was very responsive.,2026-01-08,true
+REV-0000513,ORD-0001207,CUST-000735,4,Loved it!,Arrived on time and matches the description.,2025-11-14,true
+REV-0000514,ORD-0001450,CUST-000585,2,Great purchase,"Average quality, decent value.",2025-09-10,true
+REV-0000515,ORD-0000767,CUST-000448,4,Would buy again,Shipping took longer than promised.,2026-03-29,true
+REV-0000516,ORD-0000727,CUST-000606,5,Not what I expected,"Damaged when it arrived, returned right away.",2023-08-16,true
+REV-0000517,ORD-0000241,CUST-000306,5,Returned,"Five stars, would recommend.",2025-02-23,true
+REV-0000518,ORD-0000680,CUST-000692,4,Would buy again,Not worth the price.,2026-05-07,true
+REV-0000519,ORD-0000384,CUST-000519,5,Excellent,Build quality is excellent.,2024-08-21,true
+REV-0000520,ORD-0000153,CUST-000095,5,Great purchase,Item was different from the photos.,2023-12-24,true
+REV-0000521,ORD-0000745,CUST-000479,3,Great purchase,"Damaged when it arrived, returned right away.",2024-12-11,true
+REV-0000522,ORD-0000320,CUST-000631,5,Would buy again,Shipping took longer than promised.,2024-12-28,true
+REV-0000523,ORD-0000950,CUST-000601,4,Returned,Build quality is excellent.,2024-01-11,true
+REV-0000524,ORD-0001343,CUST-000764,5,Great purchase,"Average quality, decent value.",2025-12-20,true
+REV-0000525,ORD-0000802,CUST-000724,5,Excellent,Better than I expected for the price.,2024-06-24,true
+REV-0000526,ORD-0000870,CUST-000492,4,Highly recommend,"Average quality, decent value.",2024-09-01,true
+REV-0000527,ORD-0001041,CUST-000096,5,Returned,Not worth the price.,2023-09-26,true
+REV-0000528,ORD-0000144,CUST-000557,5,Would buy again,Item was different from the photos.,2025-12-23,true
+REV-0000529,ORD-0001475,CUST-000409,3,Returned,Item was different from the photos.,2024-12-24,true
+REV-0000530,ORD-0000183,CUST-000784,3,Could be better,Not worth the price.,2023-11-18,true
+REV-0000531,ORD-0000293,CUST-000779,4,Loved it!,"Average quality, decent value.",2025-08-14,true
+REV-0000532,ORD-0000869,CUST-000451,4,Quality issue,Build quality is excellent.,2024-12-10,true
+REV-0000533,ORD-0000025,CUST-000188,5,Not what I expected,Customer service was very responsive.,2023-05-08,true
+REV-0000534,ORD-0001001,CUST-000181,5,Not what I expected,Shipping took longer than promised.,2024-03-10,true
+REV-0000535,ORD-0000669,CUST-000568,2,Highly recommend,"Average quality, decent value.",2023-06-07,true
+REV-0000536,ORD-0001193,CUST-000592,3,Great purchase,Item was different from the photos.,2025-08-13,true
+REV-0000537,ORD-0000779,CUST-000118,4,Great purchase,"Damaged when it arrived, returned right away.",2025-01-05,true
+REV-0000538,ORD-0000538,CUST-000523,4,Disappointed,Better than I expected for the price.,2023-12-16,true
+REV-0000539,ORD-0001124,CUST-000386,1,Highly recommend,Item was different from the photos.,2024-01-30,true
+REV-0000540,ORD-0000661,CUST-000518,5,Returned,"Five stars, would recommend.",2025-12-19,true
+REV-0000541,ORD-0000807,CUST-000698,4,Highly recommend,"Damaged when it arrived, returned right away.",2024-12-08,true
+REV-0000542,ORD-0001030,CUST-000305,5,Highly recommend,Build quality is excellent.,2024-08-15,true
+REV-0000543,ORD-0000704,CUST-000207,5,Would buy again,Better than I expected for the price.,2025-02-01,true
+REV-0000544,ORD-0000045,CUST-000724,4,Highly recommend,"Average quality, decent value.",2023-11-18,true
+REV-0000545,ORD-0000726,CUST-000100,4,Highly recommend,Customer service was very responsive.,2025-12-24,true
+REV-0000546,ORD-0000349,CUST-000732,5,Quality issue,Item was different from the photos.,2024-01-22,true
+REV-0000547,ORD-0001282,CUST-000565,2,Could be better,Shipping took longer than promised.,2025-11-26,true
+REV-0000548,ORD-0000555,CUST-000096,5,Would buy again,Shipping took longer than promised.,2024-06-26,true
+REV-0000549,ORD-0001283,CUST-000334,4,Could be better,Build quality is excellent.,2025-12-14,true
+REV-0000550,ORD-0000293,CUST-000779,3,Would buy again,Item was different from the photos.,2025-07-23,true
+REV-0000551,ORD-0000490,CUST-000790,1,Disappointed,Customer service was very responsive.,2024-11-08,true
+REV-0000552,ORD-0000169,CUST-000257,5,Returned,Item was different from the photos.,2024-12-07,true
+REV-0000553,ORD-0001253,CUST-000076,5,Would buy again,Customer service was very responsive.,2023-10-30,true
+REV-0000554,ORD-0000042,CUST-000103,3,Returned,Not worth the price.,2023-07-04,true
+REV-0000555,ORD-0000191,CUST-000264,5,Excellent,Build quality is excellent.,2026-03-19,true
+REV-0000556,ORD-0000281,CUST-000556,1,Not what I expected,Build quality is excellent.,2026-06-02,true
+REV-0000557,ORD-0000249,CUST-000305,5,Could be better,Build quality is excellent.,2023-08-29,true
+REV-0000558,ORD-0001054,CUST-000280,5,Would buy again,"Average quality, decent value.",2026-02-24,true
+REV-0000559,ORD-0001130,CUST-000472,5,Loved it!,Build quality is excellent.,2023-12-24,true
+REV-0000560,ORD-0000475,CUST-000729,4,Would buy again,Build quality is excellent.,2025-03-14,true
+REV-0000561,ORD-0000613,CUST-000307,5,Highly recommend,Arrived on time and matches the description.,2026-03-23,true
+REV-0000562,ORD-0001156,CUST-000347,4,Would buy again,Build quality is excellent.,2023-03-12,true
+REV-0000563,ORD-0001471,CUST-000087,5,Excellent,Customer service was very responsive.,2023-03-10,true
+REV-0000564,ORD-0000015,CUST-000632,4,Highly recommend,Better than I expected for the price.,2024-02-13,true
+REV-0000565,ORD-0000582,CUST-000196,4,Loved it!,Arrived on time and matches the description.,2025-11-10,true
+REV-0000566,ORD-0000599,CUST-000623,5,Loved it!,"Five stars, would recommend.",2025-07-05,true
+REV-0000567,ORD-0000056,CUST-000016,5,Loved it!,Better than I expected for the price.,2025-12-15,true
+REV-0000568,ORD-0000940,CUST-000586,3,Could be better,Arrived on time and matches the description.,2023-07-13,true
+REV-0000569,ORD-0001082,CUST-000541,3,Highly recommend,"Average quality, decent value.",2024-12-30,true
+REV-0000570,ORD-0000155,CUST-000284,5,Loved it!,Build quality is excellent.,2024-02-13,true
+REV-0000571,ORD-0000152,CUST-000305,2,Loved it!,"Damaged when it arrived, returned right away.",2026-02-04,true
+REV-0000572,ORD-0000079,CUST-000383,5,Quality issue,Shipping took longer than promised.,2024-09-21,true
+REV-0000573,ORD-0001214,CUST-000104,2,Excellent,Build quality is excellent.,2023-02-16,true
+REV-0000574,ORD-0000668,CUST-000530,2,Returned,"Damaged when it arrived, returned right away.",2024-07-14,true
+REV-0000575,ORD-0000323,CUST-000759,5,Highly recommend,"Five stars, would recommend.",2025-12-24,true
+REV-0000576,ORD-0000548,CUST-000029,3,Returned,Customer service was very responsive.,2023-08-12,true
+REV-0000577,ORD-0001105,CUST-000484,3,Would buy again,"Damaged when it arrived, returned right away.",2024-08-08,true
+REV-0000578,ORD-0000681,CUST-000451,5,Great purchase,Better than I expected for the price.,2025-05-03,true
+REV-0000579,ORD-0000080,CUST-000244,1,Returned,Better than I expected for the price.,2026-01-04,true
+REV-0000580,ORD-0000633,CUST-000783,5,Great purchase,Arrived on time and matches the description.,2023-12-29,true
+REV-0000581,ORD-0001167,CUST-000168,3,Not what I expected,"Average quality, decent value.",2023-06-30,true
+REV-0000582,ORD-0000564,CUST-000365,5,Returned,Customer service was very responsive.,2024-01-09,true
+REV-0000583,ORD-0000636,CUST-000164,5,Quality issue,Not worth the price.,2026-01-20,true
+REV-0000584,ORD-0000338,CUST-000342,3,Returned,Better than I expected for the price.,2025-08-17,true
+REV-0000585,ORD-0000933,CUST-000081,4,Would buy again,Better than I expected for the price.,2025-09-18,true
+REV-0000586,ORD-0001472,CUST-000327,5,Would buy again,Arrived on time and matches the description.,2025-11-29,true
+REV-0000587,ORD-0000767,CUST-000448,3,Highly recommend,Item was different from the photos.,2026-03-24,true
+REV-0000588,ORD-0001087,CUST-000722,4,Not what I expected,Customer service was very responsive.,2024-01-12,true
+REV-0000589,ORD-0001359,CUST-000510,5,Not what I expected,Not worth the price.,2026-01-05,true
+REV-0000590,ORD-0000849,CUST-000116,5,Great purchase,Customer service was very responsive.,2023-12-07,true
+REV-0000591,ORD-0000507,CUST-000684,4,Quality issue,"Five stars, would recommend.",2025-10-15,true
+REV-0000592,ORD-0000550,CUST-000718,2,Highly recommend,"Average quality, decent value.",2024-09-28,true
+REV-0000593,ORD-0000655,CUST-000215,5,Highly recommend,"Five stars, would recommend.",2023-02-09,true
+REV-0000594,ORD-0000488,CUST-000511,4,Could be better,Item was different from the photos.,2024-06-17,true
+REV-0000595,ORD-0000127,CUST-000254,3,Great purchase,"Damaged when it arrived, returned right away.",2023-07-11,true
+REV-0000596,ORD-0000946,CUST-000726,4,Highly recommend,Build quality is excellent.,2024-03-29,true
+REV-0000597,ORD-0000512,CUST-000562,4,Would buy again,Build quality is excellent.,2024-07-29,true
+REV-0000598,ORD-0000304,CUST-000091,5,Loved it!,Not worth the price.,2025-04-15,true
+REV-0000599,ORD-0000453,CUST-000158,4,Could be better,"Five stars, would recommend.",2023-10-16,true
+REV-0000600,ORD-0000613,CUST-000307,5,Would buy again,"Five stars, would recommend.",2026-03-25,true
+REV-0000601,ORD-0000212,CUST-000736,5,Returned,Not worth the price.,2024-06-30,true
+REV-0000602,ORD-0000489,CUST-000262,5,Disappointed,Build quality is excellent.,2023-03-28,true
+REV-0000603,ORD-0001438,CUST-000652,5,Not what I expected,Better than I expected for the price.,2024-02-02,true
+REV-0000604,ORD-0000808,CUST-000258,2,Not what I expected,Better than I expected for the price.,2024-06-05,true
+REV-0000605,ORD-0001212,CUST-000271,4,Quality issue,Not worth the price.,2023-12-12,true
+REV-0000606,ORD-0001016,CUST-000258,5,Could be better,Customer service was very responsive.,2023-09-24,true
+REV-0000607,ORD-0001231,CUST-000089,4,Loved it!,"Average quality, decent value.",2026-03-08,true
+REV-0000608,ORD-0000636,CUST-000164,4,Quality issue,"Damaged when it arrived, returned right away.",2026-01-03,true
+REV-0000609,ORD-0000432,CUST-000636,5,Would buy again,Not worth the price.,2023-05-23,true
+REV-0000610,ORD-0000508,CUST-000029,5,Disappointed,Customer service was very responsive.,2023-02-06,true
+REV-0000611,ORD-0001343,CUST-000764,4,Loved it!,Shipping took longer than promised.,2026-01-03,true
+REV-0000612,ORD-0001447,CUST-000219,5,Not what I expected,Better than I expected for the price.,2024-04-21,true
+REV-0000613,ORD-0000831,CUST-000673,3,Loved it!,Customer service was very responsive.,2026-03-18,true
+REV-0000614,ORD-0000988,CUST-000712,4,Could be better,Build quality is excellent.,2025-12-18,true
+REV-0000615,ORD-0000204,CUST-000212,2,Quality issue,Customer service was very responsive.,2026-01-01,true
+REV-0000616,ORD-0001298,CUST-000234,4,Highly recommend,"Five stars, would recommend.",2025-12-29,true
+REV-0000617,ORD-0000265,CUST-000464,3,Could be better,Arrived on time and matches the description.,2023-12-26,true
+REV-0000618,ORD-0000720,CUST-000200,4,Quality issue,Shipping took longer than promised.,2025-04-12,true
+REV-0000619,ORD-0001164,CUST-000641,5,Could be better,Not worth the price.,2024-08-05,true
+REV-0000620,ORD-0000407,CUST-000658,4,Quality issue,Item was different from the photos.,2025-12-18,true
+REV-0000621,ORD-0000287,CUST-000366,3,Could be better,Build quality is excellent.,2025-09-02,true
+REV-0000622,ORD-0000588,CUST-000504,3,Loved it!,Build quality is excellent.,2025-03-10,true
+REV-0000623,ORD-0000980,CUST-000774,3,Would buy again,Arrived on time and matches the description.,2023-04-11,true
+REV-0000624,ORD-0001360,CUST-000277,5,Disappointed,"Five stars, would recommend.",2024-08-09,true
+REV-0000625,ORD-0000509,CUST-000255,5,Returned,Arrived on time and matches the description.,2023-11-21,true
+REV-0000626,ORD-0000707,CUST-000297,3,Returned,Shipping took longer than promised.,2025-10-03,true
+REV-0000627,ORD-0001466,CUST-000715,5,Would buy again,Better than I expected for the price.,2026-05-23,true
+REV-0000628,ORD-0000189,CUST-000526,3,Highly recommend,Shipping took longer than promised.,2025-02-10,true
+REV-0000629,ORD-0001279,CUST-000557,4,Returned,Customer service was very responsive.,2024-06-23,true
+REV-0000630,ORD-0001024,CUST-000372,5,Could be better,Not worth the price.,2023-05-16,true
+REV-0000631,ORD-0001235,CUST-000521,4,Excellent,Not worth the price.,2025-09-10,true
+REV-0000632,ORD-0000577,CUST-000401,4,Could be better,"Damaged when it arrived, returned right away.",2024-11-05,true
+REV-0000633,ORD-0001157,CUST-000191,5,Highly recommend,Not worth the price.,2026-03-18,true
+REV-0000634,ORD-0001201,CUST-000624,4,Disappointed,Customer service was very responsive.,2023-05-28,true
+REV-0000635,ORD-0001270,CUST-000537,4,Quality issue,Shipping took longer than promised.,2024-07-12,true
+REV-0000636,ORD-0000285,CUST-000398,5,Returned,"Damaged when it arrived, returned right away.",2023-12-07,true
+REV-0000637,ORD-0001101,CUST-000639,4,Great purchase,Not worth the price.,2025-10-23,true
+REV-0000638,ORD-0000799,CUST-000302,5,Highly recommend,Not worth the price.,2025-03-10,true
+REV-0000639,ORD-0001191,CUST-000616,2,Loved it!,Not worth the price.,2023-04-07,true
+REV-0000640,ORD-0000505,CUST-000012,5,Not what I expected,Item was different from the photos.,2025-09-20,true
+REV-0000641,ORD-0000690,CUST-000604,2,Would buy again,Arrived on time and matches the description.,2025-04-14,true
+REV-0000642,ORD-0000614,CUST-000586,3,Would buy again,Shipping took longer than promised.,2026-02-06,true
+REV-0000643,ORD-0000669,CUST-000568,2,Excellent,"Average quality, decent value.",2023-06-03,true
+REV-0000644,ORD-0000517,CUST-000243,5,Great purchase,Better than I expected for the price.,2026-02-16,true
+REV-0000645,ORD-0001477,CUST-000672,5,Loved it!,Item was different from the photos.,2024-02-13,true
+REV-0000646,ORD-0000683,CUST-000776,5,Highly recommend,Better than I expected for the price.,2025-12-15,true
+REV-0000647,ORD-0000309,CUST-000036,4,Highly recommend,Not worth the price.,2023-05-11,true
+REV-0000648,ORD-0000339,CUST-000690,5,Great purchase,"Five stars, would recommend.",2026-04-11,true
+REV-0000649,ORD-0001116,CUST-000711,5,Not what I expected,"Five stars, would recommend.",2024-05-10,true
+REV-0000650,ORD-0000348,CUST-000315,5,Returned,"Average quality, decent value.",2025-08-28,true
+REV-0000651,ORD-0000588,CUST-000504,4,Highly recommend,Item was different from the photos.,2025-03-06,true
+REV-0000652,ORD-0001270,CUST-000537,4,Could be better,"Average quality, decent value.",2024-07-03,true
+REV-0000653,ORD-0000761,CUST-000577,5,Disappointed,"Five stars, would recommend.",2024-09-08,true
+REV-0000654,ORD-0000813,CUST-000658,5,Disappointed,"Damaged when it arrived, returned right away.",2025-05-18,true
+REV-0000655,ORD-0001141,CUST-000254,3,Could be better,"Average quality, decent value.",2025-12-06,true
+REV-0000656,ORD-0000722,CUST-000053,5,Great purchase,Not worth the price.,2023-12-13,true
+REV-0000657,ORD-0001167,CUST-000168,5,Disappointed,Not worth the price.,2023-06-24,true
+REV-0000658,ORD-0000458,CUST-000603,5,Would buy again,Customer service was very responsive.,2024-12-31,true
+REV-0000659,ORD-0000176,CUST-000587,4,Loved it!,Not worth the price.,2023-09-09,true
+REV-0000660,ORD-0000171,CUST-000300,3,Quality issue,Not worth the price.,2025-01-21,true
+REV-0000661,ORD-0000427,CUST-000230,3,Could be better,Build quality is excellent.,2025-09-06,true
+REV-0000662,ORD-0000558,CUST-000005,5,Disappointed,Shipping took longer than promised.,2025-03-01,true
+REV-0000663,ORD-0000277,CUST-000333,5,Would buy again,Build quality is excellent.,2023-12-09,true
+REV-0000664,ORD-0001353,CUST-000077,2,Could be better,Item was different from the photos.,2026-05-15,true
+REV-0000665,ORD-0000988,CUST-000712,4,Loved it!,Better than I expected for the price.,2025-12-10,true
+REV-0000666,ORD-0000736,CUST-000536,5,Quality issue,"Damaged when it arrived, returned right away.",2024-01-01,true
+REV-0000667,ORD-0000684,CUST-000496,4,Not what I expected,"Average quality, decent value.",2023-06-17,true
+REV-0000668,ORD-0001434,CUST-000177,3,Could be better,"Five stars, would recommend.",2026-04-23,true
+REV-0000669,ORD-0000657,CUST-000405,4,Great purchase,Build quality is excellent.,2025-12-15,true
+REV-0000670,ORD-0000326,CUST-000328,5,Would buy again,Customer service was very responsive.,2023-08-04,true
+REV-0000671,ORD-0001037,CUST-000357,5,Would buy again,Better than I expected for the price.,2023-07-03,true
+REV-0000672,ORD-0000112,CUST-000637,5,Disappointed,Better than I expected for the price.,2023-12-13,true
+REV-0000673,ORD-0001111,CUST-000670,4,Returned,Item was different from the photos.,2025-11-14,true
+REV-0000674,ORD-0000087,CUST-000540,2,Great purchase,Not worth the price.,2023-01-19,true
+REV-0000675,ORD-0000294,CUST-000041,5,Great purchase,Shipping took longer than promised.,2023-12-26,true
+REV-0000676,ORD-0000349,CUST-000732,5,Would buy again,Arrived on time and matches the description.,2023-12-30,true
+REV-0000677,ORD-0000740,CUST-000206,5,Quality issue,Shipping took longer than promised.,2025-01-13,true
+REV-0000678,ORD-0000861,CUST-000485,4,Returned,"Average quality, decent value.",2025-03-19,true
+REV-0000679,ORD-0000480,CUST-000143,4,Disappointed,Build quality is excellent.,2024-06-02,true
+REV-0000680,ORD-0000220,CUST-000404,5,Highly recommend,Build quality is excellent.,2024-12-24,true
+REV-0000681,ORD-0001181,CUST-000449,5,Highly recommend,Build quality is excellent.,2026-01-19,true
+REV-0000682,ORD-0001389,CUST-000390,4,Returned,Customer service was very responsive.,2026-02-18,true
+REV-0000683,ORD-0000328,CUST-000367,5,Disappointed,Build quality is excellent.,2024-12-22,true
+REV-0000684,ORD-0001270,CUST-000537,4,Excellent,Shipping took longer than promised.,2024-06-24,true
+REV-0000685,ORD-0001418,CUST-000382,5,Could be better,"Average quality, decent value.",2024-12-31,true
+REV-0000686,ORD-0001447,CUST-000219,5,Disappointed,"Average quality, decent value.",2024-04-06,true
+REV-0000687,ORD-0000785,CUST-000064,5,Highly recommend,Better than I expected for the price.,2024-06-24,true
+REV-0000688,ORD-0000867,CUST-000204,4,Returned,Build quality is excellent.,2024-07-22,true
+REV-0000689,ORD-0000401,CUST-000636,4,Great purchase,Better than I expected for the price.,2024-12-30,true
+REV-0000690,ORD-0001290,CUST-000237,4,Could be better,Not worth the price.,2025-09-12,true
+REV-0000691,ORD-0001043,CUST-000521,5,Excellent,Build quality is excellent.,2023-09-26,true
+REV-0000692,ORD-0000325,CUST-000514,5,Disappointed,Not worth the price.,2025-05-10,true
+REV-0000693,ORD-0000608,CUST-000066,3,Disappointed,"Five stars, would recommend.",2023-12-23,true
+REV-0000694,ORD-0001108,CUST-000089,1,Not what I expected,Item was different from the photos.,2025-02-07,true
+REV-0000695,ORD-0000910,CUST-000648,4,Could be better,"Damaged when it arrived, returned right away.",2024-12-12,true
+REV-0000696,ORD-0001165,CUST-000644,5,Excellent,Shipping took longer than promised.,2023-03-24,true
+REV-0000697,ORD-0000904,CUST-000608,5,Loved it!,Not worth the price.,2026-01-30,true
+REV-0000698,ORD-0001264,CUST-000637,2,Great purchase,Customer service was very responsive.,2023-07-23,true
+REV-0000699,ORD-0001153,CUST-000553,4,Not what I expected,"Damaged when it arrived, returned right away.",2023-03-18,true
+REV-0000700,ORD-0000320,CUST-000631,5,Could be better,"Average quality, decent value.",2024-12-24,true
+REV-0000701,ORD-0001106,CUST-000006,2,Disappointed,Better than I expected for the price.,2025-09-03,true
+REV-0000702,ORD-0000415,CUST-000767,5,Highly recommend,Arrived on time and matches the description.,2025-01-23,true
+REV-0000703,ORD-0000854,CUST-000005,5,Quality issue,Item was different from the photos.,2023-08-22,true
+REV-0000704,ORD-0001187,CUST-000755,4,Could be better,"Average quality, decent value.",2023-02-24,true
+REV-0000705,ORD-0000558,CUST-000005,3,Not what I expected,"Damaged when it arrived, returned right away.",2025-03-15,true
+REV-0000706,ORD-0000704,CUST-000207,5,Not what I expected,Item was different from the photos.,2025-02-24,true
+REV-0000707,ORD-0000322,CUST-000424,3,Quality issue,Not worth the price.,2023-12-19,true
+REV-0000708,ORD-0000397,CUST-000587,5,Excellent,"Average quality, decent value.",2023-02-04,true
+REV-0000709,ORD-0000359,CUST-000283,5,Great purchase,"Five stars, would recommend.",2024-12-16,true
+REV-0000710,ORD-0000056,CUST-000016,4,Returned,"Average quality, decent value.",2026-01-02,true
+REV-0000711,ORD-0001269,CUST-000049,2,Great purchase,Item was different from the photos.,2024-01-07,true
+REV-0000712,ORD-0001105,CUST-000484,2,Great purchase,Build quality is excellent.,2024-08-18,true
+REV-0000713,ORD-0000758,CUST-000248,5,Quality issue,Build quality is excellent.,2026-02-25,true
+REV-0000714,ORD-0000703,CUST-000671,4,Highly recommend,Customer service was very responsive.,2023-12-14,true
+REV-0000715,ORD-0001340,CUST-000271,3,Great purchase,"Damaged when it arrived, returned right away.",2023-11-03,true
+REV-0000716,ORD-0000878,CUST-000159,5,Quality issue,"Damaged when it arrived, returned right away.",2024-01-04,true
+REV-0000717,ORD-0000242,CUST-000547,3,Would buy again,Better than I expected for the price.,2023-08-21,true
+REV-0000718,ORD-0001184,CUST-000517,4,Could be better,Item was different from the photos.,2023-08-22,true
+REV-0000719,ORD-0001242,CUST-000765,4,Loved it!,Arrived on time and matches the description.,2023-12-29,true
+REV-0000720,ORD-0000871,CUST-000481,4,Excellent,Customer service was very responsive.,2024-12-17,true
+REV-0000721,ORD-0001191,CUST-000616,1,Returned,Shipping took longer than promised.,2023-03-27,true
+REV-0000722,ORD-0001183,CUST-000035,5,Would buy again,"Average quality, decent value.",2026-01-12,true
+REV-0000723,ORD-0001457,CUST-000265,5,Would buy again,Shipping took longer than promised.,2025-01-15,true
+REV-0000724,ORD-0001036,CUST-000256,5,Could be better,Arrived on time and matches the description.,2025-12-24,true
+REV-0000725,ORD-0000523,CUST-000438,5,Would buy again,Arrived on time and matches the description.,2024-09-13,true
+REV-0000726,ORD-0000850,CUST-000244,3,Returned,Build quality is excellent.,2024-05-15,true
+REV-0000727,ORD-0000343,CUST-000575,4,Highly recommend,"Average quality, decent value.",2024-05-28,true
+REV-0000728,ORD-0001356,CUST-000520,5,Returned,"Five stars, would recommend.",2025-12-01,true
+REV-0000729,ORD-0000425,CUST-000572,1,Great purchase,Item was different from the photos.,2023-03-18,true
+REV-0000730,ORD-0000356,CUST-000208,5,Highly recommend,"Damaged when it arrived, returned right away.",2023-08-13,true
+REV-0000731,ORD-0001464,CUST-000008,5,Excellent,"Average quality, decent value.",2024-09-20,true
+REV-0000732,ORD-0000074,CUST-000383,5,Highly recommend,Arrived on time and matches the description.,2025-01-12,true
+REV-0000733,ORD-0000030,CUST-000519,3,Returned,"Damaged when it arrived, returned right away.",2025-01-06,true
+REV-0000734,ORD-0000979,CUST-000506,3,Great purchase,Shipping took longer than promised.,2025-05-03,true
+REV-0000735,ORD-0000017,CUST-000797,5,Great purchase,Build quality is excellent.,2024-01-02,true
+REV-0000736,ORD-0000310,CUST-000647,5,Could be better,Not worth the price.,2024-12-16,true
+REV-0000737,ORD-0000086,CUST-000259,4,Would buy again,Build quality is excellent.,2023-12-19,true
+REV-0000738,ORD-0000990,CUST-000646,4,Excellent,"Average quality, decent value.",2023-12-22,true
+REV-0000739,ORD-0000229,CUST-000767,4,Highly recommend,"Five stars, would recommend.",2024-10-09,true
+REV-0000740,ORD-0000384,CUST-000519,4,Would buy again,"Average quality, decent value.",2024-09-12,true
+REV-0000741,ORD-0000310,CUST-000647,5,Not what I expected,"Damaged when it arrived, returned right away.",2024-12-19,true
+REV-0000742,ORD-0000604,CUST-000403,5,Could be better,"Damaged when it arrived, returned right away.",2024-06-12,true
+REV-0000743,ORD-0000194,CUST-000239,4,Great purchase,Arrived on time and matches the description.,2023-09-03,true
+REV-0000744,ORD-0001331,CUST-000752,4,Not what I expected,Shipping took longer than promised.,2025-10-07,true
+REV-0000745,ORD-0000472,CUST-000790,5,Could be better,"Average quality, decent value.",2023-08-18,true
+REV-0000746,ORD-0001149,CUST-000594,4,Could be better,"Five stars, would recommend.",2025-12-31,true
+REV-0000747,ORD-0000042,CUST-000103,1,Great purchase,Shipping took longer than promised.,2023-07-11,true
+REV-0000748,ORD-0000792,CUST-000779,5,Disappointed,"Damaged when it arrived, returned right away.",2025-12-10,true
+REV-0000749,ORD-0001457,CUST-000265,4,Highly recommend,"Damaged when it arrived, returned right away.",2025-01-13,true
+REV-0000750,ORD-0001282,CUST-000565,2,Highly recommend,"Average quality, decent value.",2025-11-07,true
+REV-0000751,ORD-0001274,CUST-000677,4,Great purchase,Item was different from the photos.,2026-02-08,true
+REV-0000752,ORD-0000678,CUST-000023,3,Could be better,"Average quality, decent value.",2025-04-26,true
+REV-0000753,ORD-0001490,CUST-000459,3,Not what I expected,"Damaged when it arrived, returned right away.",2024-12-31,true
+REV-0000754,ORD-0000170,CUST-000518,5,Disappointed,"Five stars, would recommend.",2023-04-15,true
+REV-0000755,ORD-0000475,CUST-000729,5,Quality issue,Shipping took longer than promised.,2025-03-25,true
+REV-0000756,ORD-0001359,CUST-000510,3,Not what I expected,Shipping took longer than promised.,2026-01-02,true
+REV-0000757,ORD-0000682,CUST-000771,4,Great purchase,"Average quality, decent value.",2025-05-03,true
+REV-0000758,ORD-0000251,CUST-000562,4,Highly recommend,Item was different from the photos.,2024-12-26,true
+REV-0000759,ORD-0001141,CUST-000254,5,Highly recommend,"Damaged when it arrived, returned right away.",2025-12-30,true
+REV-0000760,ORD-0000364,CUST-000406,3,Could be better,Better than I expected for the price.,2025-11-23,true
+REV-0000761,ORD-0000507,CUST-000684,4,Disappointed,Better than I expected for the price.,2025-10-20,true
+REV-0000762,ORD-0001402,CUST-000792,5,Disappointed,Better than I expected for the price.,2023-11-01,true
+REV-0000763,ORD-0000646,CUST-000148,5,Returned,Arrived on time and matches the description.,2026-01-02,true
+REV-0000764,ORD-0001027,CUST-000789,5,Could be better,Item was different from the photos.,2023-03-25,true
+REV-0000765,ORD-0001283,CUST-000334,5,Not what I expected,Build quality is excellent.,2025-12-09,true
+REV-0000766,ORD-0001071,CUST-000507,1,Loved it!,"Five stars, would recommend.",2023-08-19,true
+REV-0000767,ORD-0001291,CUST-000510,4,Returned,"Damaged when it arrived, returned right away.",2023-04-22,true
+REV-0000768,ORD-0000156,CUST-000709,2,Quality issue,Shipping took longer than promised.,2026-01-01,true
+REV-0000769,ORD-0000398,CUST-000172,4,Could be better,Build quality is excellent.,2024-06-14,true
+REV-0000770,ORD-0001278,CUST-000611,5,Quality issue,Shipping took longer than promised.,2026-04-10,true
+REV-0000771,ORD-0000921,CUST-000426,3,Disappointed,"Five stars, would recommend.",2023-06-30,true
+REV-0000772,ORD-0000840,CUST-000317,1,Would buy again,"Average quality, decent value.",2025-12-14,true
+REV-0000773,ORD-0001351,CUST-000301,3,Returned,"Five stars, would recommend.",2023-12-19,true
+REV-0000774,ORD-0000070,CUST-000594,5,Could be better,Customer service was very responsive.,2023-02-19,true
+REV-0000775,ORD-0000200,CUST-000175,5,Highly recommend,Customer service was very responsive.,2025-03-13,true
+REV-0000776,ORD-0000857,CUST-000149,4,Loved it!,Not worth the price.,2026-02-05,true
+REV-0000777,ORD-0001338,CUST-000100,3,Quality issue,Not worth the price.,2023-01-20,true
+REV-0000778,ORD-0000270,CUST-000693,4,Could be better,Build quality is excellent.,2026-05-16,true
+REV-0000779,ORD-0001278,CUST-000611,3,Excellent,Build quality is excellent.,2026-03-15,true
+REV-0000780,ORD-0000782,CUST-000719,5,Not what I expected,Shipping took longer than promised.,2023-12-22,true
+REV-0000781,ORD-0000409,CUST-000347,5,Quality issue,"Average quality, decent value.",2023-08-06,true
+REV-0000782,ORD-0001106,CUST-000006,1,Loved it!,Not worth the price.,2025-08-20,true
+REV-0000783,ORD-0000233,CUST-000590,3,Highly recommend,Shipping took longer than promised.,2025-10-17,true
+REV-0000784,ORD-0001265,CUST-000683,4,Not what I expected,Better than I expected for the price.,2025-06-15,true
+REV-0000785,ORD-0001138,CUST-000245,3,Highly recommend,Item was different from the photos.,2025-12-10,true
+REV-0000786,ORD-0000151,CUST-000209,3,Great purchase,"Damaged when it arrived, returned right away.",2025-03-04,true
+REV-0000787,ORD-0001250,CUST-000612,5,Quality issue,"Average quality, decent value.",2023-12-12,true
+REV-0000788,ORD-0001379,CUST-000316,5,Excellent,Arrived on time and matches the description.,2023-03-03,true
+REV-0000789,ORD-0000103,CUST-000277,3,Quality issue,Shipping took longer than promised.,2023-12-11,true
+REV-0000790,ORD-0000271,CUST-000129,5,Would buy again,Customer service was very responsive.,2025-04-12,true
+REV-0000791,ORD-0000337,CUST-000444,5,Returned,Customer service was very responsive.,2024-12-09,true
+REV-0000792,ORD-0000951,CUST-000467,3,Would buy again,"Five stars, would recommend.",2024-05-23,true
+REV-0000793,ORD-0001403,CUST-000433,5,Not what I expected,Customer service was very responsive.,2023-07-05,true
+REV-0000794,ORD-0000268,CUST-000673,4,Excellent,Shipping took longer than promised.,2024-08-14,true
+REV-0000795,ORD-0000278,CUST-000099,5,Great purchase,Item was different from the photos.,2025-12-19,true
+REV-0000796,ORD-0001107,CUST-000772,4,Not what I expected,Customer service was very responsive.,2025-11-08,true
+REV-0000797,ORD-0000226,CUST-000621,2,Not what I expected,Item was different from the photos.,2023-12-16,true
+REV-0000798,ORD-0001283,CUST-000334,5,Highly recommend,Customer service was very responsive.,2025-12-20,true
+REV-0000799,ORD-0000384,CUST-000519,3,Highly recommend,Item was different from the photos.,2024-08-18,true
+REV-0000800,ORD-0000406,CUST-000768,5,Quality issue,"Five stars, would recommend.",2024-01-28,true
+REV-0000801,ORD-0001366,CUST-000532,5,Returned,Build quality is excellent.,2025-11-25,true
+REV-0000802,ORD-0000888,CUST-000733,4,Quality issue,Item was different from the photos.,2025-10-19,true
+REV-0000803,ORD-0000733,CUST-000133,3,Quality issue,Better than I expected for the price.,2025-05-24,true
+REV-0000804,ORD-0000599,CUST-000623,4,Returned,Item was different from the photos.,2025-07-14,true
+REV-0000805,ORD-0000734,CUST-000322,5,Excellent,"Five stars, would recommend.",2025-12-22,true
+REV-0000806,ORD-0000148,CUST-000719,5,Returned,Not worth the price.,2025-08-22,true
+REV-0000807,ORD-0001353,CUST-000077,3,Quality issue,Arrived on time and matches the description.,2026-06-05,true
+REV-0000808,ORD-0000760,CUST-000334,5,Loved it!,"Average quality, decent value.",2023-04-23,true
+REV-0000809,ORD-0000613,CUST-000307,5,Would buy again,"Five stars, would recommend.",2026-04-12,true
+REV-0000810,ORD-0000309,CUST-000036,3,Could be better,Build quality is excellent.,2023-05-03,true
+REV-0000811,ORD-0000216,CUST-000269,5,Would buy again,Customer service was very responsive.,2025-03-30,true
+REV-0000812,ORD-0000223,CUST-000682,4,Could be better,Shipping took longer than promised.,2024-09-03,true
+REV-0000813,ORD-0000022,CUST-000109,5,Highly recommend,Better than I expected for the price.,2026-03-08,true
+REV-0000814,ORD-0001073,CUST-000229,1,Would buy again,Build quality is excellent.,2026-04-08,true
+REV-0000815,ORD-0001390,CUST-000723,4,Loved it!,Build quality is excellent.,2024-12-10,true
+REV-0000816,ORD-0000080,CUST-000244,1,Highly recommend,Better than I expected for the price.,2026-01-07,true
+REV-0000817,ORD-0000581,CUST-000474,4,Excellent,Build quality is excellent.,2026-01-28,true
+REV-0000818,ORD-0000085,CUST-000467,4,Highly recommend,Not worth the price.,2024-12-08,true
+REV-0000819,ORD-0000577,CUST-000401,5,Highly recommend,"Average quality, decent value.",2024-10-21,true
+REV-0000820,ORD-0001036,CUST-000256,4,Disappointed,Build quality is excellent.,2025-12-25,true
+REV-0000821,ORD-0000066,CUST-000191,3,Quality issue,Build quality is excellent.,2024-03-22,true
+REV-0000822,ORD-0001025,CUST-000275,4,Highly recommend,Not worth the price.,2026-01-06,true
+REV-0000823,ORD-0000157,CUST-000380,4,Disappointed,Better than I expected for the price.,2024-03-07,true
+REV-0000824,ORD-0001130,CUST-000472,5,Not what I expected,Better than I expected for the price.,2023-12-07,true
+REV-0000825,ORD-0000538,CUST-000523,5,Highly recommend,"Damaged when it arrived, returned right away.",2024-01-04,true
+REV-0000826,ORD-0000327,CUST-000452,4,Returned,Customer service was very responsive.,2025-05-20,true
+REV-0000827,ORD-0001310,CUST-000469,4,Not what I expected,Item was different from the photos.,2023-05-27,true
+REV-0000828,ORD-0000465,CUST-000121,5,Loved it!,Arrived on time and matches the description.,2025-12-23,true
+REV-0000829,ORD-0001068,CUST-000654,4,Returned,Build quality is excellent.,2025-06-11,true
+REV-0000830,ORD-0000192,CUST-000618,3,Would buy again,Build quality is excellent.,2023-12-29,true
+REV-0000831,ORD-0000282,CUST-000013,4,Not what I expected,"Damaged when it arrived, returned right away.",2023-03-06,true
+REV-0000832,ORD-0000260,CUST-000271,4,Disappointed,"Average quality, decent value.",2023-05-13,true
+REV-0000833,ORD-0000597,CUST-000341,3,Returned,Arrived on time and matches the description.,2024-10-17,true
+REV-0000834,ORD-0001343,CUST-000764,5,Not what I expected,Customer service was very responsive.,2025-12-29,true
+REV-0000835,ORD-0000219,CUST-000444,3,Not what I expected,"Five stars, would recommend.",2024-12-19,true
+REV-0000836,ORD-0001489,CUST-000799,5,Great purchase,Better than I expected for the price.,2025-01-04,true
+REV-0000837,ORD-0000617,CUST-000752,5,Not what I expected,Not worth the price.,2025-12-06,true
+REV-0000838,ORD-0001086,CUST-000539,5,Highly recommend,Arrived on time and matches the description.,2025-03-16,true
+REV-0000839,ORD-0000066,CUST-000191,5,Returned,Shipping took longer than promised.,2024-03-05,true
+REV-0000840,ORD-0000081,CUST-000061,2,Returned,Not worth the price.,2024-12-15,true
+REV-0000841,ORD-0000522,CUST-000383,1,Quality issue,Shipping took longer than promised.,2024-10-28,true
+REV-0000842,ORD-0000162,CUST-000689,5,Would buy again,"Damaged when it arrived, returned right away.",2024-12-25,true
+REV-0000843,ORD-0001013,CUST-000346,4,Not what I expected,Item was different from the photos.,2025-03-21,true
+REV-0000844,ORD-0001417,CUST-000405,5,Great purchase,Better than I expected for the price.,2024-12-13,true
+REV-0000845,ORD-0000581,CUST-000474,4,Not what I expected,Not worth the price.,2026-02-19,true
+REV-0000846,ORD-0000515,CUST-000440,3,Loved it!,"Five stars, would recommend.",2023-07-06,true
+REV-0000847,ORD-0001041,CUST-000096,5,Not what I expected,Not worth the price.,2023-10-07,true
+REV-0000848,ORD-0000579,CUST-000152,5,Could be better,Build quality is excellent.,2023-08-18,true
+REV-0000849,ORD-0000228,CUST-000438,5,Loved it!,"Damaged when it arrived, returned right away.",2026-05-20,true
+REV-0000850,ORD-0000933,CUST-000081,3,Quality issue,Shipping took longer than promised.,2025-09-27,true
+REV-0000851,ORD-0000625,CUST-000650,4,Would buy again,"Five stars, would recommend.",2024-06-30,true
+REV-0000852,ORD-0001430,CUST-000736,3,Highly recommend,Better than I expected for the price.,2024-12-17,true
+REV-0000853,ORD-0000108,CUST-000590,5,Excellent,Shipping took longer than promised.,2024-12-06,true
+REV-0000854,ORD-0001022,CUST-000430,5,Excellent,Build quality is excellent.,2025-07-24,true
+REV-0000855,ORD-0000280,CUST-000484,4,Disappointed,Item was different from the photos.,2024-12-14,true
+REV-0000856,ORD-0000691,CUST-000374,5,Highly recommend,Better than I expected for the price.,2023-05-24,true
+REV-0000857,ORD-0000491,CUST-000016,4,Quality issue,Arrived on time and matches the description.,2024-06-14,true
+REV-0000858,ORD-0000517,CUST-000243,5,Quality issue,Customer service was very responsive.,2026-02-21,true
+REV-0000859,ORD-0000472,CUST-000790,4,Excellent,Shipping took longer than promised.,2023-08-10,true
+REV-0000860,ORD-0000332,CUST-000085,5,Highly recommend,Shipping took longer than promised.,2024-06-16,true
+REV-0000861,ORD-0000251,CUST-000562,4,Great purchase,"Average quality, decent value.",2024-12-23,true
+REV-0000862,ORD-0000201,CUST-000499,4,Could be better,Customer service was very responsive.,2025-10-09,true
+REV-0000863,ORD-0000395,CUST-000580,5,Would buy again,Customer service was very responsive.,2024-09-25,true
+REV-0000864,ORD-0001393,CUST-000358,1,Not what I expected,Better than I expected for the price.,2026-01-18,true
+REV-0000865,ORD-0000144,CUST-000557,4,Disappointed,"Five stars, would recommend.",2026-01-04,true
+REV-0000866,ORD-0001482,CUST-000580,5,Quality issue,Not worth the price.,2023-03-22,true
+REV-0000867,ORD-0000989,CUST-000371,4,Not what I expected,Arrived on time and matches the description.,2023-09-02,true
+REV-0000868,ORD-0001338,CUST-000100,5,Excellent,Not worth the price.,2023-02-02,true
+REV-0000869,ORD-0000617,CUST-000752,5,Quality issue,Shipping took longer than promised.,2025-12-25,true
+REV-0000870,ORD-0001101,CUST-000639,4,Disappointed,Shipping took longer than promised.,2025-10-31,true
+REV-0000871,ORD-0000285,CUST-000398,5,Could be better,"Average quality, decent value.",2023-11-24,true
+REV-0000872,ORD-0001439,CUST-000276,5,Would buy again,"Average quality, decent value.",2025-12-15,true
+REV-0000873,ORD-0000464,CUST-000033,5,Would buy again,"Damaged when it arrived, returned right away.",2025-11-01,true
+REV-0000874,ORD-0000128,CUST-000728,5,Could be better,Arrived on time and matches the description.,2025-12-28,true
+REV-0000875,ORD-0000607,CUST-000193,4,Disappointed,Not worth the price.,2023-11-27,true
+REV-0000876,ORD-0000722,CUST-000053,5,Would buy again,Shipping took longer than promised.,2023-12-10,true
+REV-0000877,ORD-0000814,CUST-000006,5,Great purchase,Build quality is excellent.,2025-12-23,true
+REV-0000878,ORD-0000331,CUST-000309,5,Would buy again,Arrived on time and matches the description.,2024-07-16,true
+REV-0000879,ORD-0000467,CUST-000738,4,Quality issue,"Average quality, decent value.",2025-09-17,true
+REV-0000880,ORD-0000950,CUST-000601,4,Loved it!,"Average quality, decent value.",2023-12-18,true
+REV-0000881,ORD-0001228,CUST-000064,5,Disappointed,Better than I expected for the price.,2025-12-25,true
+REV-0000882,ORD-0000026,CUST-000508,4,Would buy again,Arrived on time and matches the description.,2023-04-24,true
+REV-0000883,ORD-0000709,CUST-000740,5,Returned,Customer service was very responsive.,2025-12-17,true
+REV-0000884,ORD-0000521,CUST-000620,5,Returned,Arrived on time and matches the description.,2024-05-23,true
+REV-0000885,ORD-0000328,CUST-000367,5,Loved it!,Build quality is excellent.,2024-12-23,true
+REV-0000886,ORD-0000278,CUST-000099,5,Quality issue,Better than I expected for the price.,2025-12-13,true
+REV-0000887,ORD-0000194,CUST-000239,4,Not what I expected,Not worth the price.,2023-08-27,true
+REV-0000888,ORD-0000991,CUST-000504,5,Quality issue,Shipping took longer than promised.,2024-12-16,true
+REV-0000889,ORD-0001258,CUST-000375,5,Would buy again,Shipping took longer than promised.,2024-03-22,true
+REV-0000890,ORD-0001278,CUST-000611,5,Quality issue,Better than I expected for the price.,2026-03-22,true
+REV-0000891,ORD-0001030,CUST-000305,4,Disappointed,"Damaged when it arrived, returned right away.",2024-07-24,true
+REV-0000892,ORD-0000033,CUST-000267,5,Could be better,Arrived on time and matches the description.,2023-11-20,true
+REV-0000893,ORD-0000168,CUST-000692,3,Loved it!,Customer service was very responsive.,2025-03-14,true
+REV-0000894,ORD-0000112,CUST-000637,5,Great purchase,Better than I expected for the price.,2023-12-13,true
+REV-0000895,ORD-0001034,CUST-000163,4,Excellent,Better than I expected for the price.,2024-12-21,true
+REV-0000896,ORD-0000520,CUST-000413,4,Highly recommend,Not worth the price.,2026-03-01,true
+REV-0000897,ORD-0000824,CUST-000748,5,Could be better,"Average quality, decent value.",2023-07-18,true
+REV-0000898,ORD-0001385,CUST-000212,4,Quality issue,Not worth the price.,2024-09-23,true
+REV-0000899,ORD-0001042,CUST-000251,5,Would buy again,"Average quality, decent value.",2023-06-09,true
+REV-0000900,ORD-0001166,CUST-000315,5,Quality issue,"Average quality, decent value.",2024-12-10,true
+REV-0000901,ORD-0000147,CUST-000057,4,Could be better,"Average quality, decent value.",2023-12-20,true
+REV-0000902,ORD-0000400,CUST-000372,5,Great purchase,Customer service was very responsive.,2024-06-23,true
+REV-0000903,ORD-0000942,CUST-000221,5,Quality issue,"Average quality, decent value.",2026-02-02,true
+REV-0000904,ORD-0000808,CUST-000258,2,Returned,Customer service was very responsive.,2024-06-11,true
+REV-0000905,ORD-0001169,CUST-000200,4,Excellent,"Average quality, decent value.",2025-12-19,true
+REV-0000906,ORD-0001316,CUST-000053,2,Would buy again,"Five stars, would recommend.",2024-10-28,true
+REV-0000907,ORD-0001110,CUST-000606,4,Disappointed,Build quality is excellent.,2023-06-03,true
+REV-0000908,ORD-0000625,CUST-000650,4,Great purchase,Better than I expected for the price.,2024-07-17,true
+REV-0000909,ORD-0000150,CUST-000213,5,Quality issue,Item was different from the photos.,2024-06-05,true
+REV-0000910,ORD-0000017,CUST-000797,5,Not what I expected,Arrived on time and matches the description.,2023-12-13,true
+REV-0000911,ORD-0000334,CUST-000348,5,Quality issue,Build quality is excellent.,2024-08-01,true
+REV-0000912,ORD-0001037,CUST-000357,4,Returned,Shipping took longer than promised.,2023-07-04,true
+REV-0000913,ORD-0001141,CUST-000254,4,Would buy again,Better than I expected for the price.,2025-12-09,true
+REV-0000914,ORD-0000306,CUST-000478,1,Great purchase,Item was different from the photos.,2024-02-15,true
+REV-0000915,ORD-0000387,CUST-000590,5,Quality issue,Not worth the price.,2025-11-07,true
+REV-0000916,ORD-0000489,CUST-000262,3,Great purchase,"Average quality, decent value.",2023-04-09,true
+REV-0000917,ORD-0000084,CUST-000710,4,Would buy again,Better than I expected for the price.,2025-05-22,true
+REV-0000918,ORD-0001259,CUST-000657,5,Could be better,Arrived on time and matches the description.,2025-02-09,true
+REV-0000919,ORD-0000066,CUST-000191,4,Loved it!,"Five stars, would recommend.",2024-03-05,true
+REV-0000920,ORD-0001430,CUST-000736,4,Could be better,Customer service was very responsive.,2024-12-20,true
+REV-0000921,ORD-0001293,CUST-000525,4,Great purchase,Build quality is excellent.,2023-07-28,true
+REV-0000922,ORD-0000981,CUST-000221,4,Highly recommend,"Five stars, would recommend.",2025-12-19,true
+REV-0000923,ORD-0000876,CUST-000599,4,Disappointed,"Average quality, decent value.",2025-09-01,true
+REV-0000924,ORD-0000624,CUST-000527,5,Disappointed,"Damaged when it arrived, returned right away.",2024-01-03,true
+REV-0000925,ORD-0001071,CUST-000507,2,Returned,Arrived on time and matches the description.,2023-08-18,true
+REV-0000926,ORD-0000025,CUST-000188,5,Excellent,Customer service was very responsive.,2023-04-21,true
+REV-0000927,ORD-0000061,CUST-000589,5,Great purchase,Shipping took longer than promised.,2023-12-17,true
+REV-0000928,ORD-0001351,CUST-000301,1,Returned,"Average quality, decent value.",2023-12-18,true
+REV-0000929,ORD-0000887,CUST-000236,4,Not what I expected,"Five stars, would recommend.",2023-05-29,true
+REV-0000930,ORD-0000941,CUST-000709,4,Highly recommend,Arrived on time and matches the description.,2025-04-17,true
+REV-0000931,ORD-0000504,CUST-000028,5,Not what I expected,Better than I expected for the price.,2024-08-28,true
+REV-0000932,ORD-0000806,CUST-000066,3,Returned,Build quality is excellent.,2023-02-23,true
+REV-0000933,ORD-0000246,CUST-000124,3,Returned,"Damaged when it arrived, returned right away.",2024-01-03,true
+REV-0000934,ORD-0000221,CUST-000698,4,Would buy again,Shipping took longer than promised.,2025-09-25,true
+REV-0000935,ORD-0000386,CUST-000570,4,Highly recommend,Build quality is excellent.,2025-09-14,true
+REV-0000936,ORD-0000690,CUST-000604,2,Could be better,"Five stars, would recommend.",2025-04-19,true
+REV-0000937,ORD-0001155,CUST-000049,5,Excellent,"Average quality, decent value.",2023-07-08,true
+REV-0000938,ORD-0000337,CUST-000444,4,Quality issue,Item was different from the photos.,2024-12-11,true
+REV-0000939,ORD-0001309,CUST-000185,5,Not what I expected,"Five stars, would recommend.",2025-08-25,true
+REV-0000940,ORD-0000871,CUST-000481,4,Quality issue,"Damaged when it arrived, returned right away.",2024-12-04,true
+REV-0000941,ORD-0001047,CUST-000671,4,Excellent,Build quality is excellent.,2025-01-04,true
+REV-0000942,ORD-0000333,CUST-000220,4,Disappointed,Build quality is excellent.,2025-02-22,true
+REV-0000943,ORD-0000280,CUST-000484,3,Could be better,Customer service was very responsive.,2024-12-22,true
+REV-0000944,ORD-0000465,CUST-000121,5,Disappointed,Item was different from the photos.,2026-01-01,true
+REV-0000945,ORD-0001463,CUST-000156,5,Could be better,Build quality is excellent.,2023-02-21,true
+REV-0000946,ORD-0000455,CUST-000406,3,Loved it!,Better than I expected for the price.,2023-11-15,true
+REV-0000947,ORD-0000280,CUST-000484,4,Not what I expected,Build quality is excellent.,2024-12-08,true
+REV-0000948,ORD-0000683,CUST-000776,5,Loved it!,"Damaged when it arrived, returned right away.",2025-12-15,true
+REV-0000949,ORD-0001472,CUST-000327,5,Great purchase,Customer service was very responsive.,2025-11-28,true
+REV-0000950,ORD-0001235,CUST-000521,4,Not what I expected,Arrived on time and matches the description.,2025-10-07,true
+REV-0000951,ORD-0001406,CUST-000683,5,Would buy again,"Damaged when it arrived, returned right away.",2023-12-27,true
+REV-0000952,ORD-0000198,CUST-000642,4,Loved it!,"Five stars, would recommend.",2024-01-26,true
+REV-0000953,ORD-0000918,CUST-000542,3,Not what I expected,Shipping took longer than promised.,2024-06-01,true
+REV-0000954,ORD-0001279,CUST-000557,5,Highly recommend,"Average quality, decent value.",2024-06-12,true
+REV-0000955,ORD-0000647,CUST-000072,5,Returned,Item was different from the photos.,2024-12-14,true
+REV-0000956,ORD-0000408,CUST-000383,5,Could be better,Customer service was very responsive.,2024-12-10,true
+REV-0000957,ORD-0000093,CUST-000750,5,Disappointed,Better than I expected for the price.,2025-01-24,true
+REV-0000958,ORD-0000942,CUST-000221,5,Highly recommend,"Average quality, decent value.",2026-01-22,true
+REV-0000959,ORD-0000455,CUST-000406,2,Returned,Build quality is excellent.,2023-11-24,true
+REV-0000960,ORD-0000215,CUST-000177,3,Loved it!,Item was different from the photos.,2023-07-30,true
+REV-0000961,ORD-0001499,CUST-000394,5,Would buy again,Shipping took longer than promised.,2025-09-10,true
+REV-0000962,ORD-0000627,CUST-000639,4,Loved it!,Arrived on time and matches the description.,2024-05-01,true
+REV-0000963,ORD-0000851,CUST-000563,1,Could be better,"Five stars, would recommend.",2024-02-16,true
+REV-0000964,ORD-0001490,CUST-000459,3,Highly recommend,Customer service was very responsive.,2025-01-11,true
+REV-0000965,ORD-0000327,CUST-000452,4,Excellent,Item was different from the photos.,2025-05-19,true
+REV-0000966,ORD-0000001,CUST-000614,5,Excellent,Arrived on time and matches the description.,2023-10-17,true
+REV-0000967,ORD-0000937,CUST-000552,5,Loved it!,Customer service was very responsive.,2023-04-02,true
+REV-0000968,ORD-0000486,CUST-000037,5,Would buy again,Not worth the price.,2026-01-20,true
+REV-0000969,ORD-0000614,CUST-000586,4,Highly recommend,Arrived on time and matches the description.,2026-02-01,true
+REV-0000970,ORD-0000415,CUST-000767,5,Could be better,Build quality is excellent.,2025-01-11,true
+REV-0000971,ORD-0000738,CUST-000647,4,Loved it!,Not worth the price.,2024-12-27,true
+REV-0000972,ORD-0001156,CUST-000347,1,Loved it!,Shipping took longer than promised.,2023-03-20,true
+REV-0000973,ORD-0000898,CUST-000099,3,Loved it!,"Five stars, would recommend.",2024-10-08,true
+REV-0000974,ORD-0001392,CUST-000115,4,Could be better,Arrived on time and matches the description.,2023-12-24,true
+REV-0000975,ORD-0000742,CUST-000442,4,Great purchase,"Average quality, decent value.",2023-08-22,true
+REV-0000976,ORD-0000406,CUST-000768,3,Excellent,Customer service was very responsive.,2024-02-10,true
+REV-0000977,ORD-0000585,CUST-000122,5,Could be better,"Average quality, decent value.",2026-05-19,true
+REV-0000978,ORD-0001107,CUST-000772,5,Would buy again,Item was different from the photos.,2025-10-30,true
+REV-0000979,ORD-0000363,CUST-000528,5,Great purchase,Better than I expected for the price.,2025-12-03,true
+REV-0000980,ORD-0000839,CUST-000273,5,Loved it!,Arrived on time and matches the description.,2023-12-29,true
+REV-0000981,ORD-0001474,CUST-000572,4,Loved it!,Better than I expected for the price.,2023-04-12,true
+REV-0000982,ORD-0000562,CUST-000432,5,Returned,Shipping took longer than promised.,2025-05-29,true
+REV-0000983,ORD-0001036,CUST-000256,4,Could be better,Better than I expected for the price.,2025-12-19,true
+REV-0000984,ORD-0001457,CUST-000265,3,Returned,Shipping took longer than promised.,2025-01-18,true
+REV-0000985,ORD-0000489,CUST-000262,3,Disappointed,Not worth the price.,2023-04-02,true
+REV-0000986,ORD-0001343,CUST-000764,3,Highly recommend,Customer service was very responsive.,2025-12-08,true
+REV-0000987,ORD-0001141,CUST-000254,4,Not what I expected,Customer service was very responsive.,2025-12-17,true
+REV-0000988,ORD-0000228,CUST-000438,3,Excellent,Item was different from the photos.,2026-05-10,true
+REV-0000989,ORD-0001395,CUST-000607,5,Returned,"Five stars, would recommend.",2025-11-22,true
+REV-0000990,ORD-0001463,CUST-000156,5,Quality issue,Better than I expected for the price.,2023-03-01,true
+REV-0000991,ORD-0000802,CUST-000724,5,Quality issue,Build quality is excellent.,2024-06-27,true
+REV-0000992,ORD-0001449,CUST-000018,5,Would buy again,"Damaged when it arrived, returned right away.",2025-12-22,true
+REV-0000993,ORD-0000419,CUST-000381,3,Returned,Not worth the price.,2025-08-10,true
+REV-0000994,ORD-0000528,CUST-000307,5,Would buy again,Arrived on time and matches the description.,2024-12-13,true
+REV-0000995,ORD-0001427,CUST-000263,5,Quality issue,Build quality is excellent.,2024-03-19,true
+REV-0000996,ORD-0001137,CUST-000677,5,Returned,Not worth the price.,2024-02-08,true
+REV-0000997,ORD-0001419,CUST-000731,3,Could be better,"Five stars, would recommend.",2025-09-07,true
+REV-0000998,ORD-0000241,CUST-000306,5,Loved it!,Customer service was very responsive.,2025-03-01,true
+REV-0000999,ORD-0000960,CUST-000334,5,Returned,Not worth the price.,2024-12-09,true
+REV-0001000,ORD-0000254,CUST-000010,2,Not what I expected,Item was different from the photos.,2025-11-16,true
+REV-0001001,ORD-0000192,CUST-000618,2,Would buy again,Better than I expected for the price.,2023-12-28,true
+REV-0001002,ORD-0001336,CUST-000615,5,Great purchase,Customer service was very responsive.,2024-12-21,true
+REV-0001003,ORD-0000465,CUST-000121,5,Quality issue,"Damaged when it arrived, returned right away.",2025-12-19,true
+REV-0001004,ORD-0000929,CUST-000776,5,Could be better,Shipping took longer than promised.,2025-06-16,true
+REV-0001005,ORD-0001267,CUST-000740,4,Would buy again,"Five stars, would recommend.",2025-12-03,true
+REV-0001006,ORD-0000223,CUST-000682,5,Returned,"Average quality, decent value.",2024-08-30,true
+REV-0001007,ORD-0000593,CUST-000318,4,Highly recommend,Build quality is excellent.,2024-02-17,true
+REV-0001008,ORD-0000689,CUST-000213,5,Excellent,"Average quality, decent value.",2024-02-21,true
+REV-0001009,ORD-0000242,CUST-000547,2,Loved it!,Shipping took longer than promised.,2023-09-08,true
+REV-0001010,ORD-0001359,CUST-000510,5,Would buy again,Better than I expected for the price.,2025-12-08,true
+REV-0001011,ORD-0000983,CUST-000782,5,Loved it!,Better than I expected for the price.,2025-12-25,true
+REV-0001012,ORD-0001409,CUST-000207,4,Excellent,Item was different from the photos.,2026-02-22,true
+REV-0001013,ORD-0000022,CUST-000109,4,Loved it!,"Average quality, decent value.",2026-03-05,true
+REV-0001014,ORD-0000136,CUST-000184,4,Great purchase,Customer service was very responsive.,2024-04-07,true
+REV-0001015,ORD-0001166,CUST-000315,5,Returned,"Average quality, decent value.",2024-11-24,true
+REV-0001016,ORD-0000593,CUST-000318,5,Great purchase,"Average quality, decent value.",2024-02-17,true
