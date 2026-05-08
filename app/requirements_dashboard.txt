@@ -1,0 +1,7 @@
+# Dashboard runtime — separate from the dbt requirements.txt at the repo root
+streamlit==1.36.*
+duckdb>=0.10.0
+pandas>=2.0
+plotly>=5.20
+anthropic>=0.34.0
+python-dotenv>=1.0.0

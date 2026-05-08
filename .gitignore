@@ -11,6 +11,10 @@ __pycache__/
 .venv/
 .env
 
+# Dashboard
+app/.ai_cache/
+app/.streamlit/secrets.toml
+
 # Airflow
 logs/
 airflow.db

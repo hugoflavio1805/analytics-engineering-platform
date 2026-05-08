@@ -132,12 +132,25 @@ dbt build --select marketplace.* --target duckdb
 
 These are `severity: warn` because the goal is **documenting** the issue, not blocking the build for known source problems. Schema tests (`unique`, `not_null`, `relationships`, `accepted_values`) remain `error`.
 
-## Findings (preview)
+## Executive reviews
 
-See [`analysis/01_returns_by_category_and_region.md`](analysis/01_returns_by_category_and_region.md) for the full write-up of the obligatory question.
+Three OP1-style narrative documents — each one a six-pager around a single question:
 
-Headline: **Fashion in LATAM** is the worst offender — both highest return rate (~30%) and largest absolute refund total. Recommended action is improvement of fit guides + size charts on Fashion PDPs in LATAM, not blanket return-policy tightening.
+| # | Document | Question | Mart |
+|---|---|---|---|
+| 01 | [Returns review](analysis/01_returns_executive_review.md) | Where do returns leak GMV? | `category_region_return_rate` |
+| 02 | [Promotions review](analysis/02_promotions_roi_review.md) | Which campaigns net out positive? | `gmv_by_promotion` |
+| 03 | [Logistics review](analysis/03_logistics_sla_review.md) | Which carriers cost us via late delivery? | `sla_by_carrier` |
 
-Two follow-up marts add color:
-- `gmv_by_promotion` shows that aggressive Black Friday campaigns drive GMV but at a measurable chargeback premium — net contribution should be the metric, not gross GMV.
-- `sla_by_carrier` shows Correios (BR) as the SLA-miss leader, with elevated `arrived_late` return rate — substituting Sedex on BR ⇆ BR routes would reduce returns at no margin cost.
+Each review is structured: top-line → data → reading the table → so-what → watch items → reproducibility. SQL queries that produced each table live in `analysis/queries/`.
+
+## Live dashboard
+
+The narrative is also available as an interactive Streamlit dashboard with **AI Insights powered by Claude**. Five tabs (Overview, Returns, Promotions, Logistics, AI Insights), KPI strip, and Plotly charts. See [`app/README.md`](../../app/README.md) for the full architecture write-up.
+
+```bash
+cd app
+pip install -r requirements_dashboard.txt
+cp .env.example .env       # add your ANTHROPIC_API_KEY (optional)
+streamlit run dashboard.py
+```
