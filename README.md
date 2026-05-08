@@ -97,21 +97,31 @@ All issues are codified as **dbt tests** so they fail loudly if the next batch r
 ## 4. Data Model (gold layer)
 
 ```
-              dim_customer ──────────────┐
-                   │                     │
-                   │ customer_id         │
-                   ▼                     ▼
-         fct_subscriptions          fct_feedbacks
-         (mrr, lifecycle)           (type, sentiment, nps)
-                   │                     │
-                   └────────┬────────────┘
+  raw.customers   raw.subscriptions   raw.feedbacks            ← landing
+       │                 │                  │
+       ▼                 ▼                  ▼
+  stg_customers   stg_subscriptions    stg_feedbacks            ← staging (cast + normalize)
+       │                 │                  │
+       │     int_customer_subscription_rollup                   ← intermediate
+       │                 │              int_feedback_enriched
+       │                 │                  │
+       └────────┬────────┘                  │
+                ▼                           │
+           dim_customer ─── fct_subscriptions
+                │                           │
+                └───────────┬───────────────┘
                             ▼
-                customer_health_daily   ← semantic mart used by Tableau
-                (one row per customer per day, with rolling 30/90d
-                 feedback counts by type, MRR, churn flag, tenure)
+                  fct_feedbacks
+                            │
+                            ▼
+                customer_feedback_churn                         ← analytics mart
+                (1 row per customer; consumed by Tableau)
 ```
 
-The mart `analytics.customer_feedback_churn` answers the obligatory question in a single SELECT — **the dashboard does not do business logic**, it only paints what dbt produced. This is the discipline that makes the pipeline auditable.
+Two principles enforced by the layering:
+
+1. **Raw stays raw.** The CSVs in `data/raw/` are the schema the source system would actually emit — no derived columns, no analytical hints. Anything calculable belongs in dbt.
+2. **Dashboards are dumb.** `customer_feedback_churn` already contains every metric the BI surfaces; the dashboard paints, it does not compute. If the metric needs to change, it changes in one place — in dbt — with a test and a PR review.
 
 ---
 
@@ -234,7 +244,9 @@ On merge to `main`:
 
 ```
 .
-├── data/raw/                      # the three input CSVs (enriched with insight columns)
+├── data/raw/                      # raw CSVs (300 customers / 328 subs / 435 feedbacks); originals + synthetic rows
+├── data/raw_original/             # untouched copy of the original 200/215/229 rows
+├── scripts/generate_synthetic_data.ps1  # appends synthetic rows preserving raw schema and quality issues
 ├── dbt/
 │   ├── dbt_project.yml
 │   ├── models/

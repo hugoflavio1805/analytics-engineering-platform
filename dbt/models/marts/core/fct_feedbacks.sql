@@ -4,6 +4,9 @@
     on_schema_change='append_new_columns'
 ) }}
 
+-- One row per feedback event, with plan/segment from dim_customer
+-- and all derivations from the intermediate model.
+
 select
     f.feedback_id,
     f.customer_id,
@@ -21,11 +24,11 @@ select
     f.is_pre_churn_90d,
     f.days_before_churn,
     f.message_length,
-    f.created_at as feedback_date,
+    f.feedback_date,
     current_timestamp as _loaded_at
-from {{ ref('stg_feedbacks') }} f
-left join {{ ref('stg_customers') }} c using (customer_id)
+from {{ ref('int_feedback_enriched') }} f
+left join {{ ref('dim_customer') }} c using (customer_id)
 
 {% if is_incremental() %}
-where f.created_at > (select coalesce(max(feedback_date), '1900-01-01') from {{ this }})
+where f.feedback_date > (select coalesce(max(feedback_date), date '1900-01-01') from {{ this }})
 {% endif %}
