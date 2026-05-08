@@ -1,0 +1,53 @@
+# Dashboard stack — runs end-to-end in Docker.
+#
+# Two services:
+#   1. dbt-build — one-shot: builds all marts into a shared volume, then exits
+#   2. dashboard — Streamlit app, starts only after dbt-build succeeds
+#
+# Quickstart:
+#   export ANTHROPIC_API_KEY='sk-ant-...'
+#   docker compose -f docker-compose.dashboard.yml up --build
+#
+# Open http://localhost:8501
+
+services:
+
+  dbt-build:
+    container_name: aep-dbt-build
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dbt
+    volumes:
+      - ./dbt:/workspace/dbt
+      - ./data:/workspace/data:ro
+      - ./cases:/workspace/cases:ro
+      - aep_warehouse:/warehouse
+    environment:
+      # The dbt profile reads DBT_DUCKDB_PATH; defaults to ../warehouse.duckdb locally.
+      DBT_DUCKDB_PATH: /warehouse/warehouse.duckdb
+      # Source CSVs use these env vars in their external_location meta.
+      CASE1_RAW_DIR: /workspace/data/raw
+      CASE2_RAW_DIR: /workspace/cases/marketplace/data/raw
+    command: ["build", "--profiles-dir", ".", "--target", "duckdb"]
+
+  dashboard:
+    container_name: aep-dashboard
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    depends_on:
+      dbt-build:
+        condition: service_completed_successfully
+    ports:
+      - "8501:8501"
+    volumes:
+      - aep_warehouse:/warehouse:ro
+      - aep_ai_cache:/app/.ai_cache
+    environment:
+      DUCKDB_PATH: /warehouse/warehouse.duckdb
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-4-6}
+
+volumes:
+  aep_warehouse:
+  aep_ai_cache:

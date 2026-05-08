@@ -1,17 +1,18 @@
 FROM python:3.11-slim
 
-WORKDIR /app
+WORKDIR /workspace
 
+# dbt-core 1.9 + dbt-duckdb 1.9 (matches the local venv)
 RUN pip install --no-cache-dir \
-    dbt-core==1.8.* \
-    dbt-duckdb==1.8.* \
-    dbt-snowflake==1.8.* \
-    duckdb \
-    sqlfluff==3.0.*
+        "dbt-core>=1.9,<1.10" \
+        "dbt-duckdb>=1.9,<1.10" \
+        "duckdb>=0.10" \
+        "sqlfluff>=3.0,<4.0"
 
-COPY dbt /app/dbt
+# The dbt project, raw data, and the warehouse output directory are mounted
+# at runtime via docker-compose volumes — nothing is baked into the image.
 
-WORKDIR /app/dbt
+WORKDIR /workspace/dbt
 
 ENTRYPOINT ["dbt"]
 CMD ["build", "--profiles-dir", ".", "--target", "duckdb"]

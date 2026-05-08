@@ -5,7 +5,9 @@ feedback_revenue:
   outputs:
     duckdb:
       type: duckdb
-      path: ../warehouse.duckdb
+      # Local default: ../warehouse.duckdb (relative to the dbt/ folder).
+      # In Docker we override via DBT_DUCKDB_PATH env var.
+      path: "{{ env_var('DBT_DUCKDB_PATH', '../warehouse.duckdb') }}"
       threads: 4
 
     snowflake:

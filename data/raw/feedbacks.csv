@@ -434,3 +434,209 @@ FB-00432,CUST-0298,praise,plataforma,positive,Equipe atenciosa,2025-03-30,,True
 FB-00433,CUST-0298,bug,nps,negative,Relatório gerado em branco,2025-04-06,3,True
 FB-00434,CUST-0300,feature_request,formulario,neutral,Seria ótimo ter alertas por email,2025-01-31,,False
 FB-00435,CUST-0300,feature_request,nps,neutral,Falta integração com HubSpot,2025-04-27,7,True
+FB-00436,CUST-0301,praise,suporte,positive,Melhorou muito nos últimos meses,2023-05-13,,True
+FB-00437,CUST-0301,praise,plataforma,positive,Melhorou muito nos últimos meses,2023-08-06,,True
+FB-00438,CUST-0301,feature_request,formulario,neutral,Gostaríamos de exportar em PDF,2024-07-17,,True
+FB-00439,CUST-0302,complaint,nps,negative,Tempo de resposta do suporte muito alto,2022-04-19,5,False
+FB-00440,CUST-0302,feature_request,suporte,neutral,Falta integração com HubSpot,2022-08-08,,True
+FB-00441,CUST_0302,praise,formulario,positive,Equipe atenciosa,2024-03-12,,True
+FB-00442,CUST-0303,praise,plataforma,positive,Suporte muito rápido,2024-04-10,,True
+FB-00443,CUST-0303,praise,plataforma,positive,Suporte muito rápido,2024-04-10,,True
+FB-00444,CUST_0303,support,plataforma,neutral,Como recupero a fatura?,2024-09-12,,False
+FB-00445,CUST-0305,complaint,formulario,negative,Sem retorno do CSM,2024-11-11,,False
+FB-00446,CUST-0306,praise,formulario,positive,Suporte muito rápido,2025-05-28,,True
+FB-00447,CUST-0307,praise,suporte,positive,Suporte muito rápido,2024-08-19,,True
+FB-00448,CUST-0307,feature_request,nps,neutral,SSO via Okta,2024-10-04,6,False
+FB-00449,CUST-0307,praise,formulario,positive,Plataforma excelente!,2025-04-26,,True
+FB-00450,CUST-0308,complaint,formulario,negative,Faturamento incorreto,2025-01-18,,
+FB-00451,CUST-0308,praise,suporte,positive,Melhorou muito nos últimos meses,2025-04-03,,
+FB-00452,CUST-0308,praise,suporte,positive,Melhorou muito nos últimos meses,2025-05-02,,True
+FB-00453,CUST-0309,support,plataforma,neutral,Como recupero a fatura?,2025-02-13,,
+FB-00454,CUST-0309,praise,email,positive,Melhorou muito nos últimos meses,2024-08-17,,True
+FB-00455,CUST-0309,bug,email,negative,Integração com API retorna timeout,2024-02-24,,False
+FB-00456,CUST-0310,complaint,formulario,negative,Sem retorno do CSM,2024-04-27,,
+FB-00457,CUST-0310,praise,nps,positive,Funcionalidade impecável,2024-02-05,9,True
+FB-00458,CUST-0311,bug,email,negative,Login intermitente,2023-09-15,,
+FB-00459,CUST-0311,bug,email,negative,Login intermitente,2023-09-15,,
+FB-00460,CUST-0312,bug,suporte,negative,Relatório gerado em branco,2022-06-18,,True
+FB-00461,CUST-0312,support,suporte,neutral,Como faço para adicionar usuários?,2024-01-14,,True
+FB-00462,CUST-0312,bug,nps,negative,Login intermitente,2022-09-22,4,True
+FB-00463,CUST-0313,complaint,email,negative,Sem retorno do CSM,2024-12-20,,True
+FB-00464,CUST-0313,feature_request,email,neutral,Seria ótimo ter alertas por email,2024-10-23,,False
+FB-00465,CUST-0313,bug,plataforma,negative,Integração com API retorna timeout,2024-07-20,,True
+FB-00466,CUST-0315,support,formulario,neutral,Como faço para adicionar usuários?,2024-11-25,,True
+FB-00467,CUST-0315,support,formulario,neutral,Como faço para adicionar usuários?,2025-01-27,,True
+FB-00468,CUST-0315,praise,email,positive,Suporte muito rápido,2024-12-30,,
+FB-00469,CUST-0316,feature_request,formulario,neutral,Falta integração com HubSpot,2025-02-12,,False
+FB-00470,CUST-0316,complaint,plataforma,negative,Sem retorno do CSM,2024-12-12,,
+FB-00471,CUST-0317,support,nps,neutral,Como faço para adicionar usuários?,2025-05-01,7,False
+FB-00472,CUST-0317,praise,plataforma,positive,Plataforma excelente!,2025-05-06,,True
+FB-00473,CUST-0318,complaint,plataforma,negative,Difícil de configurar,2024-02-12,,
+FB-00474,CUST-0318,complaint,plataforma,negative,Sem retorno do CSM,2025-03-15,,
+FB-00475,CUST-0319,support,nps,neutral,Como recupero a fatura?,2025-02-28,7,False
+FB-00476,CUST-0320,praise,email,positive,Equipe atenciosa,2023-06-30,,False
+FB-00477,CUST-0320,praise,suporte,positive,Melhorou muito nos últimos meses,2024-02-02,,True
+FB-00478,CUST-0320,complaint,email,negative,Difícil de configurar,2023-11-12,,
+FB-00479,CUST-0321,complaint,plataforma,negative,Tempo de resposta do suporte muito alto,2024-05-22,,True
+FB-00480,CUST_0321,praise,email,positive,Plataforma excelente!,2023-02-16,,False
+FB-00481,CUST_0322,praise,nps,positive,Melhorou muito nos últimos meses,2024-07-07,10,
+FB-00482,CUST-0322,support,plataforma,neutral,Como faço para adicionar usuários?,2023-01-07,,
+FB-00483,CUST-0322,praise,nps,positive,Suporte muito rápido,2023-05-11,8,False
+FB-00484,CUST-0322,praise,formulario,positive,Equipe atenciosa,2025-02-05,,False
+FB-00485,CUST_0323,praise,email,positive,Melhorou muito nos últimos meses,2025-01-25,,True
+FB-00486,CUST-0323,support,email,neutral,Como faço para adicionar usuários?,2025-05-03,,
+FB-00487,CUST-0323,praise,formulario,positive,Equipe atenciosa,2025-03-14,,True
+FB-00488,CUST-0323,complaint,suporte,negative,Faturamento incorreto,2025-02-22,,True
+FB-00489,CUST-0326,praise,plataforma,positive,Melhorou muito nos últimos meses,2023-09-29,,False
+FB-00490,CUST-0326,praise,email,positive,Funcionalidade impecável,2023-09-04,,True
+FB-00491,CUST-0326,feature_request,email,neutral,Gostaríamos de exportar em PDF,2024-05-21,,
+FB-00492,CUST-0326,praise,nps,positive,Equipe atenciosa,2024-06-10,9,
+FB-00493,CUST-0327,bug,nps,negative,Erro 500 ao acessar dashboard,2024-02-22,0,
+FB-00494,CUST-0328,support,plataforma,neutral,Posso mudar de plano?,2024-03-01,,False
+FB-00495,CUST-0328,bug,formulario,negative,Integração com API retorna timeout,2025-01-08,,True
+FB-00496,CUST-0328,bug,nps,negative,Relatório gerado em branco,2025-01-24,5,
+FB-00497,CUST-0329,bug,plataforma,negative,Erro 500 ao acessar dashboard,2023-08-06,,True
+FB-00498,CUST-0329,support,formulario,neutral,Como faço para adicionar usuários?,2022-09-04,,False
+FB-00499,CUST-0330,praise,email,positive,Plataforma excelente!,2025-01-28,,False
+FB-00500,CUST-0331,feature_request,suporte,neutral,SSO via Okta,2024-05-19,,False
+FB-00501,CUST-0331,praise,plataforma,positive,Suporte muito rápido,2024-06-10,,
+FB-00502,CUST-0331,feature_request,formulario,neutral,SSO via Okta,2024-07-20,,True
+FB-00503,CUST-0332,praise,plataforma,positive,Plataforma excelente!,2023-05-16,,True
+FB-00504,CUST-0333,complaint,nps,negative,Difícil de configurar,2023-01-17,0,False
+FB-00505,CUST-0334,support,nps,neutral,Como recupero a fatura?,2024-05-25,7,True
+FB-00506,CUST-0334,praise,plataforma,positive,Suporte muito rápido,2025-01-19,,False
+FB-00507,CUST-0334,praise,email,positive,Funcionalidade impecável,2024-02-04,,False
+FB-00508,CUST-0335,support,formulario,neutral,Como faço para adicionar usuários?,2024-01-23,,False
+FB-00509,CUST-0335,support,formulario,neutral,Como faço para adicionar usuários?,2024-01-23,,False
+FB-00510,CUST-0335,complaint,formulario,negative,Tempo de resposta do suporte muito alto,2023-10-29,,False
+FB-00511,CUST-0335,complaint,suporte,negative,Tempo de resposta do suporte muito alto,2023-12-19,,
+FB-00512,CUST-0335,feature_request,suporte,neutral,Gostaríamos de exportar em PDF,2024-02-06,,False
+FB-00513,CUST-0337,support,formulario,neutral,Como faço para adicionar usuários?,2024-12-28,,True
+FB-00514,CUST-0337,complaint,formulario,negative,Faturamento incorreto,2025-02-04,,True
+FB-00515,CUST-0338,support,email,neutral,Posso mudar de plano?,2025-01-22,,True
+FB-00516,CUST-0338,support,email,neutral,Posso mudar de plano?,2025-01-22,,True
+FB-00517,CUST-0338,complaint,nps,negative,Tempo de resposta do suporte muito alto,2025-05-04,5,
+FB-00518,CUST-0338,complaint,nps,negative,Tempo de resposta do suporte muito alto,2025-05-04,5,
+FB-00519,CUST-0338,praise,plataforma,positive,Equipe atenciosa,2024-07-21,,False
+FB-00520,CUST-0339,support,suporte,neutral,Como recupero a fatura?,2024-05-29,,True
+FB-00521,CUST-0339,praise,suporte,positive,Suporte muito rápido,2024-04-12,,False
+FB-00522,CUST-0340,bug,formulario,negative,Erro 500 ao acessar dashboard,2023-10-26,,
+FB-00523,CUST-0340,bug,plataforma,negative,Login intermitente,2023-03-11,,True
+FB-00524,CUST-0340,feature_request,nps,neutral,SSO via Okta,2024-09-09,6,False
+FB-00525,CUST-0341,feature_request,suporte,neutral,Seria ótimo ter alertas por email,2025-01-08,,False
+FB-00526,CUST-0342,bug,formulario,negative,Erro 500 ao acessar dashboard,2024-04-06,,
+FB-00527,CUST-0343,support,email,neutral,Como recupero a fatura?,2024-07-09,,True
+FB-00528,CUST-0344,feature_request,formulario,neutral,Falta integração com HubSpot,2025-03-08,,True
+FB-00529,CUST-0344,bug,nps,negative,Relatório gerado em branco,2023-12-30,6,False
+FB-00530,CUST-0344,support,suporte,neutral,Como recupero a fatura?,2024-04-14,,True
+FB-00531,CUST-0345,bug,nps,negative,Login intermitente,2024-11-21,6,True
+FB-00532,CUST_0346,support,formulario,neutral,Como faço para adicionar usuários?,2024-11-05,,False
+FB-00533,CUST-0348,praise,nps,positive,Melhorou muito nos últimos meses,2024-12-13,8,True
+FB-00534,CUST-0348,feature_request,suporte,neutral,Gostaríamos de exportar em PDF,2024-08-12,,False
+FB-00535,CUST-0348,support,suporte,neutral,Posso mudar de plano?,2023-11-02,,
+FB-00536,CUST-0348,praise,suporte,positive,Funcionalidade impecável,2024-10-03,,False
+FB-00537,CUST-0349,praise,nps,positive,Melhorou muito nos últimos meses,2024-11-05,10,False
+FB-00538,CUST-0349,complaint,nps,negative,Difícil de configurar,2023-01-25,2,True
+FB-00539,CUST-0349,complaint,nps,negative,Tempo de resposta do suporte muito alto,2025-05-31,2,False
+FB-00540,CUST-0349,bug,formulario,negative,Login intermitente,2024-06-02,,True
+FB-00541,CUST_0351,bug,nps,negative,Integração com API retorna timeout,2024-10-02,2,False
+FB-00542,CUST-0351,complaint,plataforma,negative,Difícil de configurar,2025-01-10,,False
+FB-00543,CUST-0353,praise,suporte,positive,Funcionalidade impecável,2024-12-27,,False
+FB-00544,CUST-0353,praise,email,positive,Equipe atenciosa,2024-10-12,,True
+FB-00545,CUST_0353,bug,nps,negative,Login intermitente,2022-07-28,4,True
+FB-00546,CUST-0354,support,nps,neutral,Posso mudar de plano?,2025-04-26,7,True
+FB-00547,CUST-0355,support,email,neutral,Como recupero a fatura?,2025-03-25,,False
+FB-00548,CUST-0355,bug,plataforma,negative,Integração com API retorna timeout,2025-04-22,,True
+FB-00549,CUST-0356,feature_request,suporte,neutral,Falta integração com HubSpot,2025-02-12,,True
+FB-00550,CUST-0356,support,plataforma,neutral,Como faço para adicionar usuários?,2024-02-15,,
+FB-00551,CUST-0356,complaint,nps,negative,Difícil de configurar,2023-05-30,2,True
+FB-00552,CUST-0357,praise,email,positive,Suporte muito rápido,2023-07-01,,
+FB-00553,CUST-0358,praise,suporte,positive,Melhorou muito nos últimos meses,2025-02-25,,True
+FB-00554,CUST-0358,support,suporte,neutral,Posso mudar de plano?,2025-03-18,,True
+FB-00555,CUST_0358,praise,suporte,positive,Suporte muito rápido,2025-05-22,,True
+FB-00556,CUST-0359,praise,plataforma,positive,Equipe atenciosa,2024-06-10,,True
+FB-00557,CUST-0359,feature_request,suporte,neutral,Falta integração com HubSpot,2024-08-21,,False
+FB-00558,CUST_0359,bug,suporte,negative,Relatório gerado em branco,2024-01-18,,True
+FB-00559,CUST-0359,praise,suporte,positive,Equipe atenciosa,2024-02-19,,True
+FB-00560,CUST-0361,praise,formulario,positive,Funcionalidade impecável,2024-06-29,,True
+FB-00561,CUST-0361,complaint,formulario,negative,Difícil de configurar,2024-12-22,,True
+FB-00562,CUST-0361,bug,plataforma,negative,Erro 500 ao acessar dashboard,2023-10-12,,False
+FB-00563,CUST-0362,support,formulario,neutral,Como faço para adicionar usuários?,2024-12-01,,True
+FB-00564,CUST-0364,support,formulario,neutral,Como faço para adicionar usuários?,2024-01-16,,True
+FB-00565,CUST-0364,feature_request,suporte,neutral,SSO via Okta,2024-04-23,,False
+FB-00566,CUST-0365,complaint,email,negative,Tempo de resposta do suporte muito alto,2025-04-07,,False
+FB-00567,CUST_0366,support,plataforma,neutral,Como faço para adicionar usuários?,2025-02-11,,False
+FB-00568,CUST-0366,support,suporte,neutral,Posso mudar de plano?,2024-06-12,,False
+FB-00569,CUST-0366,praise,formulario,positive,Equipe atenciosa,2024-11-28,,False
+FB-00570,CUST-0367,feature_request,formulario,neutral,SSO via Okta,2022-09-25,,True
+FB-00571,CUST-0367,praise,suporte,positive,Equipe atenciosa,2023-08-03,,True
+FB-00572,CUST-0367,complaint,email,negative,Tempo de resposta do suporte muito alto,2025-05-11,,False
+FB-00573,CUST-0368,bug,suporte,negative,Login intermitente,2025-04-11,,True
+FB-00574,CUST-0368,praise,plataforma,positive,Equipe atenciosa,2025-04-03,,False
+FB-00575,CUST-0368,praise,suporte,positive,Plataforma excelente!,2025-01-25,,False
+FB-00576,CUST_0369,bug,nps,negative,Login intermitente,2024-10-12,6,False
+FB-00577,CUST-0369,praise,email,positive,Melhorou muito nos últimos meses,2024-01-17,,False
+FB-00578,CUST-0370,complaint,suporte,negative,Faturamento incorreto,2024-12-30,,True
+FB-00579,CUST-0370,support,formulario,neutral,Como recupero a fatura?,2025-03-28,,False
+FB-00580,CUST-0371,bug,email,negative,Relatório gerado em branco,2024-11-06,,True
+FB-00581,CUST-0371,praise,nps,positive,Equipe atenciosa,2025-03-04,9,True
+FB-00582,CUST-0371,bug,formulario,negative,Erro 500 ao acessar dashboard,2025-04-30,,False
+FB-00583,CUST-0371,praise,formulario,positive,Suporte muito rápido,2025-02-02,,True
+FB-00584,CUST-0372,bug,suporte,negative,Erro 500 ao acessar dashboard,2023-12-19,,False
+FB-00585,CUST-0372,bug,suporte,negative,Login intermitente,2022-11-30,,False
+FB-00586,CUST-0373,support,suporte,neutral,Como recupero a fatura?,2023-06-21,,False
+FB-00587,CUST-0373,praise,nps,positive,Funcionalidade impecável,2022-12-22,8,False
+FB-00588,CUST-0374,support,formulario,neutral,Como faço para adicionar usuários?,2023-11-18,,True
+FB-00589,CUST-0374,support,formulario,neutral,Como faço para adicionar usuários?,2023-11-18,,True
+FB-00590,CUST-0374,feature_request,plataforma,neutral,Falta integração com HubSpot,2023-08-29,,True
+FB-00591,CUST-0375,bug,email,negative,Login intermitente,2024-12-11,,True
+FB-00592,CUST-0376,bug,nps,negative,Integração com API retorna timeout,2024-06-01,1,True
+FB-00593,CUST-0376,praise,plataforma,positive,Suporte muito rápido,2023-08-07,,True
+FB-00594,CUST-0376,support,plataforma,neutral,Como faço para adicionar usuários?,2023-11-14,,False
+FB-00595,CUST-0376,support,plataforma,neutral,Como recupero a fatura?,2023-07-06,,True
+FB-00596,CUST-0377,complaint,nps,negative,Difícil de configurar,2024-11-16,5,False
+FB-00597,CUST-0377,feature_request,plataforma,neutral,Falta integração com HubSpot,2024-05-12,,True
+FB-00598,CUST-0380,support,plataforma,neutral,Posso mudar de plano?,2024-10-02,,True
+FB-00599,CUST_0381,praise,plataforma,positive,Suporte muito rápido,2024-07-02,,True
+FB-00600,CUST-0381,praise,email,positive,Suporte muito rápido,2024-08-01,,True
+FB-00601,CUST-0381,complaint,suporte,negative,Faturamento incorreto,2024-06-30,,True
+FB-00602,CUST-0381,praise,nps,positive,Suporte muito rápido,2024-12-10,10,False
+FB-00603,CUST-0382,praise,plataforma,positive,Plataforma excelente!,2024-09-20,,False
+FB-00604,CUST-0382,praise,formulario,positive,Suporte muito rápido,2024-05-13,,
+FB-00605,CUST-0382,bug,formulario,negative,Relatório gerado em branco,2023-09-20,,True
+FB-00606,CUST-0382,feature_request,nps,neutral,SSO via Okta,2024-03-14,7,True
+FB-00607,CUST-0383,bug,formulario,negative,Relatório gerado em branco,2024-10-22,,
+FB-00608,CUST-0384,support,formulario,neutral,Como faço para adicionar usuários?,2025-01-09,,False
+FB-00609,CUST-0384,praise,nps,positive,Melhorou muito nos últimos meses,2025-01-24,9,True
+FB-00610,CUST-0385,feature_request,formulario,neutral,Seria ótimo ter alertas por email,2024-09-12,,False
+FB-00611,CUST-0386,praise,email,positive,Melhorou muito nos últimos meses,2022-09-21,,
+FB-00612,CUST-0386,praise,formulario,positive,Plataforma excelente!,2025-03-28,,False
+FB-00613,CUST-0386,support,email,neutral,Como recupero a fatura?,2025-01-01,,True
+FB-00614,CUST-0387,feature_request,plataforma,neutral,Seria ótimo ter alertas por email,2025-04-27,,False
+FB-00615,CUST-0387,support,nps,neutral,Posso mudar de plano?,2023-02-06,6,True
+FB-00616,CUST-0387,praise,plataforma,positive,Equipe atenciosa,2023-05-15,,False
+FB-00617,CUST-0388,feature_request,nps,neutral,SSO via Okta,2023-08-16,6,True
+FB-00618,CUST-0388,feature_request,email,neutral,Falta integração com HubSpot,2023-10-23,,False
+FB-00619,CUST-0389,bug,plataforma,negative,Integração com API retorna timeout,2023-04-08,,False
+FB-00620,CUST-0389,bug,formulario,negative,Integração com API retorna timeout,2024-12-20,,False
+FB-00621,CUST-0389,bug,plataforma,negative,Relatório gerado em branco,2023-08-29,,True
+FB-00622,CUST-0391,feature_request,nps,neutral,Falta integração com HubSpot,2023-09-14,6,
+FB-00623,CUST-0392,complaint,plataforma,negative,Tempo de resposta do suporte muito alto,2025-05-18,,True
+FB-00624,CUST-0392,praise,formulario,positive,Funcionalidade impecável,2023-12-11,,True
+FB-00625,CUST-0392,support,suporte,neutral,Como faço para adicionar usuários?,2024-11-15,,False
+FB-00626,CUST-0392,support,suporte,neutral,Como faço para adicionar usuários?,2024-11-15,,False
+FB-00627,CUST-0393,praise,nps,positive,Equipe atenciosa,2024-12-27,8,True
+FB-00628,CUST-0393,praise,plataforma,positive,Plataforma excelente!,2025-01-22,,False
+FB-00629,CUST-0394,feature_request,formulario,neutral,Seria ótimo ter alertas por email,2024-08-09,,False
+FB-00630,CUST-0394,feature_request,formulario,neutral,Seria ótimo ter alertas por email,2024-08-09,,False
+FB-00631,CUST-0395,feature_request,plataforma,neutral,Seria ótimo ter alertas por email,2024-12-20,,True
+FB-00632,CUST-0395,praise,formulario,positive,Plataforma excelente!,2025-02-06,,False
+FB-00633,CUST-0395,feature_request,formulario,neutral,SSO via Okta,2022-11-13,,True
+FB-00634,CUST-0397,support,formulario,neutral,Como faço para adicionar usuários?,2024-10-09,,True
+FB-00635,CUST-0397,complaint,formulario,negative,Tempo de resposta do suporte muito alto,2024-06-03,,False
+FB-00636,CUST-0397,complaint,nps,negative,Sem retorno do CSM,2024-06-16,4,False
+FB-00637,CUST-0397,support,email,neutral,Como faço para adicionar usuários?,2024-01-27,,
+FB-00638,CUST-0398,praise,plataforma,positive,Equipe atenciosa,2025-03-30,,True
+FB-00639,CUST-0398,bug,nps,negative,Relatório gerado em branco,2025-04-06,3,True
+FB-00640,CUST-0400,feature_request,formulario,neutral,Seria ótimo ter alertas por email,2025-01-31,,False
+FB-00641,CUST-0400,feature_request,nps,neutral,Falta integração com HubSpot,2025-04-27,7,True
