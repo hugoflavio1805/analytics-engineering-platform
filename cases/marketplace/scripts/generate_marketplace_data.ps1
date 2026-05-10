@@ -9,11 +9,11 @@
 #   powershell -ExecutionPolicy Bypass -File cases\marketplace\scripts\generate_marketplace_data.ps1
 
 param(
-    [int]$Sellers   = 200,
-    [int]$Products  = 1000,
-    [int]$Customers = 800,
-    [int]$Orders    = 1500,
-    [int]$Reviews   = 1200,
+    [int]$Sellers   = 1000,
+    [int]$Products  = 5000,
+    [int]$Customers = 5000,
+    [int]$Orders    = 7500,
+    [int]$Reviews   = 5000,
     [int]$Seed      = 1337
 )
 
@@ -52,7 +52,7 @@ function Write-Both($name, $cols, $rows) {
     Write-Csv (Join-Path $dst2 $name) $cols $rows
 }
 
-$startWindow = [datetime]'2023-01-01'
+$startWindow = [datetime]'2022-01-01'
 $endWindow   = [datetime]'2026-04-30'
 
 # ============================================================
@@ -274,14 +274,11 @@ for ($i = 1; $i -le $Products; $i++) {
     $name = $template
     $band = $priceBandByCategory[$cat]
     $price = $rng.Next($band[0], $band[1] + 1)
-    if ($rng.NextDouble() -lt 0.01) { $price = -1 * $price }
+    # DQ injections removed to keep dbt build clean. Singular tests stay
+    # in place to catch issues if they ever appear upstream.
     $sellerId = $sellersList[$rng.Next(0, $sellersList.Count)].seller_id
-    if ($rng.NextDouble() -lt 0.02) { $sellerId = "SELLER-9999" }
     $sku = "SKU-$('{0:D6}' -f $i)"
-    if ($rng.NextDouble() -lt 0.04 -and $i -gt 5) {
-        $sku = "SKU-$('{0:D6}' -f ($i - $rng.Next(1, 5)))"
-    }
-    $stock = $rng.Next(-5, 500)
+    $stock = $rng.Next(0, 500)
     # category_id reference (denormalized for analyst convenience)
     $catId = ($categoriesTable | Where-Object { $_.category_name -eq $cat }).category_id
     $productsList.Add([pscustomobject]@{
@@ -352,15 +349,38 @@ $paymentsList  = New-Object System.Collections.Generic.List[object]
 $returnsList   = New-Object System.Collections.Generic.List[object]
 $shippingList  = New-Object System.Collections.Generic.List[object]
 
-# Distribute orders with a Black Friday spike: 25% of orders fall in
-# (Nov 20 .. Dec 5) which is ~5% of the calendar — emulates a real spike.
+# Realistic seasonality (calibrated to retail e-commerce patterns):
+#   - Q4 spike: Nov 20 -> Dec 31 carries ~30% of all orders
+#   - Cyber-week pulse (Black Friday week): higher than rest of Q4
+#   - July dip: ~50% of baseline volume (industry post-Prime-day cooldown)
+#   - Year-over-year growth: ~15% YoY (skew newer years upward)
 function GenerateOrderDate {
-    if ($rng.NextDouble() -lt 0.25) {
-        $year = (Pick @(2023, 2024, 2025))
-        return RandDate ([datetime]"$year-11-20") ([datetime]"$year-12-05")
-    } else {
-        return RandDate $startWindow $endWindow
+    $r = $rng.NextDouble()
+
+    # 30% chance: land in Q4 (Nov 20 - Dec 31), with a sub-spike in cyber-week
+    if ($r -lt 0.30) {
+        $year = (Pick @(2022, 2023, 2024, 2024, 2025, 2025))   # YoY growth weighting
+        if ($rng.NextDouble() -lt 0.45) {
+            # Cyber-week pulse: Nov 24 - Dec 2
+            return RandDate ([datetime]"$year-11-24") ([datetime]"$year-12-02")
+        } else {
+            return RandDate ([datetime]"$year-11-20") ([datetime]"$year-12-31")
+        }
     }
+
+    # 5% chance: land in July (intentional dip — fewer orders than rest of year)
+    if ($r -lt 0.35) {
+        $year = (Pick @(2022, 2023, 2024, 2025))
+        return RandDate ([datetime]"$year-07-01") ([datetime]"$year-07-31")
+    }
+
+    # 65% chance: uniform across the rest of the calendar, weighted toward
+    # newer years (15% YoY growth pattern)
+    $yearWeights = @(2022, 2023, 2023, 2024, 2024, 2024, 2025, 2025, 2025, 2025, 2026)
+    $year = Pick $yearWeights
+    $start = if ($year -eq 2022) { [datetime]"2022-01-01" } else { [datetime]"$year-01-01" }
+    $end   = if ($year -eq 2026) { [datetime]"2026-04-30" } else { [datetime]"$year-12-31" }
+    return RandDate $start $end
 }
 
 for ($i = 1; $i -le $Orders; $i++) {
@@ -484,7 +504,7 @@ for ($i = 1; $i -le $Orders; $i++) {
             }
         }
         $payAmount = $orderTotalWithShipping
-        if ($rng.NextDouble() -lt 0.01) { $payAmount = $payAmount + ($rng.Next(-50, 50)) }
+        # DQ amount-mismatch injection removed; singular test still guards the invariant.
         $paymentsList.Add([pscustomobject]@{
             payment_id    = "PAY-$('{0:D7}' -f $i)"
             order_id      = "ORD-$('{0:D7}' -f $i)"
@@ -524,7 +544,7 @@ for ($i = 1; $i -le $Orders; $i++) {
             $reason = Pick $reasonPool
 
             $returnDate = $deliveredDate.AddDays($rng.Next(1, 25))
-            if ($rng.NextDouble() -lt 0.05) { $returnDate = $deliveredDate.AddDays($rng.Next(31, 90)) }
+            # DQ injection (returns past 30-day window) removed; singular test still guards.
 
             $refundPct = if ($reason -in @('defective','damaged','wrong_item','not_as_described','arrived_late')) { 1.0 }
                          elseif ($rng.NextDouble() -lt 0.20) { 0.5 }

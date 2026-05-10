@@ -20,7 +20,10 @@ models:
   feedback_revenue:
     # Case 1 — SaaS feedback × revenue (Prevision-style challenge)
     staging:
-      +materialized: view
+      # Materialized as table (not view) so the warehouse is self-contained
+      # — the resulting .duckdb file works without the source CSVs being
+      # present at the path the source meta references.
+      +materialized: table
       +schema: staging
     intermediate:
       +materialized: ephemeral
@@ -35,7 +38,7 @@ models:
     # Case 2 — Generic marketplace (returns, fraud, GMV)
     marketplace:
       staging:
-        +materialized: view
+        +materialized: table
         +schema: marketplace_staging
       intermediate:
         +materialized: ephemeral

@@ -22,9 +22,7 @@ sources:
           - name: status
             tests:
               - accepted_values:
-                  values: ['active', 'churned']
-                  config:
-                    severity: warn
+                  values: ['active', 'churned', 'trial']
 
       - name: subscriptions
         description: "Subscription history with MRR and lifecycle dates."

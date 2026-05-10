@@ -1,290 +1,1303 @@
 return_id,order_id,return_date,reason,refund_amount,category_primary,ship_region,processed
-RET-0000001,ORD-0000003,2026-01-05,wrong_item,1446.73,Home & Kitchen,LATAM,true
-RET-0000002,ORD-0000013,2023-11-21,defective,2059.41,Electronics,LATAM,true
-RET-0000003,ORD-0000023,2023-12-28,wrong_item,371.33,Home & Kitchen,APAC,true
-RET-0000004,ORD-0000026,2023-05-08,arrived_late,3589.68,Electronics,LATAM,true
-RET-0000005,ORD-0000029,2025-12-20,size_mismatch,454.54,Fashion,North America,false
-RET-0000006,ORD-0000037,2023-12-21,changed_mind,897.28,Fashion,APAC,true
-RET-0000007,ORD-0000042,2023-07-03,damaged,293.68,Beauty & Personal Care,LATAM,true
-RET-0000008,ORD-0000043,2025-01-17,changed_mind,238.16,Home & Kitchen,Europe,true
-RET-0000009,ORD-0000060,2023-11-06,changed_mind,271.20,Home & Kitchen,LATAM,true
-RET-0000010,ORD-0000074,2025-01-11,arrived_late,1404.00,Home & Kitchen,Europe,true
-RET-0000011,ORD-0000079,2024-09-26,changed_mind,1148.54,Sports & Outdoors,Europe,false
-RET-0000012,ORD-0000080,2025-12-21,damaged,1146.61,Automotive Parts,Europe,false
-RET-0000013,ORD-0000081,2024-12-10,quality_issue,61.14,Home & Kitchen,LATAM,true
-RET-0000014,ORD-0000087,2023-01-30,color_different,258.14,Fashion,North America,true
-RET-0000015,ORD-0000091,2024-09-29,arrived_late,619.14,Toys & Games,Europe,true
-RET-0000016,ORD-0000092,2025-04-12,changed_mind,38.99,Fashion,Europe,true
-RET-0000017,ORD-0000099,2025-10-14,quality_issue,91.96,Home & Kitchen,North America,true
-RET-0000018,ORD-0000107,2025-12-14,quality_issue,2051.58,Electronics,North America,true
-RET-0000019,ORD-0000108,2024-12-23,quality_issue,737.31,Fashion,Europe,true
-RET-0000020,ORD-0000117,2024-02-26,quality_issue,784.73,Health & Wellness,North America,true
-RET-0000021,ORD-0000121,2024-03-18,quality_issue,480.18,Home & Kitchen,LATAM,false
-RET-0000022,ORD-0000137,2026-04-10,quality_issue,684.53,Fashion,North America,true
-RET-0000023,ORD-0000148,2025-08-08,arrived_late,367.83,Fashion,Europe,true
-RET-0000024,ORD-0000150,2024-06-02,not_as_described,253.94,Toys & Games,APAC,false
-RET-0000025,ORD-0000151,2025-02-26,changed_mind,3211.30,Fashion,LATAM,true
-RET-0000026,ORD-0000152,2026-02-25,damaged,113.26,Beauty & Personal Care,LATAM,true
-RET-0000027,ORD-0000156,2025-12-16,quality_issue,891.94,Toys & Games,North America,true
-RET-0000028,ORD-0000162,2024-12-28,size_mismatch,1269.21,Fashion,North America,true
-RET-0000029,ORD-0000163,2023-12-11,damaged,506.29,Sports & Outdoors,APAC,true
-RET-0000030,ORD-0000165,2024-06-11,not_as_described,1731.17,Electronics,LATAM,true
-RET-0000031,ORD-0000172,2024-12-21,wrong_item,721.68,Beauty & Personal Care,APAC,true
-RET-0000032,ORD-0000176,2023-09-07,wrong_item,1426.93,Automotive Parts,North America,true
-RET-0000033,ORD-0000177,2024-11-29,not_as_described,164.04,Beauty & Personal Care,North America,true
-RET-0000034,ORD-0000182,2024-03-16,quality_issue,97.96,Beauty & Personal Care,North America,true
-RET-0000035,ORD-0000192,2023-12-26,quality_issue,3341.84,Electronics,Europe,true
-RET-0000036,ORD-0000201,2025-10-27,size_mismatch,1730.26,Fashion,North America,true
-RET-0000037,ORD-0000204,2026-01-01,changed_mind,701.65,Home & Kitchen,LATAM,false
-RET-0000038,ORD-0000209,2023-03-08,quality_issue,112.77,Fashion,LATAM,true
-RET-0000039,ORD-0000215,2023-07-17,arrived_late,208.51,Automotive Parts,APAC,true
-RET-0000040,ORD-0000221,2025-08-29,changed_mind,719.56,Health & Wellness,North America,true
-RET-0000041,ORD-0000226,2023-12-09,changed_mind,363.99,Sports & Outdoors,APAC,true
-RET-0000042,ORD-0000233,2025-10-25,not_as_described,124.30,Health & Wellness,Europe,true
-RET-0000043,ORD-0000237,2024-04-20,not_as_described,1818.76,Automotive Parts,LATAM,true
-RET-0000044,ORD-0000242,2023-09-02,not_as_described,561.68,Automotive Parts,LATAM,false
-RET-0000045,ORD-0000245,2025-01-15,quality_issue,606.97,Fashion,Europe,true
-RET-0000046,ORD-0000254,2025-11-11,not_as_described,184.24,Toys & Games,Europe,true
-RET-0000047,ORD-0000257,2024-05-28,arrived_late,3939.02,Sports & Outdoors,LATAM,true
-RET-0000048,ORD-0000265,2023-12-19,not_as_described,498.63,Electronics,Europe,true
-RET-0000049,ORD-0000266,2024-12-03,quality_issue,261.14,Automotive Parts,North America,true
-RET-0000050,ORD-0000270,2026-04-28,quality_issue,544.98,Fashion,North America,true
-RET-0000051,ORD-0000274,2025-12-29,quality_issue,610.90,Automotive Parts,LATAM,true
-RET-0000052,ORD-0000281,2026-05-27,arrived_late,743.48,Health & Wellness,APAC,true
-RET-0000053,ORD-0000286,2026-05-18,arrived_late,66.83,Fashion,Europe,true
-RET-0000054,ORD-0000290,2024-12-18,damaged,1696.26,Home & Kitchen,North America,true
-RET-0000055,ORD-0000299,2024-12-10,not_as_described,2234.29,Sports & Outdoors,LATAM,true
-RET-0000056,ORD-0000304,2025-04-15,changed_mind,91.54,Fashion,North America,true
-RET-0000057,ORD-0000305,2023-08-04,wrong_item,85.02,Health & Wellness,Europe,false
-RET-0000058,ORD-0000306,2024-01-29,not_as_described,919.27,Electronics,Europe,true
-RET-0000059,ORD-0000309,2023-05-17,not_as_described,320.52,Automotive Parts,North America,false
-RET-0000060,ORD-0000312,2023-10-07,damaged,725.36,Beauty & Personal Care,LATAM,true
-RET-0000061,ORD-0000320,2024-12-23,defective,522.11,Electronics,North America,false
-RET-0000062,ORD-0000327,2025-05-17,arrived_late,1137.96,Sports & Outdoors,Europe,true
-RET-0000063,ORD-0000333,2025-02-19,size_mismatch,1065.61,Fashion,Europe,true
-RET-0000064,ORD-0000344,2024-10-19,changed_mind,231.24,Fashion,North America,true
-RET-0000065,ORD-0000367,2025-02-03,defective,1611.85,Electronics,Europe,false
-RET-0000066,ORD-0000371,2023-12-13,damaged,625.72,Home & Kitchen,Europe,true
-RET-0000067,ORD-0000372,2023-03-03,quality_issue,1150.55,Fashion,North America,true
-RET-0000068,ORD-0000376,2023-02-15,changed_mind,-564.63,Home & Kitchen,Europe,false
-RET-0000069,ORD-0000385,2025-11-11,damaged,101.45,Books,North America,true
-RET-0000070,ORD-0000388,2026-02-23,quality_issue,6121.44,Automotive Parts,North America,false
-RET-0000071,ORD-0000398,2024-06-23,wrong_item,239.31,Toys & Games,Europe,true
-RET-0000072,ORD-0000403,2026-02-18,changed_mind,620.61,Fashion,Europe,true
-RET-0000073,ORD-0000404,2025-10-31,wrong_item,947.28,Books,Europe,true
-RET-0000074,ORD-0000407,2025-12-09,changed_mind,48.58,Toys & Games,Europe,true
-RET-0000075,ORD-0000410,2025-01-19,quality_issue,879.75,Home & Kitchen,APAC,true
-RET-0000076,ORD-0000419,2025-08-11,damaged,685.95,Books,APAC,true
-RET-0000077,ORD-0000420,2024-12-01,changed_mind,423.53,Toys & Games,APAC,true
-RET-0000078,ORD-0000425,2023-03-17,wrong_item,285.47,Health & Wellness,North America,true
-RET-0000079,ORD-0000427,2025-08-25,changed_mind,2207.00,Automotive Parts,North America,true
-RET-0000080,ORD-0000429,2026-05-22,quality_issue,3273.81,Fashion,Europe,true
-RET-0000081,ORD-0000431,2024-03-08,quality_issue,777.32,Toys & Games,LATAM,true
-RET-0000082,ORD-0000435,2023-03-31,arrived_late,854.47,Home & Kitchen,North America,true
-RET-0000083,ORD-0000436,2025-04-10,damaged,1340.79,Books,LATAM,false
-RET-0000084,ORD-0000439,2024-02-18,arrived_late,1016.27,Electronics,North America,true
-RET-0000085,ORD-0000448,2025-11-16,wrong_item,53.08,Health & Wellness,North America,true
-RET-0000086,ORD-0000453,2023-11-02,size_mismatch,434.60,Fashion,LATAM,true
-RET-0000087,ORD-0000455,2023-11-08,quality_issue,634.91,Fashion,APAC,false
-RET-0000088,ORD-0000475,2025-03-11,changed_mind,487.91,Automotive Parts,LATAM,true
-RET-0000089,ORD-0000477,2025-12-05,quality_issue,40.29,Health & Wellness,Europe,false
-RET-0000090,ORD-0000478,2024-02-22,wrong_item,277.86,Health & Wellness,LATAM,true
-RET-0000091,ORD-0000479,2026-04-22,size_mismatch,338.14,Fashion,Europe,true
-RET-0000092,ORD-0000480,2024-06-09,damaged,1220.97,Beauty & Personal Care,LATAM,false
-RET-0000093,ORD-0000490,2024-11-01,damaged,277.70,Health & Wellness,LATAM,true
-RET-0000094,ORD-0000491,2024-05-26,not_as_described,3137.98,Sports & Outdoors,North America,true
-RET-0000095,ORD-0000495,2025-05-05,quality_issue,254.55,Beauty & Personal Care,Europe,true
-RET-0000096,ORD-0000497,2025-12-08,changed_mind,298.88,Fashion,Europe,true
-RET-0000097,ORD-0000498,2025-07-17,changed_mind,741.90,Fashion,LATAM,true
-RET-0000098,ORD-0000500,2023-12-22,quality_issue,1876.48,Sports & Outdoors,LATAM,true
-RET-0000099,ORD-0000512,2024-07-05,quality_issue,536.22,Electronics,LATAM,true
-RET-0000100,ORD-0000522,2024-10-26,quality_issue,1806.72,Toys & Games,Europe,true
-RET-0000101,ORD-0000523,2024-09-08,quality_issue,687.95,Home & Kitchen,Europe,true
-RET-0000102,ORD-0000528,2024-12-06,wrong_item,101.76,Beauty & Personal Care,APAC,true
-RET-0000103,ORD-0000548,2023-08-25,defective,2562.19,Electronics,North America,false
-RET-0000104,ORD-0000550,2024-09-21,wrong_item,782.56,Sports & Outdoors,LATAM,true
-RET-0000105,ORD-0000555,2024-06-11,arrived_late,2676.01,Electronics,North America,true
-RET-0000106,ORD-0000558,2025-03-06,damaged,732.24,Sports & Outdoors,North America,true
-RET-0000107,ORD-0000566,2025-11-13,size_mismatch,508.32,Fashion,Europe,true
-RET-0000108,ORD-0000567,2024-02-11,changed_mind,912.67,Home & Kitchen,North America,true
-RET-0000109,ORD-0000572,2024-12-20,defective,822.22,Electronics,North America,true
-RET-0000110,ORD-0000583,2023-12-29,not_as_described,1250.79,Beauty & Personal Care,LATAM,true
-RET-0000111,ORD-0000585,2026-04-29,size_mismatch,-285.41,Fashion,Europe,true
-RET-0000112,ORD-0000588,2025-03-07,quality_issue,1789.03,Beauty & Personal Care,Europe,true
-RET-0000113,ORD-0000597,2024-10-27,not_as_described,962.92,Automotive Parts,Europe,true
-RET-0000114,ORD-0000598,2023-11-10,quality_issue,897.48,Fashion,LATAM,false
-RET-0000115,ORD-0000612,2023-12-09,not_as_described,1573.18,Home & Kitchen,Europe,true
-RET-0000116,ORD-0000613,2026-03-22,quality_issue,2605.15,Sports & Outdoors,APAC,true
-RET-0000117,ORD-0000614,2026-01-28,wrong_item,1220.58,Automotive Parts,Europe,true
-RET-0000118,ORD-0000616,2025-01-07,quality_issue,90.25,Automotive Parts,North America,true
-RET-0000119,ORD-0000619,2025-01-29,color_different,331.09,Fashion,Europe,false
-RET-0000120,ORD-0000625,2024-06-30,color_different,655.02,Fashion,Europe,true
-RET-0000121,ORD-0000626,2023-12-22,wrong_item,1258.49,Sports & Outdoors,LATAM,false
-RET-0000122,ORD-0000629,2024-07-03,quality_issue,1743.95,Electronics,LATAM,true
-RET-0000123,ORD-0000640,2025-12-20,quality_issue,187.67,Health & Wellness,LATAM,true
-RET-0000124,ORD-0000647,2024-12-07,changed_mind,2154.10,Fashion,LATAM,true
-RET-0000125,ORD-0000653,2025-07-11,wrong_item,386.44,Sports & Outdoors,Europe,false
-RET-0000126,ORD-0000668,2024-06-27,damaged,963.48,Automotive Parts,North America,false
-RET-0000127,ORD-0000669,2023-05-23,changed_mind,725.74,Books,LATAM,true
-RET-0000128,ORD-0000671,2026-01-15,damaged,1039.42,Home & Kitchen,LATAM,false
-RET-0000129,ORD-0000678,2025-04-01,not_as_described,413.08,Health & Wellness,North America,true
-RET-0000130,ORD-0000680,2026-04-28,defective,1012.86,Electronics,LATAM,true
-RET-0000131,ORD-0000681,2025-04-14,not_as_described,991.50,Electronics,Europe,false
-RET-0000132,ORD-0000690,2025-03-31,quality_issue,2749.79,Sports & Outdoors,North America,true
-RET-0000133,ORD-0000703,2023-12-27,quality_issue,1048.80,Sports & Outdoors,LATAM,true
-RET-0000134,ORD-0000705,2024-05-22,arrived_late,882.98,Automotive Parts,Europe,false
-RET-0000135,ORD-0000707,2025-10-22,quality_issue,1278.41,Electronics,Europe,true
-RET-0000136,ORD-0000719,2024-05-13,wrong_item,506.42,Sports & Outdoors,North America,true
-RET-0000137,ORD-0000738,2025-02-19,arrived_late,1438.52,Electronics,LATAM,true
-RET-0000138,ORD-0000741,2024-11-12,quality_issue,95.86,Electronics,LATAM,true
-RET-0000139,ORD-0000746,2024-07-06,wrong_item,2259.91,Toys & Games,North America,true
-RET-0000140,ORD-0000748,2023-05-14,damaged,767.24,Home & Kitchen,Europe,true
-RET-0000141,ORD-0000759,2025-12-22,color_different,594.49,Fashion,Europe,true
-RET-0000142,ORD-0000771,2023-06-20,not_as_described,1589.94,Health & Wellness,LATAM,true
-RET-0000143,ORD-0000779,2024-12-29,wrong_item,197.93,Toys & Games,North America,true
-RET-0000144,ORD-0000782,2023-12-22,defective,1220.99,Electronics,Europe,false
-RET-0000145,ORD-0000783,2024-10-07,arrived_late,1696.24,Health & Wellness,LATAM,true
-RET-0000146,ORD-0000787,2025-10-03,quality_issue,55.33,Beauty & Personal Care,LATAM,true
-RET-0000147,ORD-0000792,2025-12-16,size_mismatch,182.68,Fashion,APAC,true
-RET-0000148,ORD-0000796,2023-03-17,quality_issue,457.92,Sports & Outdoors,Europe,false
-RET-0000149,ORD-0000804,2025-12-22,arrived_late,1459.68,Books,APAC,true
-RET-0000150,ORD-0000808,2024-06-07,arrived_late,6131.57,Electronics,LATAM,true
-RET-0000151,ORD-0000831,2026-03-19,quality_issue,100.40,Toys & Games,Europe,true
-RET-0000152,ORD-0000839,2023-12-25,color_different,1170.29,Fashion,Europe,true
-RET-0000153,ORD-0000840,2025-12-05,not_as_described,881.93,Health & Wellness,Europe,false
-RET-0000154,ORD-0000844,2023-06-04,not_as_described,3345.04,Sports & Outdoors,North America,true
-RET-0000155,ORD-0000845,2023-10-07,not_as_described,3503.31,Automotive Parts,LATAM,true
-RET-0000156,ORD-0000847,2025-02-09,arrived_late,134.00,Books,Europe,false
-RET-0000157,ORD-0000849,2023-12-28,color_different,198.61,Fashion,North America,true
-RET-0000158,ORD-0000850,2024-06-06,not_as_described,3734.61,Sports & Outdoors,Europe,true
-RET-0000159,ORD-0000851,2024-02-13,quality_issue,296.53,Fashion,LATAM,true
-RET-0000160,ORD-0000863,2023-11-20,quality_issue,447.52,Beauty & Personal Care,Europe,true
-RET-0000161,ORD-0000864,2024-12-29,changed_mind,990.10,Toys & Games,LATAM,true
-RET-0000162,ORD-0000877,2024-06-15,not_as_described,728.87,Electronics,North America,false
-RET-0000163,ORD-0000878,2024-01-01,arrived_late,556.17,Electronics,Europe,true
-RET-0000164,ORD-0000880,2023-12-22,wrong_item,497.87,Books,LATAM,true
-RET-0000165,ORD-0000881,2025-06-08,arrived_late,207.26,Beauty & Personal Care,Europe,true
-RET-0000166,ORD-0000882,2024-01-27,changed_mind,426.50,Automotive Parts,LATAM,true
-RET-0000167,ORD-0000884,2025-10-19,quality_issue,1542.80,Automotive Parts,North America,true
-RET-0000168,ORD-0000891,2024-10-30,damaged,3468.61,Sports & Outdoors,Europe,true
-RET-0000169,ORD-0000892,2024-04-21,size_mismatch,412.27,Fashion,LATAM,true
-RET-0000170,ORD-0000898,2024-10-11,changed_mind,1049.73,Automotive Parts,North America,true
-RET-0000171,ORD-0000901,2025-12-20,not_as_described,927.49,Electronics,LATAM,false
-RET-0000172,ORD-0000905,2023-12-27,not_as_described,1061.07,Health & Wellness,North America,true
-RET-0000173,ORD-0000908,2024-05-29,arrived_late,455.62,Electronics,LATAM,true
-RET-0000174,ORD-0000914,2023-12-13,wrong_item,2440.86,Beauty & Personal Care,Europe,true
-RET-0000175,ORD-0000918,2024-06-10,wrong_item,454.70,Sports & Outdoors,North America,true
-RET-0000176,ORD-0000919,2026-05-10,changed_mind,4678.84,Automotive Parts,Europe,false
-RET-0000177,ORD-0000921,2023-07-05,wrong_item,319.84,Home & Kitchen,LATAM,true
-RET-0000178,ORD-0000930,2025-06-20,defective,1106.79,Electronics,Europe,true
-RET-0000179,ORD-0000937,2023-04-04,quality_issue,482.24,Automotive Parts,LATAM,true
-RET-0000180,ORD-0000939,2025-05-08,not_as_described,623.13,Home & Kitchen,North America,true
-RET-0000181,ORD-0000940,2023-07-16,arrived_late,1714.76,Fashion,Europe,true
-RET-0000182,ORD-0000941,2025-04-08,changed_mind,386.19,Health & Wellness,North America,true
-RET-0000183,ORD-0000944,2024-12-22,damaged,2299.16,Home & Kitchen,North America,true
-RET-0000184,ORD-0000951,2024-05-26,arrived_late,1563.78,Sports & Outdoors,Europe,true
-RET-0000185,ORD-0000954,2023-08-21,not_as_described,576.61,Health & Wellness,LATAM,false
-RET-0000186,ORD-0000959,2023-05-26,damaged,352.82,Toys & Games,APAC,false
-RET-0000187,ORD-0000960,2024-11-21,not_as_described,1457.61,Sports & Outdoors,Europe,true
-RET-0000188,ORD-0000961,2025-03-17,color_different,130.43,Fashion,Europe,true
-RET-0000189,ORD-0000962,2024-02-19,defective,3346.23,Electronics,North America,true
-RET-0000190,ORD-0000967,2023-12-19,changed_mind,44.52,Sports & Outdoors,North America,true
-RET-0000191,ORD-0000969,2023-12-26,arrived_late,3103.19,Automotive Parts,Europe,true
-RET-0000192,ORD-0000977,2025-06-01,damaged,249.10,Health & Wellness,North America,true
-RET-0000193,ORD-0000985,2023-01-19,damaged,353.81,Health & Wellness,APAC,true
-RET-0000194,ORD-0000989,2023-09-01,not_as_described,971.14,Home & Kitchen,North America,true
-RET-0000195,ORD-0000991,2024-12-03,quality_issue,268.86,Fashion,Europe,true
-RET-0000196,ORD-0000992,2026-04-22,arrived_late,952.85,Beauty & Personal Care,APAC,true
-RET-0000197,ORD-0001013,2025-03-20,changed_mind,89.98,Beauty & Personal Care,North America,true
-RET-0000198,ORD-0001015,2024-12-25,size_mismatch,285.06,Fashion,Europe,true
-RET-0000199,ORD-0001019,2024-09-07,changed_mind,517.31,Toys & Games,LATAM,true
-RET-0000200,ORD-0001031,2024-12-24,changed_mind,1031.23,Toys & Games,North America,true
-RET-0000201,ORD-0001032,2023-12-16,changed_mind,1841.78,Health & Wellness,LATAM,true
-RET-0000202,ORD-0001051,2025-07-19,changed_mind,707.77,Automotive Parts,Europe,true
-RET-0000203,ORD-0001071,2023-08-19,wrong_item,159.82,Health & Wellness,North America,true
-RET-0000204,ORD-0001073,2026-05-09,changed_mind,632.31,Health & Wellness,LATAM,true
-RET-0000205,ORD-0001080,2024-12-24,not_as_described,52.47,Toys & Games,LATAM,false
-RET-0000206,ORD-0001082,2024-12-30,defective,991.14,Electronics,LATAM,true
-RET-0000207,ORD-0001093,2023-11-22,quality_issue,2419.16,Beauty & Personal Care,North America,true
-RET-0000208,ORD-0001102,2025-12-05,arrived_late,291.06,Health & Wellness,North America,true
-RET-0000209,ORD-0001103,2024-11-05,quality_issue,1813.07,Health & Wellness,APAC,true
-RET-0000210,ORD-0001105,2024-08-07,changed_mind,627.54,Books,Europe,true
-RET-0000211,ORD-0001106,2025-08-21,color_different,461.31,Fashion,Europe,true
-RET-0000212,ORD-0001108,2025-02-27,wrong_item,805.48,Automotive Parts,North America,false
-RET-0000213,ORD-0001114,2026-02-10,damaged,553.04,Home & Kitchen,North America,true
-RET-0000214,ORD-0001124,2024-01-12,defective,1617.29,Electronics,North America,true
-RET-0000215,ORD-0001131,2025-12-16,arrived_late,1644.61,Toys & Games,North America,false
-RET-0000216,ORD-0001137,2024-01-26,quality_issue,1720.66,Fashion,North America,true
-RET-0000217,ORD-0001138,2025-12-19,quality_issue,681.21,Health & Wellness,North America,true
-RET-0000218,ORD-0001139,2025-08-31,not_as_described,696.42,Automotive Parts,LATAM,true
-RET-0000219,ORD-0001143,2023-12-20,quality_issue,74.41,Health & Wellness,North America,false
-RET-0000220,ORD-0001152,2025-12-15,not_as_described,241.51,Toys & Games,North America,true
-RET-0000221,ORD-0001156,2023-02-27,changed_mind,1271.12,Fashion,Europe,true
-RET-0000222,ORD-0001168,2025-11-17,not_as_described,2327.53,Electronics,APAC,true
-RET-0000223,ORD-0001169,2025-12-12,defective,3950.18,Electronics,Europe,true
-RET-0000224,ORD-0001173,2024-10-23,changed_mind,268.40,Books,LATAM,true
-RET-0000225,ORD-0001175,2024-12-11,arrived_late,461.72,Home & Kitchen,North America,true
-RET-0000226,ORD-0001180,2023-09-04,damaged,125.28,Beauty & Personal Care,Europe,true
-RET-0000227,ORD-0001183,2025-12-23,arrived_late,3388.56,Electronics,LATAM,true
-RET-0000228,ORD-0001191,2023-04-16,wrong_item,3534.03,Sports & Outdoors,Europe,true
-RET-0000229,ORD-0001197,2024-12-25,damaged,281.21,Beauty & Personal Care,Europe,true
-RET-0000230,ORD-0001205,2024-12-24,quality_issue,292.71,Sports & Outdoors,North America,true
-RET-0000231,ORD-0001206,2024-07-04,wrong_item,36.21,Books,North America,true
-RET-0000232,ORD-0001214,2023-02-11,wrong_item,641.77,Beauty & Personal Care,North America,true
-RET-0000233,ORD-0001219,2023-04-22,quality_issue,904.37,Automotive Parts,APAC,true
-RET-0000234,ORD-0001221,2023-10-02,arrived_late,668.11,Home & Kitchen,APAC,false
-RET-0000235,ORD-0001225,2024-06-12,damaged,713.52,Toys & Games,Europe,true
-RET-0000236,ORD-0001227,2023-04-23,size_mismatch,172.31,Fashion,North America,true
-RET-0000237,ORD-0001229,2023-08-14,arrived_late,175.40,Fashion,LATAM,true
-RET-0000238,ORD-0001232,2024-12-10,quality_issue,399.47,Toys & Games,Europe,true
-RET-0000239,ORD-0001248,2023-09-01,not_as_described,2047.08,Electronics,Europe,true
-RET-0000240,ORD-0001249,2024-01-11,changed_mind,750.53,Beauty & Personal Care,LATAM,true
-RET-0000241,ORD-0001250,2023-12-20,size_mismatch,1011.16,Fashion,North America,true
-RET-0000242,ORD-0001251,2025-05-13,changed_mind,363.68,Health & Wellness,North America,true
-RET-0000243,ORD-0001264,2023-08-08,quality_issue,3968.06,Fashion,Europe,true
-RET-0000244,ORD-0001265,2025-06-05,arrived_late,2763.59,Electronics,North America,true
-RET-0000245,ORD-0001266,2024-09-13,quality_issue,1448.29,Sports & Outdoors,North America,false
-RET-0000246,ORD-0001269,2023-12-23,quality_issue,394.76,Fashion,North America,true
-RET-0000247,ORD-0001274,2026-01-23,changed_mind,314.49,Books,North America,true
-RET-0000248,ORD-0001275,2026-04-21,not_as_described,69.10,Toys & Games,Europe,true
-RET-0000249,ORD-0001281,2025-12-26,damaged,1713.76,Home & Kitchen,LATAM,true
-RET-0000250,ORD-0001282,2025-11-21,damaged,1325.93,Books,LATAM,true
-RET-0000251,ORD-0001287,2024-07-19,changed_mind,333.62,Fashion,LATAM,true
-RET-0000252,ORD-0001301,2024-11-03,color_different,2789.45,Fashion,Europe,true
-RET-0000253,ORD-0001304,2026-01-20,color_different,262.35,Fashion,Europe,true
-RET-0000254,ORD-0001305,2023-11-26,not_as_described,2217.77,Beauty & Personal Care,APAC,true
-RET-0000255,ORD-0001309,2025-08-27,changed_mind,789.13,Beauty & Personal Care,Europe,true
-RET-0000256,ORD-0001316,2024-12-03,changed_mind,530.23,Sports & Outdoors,North America,true
-RET-0000257,ORD-0001325,2024-01-18,quality_issue,186.55,Fashion,North America,false
-RET-0000258,ORD-0001330,2024-04-14,wrong_item,86.02,Books,North America,true
-RET-0000259,ORD-0001332,2025-07-10,quality_issue,426.55,Sports & Outdoors,North America,true
-RET-0000260,ORD-0001349,2025-08-01,wrong_item,1220.02,Toys & Games,LATAM,true
-RET-0000261,ORD-0001351,2023-12-23,damaged,2232.12,Beauty & Personal Care,North America,true
-RET-0000262,ORD-0001353,2026-05-12,quality_issue,2094.36,Electronics,North America,true
-RET-0000263,ORD-0001356,2025-12-01,changed_mind,639.41,Fashion,Europe,true
-RET-0000264,ORD-0001364,2023-12-21,not_as_described,4595.25,Sports & Outdoors,North America,true
-RET-0000265,ORD-0001365,2025-02-09,changed_mind,1145.99,Automotive Parts,North America,true
-RET-0000266,ORD-0001370,2023-12-19,defective,3563.45,Electronics,North America,true
-RET-0000267,ORD-0001372,2024-01-17,arrived_late,655.25,Sports & Outdoors,North America,true
-RET-0000268,ORD-0001373,2024-11-06,wrong_item,133.22,Toys & Games,North America,true
-RET-0000269,ORD-0001381,2025-02-13,not_as_described,1044.47,Health & Wellness,LATAM,true
-RET-0000270,ORD-0001386,2024-12-21,not_as_described,646.26,Toys & Games,LATAM,true
-RET-0000271,ORD-0001393,2026-01-22,damaged,1302.42,Sports & Outdoors,LATAM,true
-RET-0000272,ORD-0001397,2023-06-09,quality_issue,312.88,Fashion,North America,true
-RET-0000273,ORD-0001398,2025-06-15,quality_issue,1068.11,Automotive Parts,Europe,false
-RET-0000274,ORD-0001400,2024-06-13,changed_mind,365.42,Fashion,LATAM,false
-RET-0000275,ORD-0001403,2023-07-18,color_different,421.78,Fashion,Europe,true
-RET-0000276,ORD-0001408,2023-03-14,quality_issue,475.55,Toys & Games,North America,true
-RET-0000277,ORD-0001419,2025-09-19,damaged,1082.75,Sports & Outdoors,North America,true
-RET-0000278,ORD-0001431,2023-05-30,size_mismatch,736.08,Fashion,LATAM,false
-RET-0000279,ORD-0001434,2026-04-07,damaged,50.66,Beauty & Personal Care,APAC,true
-RET-0000280,ORD-0001435,2023-05-03,damaged,114.06,Beauty & Personal Care,Europe,true
-RET-0000281,ORD-0001444,2025-12-02,arrived_late,2867.40,Fashion,Europe,true
-RET-0000282,ORD-0001450,2025-09-14,arrived_late,106.78,Health & Wellness,North America,true
-RET-0000283,ORD-0001456,2024-07-19,not_as_described,3652.16,Automotive Parts,North America,true
-RET-0000284,ORD-0001461,2023-03-22,wrong_item,1099.31,Home & Kitchen,North America,true
-RET-0000285,ORD-0001462,2025-04-13,damaged,58.18,Books,Europe,false
-RET-0000286,ORD-0001475,2024-12-15,defective,1950.90,Electronics,North America,true
-RET-0000287,ORD-0001481,2023-08-02,quality_issue,260.45,Automotive Parts,LATAM,false
-RET-0000288,ORD-0001489,2024-12-28,changed_mind,3780.48,Automotive Parts,Europe,true
-RET-0000289,ORD-0001490,2024-12-31,changed_mind,184.51,Fashion,Europe,true
+RET-0000001,ORD-0000016,2022-04-02,damaged,85.19,Books,North America,false
+RET-0000002,ORD-0000027,2024-09-14,not_as_described,89.69,Toys & Games,North America,true
+RET-0000003,ORD-0000041,2025-11-30,defective,1797.34,Electronics,North America,true
+RET-0000004,ORD-0000047,2022-12-09,changed_mind,1780.58,Books,North America,true
+RET-0000005,ORD-0000049,2024-03-05,wrong_item,1456.67,Sports & Outdoors,North America,true
+RET-0000006,ORD-0000056,2024-04-28,wrong_item,238.91,Toys & Games,North America,true
+RET-0000007,ORD-0000061,2022-11-04,not_as_described,1768.63,Automotive Parts,North America,true
+RET-0000008,ORD-0000062,2024-12-13,quality_issue,836.59,Automotive Parts,Europe,true
+RET-0000009,ORD-0000067,2025-01-02,defective,2441.06,Electronics,Europe,true
+RET-0000010,ORD-0000068,2023-08-03,not_as_described,519.67,Beauty & Personal Care,North America,true
+RET-0000011,ORD-0000081,2025-12-02,changed_mind,1552.35,Automotive Parts,Europe,true
+RET-0000012,ORD-0000083,2024-04-04,wrong_item,939.28,Home & Kitchen,North America,true
+RET-0000013,ORD-0000084,2025-01-12,changed_mind,1848.48,Sports & Outdoors,North America,true
+RET-0000014,ORD-0000087,2025-11-24,wrong_item,211.47,Beauty & Personal Care,LATAM,true
+RET-0000015,ORD-0000116,2024-12-05,changed_mind,436.76,Fashion,LATAM,true
+RET-0000016,ORD-0000124,2025-03-08,changed_mind,3066.63,Home & Kitchen,North America,true
+RET-0000017,ORD-0000134,2025-08-12,color_different,1124.06,Fashion,North America,true
+RET-0000018,ORD-0000137,2023-12-15,size_mismatch,69.98,Fashion,LATAM,true
+RET-0000019,ORD-0000141,2022-05-14,damaged,789.60,Sports & Outdoors,North America,true
+RET-0000020,ORD-0000144,2026-02-10,arrived_late,592.90,Automotive Parts,LATAM,true
+RET-0000021,ORD-0000153,2024-06-03,not_as_described,1438.67,Automotive Parts,North America,true
+RET-0000022,ORD-0000173,2025-03-25,not_as_described,380.57,Electronics,Europe,false
+RET-0000023,ORD-0000176,2022-12-26,not_as_described,279.55,Home & Kitchen,APAC,true
+RET-0000024,ORD-0000181,2025-01-30,arrived_late,876.78,Beauty & Personal Care,Europe,true
+RET-0000025,ORD-0000192,2024-01-11,damaged,3208.08,Home & Kitchen,North America,true
+RET-0000026,ORD-0000201,2023-12-16,arrived_late,5698.38,Electronics,North America,false
+RET-0000027,ORD-0000214,2025-07-19,changed_mind,412.30,Books,LATAM,false
+RET-0000028,ORD-0000224,2024-12-26,not_as_described,844.45,Home & Kitchen,Europe,false
+RET-0000029,ORD-0000226,2025-12-18,color_different,162.12,Fashion,Europe,false
+RET-0000030,ORD-0000229,2025-05-02,damaged,38.37,Books,North America,true
+RET-0000031,ORD-0000231,2024-09-01,quality_issue,4901.86,Sports & Outdoors,Europe,true
+RET-0000032,ORD-0000234,2025-12-04,changed_mind,1146.39,Toys & Games,LATAM,true
+RET-0000033,ORD-0000244,2025-12-27,changed_mind,2123.53,Automotive Parts,APAC,false
+RET-0000034,ORD-0000248,2025-08-19,not_as_described,816.79,Toys & Games,APAC,true
+RET-0000035,ORD-0000256,2025-12-27,damaged,613.35,Home & Kitchen,North America,true
+RET-0000036,ORD-0000262,2025-02-06,defective,1063.73,Electronics,LATAM,true
+RET-0000037,ORD-0000266,2024-09-09,damaged,577.02,Toys & Games,LATAM,true
+RET-0000038,ORD-0000270,2024-03-31,changed_mind,104.10,Books,North America,true
+RET-0000039,ORD-0000277,2025-07-28,wrong_item,43.67,Beauty & Personal Care,APAC,true
+RET-0000040,ORD-0000282,2023-01-15,not_as_described,224.41,Health & Wellness,LATAM,true
+RET-0000041,ORD-0000288,2022-12-05,damaged,332.75,Health & Wellness,APAC,true
+RET-0000042,ORD-0000290,2026-04-10,wrong_item,244.63,Toys & Games,Europe,true
+RET-0000043,ORD-0000294,2022-12-09,quality_issue,947.06,Automotive Parts,North America,false
+RET-0000044,ORD-0000300,2024-06-25,quality_issue,269.54,Fashion,Europe,true
+RET-0000045,ORD-0000327,2025-11-09,quality_issue,650.18,Electronics,Europe,true
+RET-0000046,ORD-0000334,2025-01-29,damaged,2907.74,Home & Kitchen,North America,true
+RET-0000047,ORD-0000335,2022-08-17,quality_issue,1959.77,Toys & Games,APAC,true
+RET-0000048,ORD-0000343,2025-01-10,changed_mind,122.13,Health & Wellness,APAC,true
+RET-0000049,ORD-0000344,2022-12-17,damaged,2730.78,Sports & Outdoors,LATAM,false
+RET-0000050,ORD-0000346,2024-12-17,changed_mind,578.72,Fashion,LATAM,false
+RET-0000051,ORD-0000349,2022-12-27,wrong_item,195.98,Books,North America,true
+RET-0000052,ORD-0000358,2024-07-21,damaged,700.41,Home & Kitchen,North America,true
+RET-0000053,ORD-0000367,2025-12-09,defective,3276.14,Electronics,North America,true
+RET-0000054,ORD-0000371,2023-03-02,size_mismatch,1422.72,Fashion,North America,true
+RET-0000055,ORD-0000372,2022-12-18,changed_mind,397.28,Automotive Parts,Europe,true
+RET-0000056,ORD-0000373,2022-05-26,arrived_late,661.66,Automotive Parts,North America,true
+RET-0000057,ORD-0000378,2024-08-16,not_as_described,2684.68,Electronics,North America,true
+RET-0000058,ORD-0000381,2025-05-29,quality_issue,982.84,Sports & Outdoors,North America,true
+RET-0000059,ORD-0000382,2022-05-10,quality_issue,445.75,Fashion,LATAM,true
+RET-0000060,ORD-0000383,2023-08-10,arrived_late,300.69,Fashion,North America,true
+RET-0000061,ORD-0000384,2025-07-17,wrong_item,2279.01,Toys & Games,Europe,true
+RET-0000062,ORD-0000388,2025-01-21,wrong_item,694.77,Sports & Outdoors,Europe,true
+RET-0000063,ORD-0000395,2025-05-02,defective,634.01,Electronics,Europe,true
+RET-0000064,ORD-0000397,2025-03-21,size_mismatch,376.71,Fashion,APAC,true
+RET-0000065,ORD-0000399,2025-08-06,damaged,194.59,Toys & Games,North America,false
+RET-0000066,ORD-0000400,2023-02-18,not_as_described,2182.93,Automotive Parts,North America,false
+RET-0000067,ORD-0000403,2024-11-14,quality_issue,43.20,Toys & Games,North America,true
+RET-0000068,ORD-0000404,2025-09-14,damaged,2433.30,Toys & Games,North America,true
+RET-0000069,ORD-0000405,2025-09-11,damaged,326.83,Toys & Games,LATAM,true
+RET-0000070,ORD-0000410,2023-12-25,wrong_item,3321.90,Sports & Outdoors,Europe,true
+RET-0000071,ORD-0000412,2024-08-07,wrong_item,1933.54,Beauty & Personal Care,North America,true
+RET-0000072,ORD-0000419,2025-01-03,arrived_late,1651.61,Electronics,North America,true
+RET-0000073,ORD-0000425,2025-01-13,arrived_late,1237.85,Home & Kitchen,APAC,false
+RET-0000074,ORD-0000439,2025-07-30,arrived_late,2149.54,Electronics,North America,true
+RET-0000075,ORD-0000443,2023-09-01,quality_issue,788.97,Fashion,LATAM,true
+RET-0000076,ORD-0000445,2024-02-13,damaged,390.27,Books,Europe,true
+RET-0000077,ORD-0000460,2023-12-22,wrong_item,878.37,Automotive Parts,Europe,false
+RET-0000078,ORD-0000463,2024-12-09,quality_issue,422.82,Toys & Games,North America,true
+RET-0000079,ORD-0000467,2024-12-13,damaged,4544.29,Automotive Parts,Europe,true
+RET-0000080,ORD-0000478,2024-09-03,damaged,889.72,Toys & Games,Europe,true
+RET-0000081,ORD-0000485,2025-06-16,damaged,4818.11,Automotive Parts,Europe,true
+RET-0000082,ORD-0000487,2026-03-16,arrived_late,694.92,Fashion,North America,true
+RET-0000083,ORD-0000489,2023-07-26,quality_issue,2220.77,Electronics,North America,true
+RET-0000084,ORD-0000499,2023-12-29,quality_issue,4023.04,Fashion,LATAM,true
+RET-0000085,ORD-0000511,2023-07-23,quality_issue,2577.57,Electronics,LATAM,true
+RET-0000086,ORD-0000517,2022-09-15,quality_issue,1448.86,Health & Wellness,North America,true
+RET-0000087,ORD-0000523,2026-02-28,arrived_late,220.59,Health & Wellness,North America,true
+RET-0000088,ORD-0000525,2024-12-17,wrong_item,1212.96,Home & Kitchen,LATAM,true
+RET-0000089,ORD-0000528,2025-02-11,changed_mind,1812.54,Books,North America,true
+RET-0000090,ORD-0000532,2024-05-13,arrived_late,1321.10,Beauty & Personal Care,North America,false
+RET-0000091,ORD-0000542,2022-12-30,changed_mind,1995.84,Fashion,North America,true
+RET-0000092,ORD-0000545,2022-12-31,arrived_late,1222.09,Home & Kitchen,Europe,true
+RET-0000093,ORD-0000549,2025-01-16,quality_issue,4468.53,Electronics,North America,true
+RET-0000094,ORD-0000551,2024-12-07,changed_mind,690.73,Sports & Outdoors,Europe,true
+RET-0000095,ORD-0000557,2024-02-05,arrived_late,761.74,Electronics,APAC,true
+RET-0000096,ORD-0000568,2024-12-31,not_as_described,1499.87,Sports & Outdoors,Europe,true
+RET-0000097,ORD-0000571,2025-12-08,quality_issue,1495.63,Sports & Outdoors,North America,true
+RET-0000098,ORD-0000572,2024-10-19,damaged,416.45,Toys & Games,North America,true
+RET-0000099,ORD-0000585,2024-12-15,changed_mind,242.14,Health & Wellness,LATAM,true
+RET-0000100,ORD-0000590,2025-12-29,not_as_described,144.69,Health & Wellness,APAC,true
+RET-0000101,ORD-0000599,2024-02-29,arrived_late,765.28,Automotive Parts,Europe,true
+RET-0000102,ORD-0000601,2023-12-31,wrong_item,2045.63,Books,Europe,true
+RET-0000103,ORD-0000609,2025-12-13,damaged,959.52,Books,Europe,true
+RET-0000104,ORD-0000610,2022-04-04,quality_issue,269.06,Fashion,APAC,true
+RET-0000105,ORD-0000615,2024-08-07,size_mismatch,416.97,Fashion,LATAM,false
+RET-0000106,ORD-0000617,2025-12-19,changed_mind,1201.35,Home & Kitchen,Europe,false
+RET-0000107,ORD-0000625,2022-03-17,wrong_item,2111.88,Automotive Parts,North America,true
+RET-0000108,ORD-0000637,2022-08-14,quality_issue,661.78,Fashion,North America,true
+RET-0000109,ORD-0000644,2025-04-04,wrong_item,977.37,Sports & Outdoors,LATAM,true
+RET-0000110,ORD-0000645,2022-08-13,quality_issue,324.95,Health & Wellness,Europe,true
+RET-0000111,ORD-0000648,2025-12-15,arrived_late,495.52,Fashion,North America,false
+RET-0000112,ORD-0000651,2025-12-29,not_as_described,548.92,Home & Kitchen,North America,true
+RET-0000113,ORD-0000654,2025-12-06,quality_issue,973.48,Electronics,LATAM,true
+RET-0000114,ORD-0000659,2024-12-06,wrong_item,1485.65,Sports & Outdoors,North America,true
+RET-0000115,ORD-0000662,2025-04-07,changed_mind,399.48,Books,LATAM,true
+RET-0000116,ORD-0000672,2024-02-27,quality_issue,334.88,Fashion,North America,false
+RET-0000117,ORD-0000678,2025-03-23,changed_mind,1104.16,Toys & Games,Europe,true
+RET-0000118,ORD-0000681,2023-02-13,quality_issue,1313.15,Health & Wellness,North America,true
+RET-0000119,ORD-0000683,2023-11-03,arrived_late,1103.66,Electronics,LATAM,false
+RET-0000120,ORD-0000684,2022-12-18,size_mismatch,1450.97,Fashion,LATAM,true
+RET-0000121,ORD-0000685,2025-04-18,changed_mind,260.20,Toys & Games,North America,true
+RET-0000122,ORD-0000700,2022-05-17,not_as_described,1047.14,Automotive Parts,North America,true
+RET-0000123,ORD-0000709,2023-05-24,not_as_described,187.22,Beauty & Personal Care,LATAM,true
+RET-0000124,ORD-0000720,2025-12-24,arrived_late,200.72,Fashion,Europe,true
+RET-0000125,ORD-0000721,2023-02-08,quality_issue,769.47,Health & Wellness,Europe,true
+RET-0000126,ORD-0000725,2024-12-21,arrived_late,867.04,Books,LATAM,true
+RET-0000127,ORD-0000741,2024-01-01,wrong_item,263.19,Toys & Games,North America,true
+RET-0000128,ORD-0000754,2024-08-25,not_as_described,5415.17,Automotive Parts,LATAM,true
+RET-0000129,ORD-0000755,2026-03-18,not_as_described,3448.88,Electronics,Europe,true
+RET-0000130,ORD-0000767,2025-12-12,not_as_described,2270.73,Health & Wellness,APAC,false
+RET-0000131,ORD-0000792,2025-05-08,quality_issue,1523.62,Health & Wellness,North America,true
+RET-0000132,ORD-0000796,2025-01-17,changed_mind,2173.90,Sports & Outdoors,LATAM,true
+RET-0000133,ORD-0000810,2025-01-11,not_as_described,4960.51,Electronics,Europe,true
+RET-0000134,ORD-0000824,2022-12-30,defective,1787.51,Electronics,North America,true
+RET-0000135,ORD-0000825,2024-04-17,quality_issue,1190.23,Fashion,North America,true
+RET-0000136,ORD-0000837,2024-10-06,arrived_late,850.78,Home & Kitchen,North America,false
+RET-0000137,ORD-0000838,2025-12-21,wrong_item,313.88,Toys & Games,Europe,true
+RET-0000138,ORD-0000841,2024-07-08,size_mismatch,664.52,Fashion,Europe,true
+RET-0000139,ORD-0000851,2025-07-10,changed_mind,205.59,Fashion,APAC,true
+RET-0000140,ORD-0000861,2025-12-16,color_different,668.73,Fashion,APAC,true
+RET-0000141,ORD-0000870,2025-01-22,not_as_described,540.84,Home & Kitchen,LATAM,true
+RET-0000142,ORD-0000871,2024-12-26,arrived_late,235.82,Electronics,North America,true
+RET-0000143,ORD-0000874,2025-09-16,not_as_described,4239.02,Electronics,North America,true
+RET-0000144,ORD-0000877,2025-02-23,wrong_item,357.45,Home & Kitchen,Europe,true
+RET-0000145,ORD-0000879,2022-04-05,not_as_described,2230.29,Automotive Parts,LATAM,true
+RET-0000146,ORD-0000884,2024-12-22,quality_issue,718.78,Sports & Outdoors,North America,true
+RET-0000147,ORD-0000886,2024-12-25,defective,459.52,Electronics,LATAM,true
+RET-0000148,ORD-0000909,2026-01-05,damaged,271.82,Books,North America,true
+RET-0000149,ORD-0000910,2024-06-13,quality_issue,1279.03,Toys & Games,Europe,true
+RET-0000150,ORD-0000917,2023-04-13,quality_issue,1585.91,Fashion,Europe,true
+RET-0000151,ORD-0000921,2024-07-02,not_as_described,227.97,Health & Wellness,North America,false
+RET-0000152,ORD-0000927,2024-03-31,size_mismatch,303.92,Fashion,Europe,true
+RET-0000153,ORD-0000930,2026-05-20,not_as_described,1308.44,Sports & Outdoors,Europe,false
+RET-0000154,ORD-0000935,2024-12-13,damaged,629.48,Toys & Games,North America,true
+RET-0000155,ORD-0000937,2026-05-13,changed_mind,1175.94,Toys & Games,Europe,true
+RET-0000156,ORD-0000939,2024-12-11,arrived_late,742.02,Books,LATAM,true
+RET-0000157,ORD-0000941,2025-12-23,wrong_item,707.92,Beauty & Personal Care,LATAM,true
+RET-0000158,ORD-0000942,2023-06-12,changed_mind,130.84,Beauty & Personal Care,North America,true
+RET-0000159,ORD-0000946,2024-08-18,wrong_item,3302.01,Sports & Outdoors,LATAM,true
+RET-0000160,ORD-0000950,2025-01-29,arrived_late,368.81,Sports & Outdoors,Europe,true
+RET-0000161,ORD-0000951,2024-12-20,quality_issue,1532.76,Sports & Outdoors,APAC,true
+RET-0000162,ORD-0000968,2024-07-19,wrong_item,2208.74,Health & Wellness,North America,true
+RET-0000163,ORD-0000976,2023-11-19,changed_mind,103.92,Books,LATAM,true
+RET-0000164,ORD-0000977,2024-03-22,quality_issue,140.74,Fashion,Europe,true
+RET-0000165,ORD-0000982,2024-12-12,size_mismatch,447.37,Fashion,LATAM,true
+RET-0000166,ORD-0000996,2025-04-20,size_mismatch,1838.54,Fashion,Europe,true
+RET-0000167,ORD-0000999,2024-12-25,defective,3815.20,Electronics,North America,true
+RET-0000168,ORD-0001014,2023-08-25,arrived_late,916.17,Home & Kitchen,LATAM,false
+RET-0000169,ORD-0001028,2025-10-16,quality_issue,167.10,Home & Kitchen,LATAM,true
+RET-0000170,ORD-0001032,2024-03-01,quality_issue,140.24,Health & Wellness,Europe,true
+RET-0000171,ORD-0001038,2024-08-23,arrived_late,270.93,Sports & Outdoors,North America,true
+RET-0000172,ORD-0001062,2024-12-12,not_as_described,403.59,Beauty & Personal Care,Europe,false
+RET-0000173,ORD-0001064,2025-10-03,damaged,2568.20,Beauty & Personal Care,Europe,true
+RET-0000174,ORD-0001066,2026-01-29,not_as_described,1043.60,Automotive Parts,LATAM,true
+RET-0000175,ORD-0001075,2022-08-01,size_mismatch,366.75,Fashion,North America,true
+RET-0000176,ORD-0001081,2022-12-25,damaged,1980.87,Sports & Outdoors,Europe,true
+RET-0000177,ORD-0001085,2023-01-01,changed_mind,613.27,Sports & Outdoors,North America,true
+RET-0000178,ORD-0001093,2026-01-16,defective,1770.36,Electronics,Europe,false
+RET-0000179,ORD-0001099,2023-06-17,changed_mind,994.20,Sports & Outdoors,Europe,false
+RET-0000180,ORD-0001104,2025-03-21,wrong_item,162.62,Toys & Games,APAC,true
+RET-0000181,ORD-0001106,2025-04-13,not_as_described,3999.25,Electronics,Europe,true
+RET-0000182,ORD-0001109,2024-07-03,changed_mind,1069.93,Sports & Outdoors,North America,false
+RET-0000183,ORD-0001116,2025-12-02,arrived_late,218.55,Toys & Games,APAC,false
+RET-0000184,ORD-0001117,2025-06-10,quality_issue,386.40,Beauty & Personal Care,Europe,true
+RET-0000185,ORD-0001120,2023-12-19,damaged,3734.69,Automotive Parts,North America,true
+RET-0000186,ORD-0001123,2025-12-26,quality_issue,1267.32,Toys & Games,LATAM,true
+RET-0000187,ORD-0001126,2025-08-15,changed_mind,1294.30,Automotive Parts,North America,true
+RET-0000188,ORD-0001127,2026-02-15,quality_issue,566.84,Sports & Outdoors,LATAM,false
+RET-0000189,ORD-0001128,2025-01-03,arrived_late,1083.98,Electronics,Europe,true
+RET-0000190,ORD-0001136,2023-12-05,changed_mind,860.48,Beauty & Personal Care,North America,true
+RET-0000191,ORD-0001141,2024-10-31,changed_mind,2117.78,Fashion,Europe,true
+RET-0000192,ORD-0001153,2024-07-10,quality_issue,257.31,Home & Kitchen,North America,true
+RET-0000193,ORD-0001168,2023-11-11,wrong_item,1653.51,Sports & Outdoors,North America,true
+RET-0000194,ORD-0001174,2023-08-19,arrived_late,2343.25,Electronics,North America,false
+RET-0000195,ORD-0001182,2024-07-14,damaged,1368.13,Sports & Outdoors,North America,false
+RET-0000196,ORD-0001183,2025-01-02,changed_mind,74.80,Books,APAC,true
+RET-0000197,ORD-0001187,2026-05-20,arrived_late,2785.58,Electronics,APAC,true
+RET-0000198,ORD-0001189,2023-12-28,quality_issue,1588.33,Sports & Outdoors,North America,false
+RET-0000199,ORD-0001192,2025-02-16,quality_issue,145.00,Toys & Games,APAC,true
+RET-0000200,ORD-0001194,2024-09-23,damaged,529.65,Toys & Games,Europe,false
+RET-0000201,ORD-0001211,2022-12-16,damaged,402.97,Toys & Games,North America,true
+RET-0000202,ORD-0001215,2024-12-04,quality_issue,2323.36,Sports & Outdoors,North America,true
+RET-0000203,ORD-0001216,2024-09-20,not_as_described,363.64,Electronics,Europe,true
+RET-0000204,ORD-0001217,2023-12-09,not_as_described,2696.20,Electronics,North America,true
+RET-0000205,ORD-0001239,2024-02-15,changed_mind,1167.84,Health & Wellness,North America,true
+RET-0000206,ORD-0001242,2023-07-31,changed_mind,199.38,Health & Wellness,Europe,true
+RET-0000207,ORD-0001246,2025-02-27,damaged,223.53,Health & Wellness,Europe,true
+RET-0000208,ORD-0001247,2024-12-23,damaged,1309.00,Automotive Parts,Europe,true
+RET-0000209,ORD-0001256,2024-12-12,wrong_item,2338.96,Sports & Outdoors,North America,true
+RET-0000210,ORD-0001265,2025-12-14,defective,343.66,Electronics,LATAM,true
+RET-0000211,ORD-0001267,2025-02-20,wrong_item,98.30,Home & Kitchen,LATAM,false
+RET-0000212,ORD-0001271,2024-09-06,not_as_described,41.07,Health & Wellness,APAC,true
+RET-0000213,ORD-0001286,2025-02-24,changed_mind,76.92,Books,LATAM,false
+RET-0000214,ORD-0001288,2022-12-07,changed_mind,663.89,Fashion,North America,true
+RET-0000215,ORD-0001290,2024-02-09,not_as_described,133.16,Toys & Games,Europe,true
+RET-0000216,ORD-0001295,2024-04-03,not_as_described,337.25,Home & Kitchen,Europe,true
+RET-0000217,ORD-0001305,2025-01-06,damaged,627.24,Health & Wellness,Europe,false
+RET-0000218,ORD-0001315,2025-01-02,arrived_late,1131.61,Electronics,APAC,true
+RET-0000219,ORD-0001319,2025-12-20,defective,3488.50,Electronics,LATAM,true
+RET-0000220,ORD-0001321,2026-01-02,wrong_item,2278.67,Automotive Parts,Europe,true
+RET-0000221,ORD-0001323,2025-11-05,damaged,2890.24,Sports & Outdoors,LATAM,true
+RET-0000222,ORD-0001325,2023-08-08,quality_issue,700.99,Health & Wellness,LATAM,true
+RET-0000223,ORD-0001333,2022-12-08,not_as_described,109.06,Health & Wellness,North America,false
+RET-0000224,ORD-0001334,2023-03-12,arrived_late,852.54,Electronics,LATAM,true
+RET-0000225,ORD-0001342,2023-02-17,not_as_described,128.93,Home & Kitchen,LATAM,true
+RET-0000226,ORD-0001344,2024-12-17,quality_issue,3914.94,Fashion,Europe,true
+RET-0000227,ORD-0001347,2025-07-12,changed_mind,158.90,Home & Kitchen,LATAM,false
+RET-0000228,ORD-0001357,2022-05-11,changed_mind,557.72,Books,North America,true
+RET-0000229,ORD-0001364,2023-12-13,changed_mind,155.61,Books,North America,true
+RET-0000230,ORD-0001366,2023-03-15,changed_mind,1256.91,Home & Kitchen,LATAM,true
+RET-0000231,ORD-0001368,2025-05-17,size_mismatch,1082.95,Fashion,North America,true
+RET-0000232,ORD-0001374,2024-12-27,arrived_late,513.93,Automotive Parts,LATAM,true
+RET-0000233,ORD-0001376,2026-01-10,wrong_item,296.36,Books,Europe,true
+RET-0000234,ORD-0001390,2022-08-30,not_as_described,456.82,Home & Kitchen,North America,true
+RET-0000235,ORD-0001392,2026-04-23,changed_mind,250.22,Fashion,North America,true
+RET-0000236,ORD-0001395,2024-07-30,arrived_late,333.24,Fashion,LATAM,true
+RET-0000237,ORD-0001396,2022-07-15,damaged,65.29,Books,North America,true
+RET-0000238,ORD-0001398,2022-08-06,quality_issue,2668.40,Electronics,Europe,true
+RET-0000239,ORD-0001400,2025-09-21,damaged,802.37,Books,Europe,true
+RET-0000240,ORD-0001402,2025-07-11,wrong_item,682.08,Sports & Outdoors,North America,true
+RET-0000241,ORD-0001404,2024-07-31,wrong_item,772.13,Beauty & Personal Care,North America,true
+RET-0000242,ORD-0001406,2024-07-06,quality_issue,363.94,Sports & Outdoors,Europe,true
+RET-0000243,ORD-0001408,2024-12-11,wrong_item,1803.17,Sports & Outdoors,LATAM,true
+RET-0000244,ORD-0001412,2023-09-12,changed_mind,569.43,Automotive Parts,Europe,false
+RET-0000245,ORD-0001425,2024-03-26,wrong_item,352.33,Health & Wellness,LATAM,true
+RET-0000246,ORD-0001429,2024-12-24,wrong_item,224.31,Toys & Games,Europe,true
+RET-0000247,ORD-0001440,2024-02-24,size_mismatch,744.10,Fashion,North America,true
+RET-0000248,ORD-0001445,2024-07-17,changed_mind,232.74,Fashion,Europe,true
+RET-0000249,ORD-0001447,2025-08-11,quality_issue,212.05,Automotive Parts,Europe,true
+RET-0000250,ORD-0001452,2026-05-03,arrived_late,1024.22,Toys & Games,LATAM,false
+RET-0000251,ORD-0001456,2023-08-21,changed_mind,642.60,Sports & Outdoors,North America,true
+RET-0000252,ORD-0001460,2026-01-18,damaged,76.02,Home & Kitchen,North America,true
+RET-0000253,ORD-0001464,2024-03-02,damaged,1312.57,Beauty & Personal Care,Europe,false
+RET-0000254,ORD-0001466,2024-10-04,damaged,1288.15,Sports & Outdoors,North America,true
+RET-0000255,ORD-0001474,2025-07-02,wrong_item,1386.08,Books,North America,true
+RET-0000256,ORD-0001475,2023-09-13,defective,1393.72,Electronics,LATAM,true
+RET-0000257,ORD-0001484,2024-12-02,damaged,1086.41,Sports & Outdoors,APAC,true
+RET-0000258,ORD-0001485,2026-01-09,changed_mind,768.77,Sports & Outdoors,North America,true
+RET-0000259,ORD-0001490,2024-08-20,damaged,104.61,Beauty & Personal Care,Europe,true
+RET-0000260,ORD-0001491,2024-12-08,quality_issue,190.05,Automotive Parts,Europe,false
+RET-0000261,ORD-0001497,2024-10-29,changed_mind,1535.70,Automotive Parts,LATAM,true
+RET-0000262,ORD-0001498,2024-11-17,wrong_item,673.25,Health & Wellness,North America,false
+RET-0000263,ORD-0001501,2024-12-17,quality_issue,1067.02,Beauty & Personal Care,North America,true
+RET-0000264,ORD-0001526,2023-04-14,quality_issue,3651.79,Automotive Parts,North America,true
+RET-0000265,ORD-0001531,2024-09-25,damaged,467.57,Health & Wellness,North America,true
+RET-0000266,ORD-0001540,2026-02-12,changed_mind,731.22,Fashion,APAC,true
+RET-0000267,ORD-0001542,2022-08-03,changed_mind,755.14,Automotive Parts,LATAM,true
+RET-0000268,ORD-0001548,2023-12-27,wrong_item,78.65,Toys & Games,North America,false
+RET-0000269,ORD-0001553,2025-08-15,damaged,339.21,Home & Kitchen,Europe,true
+RET-0000270,ORD-0001556,2023-05-02,quality_issue,2304.03,Beauty & Personal Care,LATAM,true
+RET-0000271,ORD-0001568,2023-07-17,quality_issue,2064.25,Home & Kitchen,Europe,true
+RET-0000272,ORD-0001571,2026-01-17,quality_issue,1800.15,Automotive Parts,Europe,false
+RET-0000273,ORD-0001575,2022-04-14,quality_issue,123.30,Fashion,North America,true
+RET-0000274,ORD-0001582,2022-12-30,changed_mind,86.40,Health & Wellness,North America,true
+RET-0000275,ORD-0001583,2026-01-18,damaged,471.38,Books,Europe,true
+RET-0000276,ORD-0001584,2023-12-25,quality_issue,106.62,Home & Kitchen,North America,true
+RET-0000277,ORD-0001592,2024-03-07,changed_mind,1817.48,Books,Europe,true
+RET-0000278,ORD-0001602,2024-08-11,quality_issue,567.90,Fashion,LATAM,true
+RET-0000279,ORD-0001606,2024-12-31,damaged,886.96,Books,North America,false
+RET-0000280,ORD-0001608,2024-12-28,damaged,1721.58,Automotive Parts,North America,true
+RET-0000281,ORD-0001609,2026-04-20,wrong_item,748.12,Books,Europe,true
+RET-0000282,ORD-0001618,2024-07-28,arrived_late,2355.88,Home & Kitchen,Europe,true
+RET-0000283,ORD-0001630,2025-12-17,quality_issue,118.61,Fashion,Europe,true
+RET-0000284,ORD-0001637,2024-07-14,quality_issue,919.55,Sports & Outdoors,North America,true
+RET-0000285,ORD-0001639,2023-02-27,changed_mind,1445.64,Fashion,LATAM,true
+RET-0000286,ORD-0001640,2025-12-19,color_different,396.60,Fashion,North America,true
+RET-0000287,ORD-0001646,2025-04-30,damaged,652.58,Automotive Parts,LATAM,true
+RET-0000288,ORD-0001653,2023-08-14,arrived_late,1119.05,Automotive Parts,Europe,true
+RET-0000289,ORD-0001657,2025-03-04,wrong_item,1352.14,Health & Wellness,North America,true
+RET-0000290,ORD-0001658,2024-12-07,changed_mind,401.98,Toys & Games,APAC,true
+RET-0000291,ORD-0001659,2025-12-23,quality_issue,1555.48,Electronics,Europe,false
+RET-0000292,ORD-0001662,2023-06-16,quality_issue,356.14,Home & Kitchen,Europe,true
+RET-0000293,ORD-0001669,2024-01-21,quality_issue,895.55,Health & Wellness,North America,true
+RET-0000294,ORD-0001674,2022-12-20,color_different,3895.48,Fashion,North America,true
+RET-0000295,ORD-0001675,2023-08-02,damaged,1234.99,Health & Wellness,APAC,true
+RET-0000296,ORD-0001681,2024-03-23,arrived_late,1930.44,Electronics,LATAM,true
+RET-0000297,ORD-0001684,2024-01-22,not_as_described,957.80,Electronics,North America,true
+RET-0000298,ORD-0001687,2025-11-16,quality_issue,2331.30,Automotive Parts,LATAM,true
+RET-0000299,ORD-0001691,2025-01-22,wrong_item,1755.53,Sports & Outdoors,Europe,true
+RET-0000300,ORD-0001696,2025-04-13,damaged,783.85,Books,Europe,true
+RET-0000301,ORD-0001698,2025-12-15,size_mismatch,292.71,Fashion,Europe,false
+RET-0000302,ORD-0001725,2023-06-03,quality_issue,420.63,Toys & Games,Europe,true
+RET-0000303,ORD-0001726,2024-10-27,not_as_described,1218.14,Home & Kitchen,North America,true
+RET-0000304,ORD-0001729,2025-10-30,arrived_late,1172.98,Fashion,LATAM,true
+RET-0000305,ORD-0001743,2026-01-16,not_as_described,269.75,Toys & Games,Europe,true
+RET-0000306,ORD-0001744,2023-01-17,not_as_described,561.84,Health & Wellness,North America,true
+RET-0000307,ORD-0001746,2024-09-02,changed_mind,895.56,Sports & Outdoors,Europe,true
+RET-0000308,ORD-0001751,2024-12-03,wrong_item,219.34,Home & Kitchen,North America,true
+RET-0000309,ORD-0001761,2024-12-03,wrong_item,2539.97,Automotive Parts,LATAM,true
+RET-0000310,ORD-0001770,2025-12-16,not_as_described,1735.86,Sports & Outdoors,North America,true
+RET-0000311,ORD-0001775,2024-11-13,quality_issue,1261.38,Home & Kitchen,North America,true
+RET-0000312,ORD-0001778,2025-12-12,defective,2211.44,Electronics,North America,false
+RET-0000313,ORD-0001783,2023-02-26,quality_issue,1735.33,Sports & Outdoors,North America,true
+RET-0000314,ORD-0001790,2023-02-22,damaged,2119.36,Home & Kitchen,Europe,true
+RET-0000315,ORD-0001791,2025-01-06,color_different,3020.16,Fashion,North America,true
+RET-0000316,ORD-0001792,2025-05-14,quality_issue,704.65,Toys & Games,North America,true
+RET-0000317,ORD-0001798,2025-01-02,defective,1971.82,Electronics,North America,true
+RET-0000318,ORD-0001801,2023-09-29,quality_issue,1887.75,Electronics,Europe,false
+RET-0000319,ORD-0001803,2025-12-23,changed_mind,105.12,Fashion,Europe,true
+RET-0000320,ORD-0001806,2026-01-05,not_as_described,1318.74,Toys & Games,LATAM,true
+RET-0000321,ORD-0001818,2026-01-08,quality_issue,871.44,Sports & Outdoors,Europe,true
+RET-0000322,ORD-0001821,2025-12-13,arrived_late,467.06,Toys & Games,North America,true
+RET-0000323,ORD-0001824,2026-01-23,defective,1643.56,Electronics,LATAM,true
+RET-0000324,ORD-0001829,2025-03-26,not_as_described,497.62,Home & Kitchen,LATAM,true
+RET-0000325,ORD-0001833,2025-12-25,damaged,1227.93,Toys & Games,LATAM,true
+RET-0000326,ORD-0001843,2025-04-21,not_as_described,403.50,Health & Wellness,APAC,true
+RET-0000327,ORD-0001845,2022-08-28,arrived_late,43.39,Toys & Games,LATAM,true
+RET-0000328,ORD-0001851,2022-03-18,damaged,2104.71,Automotive Parts,Europe,true
+RET-0000329,ORD-0001853,2025-10-13,quality_issue,2611.77,Electronics,North America,true
+RET-0000330,ORD-0001854,2024-02-14,not_as_described,2080.84,Electronics,Europe,true
+RET-0000331,ORD-0001861,2024-12-19,not_as_described,1282.64,Sports & Outdoors,Europe,true
+RET-0000332,ORD-0001863,2024-05-31,damaged,329.90,Beauty & Personal Care,North America,false
+RET-0000333,ORD-0001875,2026-01-07,quality_issue,725.93,Home & Kitchen,North America,true
+RET-0000334,ORD-0001877,2026-01-08,wrong_item,4690.09,Health & Wellness,North America,true
+RET-0000335,ORD-0001883,2024-03-22,wrong_item,1301.29,Automotive Parts,Europe,false
+RET-0000336,ORD-0001884,2024-03-29,quality_issue,2313.00,Sports & Outdoors,North America,true
+RET-0000337,ORD-0001888,2023-11-09,changed_mind,155.78,Books,North America,true
+RET-0000338,ORD-0001890,2026-03-22,quality_issue,1253.50,Fashion,Europe,true
+RET-0000339,ORD-0001895,2023-12-25,defective,884.55,Electronics,North America,true
+RET-0000340,ORD-0001897,2025-07-30,arrived_late,2387.42,Electronics,North America,true
+RET-0000341,ORD-0001901,2025-12-10,wrong_item,444.05,Health & Wellness,LATAM,true
+RET-0000342,ORD-0001902,2025-12-08,changed_mind,179.64,Fashion,LATAM,true
+RET-0000343,ORD-0001908,2025-12-19,damaged,452.52,Automotive Parts,Europe,true
+RET-0000344,ORD-0001918,2025-05-14,wrong_item,2399.29,Beauty & Personal Care,Europe,false
+RET-0000345,ORD-0001925,2026-01-21,quality_issue,893.54,Fashion,Europe,true
+RET-0000346,ORD-0001933,2023-03-22,defective,2806.06,Electronics,APAC,true
+RET-0000347,ORD-0001941,2025-12-08,quality_issue,153.64,Sports & Outdoors,APAC,false
+RET-0000348,ORD-0001955,2026-02-07,changed_mind,1095.11,Automotive Parts,Europe,true
+RET-0000349,ORD-0001957,2025-04-15,changed_mind,960.72,Beauty & Personal Care,North America,true
+RET-0000350,ORD-0001965,2025-05-15,defective,121.14,Electronics,North America,true
+RET-0000351,ORD-0001980,2025-10-08,arrived_late,140.53,Fashion,LATAM,true
+RET-0000352,ORD-0001983,2026-05-08,quality_issue,417.61,Toys & Games,Europe,false
+RET-0000353,ORD-0001985,2024-10-20,not_as_described,657.87,Home & Kitchen,Europe,true
+RET-0000354,ORD-0001986,2023-09-29,arrived_late,1953.67,Electronics,LATAM,true
+RET-0000355,ORD-0001990,2024-09-21,not_as_described,2802.00,Home & Kitchen,North America,false
+RET-0000356,ORD-0001992,2023-10-22,quality_issue,248.16,Toys & Games,North America,false
+RET-0000357,ORD-0001999,2025-01-05,wrong_item,1950.35,Home & Kitchen,LATAM,true
+RET-0000358,ORD-0002003,2023-01-17,wrong_item,1032.51,Toys & Games,LATAM,true
+RET-0000359,ORD-0002005,2024-09-20,not_as_described,258.97,Beauty & Personal Care,Europe,true
+RET-0000360,ORD-0002013,2025-09-21,damaged,716.11,Sports & Outdoors,Europe,true
+RET-0000361,ORD-0002018,2024-02-18,quality_issue,853.37,Toys & Games,North America,true
+RET-0000362,ORD-0002019,2024-12-15,quality_issue,434.14,Automotive Parts,Europe,true
+RET-0000363,ORD-0002022,2022-12-29,damaged,734.59,Automotive Parts,Europe,true
+RET-0000364,ORD-0002026,2023-03-30,size_mismatch,619.58,Fashion,North America,false
+RET-0000365,ORD-0002033,2024-06-14,defective,2416.85,Electronics,North America,true
+RET-0000366,ORD-0002034,2024-12-31,damaged,748.01,Health & Wellness,LATAM,true
+RET-0000367,ORD-0002041,2025-10-17,arrived_late,1285.93,Toys & Games,Europe,false
+RET-0000368,ORD-0002043,2025-12-21,changed_mind,1280.60,Home & Kitchen,LATAM,true
+RET-0000369,ORD-0002044,2026-01-12,quality_issue,3772.78,Health & Wellness,APAC,false
+RET-0000370,ORD-0002047,2025-02-02,quality_issue,561.85,Sports & Outdoors,Europe,true
+RET-0000371,ORD-0002053,2024-10-26,not_as_described,447.93,Home & Kitchen,Europe,false
+RET-0000372,ORD-0002064,2025-12-22,wrong_item,2844.73,Home & Kitchen,Europe,true
+RET-0000373,ORD-0002070,2024-01-04,changed_mind,118.57,Home & Kitchen,Europe,true
+RET-0000374,ORD-0002074,2023-08-08,quality_issue,235.10,Fashion,Europe,true
+RET-0000375,ORD-0002075,2026-01-15,defective,2260.81,Electronics,North America,true
+RET-0000376,ORD-0002077,2023-08-20,changed_mind,887.95,Books,North America,false
+RET-0000377,ORD-0002087,2026-01-19,size_mismatch,510.51,Fashion,North America,true
+RET-0000378,ORD-0002090,2023-08-29,not_as_described,171.36,Electronics,LATAM,false
+RET-0000379,ORD-0002094,2026-03-04,wrong_item,2281.39,Sports & Outdoors,APAC,true
+RET-0000380,ORD-0002111,2024-08-03,size_mismatch,648.35,Fashion,Europe,true
+RET-0000381,ORD-0002127,2024-09-19,arrived_late,3151.76,Electronics,Europe,true
+RET-0000382,ORD-0002136,2024-03-02,arrived_late,2079.84,Electronics,LATAM,true
+RET-0000383,ORD-0002142,2025-03-31,damaged,29.21,Beauty & Personal Care,North America,true
+RET-0000384,ORD-0002144,2024-12-26,quality_issue,127.39,Toys & Games,LATAM,true
+RET-0000385,ORD-0002150,2025-05-27,damaged,804.69,Home & Kitchen,Europe,false
+RET-0000386,ORD-0002160,2024-09-25,not_as_described,762.53,Health & Wellness,LATAM,true
+RET-0000387,ORD-0002162,2025-03-20,changed_mind,650.06,Sports & Outdoors,Europe,true
+RET-0000388,ORD-0002165,2026-05-09,changed_mind,210.21,Health & Wellness,LATAM,true
+RET-0000389,ORD-0002169,2026-01-09,changed_mind,342.86,Health & Wellness,Europe,false
+RET-0000390,ORD-0002171,2025-07-31,changed_mind,30.53,Beauty & Personal Care,LATAM,true
+RET-0000391,ORD-0002175,2023-06-15,color_different,455.24,Fashion,Europe,true
+RET-0000392,ORD-0002180,2024-06-21,quality_issue,366.95,Beauty & Personal Care,North America,true
+RET-0000393,ORD-0002188,2026-02-07,damaged,1152.77,Automotive Parts,LATAM,true
+RET-0000394,ORD-0002197,2023-08-11,changed_mind,745.02,Automotive Parts,North America,true
+RET-0000395,ORD-0002201,2022-06-01,quality_issue,1944.57,Fashion,Europe,true
+RET-0000396,ORD-0002209,2022-12-05,size_mismatch,415.04,Fashion,Europe,true
+RET-0000397,ORD-0002237,2024-02-22,wrong_item,835.47,Books,North America,true
+RET-0000398,ORD-0002239,2026-02-24,damaged,3401.62,Books,Europe,true
+RET-0000399,ORD-0002241,2024-02-06,wrong_item,1357.64,Toys & Games,LATAM,true
+RET-0000400,ORD-0002250,2023-11-29,color_different,1955.73,Fashion,APAC,true
+RET-0000401,ORD-0002255,2025-05-13,changed_mind,283.18,Beauty & Personal Care,LATAM,true
+RET-0000402,ORD-0002256,2023-12-07,changed_mind,858.30,Toys & Games,Europe,true
+RET-0000403,ORD-0002265,2025-05-06,wrong_item,301.41,Home & Kitchen,North America,true
+RET-0000404,ORD-0002268,2023-12-26,quality_issue,200.37,Sports & Outdoors,LATAM,true
+RET-0000405,ORD-0002271,2023-05-08,size_mismatch,66.60,Fashion,Europe,true
+RET-0000406,ORD-0002272,2025-10-18,arrived_late,475.24,Electronics,Europe,false
+RET-0000407,ORD-0002277,2024-02-05,quality_issue,408.01,Sports & Outdoors,North America,true
+RET-0000408,ORD-0002281,2024-07-22,damaged,376.12,Books,Europe,true
+RET-0000409,ORD-0002282,2025-03-16,defective,1764.56,Electronics,North America,true
+RET-0000410,ORD-0002283,2025-05-24,wrong_item,225.63,Health & Wellness,LATAM,true
+RET-0000411,ORD-0002295,2024-07-12,size_mismatch,509.62,Fashion,LATAM,true
+RET-0000412,ORD-0002298,2023-05-31,damaged,1083.50,Sports & Outdoors,Europe,true
+RET-0000413,ORD-0002299,2026-01-01,arrived_late,1686.50,Electronics,Europe,true
+RET-0000414,ORD-0002310,2024-01-06,arrived_late,2627.61,Home & Kitchen,North America,true
+RET-0000415,ORD-0002311,2023-12-22,wrong_item,775.91,Toys & Games,Europe,true
+RET-0000416,ORD-0002318,2023-08-05,damaged,35.93,Books,Europe,true
+RET-0000417,ORD-0002323,2023-12-15,not_as_described,1471.99,Sports & Outdoors,APAC,true
+RET-0000418,ORD-0002332,2023-08-02,wrong_item,2582.61,Automotive Parts,Europe,true
+RET-0000419,ORD-0002337,2024-04-19,changed_mind,1627.48,Books,Europe,true
+RET-0000420,ORD-0002348,2026-02-15,not_as_described,3196.69,Electronics,APAC,true
+RET-0000421,ORD-0002349,2024-08-09,not_as_described,1750.14,Automotive Parts,Europe,true
+RET-0000422,ORD-0002352,2025-12-16,wrong_item,320.69,Health & Wellness,Europe,true
+RET-0000423,ORD-0002356,2025-01-29,changed_mind,3260.76,Fashion,North America,false
+RET-0000424,ORD-0002358,2025-07-15,defective,422.55,Electronics,LATAM,true
+RET-0000425,ORD-0002365,2025-12-24,arrived_late,1521.09,Fashion,LATAM,false
+RET-0000426,ORD-0002371,2022-09-29,changed_mind,499.25,Fashion,North America,true
+RET-0000427,ORD-0002373,2023-05-27,arrived_late,458.39,Fashion,LATAM,true
+RET-0000428,ORD-0002390,2024-01-11,arrived_late,2850.47,Electronics,LATAM,true
+RET-0000429,ORD-0002399,2024-12-01,defective,4035.02,Electronics,LATAM,true
+RET-0000430,ORD-0002403,2025-03-21,quality_issue,868.32,Electronics,North America,false
+RET-0000431,ORD-0002405,2025-12-22,size_mismatch,3548.85,Fashion,North America,true
+RET-0000432,ORD-0002411,2024-03-08,color_different,3863.45,Fashion,APAC,true
+RET-0000433,ORD-0002415,2026-05-06,changed_mind,2363.99,Fashion,Europe,true
+RET-0000434,ORD-0002418,2022-09-07,wrong_item,816.98,Health & Wellness,LATAM,true
+RET-0000435,ORD-0002420,2026-01-05,not_as_described,3687.30,Electronics,Europe,true
+RET-0000436,ORD-0002423,2026-01-05,size_mismatch,1522.47,Fashion,Europe,true
+RET-0000437,ORD-0002433,2025-08-11,changed_mind,615.39,Sports & Outdoors,Europe,true
+RET-0000438,ORD-0002436,2024-12-15,wrong_item,2207.31,Automotive Parts,North America,true
+RET-0000439,ORD-0002437,2025-12-08,arrived_late,1388.60,Beauty & Personal Care,Europe,true
+RET-0000440,ORD-0002440,2023-11-18,wrong_item,1792.97,Toys & Games,Europe,true
+RET-0000441,ORD-0002442,2025-12-16,wrong_item,499.75,Toys & Games,LATAM,true
+RET-0000442,ORD-0002446,2023-05-29,wrong_item,3969.45,Automotive Parts,North America,true
+RET-0000443,ORD-0002449,2025-05-16,defective,831.33,Electronics,Europe,false
+RET-0000444,ORD-0002454,2024-08-26,damaged,1196.61,Beauty & Personal Care,North America,true
+RET-0000445,ORD-0002459,2025-12-12,damaged,52.76,Health & Wellness,Europe,true
+RET-0000446,ORD-0002462,2025-09-01,quality_issue,2222.63,Electronics,LATAM,true
+RET-0000447,ORD-0002489,2026-04-12,not_as_described,1165.05,Home & Kitchen,North America,true
+RET-0000448,ORD-0002494,2025-12-10,defective,1111.60,Electronics,Europe,false
+RET-0000449,ORD-0002504,2024-12-31,wrong_item,934.59,Health & Wellness,Europe,false
+RET-0000450,ORD-0002508,2026-03-09,wrong_item,789.06,Sports & Outdoors,Europe,true
+RET-0000451,ORD-0002509,2025-09-02,changed_mind,792.44,Toys & Games,North America,true
+RET-0000452,ORD-0002519,2025-02-14,not_as_described,2323.40,Electronics,Europe,true
+RET-0000453,ORD-0002526,2024-07-22,size_mismatch,398.15,Fashion,Europe,true
+RET-0000454,ORD-0002533,2024-07-09,quality_issue,493.36,Fashion,Europe,true
+RET-0000455,ORD-0002536,2025-11-03,arrived_late,163.63,Toys & Games,LATAM,true
+RET-0000456,ORD-0002537,2026-01-29,color_different,316.53,Fashion,North America,true
+RET-0000457,ORD-0002553,2024-12-10,damaged,87.97,Toys & Games,Europe,true
+RET-0000458,ORD-0002554,2023-07-28,changed_mind,1510.29,Fashion,LATAM,true
+RET-0000459,ORD-0002562,2025-07-09,changed_mind,148.51,Toys & Games,North America,true
+RET-0000460,ORD-0002568,2026-01-01,not_as_described,63.00,Beauty & Personal Care,Europe,false
+RET-0000461,ORD-0002577,2024-06-30,size_mismatch,150.79,Fashion,LATAM,true
+RET-0000462,ORD-0002580,2023-07-12,quality_issue,82.18,Fashion,Europe,true
+RET-0000463,ORD-0002583,2025-01-15,not_as_described,1183.61,Electronics,North America,true
+RET-0000464,ORD-0002585,2025-08-27,not_as_described,517.02,Sports & Outdoors,LATAM,false
+RET-0000465,ORD-0002593,2025-12-24,size_mismatch,991.92,Fashion,Europe,true
+RET-0000466,ORD-0002598,2024-07-27,not_as_described,1354.14,Automotive Parts,North America,true
+RET-0000467,ORD-0002607,2023-12-20,quality_issue,582.25,Fashion,North America,true
+RET-0000468,ORD-0002615,2024-12-17,changed_mind,1087.59,Sports & Outdoors,LATAM,true
+RET-0000469,ORD-0002626,2022-03-14,color_different,649.15,Fashion,North America,true
+RET-0000470,ORD-0002632,2023-10-23,size_mismatch,1224.90,Fashion,Europe,true
+RET-0000471,ORD-0002638,2024-06-15,changed_mind,159.79,Toys & Games,LATAM,true
+RET-0000472,ORD-0002661,2024-07-07,arrived_late,932.00,Fashion,Europe,true
+RET-0000473,ORD-0002669,2024-07-08,arrived_late,1215.03,Electronics,Europe,true
+RET-0000474,ORD-0002688,2025-08-23,damaged,44.15,Books,Europe,false
+RET-0000475,ORD-0002696,2023-12-18,changed_mind,265.18,Books,North America,true
+RET-0000476,ORD-0002699,2024-11-06,changed_mind,1035.51,Toys & Games,North America,true
+RET-0000477,ORD-0002705,2026-04-17,changed_mind,1678.23,Books,LATAM,true
+RET-0000478,ORD-0002707,2025-10-14,wrong_item,1749.24,Home & Kitchen,North America,true
+RET-0000479,ORD-0002709,2023-08-15,arrived_late,3577.13,Electronics,LATAM,true
+RET-0000480,ORD-0002713,2025-05-20,quality_issue,1402.69,Electronics,LATAM,false
+RET-0000481,ORD-0002720,2025-04-28,wrong_item,1368.20,Automotive Parts,Europe,true
+RET-0000482,ORD-0002743,2023-06-21,changed_mind,1200.61,Toys & Games,LATAM,true
+RET-0000483,ORD-0002750,2024-06-10,quality_issue,1373.07,Automotive Parts,Europe,true
+RET-0000484,ORD-0002770,2026-04-25,quality_issue,909.41,Fashion,APAC,false
+RET-0000485,ORD-0002782,2023-08-22,changed_mind,749.24,Automotive Parts,Europe,true
+RET-0000486,ORD-0002786,2025-04-04,wrong_item,196.58,Beauty & Personal Care,North America,true
+RET-0000487,ORD-0002793,2024-07-26,not_as_described,270.19,Beauty & Personal Care,Europe,true
+RET-0000488,ORD-0002805,2026-01-07,not_as_described,1595.09,Sports & Outdoors,North America,false
+RET-0000489,ORD-0002815,2025-07-20,changed_mind,903.79,Fashion,LATAM,true
+RET-0000490,ORD-0002820,2022-01-31,damaged,101.35,Toys & Games,Europe,true
+RET-0000491,ORD-0002822,2023-12-02,arrived_late,1295.71,Books,Europe,true
+RET-0000492,ORD-0002830,2024-06-11,changed_mind,614.56,Sports & Outdoors,North America,false
+RET-0000493,ORD-0002832,2025-04-21,wrong_item,97.61,Health & Wellness,North America,false
+RET-0000494,ORD-0002836,2025-06-12,not_as_described,2866.30,Automotive Parts,North America,true
+RET-0000495,ORD-0002839,2024-03-21,not_as_described,595.11,Home & Kitchen,North America,true
+RET-0000496,ORD-0002843,2024-05-02,changed_mind,814.45,Automotive Parts,Europe,false
+RET-0000497,ORD-0002847,2024-01-03,not_as_described,3013.86,Electronics,LATAM,true
+RET-0000498,ORD-0002850,2022-12-20,defective,3964.07,Electronics,APAC,true
+RET-0000499,ORD-0002854,2026-02-09,changed_mind,256.44,Home & Kitchen,Europe,true
+RET-0000500,ORD-0002867,2025-01-13,quality_issue,1191.74,Fashion,North America,true
+RET-0000501,ORD-0002869,2023-05-31,changed_mind,1379.36,Sports & Outdoors,APAC,true
+RET-0000502,ORD-0002871,2025-11-19,wrong_item,312.91,Books,Europe,true
+RET-0000503,ORD-0002883,2025-02-10,quality_issue,2377.61,Beauty & Personal Care,LATAM,true
+RET-0000504,ORD-0002894,2026-01-12,not_as_described,178.50,Health & Wellness,LATAM,true
+RET-0000505,ORD-0002895,2023-09-06,not_as_described,947.66,Home & Kitchen,Europe,true
+RET-0000506,ORD-0002896,2025-04-02,changed_mind,536.29,Fashion,Europe,false
+RET-0000507,ORD-0002897,2025-09-17,not_as_described,762.27,Home & Kitchen,North America,true
+RET-0000508,ORD-0002901,2025-08-30,quality_issue,196.21,Beauty & Personal Care,LATAM,true
+RET-0000509,ORD-0002904,2025-05-30,damaged,747.11,Books,North America,true
+RET-0000510,ORD-0002908,2024-03-13,wrong_item,2260.61,Automotive Parts,LATAM,false
+RET-0000511,ORD-0002923,2026-02-21,color_different,904.80,Fashion,Europe,true
+RET-0000512,ORD-0002941,2025-01-03,arrived_late,2360.94,Electronics,LATAM,true
+RET-0000513,ORD-0002955,2023-09-13,wrong_item,485.71,Beauty & Personal Care,North America,true
+RET-0000514,ORD-0002986,2024-06-14,size_mismatch,1885.83,Fashion,North America,true
+RET-0000515,ORD-0002989,2022-12-18,changed_mind,2473.51,Sports & Outdoors,LATAM,true
+RET-0000516,ORD-0003007,2025-12-13,defective,477.02,Electronics,North America,true
+RET-0000517,ORD-0003022,2024-12-12,quality_issue,798.70,Fashion,North America,true
+RET-0000518,ORD-0003023,2024-12-15,not_as_described,712.95,Toys & Games,Europe,false
+RET-0000519,ORD-0003028,2024-12-15,arrived_late,3383.73,Electronics,LATAM,false
+RET-0000520,ORD-0003036,2025-01-19,defective,832.34,Electronics,North America,true
+RET-0000521,ORD-0003039,2026-01-14,arrived_late,1114.17,Electronics,APAC,false
+RET-0000522,ORD-0003044,2025-09-18,changed_mind,300.99,Books,North America,true
+RET-0000523,ORD-0003054,2024-01-11,quality_issue,2097.82,Sports & Outdoors,North America,true
+RET-0000524,ORD-0003061,2024-12-12,quality_issue,2940.99,Automotive Parts,North America,true
+RET-0000525,ORD-0003073,2023-11-03,damaged,2597.68,Automotive Parts,North America,true
+RET-0000526,ORD-0003082,2025-01-09,not_as_described,3284.06,Beauty & Personal Care,Europe,false
+RET-0000527,ORD-0003087,2025-05-05,not_as_described,302.12,Sports & Outdoors,Europe,true
+RET-0000528,ORD-0003089,2023-08-02,quality_issue,1883.20,Fashion,North America,false
+RET-0000529,ORD-0003098,2025-07-17,wrong_item,51.19,Toys & Games,LATAM,true
+RET-0000530,ORD-0003113,2024-12-12,damaged,118.21,Books,APAC,true
+RET-0000531,ORD-0003123,2024-11-28,not_as_described,612.67,Home & Kitchen,Europe,true
+RET-0000532,ORD-0003127,2023-01-15,quality_issue,761.02,Home & Kitchen,North America,true
+RET-0000533,ORD-0003130,2024-12-30,damaged,309.59,Health & Wellness,North America,true
+RET-0000534,ORD-0003133,2022-04-11,wrong_item,958.07,Books,North America,true
+RET-0000535,ORD-0003136,2025-07-18,damaged,323.24,Books,Europe,true
+RET-0000536,ORD-0003139,2025-12-03,changed_mind,659.59,Sports & Outdoors,Europe,true
+RET-0000537,ORD-0003145,2025-05-17,damaged,735.45,Books,LATAM,true
+RET-0000538,ORD-0003157,2025-05-11,not_as_described,843.54,Automotive Parts,Europe,true
+RET-0000539,ORD-0003162,2022-12-26,damaged,1393.55,Automotive Parts,North America,true
+RET-0000540,ORD-0003182,2024-11-07,color_different,141.52,Fashion,Europe,true
+RET-0000541,ORD-0003188,2024-05-31,quality_issue,2044.17,Sports & Outdoors,North America,true
+RET-0000542,ORD-0003196,2025-12-17,damaged,868.91,Automotive Parts,LATAM,true
+RET-0000543,ORD-0003200,2024-01-24,arrived_late,1459.16,Toys & Games,Europe,false
+RET-0000544,ORD-0003204,2024-09-05,changed_mind,200.96,Health & Wellness,North America,true
+RET-0000545,ORD-0003207,2025-12-30,quality_issue,2436.27,Automotive Parts,APAC,false
+RET-0000546,ORD-0003210,2024-03-17,changed_mind,530.67,Home & Kitchen,North America,true
+RET-0000547,ORD-0003218,2024-04-15,not_as_described,3511.66,Health & Wellness,North America,true
+RET-0000548,ORD-0003219,2023-07-17,damaged,767.88,Health & Wellness,LATAM,true
+RET-0000549,ORD-0003232,2024-12-08,not_as_described,2147.70,Electronics,APAC,true
+RET-0000550,ORD-0003236,2022-09-29,wrong_item,241.46,Toys & Games,Europe,true
+RET-0000551,ORD-0003247,2025-08-29,quality_issue,1177.99,Fashion,LATAM,true
+RET-0000552,ORD-0003249,2025-07-11,damaged,483.97,Health & Wellness,North America,true
+RET-0000553,ORD-0003254,2023-12-29,wrong_item,333.11,Toys & Games,LATAM,true
+RET-0000554,ORD-0003258,2026-02-08,changed_mind,2378.76,Books,Europe,true
+RET-0000555,ORD-0003261,2022-03-06,quality_issue,121.56,Sports & Outdoors,LATAM,true
+RET-0000556,ORD-0003278,2022-12-17,changed_mind,296.60,Fashion,North America,true
+RET-0000557,ORD-0003279,2023-08-13,not_as_described,1606.27,Sports & Outdoors,LATAM,true
+RET-0000558,ORD-0003290,2024-01-13,wrong_item,471.52,Automotive Parts,Europe,true
+RET-0000559,ORD-0003292,2024-12-14,not_as_described,1765.36,Automotive Parts,North America,false
+RET-0000560,ORD-0003295,2025-03-16,damaged,400.70,Toys & Games,Europe,false
+RET-0000561,ORD-0003297,2025-07-09,size_mismatch,1492.56,Fashion,LATAM,true
+RET-0000562,ORD-0003300,2025-09-03,wrong_item,67.23,Books,LATAM,false
+RET-0000563,ORD-0003310,2026-01-11,quality_issue,503.00,Electronics,LATAM,true
+RET-0000564,ORD-0003312,2024-12-28,size_mismatch,1109.90,Fashion,APAC,false
+RET-0000565,ORD-0003321,2025-02-14,changed_mind,753.88,Automotive Parts,LATAM,true
+RET-0000566,ORD-0003330,2025-12-16,quality_issue,304.44,Toys & Games,APAC,true
+RET-0000567,ORD-0003337,2024-01-06,quality_issue,133.65,Beauty & Personal Care,Europe,true
+RET-0000568,ORD-0003342,2022-07-30,quality_issue,1034.46,Beauty & Personal Care,North America,false
+RET-0000569,ORD-0003344,2022-12-26,size_mismatch,2559.94,Fashion,North America,true
+RET-0000570,ORD-0003348,2024-06-21,arrived_late,1586.25,Sports & Outdoors,North America,true
+RET-0000571,ORD-0003352,2023-05-22,wrong_item,1724.10,Toys & Games,APAC,true
+RET-0000572,ORD-0003354,2025-12-15,color_different,123.98,Fashion,North America,true
+RET-0000573,ORD-0003356,2022-03-01,quality_issue,327.08,Electronics,North America,true
+RET-0000574,ORD-0003360,2025-08-16,wrong_item,48.78,Books,North America,true
+RET-0000575,ORD-0003367,2025-04-15,damaged,1554.23,Books,North America,true
+RET-0000576,ORD-0003369,2023-01-13,damaged,84.54,Books,North America,true
+RET-0000577,ORD-0003371,2023-08-07,changed_mind,1310.58,Books,North America,true
+RET-0000578,ORD-0003385,2025-12-22,wrong_item,2428.27,Automotive Parts,Europe,true
+RET-0000579,ORD-0003387,2023-12-05,not_as_described,481.93,Beauty & Personal Care,North America,true
+RET-0000580,ORD-0003389,2024-12-26,quality_issue,589.44,Fashion,Europe,true
+RET-0000581,ORD-0003391,2024-03-23,defective,771.33,Electronics,North America,true
+RET-0000582,ORD-0003401,2024-12-27,arrived_late,57.63,Beauty & Personal Care,Europe,true
+RET-0000583,ORD-0003406,2025-07-05,size_mismatch,458.36,Fashion,LATAM,true
+RET-0000584,ORD-0003424,2025-07-15,wrong_item,229.43,Automotive Parts,North America,true
+RET-0000585,ORD-0003430,2024-03-03,not_as_described,426.56,Electronics,North America,true
+RET-0000586,ORD-0003444,2023-04-15,wrong_item,416.05,Automotive Parts,LATAM,true
+RET-0000587,ORD-0003445,2023-10-08,color_different,120.92,Fashion,North America,true
+RET-0000588,ORD-0003449,2026-02-27,wrong_item,779.44,Home & Kitchen,North America,false
+RET-0000589,ORD-0003451,2025-12-24,changed_mind,1674.44,Beauty & Personal Care,North America,true
+RET-0000590,ORD-0003456,2024-07-19,quality_issue,1663.20,Sports & Outdoors,North America,true
+RET-0000591,ORD-0003458,2026-03-16,damaged,3211.02,Health & Wellness,Europe,false
+RET-0000592,ORD-0003459,2025-08-07,arrived_late,790.16,Electronics,LATAM,false
+RET-0000593,ORD-0003460,2025-03-03,changed_mind,642.48,Fashion,APAC,true
+RET-0000594,ORD-0003461,2024-12-15,wrong_item,1083.00,Sports & Outdoors,Europe,true
+RET-0000595,ORD-0003468,2024-05-24,defective,4222.60,Electronics,Europe,true
+RET-0000596,ORD-0003469,2025-03-31,wrong_item,953.48,Books,North America,false
+RET-0000597,ORD-0003473,2025-12-31,wrong_item,927.36,Books,Europe,true
+RET-0000598,ORD-0003474,2025-12-28,wrong_item,3684.03,Sports & Outdoors,North America,false
+RET-0000599,ORD-0003475,2022-10-05,wrong_item,960.39,Automotive Parts,North America,true
+RET-0000600,ORD-0003484,2023-12-07,quality_issue,350.32,Sports & Outdoors,North America,true
+RET-0000601,ORD-0003489,2025-06-09,changed_mind,326.50,Beauty & Personal Care,North America,true
+RET-0000602,ORD-0003490,2025-06-01,changed_mind,109.43,Fashion,APAC,true
+RET-0000603,ORD-0003495,2025-01-06,defective,2128.47,Electronics,Europe,true
+RET-0000604,ORD-0003499,2024-12-08,changed_mind,68.74,Books,Europe,false
+RET-0000605,ORD-0003505,2022-10-13,changed_mind,455.50,Toys & Games,Europe,true
+RET-0000606,ORD-0003514,2025-05-14,changed_mind,846.46,Automotive Parts,North America,true
+RET-0000607,ORD-0003518,2022-12-23,color_different,1605.98,Fashion,North America,false
+RET-0000608,ORD-0003529,2023-12-27,arrived_late,1471.26,Electronics,Europe,true
+RET-0000609,ORD-0003532,2024-10-26,not_as_described,368.04,Health & Wellness,North America,true
+RET-0000610,ORD-0003537,2022-12-18,changed_mind,284.20,Home & Kitchen,North America,false
+RET-0000611,ORD-0003539,2024-03-13,arrived_late,2278.92,Electronics,Europe,true
+RET-0000612,ORD-0003542,2024-08-17,arrived_late,545.09,Electronics,LATAM,true
+RET-0000613,ORD-0003543,2022-12-31,arrived_late,1403.29,Health & Wellness,North America,true
+RET-0000614,ORD-0003558,2024-12-26,changed_mind,852.21,Fashion,LATAM,true
+RET-0000615,ORD-0003562,2024-01-15,size_mismatch,397.94,Fashion,North America,true
+RET-0000616,ORD-0003567,2023-05-20,arrived_late,374.47,Electronics,LATAM,true
+RET-0000617,ORD-0003572,2023-12-06,arrived_late,391.38,Toys & Games,LATAM,false
+RET-0000618,ORD-0003574,2023-11-02,changed_mind,270.51,Fashion,North America,true
+RET-0000619,ORD-0003582,2024-04-30,quality_issue,133.09,Toys & Games,LATAM,true
+RET-0000620,ORD-0003590,2024-12-11,damaged,1056.92,Automotive Parts,APAC,true
+RET-0000621,ORD-0003593,2024-07-27,wrong_item,855.21,Home & Kitchen,Europe,true
+RET-0000622,ORD-0003595,2024-12-10,wrong_item,735.41,Home & Kitchen,Europe,true
+RET-0000623,ORD-0003598,2023-10-27,quality_issue,258.65,Fashion,North America,true
+RET-0000624,ORD-0003616,2025-11-30,damaged,1272.16,Beauty & Personal Care,Europe,true
+RET-0000625,ORD-0003621,2023-11-29,quality_issue,806.71,Electronics,Europe,true
+RET-0000626,ORD-0003624,2023-09-15,quality_issue,740.06,Electronics,North America,false
+RET-0000627,ORD-0003631,2023-07-21,damaged,216.49,Home & Kitchen,LATAM,true
+RET-0000628,ORD-0003637,2025-01-10,quality_issue,40.53,Health & Wellness,Europe,true
+RET-0000629,ORD-0003641,2025-10-10,wrong_item,108.09,Home & Kitchen,LATAM,true
+RET-0000630,ORD-0003644,2023-07-27,not_as_described,168.77,Home & Kitchen,LATAM,true
+RET-0000631,ORD-0003654,2023-12-03,defective,2207.66,Electronics,Europe,true
+RET-0000632,ORD-0003656,2024-12-18,quality_issue,2973.48,Sports & Outdoors,Europe,true
+RET-0000633,ORD-0003660,2024-12-31,damaged,348.81,Books,North America,true
+RET-0000634,ORD-0003662,2025-08-08,quality_issue,955.71,Automotive Parts,North America,true
+RET-0000635,ORD-0003666,2024-12-18,not_as_described,1128.77,Toys & Games,LATAM,true
+RET-0000636,ORD-0003670,2025-02-09,damaged,270.09,Beauty & Personal Care,APAC,true
+RET-0000637,ORD-0003673,2025-12-03,changed_mind,802.70,Health & Wellness,APAC,true
+RET-0000638,ORD-0003678,2024-01-19,wrong_item,1829.81,Books,APAC,true
+RET-0000639,ORD-0003683,2025-10-31,wrong_item,2228.94,Beauty & Personal Care,North America,true
+RET-0000640,ORD-0003684,2025-12-22,not_as_described,409.32,Electronics,LATAM,true
+RET-0000641,ORD-0003696,2024-08-03,arrived_late,3441.54,Toys & Games,LATAM,true
+RET-0000642,ORD-0003707,2025-02-25,color_different,2414.67,Fashion,North America,true
+RET-0000643,ORD-0003708,2025-10-04,changed_mind,110.40,Sports & Outdoors,Europe,true
+RET-0000644,ORD-0003721,2025-07-14,changed_mind,199.45,Books,Europe,true
+RET-0000645,ORD-0003723,2024-03-03,wrong_item,1276.61,Beauty & Personal Care,LATAM,true
+RET-0000646,ORD-0003745,2023-12-08,color_different,269.50,Fashion,North America,true
+RET-0000647,ORD-0003746,2023-06-12,not_as_described,292.24,Toys & Games,North America,true
+RET-0000648,ORD-0003753,2022-05-13,damaged,1124.82,Sports & Outdoors,North America,true
+RET-0000649,ORD-0003754,2025-08-03,quality_issue,487.11,Health & Wellness,Europe,true
+RET-0000650,ORD-0003757,2025-04-30,not_as_described,2772.52,Electronics,Europe,true
+RET-0000651,ORD-0003761,2022-02-27,quality_issue,389.42,Home & Kitchen,North America,true
+RET-0000652,ORD-0003772,2026-02-05,arrived_late,935.21,Toys & Games,North America,true
+RET-0000653,ORD-0003777,2025-12-09,damaged,239.53,Toys & Games,Europe,true
+RET-0000654,ORD-0003778,2023-10-19,not_as_described,293.23,Home & Kitchen,North America,true
+RET-0000655,ORD-0003781,2023-11-14,wrong_item,134.90,Books,North America,true
+RET-0000656,ORD-0003786,2022-11-09,arrived_late,1614.46,Sports & Outdoors,LATAM,true
+RET-0000657,ORD-0003787,2024-03-31,damaged,2060.03,Automotive Parts,LATAM,true
+RET-0000658,ORD-0003790,2023-07-22,changed_mind,987.33,Home & Kitchen,APAC,true
+RET-0000659,ORD-0003792,2023-10-05,changed_mind,84.94,Toys & Games,Europe,true
+RET-0000660,ORD-0003795,2024-02-16,damaged,29.30,Books,North America,true
+RET-0000661,ORD-0003803,2024-12-21,arrived_late,2977.47,Fashion,Europe,true
+RET-0000662,ORD-0003804,2025-01-13,damaged,302.59,Books,North America,true
+RET-0000663,ORD-0003805,2025-07-04,not_as_described,2677.43,Electronics,LATAM,true
+RET-0000664,ORD-0003806,2024-11-04,quality_issue,964.73,Electronics,North America,false
+RET-0000665,ORD-0003810,2023-01-20,wrong_item,2311.72,Automotive Parts,Europe,true
+RET-0000666,ORD-0003817,2025-07-10,changed_mind,752.92,Toys & Games,North America,false
+RET-0000667,ORD-0003846,2024-12-14,quality_issue,707.08,Fashion,APAC,true
+RET-0000668,ORD-0003847,2025-04-26,damaged,1502.28,Toys & Games,LATAM,true
+RET-0000669,ORD-0003854,2025-12-24,damaged,705.50,Automotive Parts,North America,true
+RET-0000670,ORD-0003857,2023-08-02,damaged,856.66,Sports & Outdoors,LATAM,true
+RET-0000671,ORD-0003862,2023-08-09,size_mismatch,1174.57,Fashion,Europe,true
+RET-0000672,ORD-0003866,2024-12-16,quality_issue,3679.06,Beauty & Personal Care,North America,true
+RET-0000673,ORD-0003869,2025-07-15,arrived_late,166.50,Health & Wellness,Europe,false
+RET-0000674,ORD-0003890,2024-12-10,not_as_described,1067.79,Automotive Parts,North America,true
+RET-0000675,ORD-0003897,2024-09-21,arrived_late,666.96,Sports & Outdoors,LATAM,false
+RET-0000676,ORD-0003898,2025-04-25,not_as_described,749.52,Health & Wellness,LATAM,true
+RET-0000677,ORD-0003901,2025-03-06,quality_issue,297.06,Home & Kitchen,LATAM,true
+RET-0000678,ORD-0003902,2025-04-01,damaged,1551.56,Books,LATAM,true
+RET-0000679,ORD-0003911,2022-12-27,wrong_item,1532.26,Health & Wellness,LATAM,true
+RET-0000680,ORD-0003912,2024-09-19,color_different,3764.06,Fashion,LATAM,false
+RET-0000681,ORD-0003917,2023-01-08,changed_mind,2452.15,Automotive Parts,Europe,true
+RET-0000682,ORD-0003920,2024-12-20,wrong_item,326.20,Toys & Games,Europe,false
+RET-0000683,ORD-0003921,2022-07-27,damaged,1969.18,Beauty & Personal Care,North America,false
+RET-0000684,ORD-0003923,2022-01-26,wrong_item,126.28,Toys & Games,LATAM,true
+RET-0000685,ORD-0003926,2022-07-15,quality_issue,643.12,Automotive Parts,North America,true
+RET-0000686,ORD-0003927,2023-08-21,quality_issue,1021.55,Home & Kitchen,Europe,true
+RET-0000687,ORD-0003928,2024-12-22,color_different,286.90,Fashion,LATAM,true
+RET-0000688,ORD-0003933,2025-11-09,wrong_item,1105.00,Books,Europe,true
+RET-0000689,ORD-0003936,2022-08-03,damaged,951.47,Home & Kitchen,North America,true
+RET-0000690,ORD-0003940,2025-12-14,wrong_item,1093.48,Sports & Outdoors,North America,true
+RET-0000691,ORD-0003956,2024-01-21,quality_issue,844.22,Beauty & Personal Care,North America,true
+RET-0000692,ORD-0003958,2025-02-22,changed_mind,1184.97,Sports & Outdoors,Europe,true
+RET-0000693,ORD-0003960,2024-11-28,wrong_item,133.79,Automotive Parts,North America,true
+RET-0000694,ORD-0003970,2025-12-05,quality_issue,429.52,Automotive Parts,North America,false
+RET-0000695,ORD-0003972,2025-01-22,size_mismatch,130.04,Fashion,LATAM,true
+RET-0000696,ORD-0003975,2026-01-03,quality_issue,290.12,Health & Wellness,LATAM,true
+RET-0000697,ORD-0003978,2025-10-17,arrived_late,344.55,Health & Wellness,North America,true
+RET-0000698,ORD-0003983,2023-04-29,arrived_late,188.69,Electronics,North America,true
+RET-0000699,ORD-0003984,2025-10-15,color_different,719.04,Fashion,Europe,true
+RET-0000700,ORD-0003992,2022-12-22,changed_mind,1779.15,Books,North America,true
+RET-0000701,ORD-0003994,2024-11-23,quality_issue,680.34,Health & Wellness,North America,true
+RET-0000702,ORD-0004000,2024-12-15,changed_mind,120.81,Books,North America,false
+RET-0000703,ORD-0004004,2024-07-23,quality_issue,3158.29,Electronics,Europe,true
+RET-0000704,ORD-0004011,2024-04-23,wrong_item,189.40,Toys & Games,North America,true
+RET-0000705,ORD-0004015,2025-04-18,not_as_described,249.42,Sports & Outdoors,Europe,true
+RET-0000706,ORD-0004018,2023-01-20,changed_mind,746.17,Automotive Parts,North America,true
+RET-0000707,ORD-0004019,2022-12-16,changed_mind,63.78,Beauty & Personal Care,North America,true
+RET-0000708,ORD-0004025,2026-03-18,size_mismatch,228.04,Fashion,North America,true
+RET-0000709,ORD-0004028,2024-07-29,wrong_item,886.15,Toys & Games,North America,true
+RET-0000710,ORD-0004029,2024-12-28,defective,4721.00,Electronics,LATAM,true
+RET-0000711,ORD-0004032,2025-12-23,changed_mind,651.85,Toys & Games,LATAM,false
+RET-0000712,ORD-0004041,2025-05-02,not_as_described,1835.24,Automotive Parts,Europe,false
+RET-0000713,ORD-0004043,2025-07-25,changed_mind,848.64,Home & Kitchen,North America,true
+RET-0000714,ORD-0004045,2023-12-18,color_different,111.66,Fashion,APAC,true
+RET-0000715,ORD-0004047,2024-12-04,defective,2080.84,Electronics,Europe,true
+RET-0000716,ORD-0004058,2025-12-03,quality_issue,1951.94,Toys & Games,LATAM,true
+RET-0000717,ORD-0004065,2024-07-04,arrived_late,325.03,Sports & Outdoors,Europe,true
+RET-0000718,ORD-0004087,2024-12-17,quality_issue,3596.86,Beauty & Personal Care,Europe,true
+RET-0000719,ORD-0004091,2025-04-04,size_mismatch,657.47,Fashion,North America,true
+RET-0000720,ORD-0004094,2023-12-09,damaged,1428.45,Automotive Parts,North America,true
+RET-0000721,ORD-0004095,2024-12-18,quality_issue,1794.83,Electronics,LATAM,true
+RET-0000722,ORD-0004097,2024-11-14,wrong_item,108.78,Books,North America,true
+RET-0000723,ORD-0004105,2025-01-14,not_as_described,834.69,Home & Kitchen,Europe,true
+RET-0000724,ORD-0004113,2025-12-18,not_as_described,401.22,Toys & Games,LATAM,true
+RET-0000725,ORD-0004123,2024-12-10,damaged,1195.59,Toys & Games,Europe,true
+RET-0000726,ORD-0004125,2023-03-05,defective,2642.33,Electronics,North America,true
+RET-0000727,ORD-0004128,2022-07-22,not_as_described,1561.90,Beauty & Personal Care,North America,true
+RET-0000728,ORD-0004130,2025-01-10,not_as_described,386.39,Toys & Games,Europe,true
+RET-0000729,ORD-0004136,2023-05-07,wrong_item,835.87,Automotive Parts,Europe,false
+RET-0000730,ORD-0004141,2024-06-05,changed_mind,1187.67,Home & Kitchen,LATAM,true
+RET-0000731,ORD-0004143,2024-04-05,size_mismatch,370.22,Fashion,North America,true
+RET-0000732,ORD-0004144,2024-01-21,not_as_described,1209.13,Electronics,Europe,true
+RET-0000733,ORD-0004152,2024-12-17,quality_issue,403.67,Electronics,North America,false
+RET-0000734,ORD-0004153,2024-12-24,quality_issue,300.03,Home & Kitchen,LATAM,true
+RET-0000735,ORD-0004164,2022-11-29,wrong_item,3098.34,Automotive Parts,LATAM,true
+RET-0000736,ORD-0004169,2023-01-25,wrong_item,107.43,Health & Wellness,Europe,true
+RET-0000737,ORD-0004171,2026-02-17,damaged,1391.88,Automotive Parts,North America,true
+RET-0000738,ORD-0004186,2022-12-24,damaged,608.15,Health & Wellness,North America,true
+RET-0000739,ORD-0004193,2026-04-17,arrived_late,774.10,Automotive Parts,APAC,true
+RET-0000740,ORD-0004195,2024-12-09,damaged,740.71,Health & Wellness,LATAM,false
+RET-0000741,ORD-0004196,2023-06-21,damaged,570.73,Automotive Parts,Europe,true
+RET-0000742,ORD-0004200,2024-06-15,not_as_described,627.56,Electronics,Europe,false
+RET-0000743,ORD-0004203,2024-12-12,changed_mind,1162.87,Toys & Games,North America,true
+RET-0000744,ORD-0004207,2025-01-02,arrived_late,58.69,Beauty & Personal Care,North America,true
+RET-0000745,ORD-0004208,2022-12-18,changed_mind,183.91,Books,LATAM,false
+RET-0000746,ORD-0004211,2024-05-14,damaged,799.65,Books,Europe,true
+RET-0000747,ORD-0004214,2022-06-25,wrong_item,167.85,Books,North America,true
+RET-0000748,ORD-0004225,2024-06-07,size_mismatch,1032.84,Fashion,North America,true
+RET-0000749,ORD-0004230,2024-09-25,wrong_item,884.23,Health & Wellness,APAC,false
+RET-0000750,ORD-0004235,2024-12-04,wrong_item,758.66,Home & Kitchen,Europe,false
+RET-0000751,ORD-0004247,2024-11-21,quality_issue,685.82,Beauty & Personal Care,North America,true
+RET-0000752,ORD-0004251,2023-10-22,changed_mind,922.74,Automotive Parts,North America,true
+RET-0000753,ORD-0004254,2025-09-21,damaged,275.28,Beauty & Personal Care,Europe,true
+RET-0000754,ORD-0004258,2022-08-04,not_as_described,1908.61,Automotive Parts,North America,true
+RET-0000755,ORD-0004260,2026-01-08,wrong_item,1404.66,Sports & Outdoors,LATAM,true
+RET-0000756,ORD-0004263,2024-12-13,wrong_item,827.43,Sports & Outdoors,North America,true
+RET-0000757,ORD-0004272,2024-05-04,damaged,2525.42,Beauty & Personal Care,Europe,true
+RET-0000758,ORD-0004273,2024-12-21,damaged,877.30,Books,North America,false
+RET-0000759,ORD-0004277,2025-10-08,not_as_described,549.31,Sports & Outdoors,North America,true
+RET-0000760,ORD-0004284,2026-03-18,not_as_described,273.63,Automotive Parts,LATAM,true
+RET-0000761,ORD-0004290,2024-01-16,arrived_late,1609.11,Automotive Parts,LATAM,true
+RET-0000762,ORD-0004302,2024-11-29,arrived_late,387.62,Home & Kitchen,Europe,true
+RET-0000763,ORD-0004313,2026-04-16,quality_issue,727.25,Beauty & Personal Care,LATAM,true
+RET-0000764,ORD-0004315,2025-09-24,changed_mind,77.56,Fashion,North America,true
+RET-0000765,ORD-0004316,2024-08-18,arrived_late,920.48,Electronics,North America,true
+RET-0000766,ORD-0004317,2024-03-29,damaged,2477.11,Toys & Games,North America,true
+RET-0000767,ORD-0004319,2023-09-22,not_as_described,464.70,Health & Wellness,Europe,true
+RET-0000768,ORD-0004320,2025-10-28,quality_issue,1315.34,Sports & Outdoors,North America,true
+RET-0000769,ORD-0004326,2023-06-23,arrived_late,3801.13,Electronics,Europe,true
+RET-0000770,ORD-0004337,2025-12-15,defective,1028.86,Electronics,North America,false
+RET-0000771,ORD-0004339,2023-12-08,changed_mind,437.62,Sports & Outdoors,North America,true
+RET-0000772,ORD-0004347,2023-01-04,color_different,62.58,Fashion,North America,false
+RET-0000773,ORD-0004379,2025-12-14,changed_mind,359.90,Books,LATAM,true
+RET-0000774,ORD-0004388,2026-04-15,quality_issue,613.36,Beauty & Personal Care,APAC,true
+RET-0000775,ORD-0004393,2023-07-25,wrong_item,1564.32,Books,North America,true
+RET-0000776,ORD-0004399,2024-04-01,size_mismatch,910.18,Fashion,North America,true
+RET-0000777,ORD-0004403,2024-03-07,wrong_item,628.52,Sports & Outdoors,North America,true
+RET-0000778,ORD-0004409,2026-04-14,defective,648.83,Electronics,Europe,true
+RET-0000779,ORD-0004411,2024-01-03,not_as_described,759.68,Automotive Parts,Europe,true
+RET-0000780,ORD-0004416,2024-06-09,size_mismatch,1502.88,Fashion,North America,true
+RET-0000781,ORD-0004420,2023-04-19,not_as_described,2368.70,Beauty & Personal Care,LATAM,true
+RET-0000782,ORD-0004432,2023-07-22,wrong_item,3291.39,Beauty & Personal Care,LATAM,true
+RET-0000783,ORD-0004435,2025-01-09,quality_issue,819.88,Home & Kitchen,Europe,true
+RET-0000784,ORD-0004436,2023-12-11,quality_issue,1519.91,Electronics,Europe,true
+RET-0000785,ORD-0004440,2025-04-28,quality_issue,2515.39,Beauty & Personal Care,LATAM,true
+RET-0000786,ORD-0004449,2024-08-19,changed_mind,343.80,Toys & Games,North America,true
+RET-0000787,ORD-0004451,2024-02-26,damaged,450.99,Home & Kitchen,North America,true
+RET-0000788,ORD-0004461,2025-11-16,quality_issue,802.67,Electronics,APAC,true
+RET-0000789,ORD-0004466,2025-07-21,changed_mind,207.74,Sports & Outdoors,LATAM,false
+RET-0000790,ORD-0004471,2024-12-26,damaged,1358.54,Sports & Outdoors,LATAM,true
+RET-0000791,ORD-0004478,2025-10-26,not_as_described,2701.07,Electronics,North America,true
+RET-0000792,ORD-0004487,2023-08-06,arrived_late,646.94,Books,LATAM,true
+RET-0000793,ORD-0004495,2023-11-30,quality_issue,2292.20,Home & Kitchen,Europe,true
+RET-0000794,ORD-0004508,2023-08-25,arrived_late,1792.81,Electronics,Europe,true
+RET-0000795,ORD-0004515,2023-04-20,arrived_late,125.41,Beauty & Personal Care,North America,true
+RET-0000796,ORD-0004519,2022-11-27,quality_issue,2715.13,Electronics,LATAM,true
+RET-0000797,ORD-0004522,2024-01-08,damaged,1331.93,Sports & Outdoors,LATAM,true
+RET-0000798,ORD-0004523,2026-01-09,arrived_late,1246.34,Toys & Games,Europe,true
+RET-0000799,ORD-0004539,2024-12-31,changed_mind,986.46,Toys & Games,LATAM,false
+RET-0000800,ORD-0004542,2025-05-08,quality_issue,1233.78,Sports & Outdoors,Europe,true
+RET-0000801,ORD-0004560,2025-08-31,arrived_late,957.47,Beauty & Personal Care,Europe,true
+RET-0000802,ORD-0004570,2024-09-29,quality_issue,1113.32,Electronics,Europe,true
+RET-0000803,ORD-0004573,2024-01-21,defective,2764.66,Electronics,North America,true
+RET-0000804,ORD-0004577,2024-11-08,not_as_described,975.48,Toys & Games,North America,true
+RET-0000805,ORD-0004582,2023-12-09,wrong_item,183.23,Beauty & Personal Care,North America,true
+RET-0000806,ORD-0004589,2025-11-22,changed_mind,469.12,Home & Kitchen,APAC,true
+RET-0000807,ORD-0004593,2026-03-15,not_as_described,1818.99,Automotive Parts,LATAM,true
+RET-0000808,ORD-0004596,2024-05-24,quality_issue,1642.78,Fashion,Europe,true
+RET-0000809,ORD-0004597,2024-02-04,arrived_late,904.21,Home & Kitchen,Europe,true
+RET-0000810,ORD-0004601,2023-07-29,changed_mind,1359.09,Toys & Games,Europe,true
+RET-0000811,ORD-0004602,2025-08-09,arrived_late,158.13,Fashion,LATAM,true
+RET-0000812,ORD-0004625,2024-03-07,not_as_described,259.71,Automotive Parts,LATAM,true
+RET-0000813,ORD-0004626,2024-05-09,damaged,375.24,Books,APAC,true
+RET-0000814,ORD-0004629,2025-01-06,size_mismatch,346.85,Fashion,North America,true
+RET-0000815,ORD-0004632,2025-02-10,arrived_late,1445.78,Automotive Parts,Europe,true
+RET-0000816,ORD-0004638,2025-12-10,arrived_late,802.32,Fashion,Europe,true
+RET-0000817,ORD-0004641,2024-08-08,changed_mind,305.10,Beauty & Personal Care,North America,true
+RET-0000818,ORD-0004642,2022-08-10,arrived_late,610.84,Books,LATAM,true
+RET-0000819,ORD-0004649,2025-09-08,quality_issue,409.45,Automotive Parts,APAC,true
+RET-0000820,ORD-0004656,2026-01-18,changed_mind,403.55,Toys & Games,Europe,true
+RET-0000821,ORD-0004659,2024-02-18,quality_issue,932.65,Sports & Outdoors,North America,true
+RET-0000822,ORD-0004671,2023-12-24,changed_mind,348.31,Fashion,Europe,false
+RET-0000823,ORD-0004679,2026-01-22,damaged,520.96,Sports & Outdoors,North America,true
+RET-0000824,ORD-0004687,2023-11-07,quality_issue,821.59,Home & Kitchen,Europe,true
+RET-0000825,ORD-0004688,2025-04-06,defective,1890.90,Electronics,Europe,true
+RET-0000826,ORD-0004691,2025-07-13,quality_issue,2065.42,Toys & Games,LATAM,true
+RET-0000827,ORD-0004693,2026-02-27,changed_mind,843.77,Books,North America,false
+RET-0000828,ORD-0004698,2024-07-31,quality_issue,5348.81,Electronics,Europe,true
+RET-0000829,ORD-0004703,2022-10-27,quality_issue,1429.51,Electronics,Europe,true
+RET-0000830,ORD-0004714,2024-02-04,quality_issue,196.00,Beauty & Personal Care,Europe,false
+RET-0000831,ORD-0004738,2024-12-28,damaged,289.60,Automotive Parts,LATAM,true
+RET-0000832,ORD-0004742,2025-11-20,arrived_late,2399.56,Electronics,North America,true
+RET-0000833,ORD-0004747,2026-02-06,arrived_late,554.21,Automotive Parts,Europe,false
+RET-0000834,ORD-0004748,2026-01-21,defective,3303.33,Electronics,APAC,true
+RET-0000835,ORD-0004751,2022-03-12,size_mismatch,524.03,Fashion,North America,true
+RET-0000836,ORD-0004756,2023-12-09,quality_issue,1617.35,Electronics,Europe,true
+RET-0000837,ORD-0004765,2025-11-15,wrong_item,139.14,Beauty & Personal Care,Europe,true
+RET-0000838,ORD-0004767,2025-03-28,size_mismatch,528.43,Fashion,LATAM,false
+RET-0000839,ORD-0004787,2024-12-12,not_as_described,2384.98,Automotive Parts,North America,false
+RET-0000840,ORD-0004789,2025-11-25,arrived_late,2091.84,Electronics,North America,true
+RET-0000841,ORD-0004790,2025-11-05,defective,502.21,Electronics,LATAM,true
+RET-0000842,ORD-0004791,2024-08-11,quality_issue,721.46,Home & Kitchen,North America,true
+RET-0000843,ORD-0004811,2025-04-14,defective,627.27,Electronics,LATAM,true
+RET-0000844,ORD-0004819,2025-01-15,damaged,285.23,Health & Wellness,Europe,true
+RET-0000845,ORD-0004832,2023-09-10,size_mismatch,665.33,Fashion,Europe,true
+RET-0000846,ORD-0004834,2025-10-20,not_as_described,547.71,Home & Kitchen,APAC,true
+RET-0000847,ORD-0004838,2025-12-12,wrong_item,285.07,Beauty & Personal Care,Europe,true
+RET-0000848,ORD-0004840,2023-12-11,wrong_item,1599.48,Books,North America,true
+RET-0000849,ORD-0004842,2024-06-26,damaged,1471.08,Health & Wellness,North America,true
+RET-0000850,ORD-0004844,2022-12-12,not_as_described,159.20,Toys & Games,North America,true
+RET-0000851,ORD-0004846,2025-07-05,arrived_late,1394.82,Electronics,Europe,true
+RET-0000852,ORD-0004850,2024-12-06,changed_mind,694.58,Fashion,North America,true
+RET-0000853,ORD-0004854,2023-12-16,arrived_late,37.64,Books,Europe,true
+RET-0000854,ORD-0004855,2024-11-20,not_as_described,1075.73,Electronics,Europe,true
+RET-0000855,ORD-0004857,2025-07-18,damaged,40.91,Health & Wellness,North America,true
+RET-0000856,ORD-0004863,2022-12-15,wrong_item,2404.25,Sports & Outdoors,North America,true
+RET-0000857,ORD-0004870,2025-02-07,wrong_item,1040.82,Home & Kitchen,North America,false
+RET-0000858,ORD-0004876,2024-09-14,quality_issue,1054.52,Sports & Outdoors,LATAM,true
+RET-0000859,ORD-0004881,2025-12-13,wrong_item,1720.00,Home & Kitchen,North America,true
+RET-0000860,ORD-0004893,2024-12-24,wrong_item,1824.15,Home & Kitchen,LATAM,false
+RET-0000861,ORD-0004894,2026-05-03,changed_mind,453.27,Sports & Outdoors,APAC,true
+RET-0000862,ORD-0004916,2025-12-18,quality_issue,1471.88,Electronics,North America,true
+RET-0000863,ORD-0004917,2025-06-16,not_as_described,807.01,Beauty & Personal Care,APAC,true
+RET-0000864,ORD-0004922,2025-05-15,wrong_item,830.88,Health & Wellness,North America,false
+RET-0000865,ORD-0004924,2022-03-10,quality_issue,2255.11,Electronics,Europe,true
+RET-0000866,ORD-0004927,2024-08-11,changed_mind,663.40,Toys & Games,Europe,true
+RET-0000867,ORD-0004928,2025-07-30,wrong_item,1422.88,Automotive Parts,Europe,true
+RET-0000868,ORD-0004929,2024-01-04,wrong_item,297.67,Beauty & Personal Care,APAC,true
+RET-0000869,ORD-0004932,2024-08-03,damaged,109.23,Automotive Parts,Europe,true
+RET-0000870,ORD-0004933,2024-12-18,quality_issue,540.64,Fashion,APAC,true
+RET-0000871,ORD-0004940,2024-08-10,changed_mind,1724.81,Health & Wellness,Europe,true
+RET-0000872,ORD-0004946,2024-02-01,quality_issue,1209.94,Beauty & Personal Care,North America,true
+RET-0000873,ORD-0004952,2025-10-07,quality_issue,875.76,Beauty & Personal Care,North America,true
+RET-0000874,ORD-0004963,2025-11-29,not_as_described,1078.50,Home & Kitchen,North America,true
+RET-0000875,ORD-0004966,2023-07-24,damaged,1033.74,Beauty & Personal Care,Europe,false
+RET-0000876,ORD-0004970,2022-04-25,wrong_item,232.16,Sports & Outdoors,North America,false
+RET-0000877,ORD-0004977,2022-03-14,quality_issue,2091.73,Automotive Parts,North America,false
+RET-0000878,ORD-0004980,2023-02-02,wrong_item,599.61,Beauty & Personal Care,Europe,true
+RET-0000879,ORD-0004996,2024-03-07,wrong_item,61.22,Toys & Games,LATAM,true
+RET-0000880,ORD-0005006,2024-07-12,quality_issue,710.36,Home & Kitchen,Europe,true
+RET-0000881,ORD-0005012,2024-06-23,arrived_late,876.16,Electronics,Europe,false
+RET-0000882,ORD-0005013,2026-04-29,wrong_item,603.37,Toys & Games,APAC,false
+RET-0000883,ORD-0005016,2024-12-16,defective,1139.50,Electronics,North America,true
+RET-0000884,ORD-0005017,2026-01-22,arrived_late,345.86,Beauty & Personal Care,Europe,true
+RET-0000885,ORD-0005019,2025-01-01,not_as_described,3025.25,Health & Wellness,Europe,true
+RET-0000886,ORD-0005022,2023-09-19,arrived_late,295.85,Automotive Parts,Europe,false
+RET-0000887,ORD-0005023,2026-01-15,color_different,2078.59,Fashion,North America,true
+RET-0000888,ORD-0005034,2024-12-28,changed_mind,248.48,Fashion,Europe,true
+RET-0000889,ORD-0005036,2023-12-10,quality_issue,457.94,Home & Kitchen,North America,true
+RET-0000890,ORD-0005040,2025-05-20,damaged,2167.00,Toys & Games,APAC,true
+RET-0000891,ORD-0005041,2026-02-21,not_as_described,101.69,Toys & Games,Europe,true
+RET-0000892,ORD-0005047,2025-05-27,wrong_item,3151.35,Books,North America,true
+RET-0000893,ORD-0005048,2025-12-24,damaged,135.87,Beauty & Personal Care,Europe,true
+RET-0000894,ORD-0005051,2023-08-09,arrived_late,1651.38,Fashion,North America,true
+RET-0000895,ORD-0005052,2025-08-18,size_mismatch,1281.74,Fashion,LATAM,true
+RET-0000896,ORD-0005056,2025-03-22,quality_issue,271.75,Fashion,North America,true
+RET-0000897,ORD-0005060,2025-09-17,defective,2390.71,Electronics,Europe,true
+RET-0000898,ORD-0005076,2024-02-21,wrong_item,1481.12,Sports & Outdoors,Europe,false
+RET-0000899,ORD-0005078,2023-01-14,not_as_described,213.85,Home & Kitchen,APAC,false
+RET-0000900,ORD-0005081,2025-12-15,not_as_described,1886.65,Home & Kitchen,Europe,true
+RET-0000901,ORD-0005083,2023-11-13,color_different,891.36,Fashion,Europe,true
+RET-0000902,ORD-0005085,2024-02-22,arrived_late,921.41,Electronics,North America,true
+RET-0000903,ORD-0005086,2025-09-23,quality_issue,1739.39,Toys & Games,North America,false
+RET-0000904,ORD-0005088,2026-04-01,changed_mind,3655.82,Beauty & Personal Care,LATAM,false
+RET-0000905,ORD-0005090,2022-07-29,color_different,103.97,Fashion,North America,true
+RET-0000906,ORD-0005095,2023-12-27,damaged,2444.27,Automotive Parts,North America,false
+RET-0000907,ORD-0005098,2025-12-02,not_as_described,659.04,Toys & Games,North America,true
+RET-0000908,ORD-0005101,2023-12-18,wrong_item,317.69,Books,Europe,false
+RET-0000909,ORD-0005113,2025-10-03,defective,466.01,Electronics,North America,true
+RET-0000910,ORD-0005123,2025-03-14,quality_issue,2755.20,Health & Wellness,APAC,true
+RET-0000911,ORD-0005129,2024-12-10,damaged,121.06,Books,North America,true
+RET-0000912,ORD-0005135,2026-05-07,not_as_described,82.56,Beauty & Personal Care,LATAM,true
+RET-0000913,ORD-0005149,2025-07-21,wrong_item,348.38,Books,Europe,true
+RET-0000914,ORD-0005170,2023-12-20,defective,2592.05,Electronics,Europe,true
+RET-0000915,ORD-0005171,2023-06-06,wrong_item,1172.58,Toys & Games,Europe,true
+RET-0000916,ORD-0005174,2025-09-21,damaged,229.86,Beauty & Personal Care,Europe,true
+RET-0000917,ORD-0005187,2025-01-13,wrong_item,471.37,Beauty & Personal Care,LATAM,true
+RET-0000918,ORD-0005189,2023-06-26,size_mismatch,362.59,Fashion,Europe,true
+RET-0000919,ORD-0005191,2024-07-05,arrived_late,251.22,Automotive Parts,Europe,true
+RET-0000920,ORD-0005204,2026-04-01,changed_mind,202.29,Automotive Parts,North America,true
+RET-0000921,ORD-0005207,2025-02-09,arrived_late,1035.20,Electronics,North America,true
+RET-0000922,ORD-0005210,2023-08-01,color_different,280.35,Fashion,Europe,true
+RET-0000923,ORD-0005218,2024-08-06,wrong_item,954.36,Automotive Parts,North America,true
+RET-0000924,ORD-0005222,2025-01-11,changed_mind,2098.75,Sports & Outdoors,Europe,true
+RET-0000925,ORD-0005224,2024-12-12,changed_mind,1266.63,Automotive Parts,LATAM,true
+RET-0000926,ORD-0005237,2024-07-15,not_as_described,775.88,Home & Kitchen,LATAM,true
+RET-0000927,ORD-0005241,2026-01-08,not_as_described,292.68,Beauty & Personal Care,LATAM,true
+RET-0000928,ORD-0005252,2022-04-15,changed_mind,475.12,Fashion,North America,true
+RET-0000929,ORD-0005262,2026-03-26,wrong_item,274.27,Automotive Parts,Europe,true
+RET-0000930,ORD-0005263,2025-06-30,defective,2481.67,Electronics,Europe,true
+RET-0000931,ORD-0005269,2025-10-03,arrived_late,2205.25,Electronics,Europe,true
+RET-0000932,ORD-0005279,2025-09-04,quality_issue,355.42,Home & Kitchen,North America,true
+RET-0000933,ORD-0005294,2025-03-18,arrived_late,382.78,Home & Kitchen,LATAM,false
+RET-0000934,ORD-0005314,2025-08-31,not_as_described,1005.20,Toys & Games,North America,true
+RET-0000935,ORD-0005316,2025-05-14,changed_mind,2226.99,Books,North America,true
+RET-0000936,ORD-0005328,2023-08-07,quality_issue,180.48,Fashion,Europe,true
+RET-0000937,ORD-0005332,2024-12-28,arrived_late,1026.42,Sports & Outdoors,Europe,true
+RET-0000938,ORD-0005346,2023-08-12,changed_mind,1208.61,Automotive Parts,North America,true
+RET-0000939,ORD-0005351,2025-03-17,quality_issue,1515.08,Automotive Parts,North America,true
+RET-0000940,ORD-0005360,2025-10-17,wrong_item,686.57,Books,North America,true
+RET-0000941,ORD-0005361,2025-06-06,defective,2912.07,Electronics,North America,true
+RET-0000942,ORD-0005367,2025-11-17,wrong_item,195.50,Toys & Games,North America,true
+RET-0000943,ORD-0005368,2024-01-23,damaged,1649.09,Health & Wellness,North America,false
+RET-0000944,ORD-0005382,2024-04-20,changed_mind,1166.65,Sports & Outdoors,Europe,true
+RET-0000945,ORD-0005392,2024-07-06,wrong_item,837.97,Books,North America,true
+RET-0000946,ORD-0005394,2023-05-08,changed_mind,74.92,Sports & Outdoors,Europe,true
+RET-0000947,ORD-0005403,2023-09-15,arrived_late,5366.57,Electronics,LATAM,true
+RET-0000948,ORD-0005404,2023-08-29,not_as_described,2026.24,Electronics,Europe,true
+RET-0000949,ORD-0005414,2025-04-05,arrived_late,1863.26,Home & Kitchen,North America,false
+RET-0000950,ORD-0005419,2024-12-26,damaged,999.87,Books,APAC,true
+RET-0000951,ORD-0005421,2023-04-10,wrong_item,465.88,Books,LATAM,true
+RET-0000952,ORD-0005427,2025-09-09,damaged,1008.90,Home & Kitchen,Europe,true
+RET-0000953,ORD-0005437,2025-12-12,damaged,909.36,Automotive Parts,Europe,true
+RET-0000954,ORD-0005438,2024-12-17,defective,3394.75,Electronics,APAC,true
+RET-0000955,ORD-0005447,2023-12-19,changed_mind,718.04,Toys & Games,APAC,true
+RET-0000956,ORD-0005448,2025-07-08,damaged,592.70,Toys & Games,North America,false
+RET-0000957,ORD-0005449,2023-12-16,arrived_late,3509.59,Fashion,LATAM,true
+RET-0000958,ORD-0005461,2025-12-16,color_different,930.20,Fashion,Europe,false
+RET-0000959,ORD-0005465,2025-09-24,defective,589.08,Electronics,Europe,true
+RET-0000960,ORD-0005471,2025-01-11,not_as_described,3334.43,Electronics,North America,true
+RET-0000961,ORD-0005474,2024-11-17,damaged,105.71,Health & Wellness,North America,true
+RET-0000962,ORD-0005485,2024-07-10,quality_issue,1978.13,Fashion,North America,true
+RET-0000963,ORD-0005491,2025-01-28,not_as_described,1654.88,Sports & Outdoors,Europe,true
+RET-0000964,ORD-0005492,2025-01-27,wrong_item,148.65,Books,LATAM,true
+RET-0000965,ORD-0005496,2025-06-02,quality_issue,36.93,Beauty & Personal Care,North America,true
+RET-0000966,ORD-0005508,2023-07-31,changed_mind,672.20,Home & Kitchen,North America,true
+RET-0000967,ORD-0005509,2022-12-17,wrong_item,1783.54,Home & Kitchen,North America,true
+RET-0000968,ORD-0005513,2024-12-03,size_mismatch,457.83,Fashion,LATAM,true
+RET-0000969,ORD-0005520,2025-12-22,quality_issue,565.76,Automotive Parts,Europe,true
+RET-0000970,ORD-0005524,2024-10-28,changed_mind,352.81,Automotive Parts,LATAM,false
+RET-0000971,ORD-0005533,2024-05-22,damaged,531.15,Health & Wellness,North America,true
+RET-0000972,ORD-0005543,2022-12-05,damaged,3430.42,Automotive Parts,North America,true
+RET-0000973,ORD-0005544,2024-09-28,wrong_item,816.37,Beauty & Personal Care,Europe,false
+RET-0000974,ORD-0005548,2025-08-12,damaged,430.10,Sports & Outdoors,LATAM,false
+RET-0000975,ORD-0005559,2024-08-02,not_as_described,314.71,Electronics,North America,true
+RET-0000976,ORD-0005563,2025-12-23,changed_mind,878.04,Beauty & Personal Care,Europe,true
+RET-0000977,ORD-0005566,2025-09-27,quality_issue,673.25,Fashion,Europe,true
+RET-0000978,ORD-0005569,2024-10-27,quality_issue,1108.06,Automotive Parts,APAC,true
+RET-0000979,ORD-0005570,2026-02-19,arrived_late,2156.93,Sports & Outdoors,APAC,false
+RET-0000980,ORD-0005573,2025-09-02,damaged,1507.46,Home & Kitchen,Europe,true
+RET-0000981,ORD-0005575,2026-01-03,damaged,561.16,Beauty & Personal Care,North America,false
+RET-0000982,ORD-0005576,2023-05-19,damaged,1439.33,Sports & Outdoors,APAC,true
+RET-0000983,ORD-0005577,2023-06-11,changed_mind,854.56,Home & Kitchen,Europe,true
+RET-0000984,ORD-0005581,2024-08-09,not_as_described,2473.14,Electronics,APAC,false
+RET-0000985,ORD-0005592,2025-01-09,not_as_described,1060.65,Health & Wellness,LATAM,true
+RET-0000986,ORD-0005600,2022-10-31,arrived_late,1066.58,Sports & Outdoors,Europe,false
+RET-0000987,ORD-0005602,2024-08-07,color_different,353.68,Fashion,Europe,true
+RET-0000988,ORD-0005621,2024-12-28,arrived_late,4515.76,Automotive Parts,LATAM,true
+RET-0000989,ORD-0005622,2025-09-12,not_as_described,544.94,Home & Kitchen,APAC,true
+RET-0000990,ORD-0005625,2024-01-12,arrived_late,5196.28,Automotive Parts,Europe,true
+RET-0000991,ORD-0005634,2025-02-25,damaged,53.60,Books,LATAM,true
+RET-0000992,ORD-0005635,2026-05-24,damaged,2617.21,Automotive Parts,LATAM,true
+RET-0000993,ORD-0005637,2022-09-30,not_as_described,57.73,Automotive Parts,North America,true
+RET-0000994,ORD-0005643,2022-08-05,changed_mind,583.95,Toys & Games,Europe,true
+RET-0000995,ORD-0005645,2024-12-24,quality_issue,2397.42,Electronics,LATAM,true
+RET-0000996,ORD-0005649,2025-12-24,damaged,1379.16,Books,Europe,true
+RET-0000997,ORD-0005655,2025-09-01,size_mismatch,880.36,Fashion,Europe,true
+RET-0000998,ORD-0005660,2025-12-24,size_mismatch,479.43,Fashion,Europe,true
+RET-0000999,ORD-0005668,2026-04-03,arrived_late,2281.62,Beauty & Personal Care,APAC,true
+RET-0001000,ORD-0005669,2024-07-01,damaged,3282.15,Books,Europe,true
+RET-0001001,ORD-0005675,2025-11-06,changed_mind,1112.57,Beauty & Personal Care,North America,false
+RET-0001002,ORD-0005685,2024-12-18,damaged,159.39,Home & Kitchen,Europe,true
+RET-0001003,ORD-0005692,2024-02-14,wrong_item,1293.56,Sports & Outdoors,Europe,true
+RET-0001004,ORD-0005698,2025-08-17,color_different,750.84,Fashion,LATAM,true
+RET-0001005,ORD-0005700,2025-12-20,changed_mind,1111.08,Fashion,LATAM,true
+RET-0001006,ORD-0005720,2025-12-22,wrong_item,1220.94,Books,North America,true
+RET-0001007,ORD-0005722,2022-06-16,quality_issue,1724.13,Home & Kitchen,Europe,true
+RET-0001008,ORD-0005726,2026-04-06,not_as_described,2924.55,Automotive Parts,North America,false
+RET-0001009,ORD-0005734,2026-03-22,arrived_late,1717.89,Electronics,North America,true
+RET-0001010,ORD-0005742,2025-04-26,arrived_late,1449.72,Toys & Games,LATAM,true
+RET-0001011,ORD-0005748,2024-07-07,not_as_described,76.94,Beauty & Personal Care,APAC,true
+RET-0001012,ORD-0005750,2024-12-14,changed_mind,364.83,Home & Kitchen,Europe,true
+RET-0001013,ORD-0005757,2023-12-09,not_as_described,2197.99,Electronics,North America,true
+RET-0001014,ORD-0005762,2023-12-14,size_mismatch,1586.50,Fashion,LATAM,true
+RET-0001015,ORD-0005763,2023-12-25,quality_issue,168.45,Beauty & Personal Care,North America,true
+RET-0001016,ORD-0005769,2024-05-31,wrong_item,258.52,Books,LATAM,true
+RET-0001017,ORD-0005792,2024-05-14,wrong_item,351.68,Toys & Games,LATAM,true
+RET-0001018,ORD-0005795,2023-07-25,arrived_late,160.65,Toys & Games,Europe,true
+RET-0001019,ORD-0005798,2022-03-29,quality_issue,2444.13,Electronics,LATAM,true
+RET-0001020,ORD-0005812,2024-02-10,quality_issue,5838.47,Sports & Outdoors,LATAM,true
+RET-0001021,ORD-0005813,2023-11-17,changed_mind,266.96,Beauty & Personal Care,Europe,true
+RET-0001022,ORD-0005814,2025-07-24,not_as_described,1580.93,Toys & Games,North America,true
+RET-0001023,ORD-0005815,2023-11-16,not_as_described,1142.95,Electronics,Europe,true
+RET-0001024,ORD-0005816,2025-12-27,arrived_late,539.26,Sports & Outdoors,Europe,false
+RET-0001025,ORD-0005819,2024-01-02,damaged,108.06,Beauty & Personal Care,LATAM,false
+RET-0001026,ORD-0005824,2026-02-04,quality_issue,532.50,Electronics,North America,true
+RET-0001027,ORD-0005830,2025-12-26,changed_mind,237.54,Home & Kitchen,Europe,false
+RET-0001028,ORD-0005833,2025-05-27,not_as_described,507.86,Health & Wellness,Europe,true
+RET-0001029,ORD-0005835,2023-02-12,damaged,613.69,Automotive Parts,APAC,true
+RET-0001030,ORD-0005837,2023-09-10,not_as_described,2930.50,Toys & Games,North America,true
+RET-0001031,ORD-0005841,2025-09-18,wrong_item,2197.04,Home & Kitchen,Europe,false
+RET-0001032,ORD-0005845,2025-08-24,defective,1335.49,Electronics,North America,true
+RET-0001033,ORD-0005848,2024-07-21,changed_mind,68.47,Fashion,Europe,true
+RET-0001034,ORD-0005850,2024-11-29,quality_issue,2722.29,Electronics,North America,true
+RET-0001035,ORD-0005861,2025-10-10,damaged,2398.34,Automotive Parts,LATAM,true
+RET-0001036,ORD-0005865,2025-10-10,quality_issue,773.74,Automotive Parts,Europe,true
+RET-0001037,ORD-0005882,2025-09-16,quality_issue,571.88,Toys & Games,North America,true
+RET-0001038,ORD-0005892,2025-12-29,changed_mind,786.99,Automotive Parts,APAC,true
+RET-0001039,ORD-0005897,2022-11-13,damaged,774.48,Sports & Outdoors,APAC,true
+RET-0001040,ORD-0005903,2025-04-18,quality_issue,1894.16,Automotive Parts,Europe,true
+RET-0001041,ORD-0005906,2024-01-27,wrong_item,1203.87,Home & Kitchen,North America,true
+RET-0001042,ORD-0005907,2025-06-11,quality_issue,3162.19,Sports & Outdoors,Europe,true
+RET-0001043,ORD-0005908,2024-07-20,damaged,359.30,Toys & Games,North America,true
+RET-0001044,ORD-0005910,2025-09-11,size_mismatch,4294.41,Fashion,Europe,false
+RET-0001045,ORD-0005915,2022-12-17,damaged,243.48,Beauty & Personal Care,North America,false
+RET-0001046,ORD-0005919,2023-12-26,size_mismatch,366.12,Fashion,Europe,true
+RET-0001047,ORD-0005927,2024-07-11,changed_mind,402.74,Fashion,LATAM,true
+RET-0001048,ORD-0005935,2026-03-04,defective,564.35,Electronics,LATAM,true
+RET-0001049,ORD-0005941,2024-10-17,wrong_item,111.41,Health & Wellness,Europe,true
+RET-0001050,ORD-0005946,2025-07-12,changed_mind,1520.51,Home & Kitchen,Europe,true
+RET-0001051,ORD-0005951,2023-12-17,not_as_described,1603.25,Automotive Parts,Europe,true
+RET-0001052,ORD-0005966,2024-02-10,quality_issue,336.61,Home & Kitchen,Europe,true
+RET-0001053,ORD-0005978,2025-12-31,size_mismatch,747.10,Fashion,Europe,false
+RET-0001054,ORD-0005989,2024-12-15,wrong_item,2444.40,Home & Kitchen,LATAM,true
+RET-0001055,ORD-0005999,2025-01-15,defective,1254.15,Electronics,North America,false
+RET-0001056,ORD-0006001,2023-05-21,arrived_late,1198.14,Automotive Parts,North America,false
+RET-0001057,ORD-0006006,2023-09-10,arrived_late,68.53,Automotive Parts,APAC,true
+RET-0001058,ORD-0006015,2025-07-06,changed_mind,1368.43,Health & Wellness,APAC,true
+RET-0001059,ORD-0006027,2025-04-08,quality_issue,1665.76,Electronics,LATAM,true
+RET-0001060,ORD-0006049,2025-07-26,changed_mind,816.38,Sports & Outdoors,LATAM,true
+RET-0001061,ORD-0006064,2025-09-11,quality_issue,194.48,Health & Wellness,North America,true
+RET-0001062,ORD-0006069,2023-08-29,not_as_described,322.07,Sports & Outdoors,North America,true
+RET-0001063,ORD-0006073,2023-06-18,defective,1547.93,Electronics,North America,true
+RET-0001064,ORD-0006074,2025-08-11,quality_issue,1348.55,Electronics,LATAM,true
+RET-0001065,ORD-0006086,2023-11-02,wrong_item,661.75,Health & Wellness,LATAM,true
+RET-0001066,ORD-0006090,2023-07-10,quality_issue,526.65,Home & Kitchen,North America,true
+RET-0001067,ORD-0006092,2025-12-28,wrong_item,395.82,Beauty & Personal Care,APAC,true
+RET-0001068,ORD-0006097,2024-11-02,not_as_described,264.27,Health & Wellness,North America,true
+RET-0001069,ORD-0006102,2026-01-04,changed_mind,45.99,Health & Wellness,Europe,true
+RET-0001070,ORD-0006121,2023-11-19,changed_mind,826.78,Beauty & Personal Care,Europe,true
+RET-0001071,ORD-0006150,2023-02-27,arrived_late,536.02,Fashion,Europe,true
+RET-0001072,ORD-0006151,2023-10-11,color_different,79.99,Fashion,Europe,true
+RET-0001073,ORD-0006153,2026-01-27,arrived_late,1684.08,Fashion,North America,true
+RET-0001074,ORD-0006162,2024-01-15,changed_mind,122.24,Beauty & Personal Care,LATAM,true
+RET-0001075,ORD-0006168,2024-01-02,not_as_described,929.42,Electronics,LATAM,true
+RET-0001076,ORD-0006170,2025-10-11,quality_issue,783.97,Home & Kitchen,LATAM,true
+RET-0001077,ORD-0006183,2022-02-28,quality_issue,1048.05,Sports & Outdoors,LATAM,true
+RET-0001078,ORD-0006186,2025-07-24,not_as_described,1997.64,Beauty & Personal Care,Europe,true
+RET-0001079,ORD-0006192,2025-07-12,wrong_item,73.65,Beauty & Personal Care,Europe,true
+RET-0001080,ORD-0006202,2025-04-22,defective,533.68,Electronics,Europe,true
+RET-0001081,ORD-0006211,2024-12-06,size_mismatch,248.73,Fashion,Europe,true
+RET-0001082,ORD-0006213,2022-12-10,quality_issue,1027.61,Fashion,North America,true
+RET-0001083,ORD-0006214,2026-01-17,damaged,3059.74,Home & Kitchen,Europe,true
+RET-0001084,ORD-0006225,2024-07-26,defective,2736.43,Electronics,LATAM,true
+RET-0001085,ORD-0006242,2023-12-07,damaged,573.95,Books,Europe,true
+RET-0001086,ORD-0006257,2024-04-15,changed_mind,86.64,Health & Wellness,Europe,false
+RET-0001087,ORD-0006258,2024-12-22,damaged,922.02,Books,Europe,false
+RET-0001088,ORD-0006262,2022-08-08,quality_issue,1011.08,Sports & Outdoors,Europe,true
+RET-0001089,ORD-0006268,2025-09-20,quality_issue,629.50,Fashion,LATAM,true
+RET-0001090,ORD-0006278,2024-01-12,damaged,188.12,Sports & Outdoors,North America,true
+RET-0001091,ORD-0006284,2022-08-09,arrived_late,1657.38,Sports & Outdoors,Europe,true
+RET-0001092,ORD-0006287,2024-11-03,size_mismatch,3165.57,Fashion,Europe,true
+RET-0001093,ORD-0006291,2025-01-29,wrong_item,166.29,Books,APAC,true
+RET-0001094,ORD-0006298,2025-12-21,quality_issue,3621.06,Beauty & Personal Care,North America,true
+RET-0001095,ORD-0006304,2023-01-18,quality_issue,138.83,Fashion,Europe,true
+RET-0001096,ORD-0006317,2024-12-20,arrived_late,3441.12,Electronics,North America,true
+RET-0001097,ORD-0006323,2024-12-10,quality_issue,898.90,Home & Kitchen,North America,true
+RET-0001098,ORD-0006326,2024-08-26,quality_issue,665.95,Sports & Outdoors,North America,true
+RET-0001099,ORD-0006330,2025-12-06,wrong_item,1508.26,Automotive Parts,LATAM,true
+RET-0001100,ORD-0006335,2024-01-25,damaged,1536.86,Automotive Parts,Europe,true
+RET-0001101,ORD-0006340,2024-09-25,arrived_late,1404.36,Electronics,North America,false
+RET-0001102,ORD-0006342,2024-08-03,not_as_described,161.35,Toys & Games,LATAM,true
+RET-0001103,ORD-0006351,2022-12-29,not_as_described,1178.03,Health & Wellness,North America,false
+RET-0001104,ORD-0006354,2025-10-10,wrong_item,542.39,Toys & Games,Europe,true
+RET-0001105,ORD-0006357,2025-09-11,wrong_item,614.84,Home & Kitchen,Europe,true
+RET-0001106,ORD-0006358,2022-11-18,defective,1445.34,Electronics,Europe,true
+RET-0001107,ORD-0006361,2024-03-19,changed_mind,1576.76,Sports & Outdoors,APAC,true
+RET-0001108,ORD-0006366,2025-10-12,defective,2292.05,Electronics,LATAM,true
+RET-0001109,ORD-0006367,2026-01-22,wrong_item,616.32,Home & Kitchen,Europe,false
+RET-0001110,ORD-0006378,2024-03-26,not_as_described,3195.83,Health & Wellness,North America,true
+RET-0001111,ORD-0006381,2024-08-29,changed_mind,449.90,Home & Kitchen,North America,true
+RET-0001112,ORD-0006382,2022-03-23,quality_issue,581.66,Beauty & Personal Care,Europe,false
+RET-0001113,ORD-0006387,2026-03-16,size_mismatch,160.55,Fashion,North America,true
+RET-0001114,ORD-0006391,2026-01-21,quality_issue,119.81,Health & Wellness,North America,true
+RET-0001115,ORD-0006398,2025-08-24,changed_mind,2173.04,Automotive Parts,LATAM,true
+RET-0001116,ORD-0006403,2022-10-17,wrong_item,308.00,Home & Kitchen,Europe,false
+RET-0001117,ORD-0006407,2025-09-08,wrong_item,143.63,Books,North America,true
+RET-0001118,ORD-0006417,2022-02-19,wrong_item,1352.03,Health & Wellness,Europe,true
+RET-0001119,ORD-0006429,2025-12-20,quality_issue,419.11,Fashion,North America,true
+RET-0001120,ORD-0006430,2023-12-14,quality_issue,5700.43,Fashion,North America,true
+RET-0001121,ORD-0006442,2023-12-26,size_mismatch,1504.87,Fashion,North America,true
+RET-0001122,ORD-0006450,2023-09-26,damaged,455.29,Toys & Games,North America,true
+RET-0001123,ORD-0006460,2024-10-04,changed_mind,592.42,Fashion,North America,true
+RET-0001124,ORD-0006465,2024-09-20,defective,918.14,Electronics,North America,true
+RET-0001125,ORD-0006470,2024-12-13,damaged,184.79,Home & Kitchen,Europe,true
+RET-0001126,ORD-0006475,2025-12-25,quality_issue,606.14,Beauty & Personal Care,North America,true
+RET-0001127,ORD-0006498,2022-10-02,damaged,223.75,Home & Kitchen,Europe,true
+RET-0001128,ORD-0006501,2024-07-31,color_different,379.74,Fashion,Europe,true
+RET-0001129,ORD-0006510,2022-12-24,changed_mind,105.48,Beauty & Personal Care,North America,true
+RET-0001130,ORD-0006526,2024-12-20,arrived_late,93.64,Sports & Outdoors,Europe,false
+RET-0001131,ORD-0006530,2025-07-30,changed_mind,3576.45,Toys & Games,North America,true
+RET-0001132,ORD-0006535,2024-10-30,size_mismatch,370.64,Fashion,APAC,true
+RET-0001133,ORD-0006539,2023-01-02,changed_mind,560.17,Beauty & Personal Care,LATAM,true
+RET-0001134,ORD-0006544,2022-06-01,changed_mind,120.63,Beauty & Personal Care,LATAM,false
+RET-0001135,ORD-0006555,2025-12-11,quality_issue,283.72,Fashion,Europe,false
+RET-0001136,ORD-0006557,2025-05-12,not_as_described,903.16,Beauty & Personal Care,Europe,false
+RET-0001137,ORD-0006558,2025-02-16,quality_issue,54.79,Home & Kitchen,North America,true
+RET-0001138,ORD-0006566,2025-07-12,wrong_item,453.04,Home & Kitchen,North America,true
+RET-0001139,ORD-0006569,2024-01-08,wrong_item,273.02,Health & Wellness,North America,true
+RET-0001140,ORD-0006575,2024-12-19,quality_issue,343.29,Sports & Outdoors,North America,false
+RET-0001141,ORD-0006580,2025-03-02,wrong_item,699.20,Beauty & Personal Care,Europe,false
+RET-0001142,ORD-0006581,2024-03-15,arrived_late,478.44,Electronics,Europe,true
+RET-0001143,ORD-0006611,2025-12-30,not_as_described,2259.78,Automotive Parts,North America,true
+RET-0001144,ORD-0006615,2022-12-10,wrong_item,820.13,Books,North America,false
+RET-0001145,ORD-0006616,2025-06-10,changed_mind,76.52,Beauty & Personal Care,North America,true
+RET-0001146,ORD-0006623,2023-05-12,quality_issue,2312.06,Beauty & Personal Care,LATAM,false
+RET-0001147,ORD-0006633,2024-01-15,wrong_item,1316.32,Beauty & Personal Care,North America,false
+RET-0001148,ORD-0006638,2024-09-15,wrong_item,131.44,Automotive Parts,North America,false
+RET-0001149,ORD-0006639,2024-12-18,color_different,176.76,Fashion,North America,true
+RET-0001150,ORD-0006641,2022-07-21,defective,2330.36,Electronics,Europe,true
+RET-0001151,ORD-0006649,2024-10-19,changed_mind,110.27,Health & Wellness,North America,true
+RET-0001152,ORD-0006650,2024-05-08,not_as_described,558.23,Toys & Games,APAC,true
+RET-0001153,ORD-0006662,2022-12-22,changed_mind,299.18,Health & Wellness,Europe,true
+RET-0001154,ORD-0006665,2025-10-06,quality_issue,551.32,Fashion,Europe,true
+RET-0001155,ORD-0006669,2024-09-15,color_different,441.84,Fashion,Europe,true
+RET-0001156,ORD-0006671,2025-12-28,not_as_described,976.85,Health & Wellness,Europe,true
+RET-0001157,ORD-0006686,2024-12-29,changed_mind,149.34,Health & Wellness,North America,true
+RET-0001158,ORD-0006689,2023-01-08,changed_mind,1265.21,Home & Kitchen,North America,true
+RET-0001159,ORD-0006699,2024-10-29,damaged,132.65,Toys & Games,Europe,true
+RET-0001160,ORD-0006702,2022-08-10,changed_mind,126.07,Health & Wellness,APAC,true
+RET-0001161,ORD-0006707,2024-12-24,quality_issue,57.86,Toys & Games,Europe,true
+RET-0001162,ORD-0006708,2026-02-02,quality_issue,137.90,Beauty & Personal Care,North America,true
+RET-0001163,ORD-0006714,2025-05-28,defective,844.93,Electronics,Europe,false
+RET-0001164,ORD-0006718,2025-04-09,changed_mind,257.29,Fashion,LATAM,true
+RET-0001165,ORD-0006720,2025-07-24,damaged,1898.77,Toys & Games,Europe,true
+RET-0001166,ORD-0006725,2026-02-26,color_different,763.62,Fashion,APAC,false
+RET-0001167,ORD-0006733,2026-01-15,defective,1524.27,Electronics,Europe,true
+RET-0001168,ORD-0006737,2026-01-04,wrong_item,483.84,Home & Kitchen,LATAM,true
+RET-0001169,ORD-0006747,2024-12-05,damaged,1580.21,Books,LATAM,true
+RET-0001170,ORD-0006753,2022-08-10,damaged,299.33,Home & Kitchen,North America,false
+RET-0001171,ORD-0006762,2025-07-31,defective,1565.61,Electronics,North America,true
+RET-0001172,ORD-0006766,2025-05-01,changed_mind,21.30,Books,North America,true
+RET-0001173,ORD-0006769,2023-05-13,arrived_late,1955.24,Electronics,Europe,true
+RET-0001174,ORD-0006770,2024-04-09,damaged,349.99,Beauty & Personal Care,North America,true
+RET-0001175,ORD-0006771,2025-10-26,quality_issue,133.99,Health & Wellness,Europe,true
+RET-0001176,ORD-0006779,2023-10-31,wrong_item,1216.48,Sports & Outdoors,Europe,false
+RET-0001177,ORD-0006785,2025-11-10,changed_mind,942.46,Automotive Parts,North America,true
+RET-0001178,ORD-0006788,2022-11-28,changed_mind,645.22,Books,Europe,false
+RET-0001179,ORD-0006791,2023-12-05,changed_mind,407.39,Fashion,Europe,true
+RET-0001180,ORD-0006804,2024-12-23,arrived_late,346.52,Fashion,North America,true
+RET-0001181,ORD-0006805,2023-12-19,not_as_described,1863.84,Health & Wellness,LATAM,false
+RET-0001182,ORD-0006812,2025-12-12,not_as_described,171.13,Toys & Games,Europe,true
+RET-0001183,ORD-0006817,2022-12-27,size_mismatch,204.40,Fashion,North America,true
+RET-0001184,ORD-0006820,2023-06-23,changed_mind,496.69,Home & Kitchen,North America,false
+RET-0001185,ORD-0006822,2022-07-19,wrong_item,449.17,Toys & Games,LATAM,true
+RET-0001186,ORD-0006832,2022-05-22,not_as_described,975.27,Electronics,Europe,true
+RET-0001187,ORD-0006837,2024-09-21,damaged,1242.98,Books,Europe,true
+RET-0001188,ORD-0006839,2023-08-16,quality_issue,355.66,Toys & Games,Europe,true
+RET-0001189,ORD-0006846,2025-03-25,damaged,649.12,Health & Wellness,Europe,false
+RET-0001190,ORD-0006851,2025-12-23,damaged,566.12,Sports & Outdoors,LATAM,true
+RET-0001191,ORD-0006858,2024-03-26,damaged,2890.15,Sports & Outdoors,LATAM,true
+RET-0001192,ORD-0006872,2024-08-02,not_as_described,89.38,Automotive Parts,North America,true
+RET-0001193,ORD-0006879,2025-03-30,size_mismatch,2892.66,Fashion,LATAM,true
+RET-0001194,ORD-0006881,2025-01-20,quality_issue,4329.26,Electronics,Europe,true
+RET-0001195,ORD-0006883,2023-12-28,changed_mind,945.00,Fashion,Europe,true
+RET-0001196,ORD-0006887,2025-11-01,changed_mind,981.59,Fashion,Europe,true
+RET-0001197,ORD-0006890,2025-01-24,changed_mind,1105.27,Health & Wellness,LATAM,false
+RET-0001198,ORD-0006914,2025-03-15,defective,697.86,Electronics,North America,true
+RET-0001199,ORD-0006919,2025-12-11,damaged,657.44,Home & Kitchen,Europe,true
+RET-0001200,ORD-0006920,2025-12-19,wrong_item,902.05,Books,Europe,true
+RET-0001201,ORD-0006923,2022-12-21,quality_issue,377.28,Fashion,North America,true
+RET-0001202,ORD-0006933,2023-01-07,wrong_item,2335.71,Books,North America,false
+RET-0001203,ORD-0006943,2025-10-07,quality_issue,441.90,Fashion,North America,true
+RET-0001204,ORD-0006953,2025-12-12,defective,1284.78,Electronics,LATAM,true
+RET-0001205,ORD-0006954,2024-04-28,damaged,511.64,Home & Kitchen,LATAM,true
+RET-0001206,ORD-0006956,2024-08-24,changed_mind,41.99,Books,Europe,true
+RET-0001207,ORD-0006963,2024-08-05,damaged,1308.79,Automotive Parts,Europe,true
+RET-0001208,ORD-0006969,2024-01-06,size_mismatch,1178.54,Fashion,Europe,true
+RET-0001209,ORD-0006970,2022-12-19,changed_mind,698.87,Books,LATAM,true
+RET-0001210,ORD-0006972,2025-01-08,arrived_late,336.94,Health & Wellness,North America,true
+RET-0001211,ORD-0006988,2025-11-29,damaged,1370.90,Home & Kitchen,North America,true
+RET-0001212,ORD-0007006,2024-01-13,changed_mind,91.21,Books,APAC,true
+RET-0001213,ORD-0007017,2022-12-20,arrived_late,208.82,Automotive Parts,North America,false
+RET-0001214,ORD-0007023,2026-01-02,damaged,563.45,Toys & Games,Europe,false
+RET-0001215,ORD-0007024,2025-04-27,quality_issue,645.80,Sports & Outdoors,North America,false
+RET-0001216,ORD-0007027,2024-11-06,wrong_item,427.97,Health & Wellness,North America,true
+RET-0001217,ORD-0007047,2025-12-17,quality_issue,1080.12,Sports & Outdoors,Europe,true
+RET-0001218,ORD-0007055,2025-05-22,not_as_described,87.72,Toys & Games,LATAM,true
+RET-0001219,ORD-0007058,2023-08-07,wrong_item,2559.69,Toys & Games,North America,true
+RET-0001220,ORD-0007065,2024-03-28,quality_issue,632.50,Sports & Outdoors,Europe,true
+RET-0001221,ORD-0007072,2022-08-23,size_mismatch,2271.47,Fashion,North America,true
+RET-0001222,ORD-0007080,2024-12-15,size_mismatch,232.21,Fashion,Europe,true
+RET-0001223,ORD-0007085,2024-09-15,not_as_described,199.33,Beauty & Personal Care,North America,true
+RET-0001224,ORD-0007091,2023-12-05,quality_issue,601.68,Health & Wellness,Europe,true
+RET-0001225,ORD-0007102,2024-01-23,not_as_described,774.26,Health & Wellness,LATAM,true
+RET-0001226,ORD-0007111,2025-06-19,not_as_described,2792.52,Electronics,Europe,true
+RET-0001227,ORD-0007118,2024-08-05,defective,205.31,Electronics,Europe,true
+RET-0001228,ORD-0007124,2024-08-08,quality_issue,34.49,Fashion,North America,true
+RET-0001229,ORD-0007125,2025-05-03,defective,5538.80,Electronics,Europe,true
+RET-0001230,ORD-0007130,2023-12-08,wrong_item,1434.94,Health & Wellness,North America,true
+RET-0001231,ORD-0007138,2023-08-16,damaged,109.20,Toys & Games,Europe,false
+RET-0001232,ORD-0007142,2023-08-05,arrived_late,668.40,Home & Kitchen,LATAM,true
+RET-0001233,ORD-0007147,2022-06-14,color_different,942.25,Fashion,LATAM,false
+RET-0001234,ORD-0007152,2023-08-05,damaged,662.21,Books,LATAM,true
+RET-0001235,ORD-0007153,2025-07-14,wrong_item,843.28,Home & Kitchen,APAC,true
+RET-0001236,ORD-0007162,2025-10-16,wrong_item,2363.81,Sports & Outdoors,LATAM,true
+RET-0001237,ORD-0007164,2025-12-15,not_as_described,1647.21,Home & Kitchen,LATAM,true
+RET-0001238,ORD-0007165,2023-12-27,changed_mind,220.04,Fashion,North America,true
+RET-0001239,ORD-0007168,2024-07-03,wrong_item,63.43,Beauty & Personal Care,Europe,true
+RET-0001240,ORD-0007169,2023-09-29,changed_mind,610.69,Automotive Parts,Europe,true
+RET-0001241,ORD-0007179,2024-07-23,size_mismatch,400.41,Fashion,Europe,true
+RET-0001242,ORD-0007186,2026-01-03,arrived_late,133.58,Toys & Games,LATAM,true
+RET-0001243,ORD-0007192,2025-08-17,changed_mind,2023.95,Sports & Outdoors,North America,true
+RET-0001244,ORD-0007198,2023-04-19,damaged,1761.51,Automotive Parts,North America,true
+RET-0001245,ORD-0007206,2026-01-07,damaged,2908.97,Books,Europe,true
+RET-0001246,ORD-0007208,2023-02-21,size_mismatch,1043.92,Fashion,North America,true
+RET-0001247,ORD-0007212,2025-12-12,wrong_item,853.06,Automotive Parts,Europe,true
+RET-0001248,ORD-0007213,2024-12-27,quality_issue,229.74,Sports & Outdoors,North America,true
+RET-0001249,ORD-0007214,2025-08-03,damaged,57.05,Health & Wellness,Europe,true
+RET-0001250,ORD-0007221,2023-05-05,changed_mind,79.71,Toys & Games,APAC,false
+RET-0001251,ORD-0007227,2022-07-04,quality_issue,629.53,Sports & Outdoors,LATAM,true
+RET-0001252,ORD-0007229,2025-01-05,arrived_late,2398.30,Electronics,LATAM,false
+RET-0001253,ORD-0007237,2025-08-21,changed_mind,128.78,Health & Wellness,LATAM,true
+RET-0001254,ORD-0007239,2025-05-27,damaged,101.84,Books,Europe,true
+RET-0001255,ORD-0007240,2026-01-11,not_as_described,3794.85,Electronics,North America,true
+RET-0001256,ORD-0007248,2023-01-06,not_as_described,4083.87,Electronics,North America,false
+RET-0001257,ORD-0007251,2023-05-04,damaged,687.54,Books,North America,true
+RET-0001258,ORD-0007256,2025-03-16,color_different,835.34,Fashion,APAC,true
+RET-0001259,ORD-0007257,2026-02-07,quality_issue,1081.40,Electronics,Europe,false
+RET-0001260,ORD-0007260,2026-05-02,changed_mind,4087.09,Sports & Outdoors,LATAM,true
+RET-0001261,ORD-0007267,2023-06-20,quality_issue,676.87,Fashion,Europe,true
+RET-0001262,ORD-0007268,2023-06-23,quality_issue,69.69,Beauty & Personal Care,APAC,false
+RET-0001263,ORD-0007269,2024-03-03,size_mismatch,136.99,Fashion,North America,true
+RET-0001264,ORD-0007273,2024-09-12,color_different,2421.50,Fashion,APAC,false
+RET-0001265,ORD-0007274,2024-12-11,changed_mind,339.36,Fashion,North America,true
+RET-0001266,ORD-0007281,2025-02-05,changed_mind,163.94,Books,LATAM,true
+RET-0001267,ORD-0007285,2024-03-06,wrong_item,1822.18,Automotive Parts,North America,true
+RET-0001268,ORD-0007291,2024-08-11,arrived_late,643.35,Home & Kitchen,LATAM,true
+RET-0001269,ORD-0007297,2023-12-19,wrong_item,1309.37,Home & Kitchen,Europe,true
+RET-0001270,ORD-0007299,2023-12-26,size_mismatch,370.48,Fashion,APAC,true
+RET-0001271,ORD-0007323,2025-01-06,size_mismatch,438.94,Fashion,North America,true
+RET-0001272,ORD-0007329,2023-09-05,size_mismatch,387.23,Fashion,LATAM,true
+RET-0001273,ORD-0007331,2022-06-19,defective,2879.97,Electronics,Europe,true
+RET-0001274,ORD-0007334,2024-12-06,wrong_item,1914.98,Toys & Games,Europe,true
+RET-0001275,ORD-0007336,2026-03-30,changed_mind,384.36,Fashion,North America,true
+RET-0001276,ORD-0007342,2025-08-03,damaged,239.49,Beauty & Personal Care,Europe,true
+RET-0001277,ORD-0007345,2024-05-19,quality_issue,613.18,Fashion,LATAM,true
+RET-0001278,ORD-0007353,2024-05-21,changed_mind,227.18,Toys & Games,North America,true
+RET-0001279,ORD-0007354,2023-05-25,arrived_late,724.07,Sports & Outdoors,LATAM,true
+RET-0001280,ORD-0007364,2025-02-03,size_mismatch,681.66,Fashion,Europe,true
+RET-0001281,ORD-0007382,2024-12-06,wrong_item,1340.50,Toys & Games,North America,true
+RET-0001282,ORD-0007386,2024-12-04,arrived_late,5511.89,Electronics,Europe,true
+RET-0001283,ORD-0007389,2026-03-03,defective,530.95,Electronics,Europe,true
+RET-0001284,ORD-0007392,2026-05-14,damaged,257.58,Sports & Outdoors,Europe,true
+RET-0001285,ORD-0007396,2026-03-24,changed_mind,242.22,Fashion,Europe,true
+RET-0001286,ORD-0007405,2025-05-08,damaged,292.01,Health & Wellness,North America,true
+RET-0001287,ORD-0007406,2025-03-09,color_different,1190.28,Fashion,LATAM,true
+RET-0001288,ORD-0007407,2024-02-07,not_as_described,111.24,Toys & Games,North America,true
+RET-0001289,ORD-0007408,2023-01-26,damaged,5016.70,Sports & Outdoors,LATAM,true
+RET-0001290,ORD-0007409,2023-01-09,color_different,598.93,Fashion,LATAM,true
+RET-0001291,ORD-0007416,2025-12-15,quality_issue,1658.70,Automotive Parts,LATAM,true
+RET-0001292,ORD-0007418,2023-11-07,quality_issue,2464.36,Electronics,Europe,true
+RET-0001293,ORD-0007431,2023-07-20,defective,2093.11,Electronics,Europe,false
+RET-0001294,ORD-0007446,2023-05-08,wrong_item,255.95,Beauty & Personal Care,Europe,true
+RET-0001295,ORD-0007447,2025-08-01,quality_issue,1048.20,Sports & Outdoors,North America,false
+RET-0001296,ORD-0007451,2025-10-18,changed_mind,549.55,Health & Wellness,LATAM,true
+RET-0001297,ORD-0007454,2023-02-27,arrived_late,1368.21,Sports & Outdoors,North America,true
+RET-0001298,ORD-0007456,2024-12-24,arrived_late,786.62,Automotive Parts,North America,true
+RET-0001299,ORD-0007468,2023-09-20,changed_mind,287.76,Fashion,North America,true
+RET-0001300,ORD-0007474,2025-04-18,not_as_described,217.77,Sports & Outdoors,North America,true
+RET-0001301,ORD-0007496,2026-02-18,damaged,1199.17,Automotive Parts,LATAM,true
+RET-0001302,ORD-0007497,2025-03-11,arrived_late,315.28,Fashion,APAC,true

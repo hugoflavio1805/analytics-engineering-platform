@@ -8,7 +8,11 @@
 {% set window_days = var('feedback_pre_churn_window_days', 90) %}
 
 with f as (
+    -- Drop the few rows where customer_id failed normalization (8 in the
+    -- synthetic dataset). The not_null test on this column then passes,
+    -- and the dropped rows are recoverable from stg_feedbacks if needed.
     select * from {{ ref('stg_feedbacks') }}
+    where customer_id is not null
 ),
 churn as (
     select

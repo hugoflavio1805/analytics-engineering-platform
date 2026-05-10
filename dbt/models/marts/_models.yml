@@ -29,14 +29,10 @@ models:
         tests: [not_null, unique]
       - name: customer_id
         tests:
-          - not_null:
-              config:
-                severity: warn
+          - not_null
           - relationships:
               to: ref('dim_customer')
               field: customer_id
-              config:
-                severity: warn
       - name: is_pre_churn_90d
         description: "True if the feedback was emitted within 90 days before the customer's latest_churn_date."
 
