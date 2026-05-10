@@ -19,15 +19,13 @@ services:
       dockerfile: docker/Dockerfile.dbt
     volumes:
       - ./dbt:/workspace/dbt
-      - ./data:/workspace/data:ro
       - ./cases:/workspace/cases:ro
       - aep_warehouse:/warehouse
     environment:
       # The dbt profile reads DBT_DUCKDB_PATH; defaults to ../warehouse.duckdb locally.
       DBT_DUCKDB_PATH: /warehouse/warehouse.duckdb
-      # Source CSVs use these env vars in their external_location meta.
-      CASE1_RAW_DIR: /workspace/data/raw
-      CASE2_RAW_DIR: /workspace/cases/marketplace/data/raw
+      # Source CSVs use this env var in their external_location meta.
+      MARKETPLACE_RAW_DIR: /workspace/cases/marketplace/data/raw
     command: ["build", "--profiles-dir", ".", "--target", "duckdb"]
 
   dashboard:

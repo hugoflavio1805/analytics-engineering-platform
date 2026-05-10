@@ -1,8 +1,8 @@
-name: 'feedback_revenue'
+name: 'analytics_platform'
 version: '1.0.0'
 config-version: 2
 
-profile: 'feedback_revenue'
+profile: 'analytics_platform'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -17,27 +17,13 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  feedback_revenue:
-    # Case 1 — SaaS feedback × revenue (Prevision-style challenge)
-    staging:
-      # Materialized as table (not view) so the warehouse is self-contained
-      # — the resulting .duckdb file works without the source CSVs being
-      # present at the path the source meta references.
-      +materialized: table
-      +schema: staging
-    intermediate:
-      +materialized: ephemeral
-    marts:
-      core:
-        +materialized: table
-        +schema: marts_core
-      analytics:
-        +materialized: table
-        +schema: marts_analytics
-
-    # Case 2 — Generic marketplace (returns, fraud, GMV)
+  analytics_platform:
+    # Generic marketplace case — full Kimball star schema (10 dims + 6 facts).
     marketplace:
       staging:
+        # Materialized as table (not view) so the warehouse is self-contained
+        # — the .duckdb file works without the source CSVs being present at
+        # the path the source meta references.
         +materialized: table
         +schema: marketplace_staging
       intermediate:
@@ -51,7 +37,6 @@ models:
           +schema: marketplace_analytics
 
 vars:
-  feedback_pre_churn_window_days: 90
   marketplace_return_window_days: 30
 
 # Audit hooks — make the audit table before any model reads from it,

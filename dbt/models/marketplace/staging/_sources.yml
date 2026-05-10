@@ -4,7 +4,7 @@ sources:
   - name: marketplace_raw
     description: "Raw CSVs from the marketplace platform. 6 fact sources + 10 dimension sources, supporting a Kimball-style model. On DuckDB, sources are wired directly to the CSV files via dbt-duckdb's external_location."
     meta:
-      external_location: "read_csv_auto('{{ env_var('CASE2_RAW_DIR', '../cases/marketplace/data/raw') }}/{name}.csv', header=true)"
+      external_location: "read_csv_auto('{{ env_var('MARKETPLACE_RAW_DIR', '../cases/marketplace/data/raw') }}/{name}.csv', header=true)"
     tables:
 
       # -------- Fact-grade sources --------

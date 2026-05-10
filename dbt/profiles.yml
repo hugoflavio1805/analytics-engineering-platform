@@ -1,6 +1,6 @@
 # Local profile (committed to repo for reproducibility).
 # In production, this lives in ~/.dbt/profiles.yml and points at Snowflake.
-feedback_revenue:
+analytics_platform:
   target: duckdb
   outputs:
     duckdb:
