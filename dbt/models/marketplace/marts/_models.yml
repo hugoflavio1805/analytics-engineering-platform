@@ -144,3 +144,33 @@ models:
 
   - name: sla_by_carrier
     description: "Carrier SLA performance per ship_country. Surfaces sla_miss_rate and late_return_rate together."
+
+  - name: customer_cohort_retention
+    description: "Cohort retention matrix — one row per (cohort_month × activity_month). Used by the Growth Analytics tab."
+    columns:
+      - name: cohort_month
+        tests: [not_null]
+      - name: retention_pct
+        description: "active_customers / cohort_size — bounded 0..1."
+
+  - name: pareto_sellers
+    description: "Sellers ranked by GMV with cumulative GMV share and A/B/C bucket. Demonstrates the 80/20 concentration."
+    columns:
+      - name: seller_id
+        tests: [not_null, unique]
+      - name: pareto_bucket
+        tests:
+          - accepted_values:
+              values: ['A', 'B', 'C']
+
+  - name: growth_metrics_monthly
+    description: "Per-month KPIs with MoM and YoY growth rates plus annualized run rate. Drives the Growth Analytics line charts."
+    columns:
+      - name: month
+        tests: [not_null, unique]
+
+  - name: customer_ltv_by_segment
+    description: "LTV breakdown by region × prime × tenure_bucket. Net LTV = lifetime_gmv - total_refunds."
+
+  - name: pipeline_health
+    description: "Read-only view over main_audit.dbt_runs. Surfaces the last N dbt runs with PASS/WARN/ERROR counts and durations."

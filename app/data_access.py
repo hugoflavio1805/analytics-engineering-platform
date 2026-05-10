@@ -383,6 +383,101 @@ def anomalies_summary(top_n: int = 5) -> pd.DataFrame:
 # =============================================================================
 
 @st.cache_data(ttl=300, show_spinner=False)
+def cohort_retention() -> pd.DataFrame:
+    return _q("select * from main_marketplace_analytics.customer_cohort_retention")
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def pareto_sellers() -> pd.DataFrame:
+    return _q("select * from main_marketplace_analytics.pareto_sellers")
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def growth_metrics() -> pd.DataFrame:
+    return _q("select * from main_marketplace_analytics.growth_metrics_monthly")
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def ltv_by_segment() -> pd.DataFrame:
+    return _q("select * from main_marketplace_analytics.customer_ltv_by_segment")
+
+
+# =============================================================================
+# Pipeline audits / health
+# =============================================================================
+
+@st.cache_data(ttl=60, show_spinner=False)
+def pipeline_runs(limit: int = 25) -> pd.DataFrame:
+    return _q(
+        f"""
+        select * from main_marketplace_analytics.pipeline_health
+        order by invocation_at desc
+        limit {int(limit)}
+        """
+    )
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def latest_run() -> dict:
+    rows = _q(
+        """
+        select * from main_marketplace_analytics.pipeline_health
+        order by invocation_at desc
+        limit 1
+        """
+    )
+    return rows.iloc[0].to_dict() if len(rows) else {}
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def latest_run_node_breakdown() -> pd.DataFrame:
+    return _q(
+        """
+        with last_run as (
+            select max(invocation_at) as max_at from main_audit.dbt_runs
+        )
+        select
+            r.node_name, r.resource_type, r.status,
+            r.duration_ms, r.rows_affected, r.message
+        from main_audit.dbt_runs r, last_run
+        where r.invocation_at = last_run.max_at
+        order by r.duration_ms desc
+        """
+    )
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def slowest_models(limit: int = 10) -> pd.DataFrame:
+    return _q(
+        f"""
+        select node_name, resource_type, avg(duration_ms) as avg_duration_ms, count(*) as runs
+        from main_audit.dbt_runs
+        where resource_type in ('model', 'test')
+        group by node_name, resource_type
+        order by avg_duration_ms desc
+        limit {int(limit)}
+        """
+    )
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def test_outcome_history() -> pd.DataFrame:
+    return _q(
+        """
+        select
+            invocation_at,
+            sum(case when status = 'pass'    then 1 else 0 end) as tests_pass,
+            sum(case when status = 'warn'    then 1 else 0 end) as tests_warn,
+            sum(case when status in ('fail','error') then 1 else 0 end) as tests_fail
+        from main_audit.dbt_runs
+        where resource_type = 'test'
+        group by invocation_at
+        order by invocation_at
+        """
+    )
+
+
+@st.cache_data(ttl=300, show_spinner=False)
 def monthly_sales_with_ad_spend() -> pd.DataFrame:
     """Joins monthly GMV with synthetic ad spend signals.
 

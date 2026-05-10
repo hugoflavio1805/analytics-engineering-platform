@@ -181,8 +181,8 @@ st.markdown("")  # breathing room
 # Tabs
 # ---------------------------------------------------------------------------
 
-tab_overview, tab_returns, tab_promo, tab_logistics, tab_ai = st.tabs([
-    "Overview", "Returns", "Promotions", "Logistics", "AI Insights",
+tab_overview, tab_growth, tab_returns, tab_promo, tab_logistics, tab_pipeline, tab_ai = st.tabs([
+    "Overview", "Growth", "Returns", "Promotions", "Logistics", "Pipeline Health", "AI Insights",
 ])
 
 
@@ -377,6 +377,125 @@ with tab_logistics:
         with st.container(border=True):
             st.plotly_chart(charts.chargeback_by_method_bar(da.chargeback_by_method()),
                             use_container_width=True, config={"displayModeBar": False})
+
+
+# ===== Growth Analytics ====================================================
+
+with tab_growth:
+    st.markdown("### Growth Analytics")
+    st.caption("Cohorts · Pareto concentration · MoM/YoY growth · Customer LTV.")
+
+    # Row 1: growth lines (full width)
+    growth_df = da.growth_metrics()
+    with st.container(border=True):
+        st.plotly_chart(charts.growth_lines(growth_df),
+                        use_container_width=True, config={"displayModeBar": False})
+
+    # Row 2: cohort + pareto
+    g2c1, g2c2 = st.columns([3, 4])
+    with g2c1:
+        with st.container(border=True):
+            st.plotly_chart(charts.cohort_heatmap(da.cohort_retention()),
+                            use_container_width=True, config={"displayModeBar": False})
+    with g2c2:
+        with st.container(border=True):
+            pareto_df = da.pareto_sellers()
+            st.plotly_chart(charts.pareto_curve(pareto_df),
+                            use_container_width=True, config={"displayModeBar": False})
+            # Pareto callout
+            top_a = pareto_df[pareto_df["pareto_bucket"] == "A"]
+            if len(top_a):
+                share_a = top_a["gmv"].sum() / pareto_df["gmv"].sum()
+                st.caption(
+                    f"Top **{len(top_a)} sellers** (bucket A) drive "
+                    f"**{share_a:.0%}** of total GMV. Bucket B: "
+                    f"**{len(pareto_df[pareto_df['pareto_bucket']=='B'])}** sellers."
+                )
+
+    # Row 3: LTV breakdown + LTV table
+    g3c1, g3c2 = st.columns([3, 2])
+    ltv_df = da.ltv_by_segment()
+    with g3c1:
+        with st.container(border=True):
+            st.plotly_chart(charts.ltv_breakdown_bars(ltv_df),
+                            use_container_width=True, config={"displayModeBar": False})
+    with g3c2:
+        with st.container(border=True):
+            st.markdown("**LTV by segment**")
+            ltv_table = ltv_df[["region", "tenure_bucket", "customers",
+                                "avg_net_ltv", "median_net_ltv"]].copy()
+            ltv_table["avg_net_ltv"]    = ltv_table["avg_net_ltv"].apply(lambda v: f"${v:,.0f}")
+            ltv_table["median_net_ltv"] = ltv_table["median_net_ltv"].apply(lambda v: f"${v:,.0f}")
+            st.dataframe(ltv_table, use_container_width=True, hide_index=True, height=320)
+
+
+# ===== Pipeline Health =====================================================
+
+with tab_pipeline:
+    st.markdown("### Pipeline Health")
+    st.caption("Every dbt run is captured in `main_audit.dbt_runs` via on-run-end hook. "
+               "This tab is the operational view of the platform itself.")
+
+    # Latest run hero card
+    last = da.latest_run()
+    if not last:
+        st.info("No runs recorded yet. Run `dbt build` to populate the audit log.")
+    else:
+        status_color = {"green": "#10B981", "warning": "#F59E0B", "failed": "#EF4444"}.get(
+            last.get("overall_status", "green"), "#9CA3AF"
+        )
+        with st.container(border=True):
+            ph1, ph2, ph3, ph4, ph5 = st.columns([2, 1, 1, 1, 2])
+            ph1.markdown(
+                f"<div style='font-size:11px;color:#9CA3AF;text-transform:uppercase;'>Last run</div>"
+                f"<div style='font-size:22px;color:#F9FAFB;font-weight:600;font-family:Consolas,monospace;'>"
+                f"{last['run_short']}</div>"
+                f"<div style='color:{status_color};font-size:13px;font-weight:600;text-transform:uppercase;'>"
+                f"● {last.get('overall_status', '?')}</div>",
+                unsafe_allow_html=True,
+            )
+            ph2.metric("PASS",  int(last.get("pass_count", 0)))
+            ph3.metric("WARN",  int(last.get("warn_count", 0)))
+            ph4.metric("ERROR", int(last.get("error_count", 0)))
+            ph5.metric("Duration", f"{last.get('total_duration_seconds', 0):.1f}s")
+            st.caption(
+                f"git_sha: `{last.get('git_sha', 'unknown')}` · "
+                f"started_at: `{last.get('started_at')}` · "
+                f"completed_at: `{last.get('completed_at')}`"
+            )
+
+    # Row: timeline + test history
+    p2c1, p2c2 = st.columns([2, 3])
+    with p2c1:
+        with st.container(border=True):
+            runs = da.pipeline_runs(25)
+            if not runs.empty:
+                st.plotly_chart(charts.pipeline_runs_timeline(runs),
+                                use_container_width=True, config={"displayModeBar": False})
+    with p2c2:
+        with st.container(border=True):
+            tests = da.test_outcome_history()
+            if not tests.empty:
+                st.plotly_chart(charts.test_outcome_area(tests),
+                                use_container_width=True, config={"displayModeBar": False})
+            else:
+                st.info("No tests recorded yet.")
+
+    # Row: slowest models + last run breakdown
+    p3c1, p3c2 = st.columns([2, 3])
+    with p3c1:
+        with st.container(border=True):
+            st.markdown("**Slowest models (avg)**")
+            slow = da.slowest_models(10)
+            slow["avg_duration_ms"] = slow["avg_duration_ms"].apply(lambda v: f"{v:,.0f}")
+            st.dataframe(slow, use_container_width=True, hide_index=True, height=320)
+    with p3c2:
+        with st.container(border=True):
+            st.markdown("**Last run — node-by-node**")
+            br = da.latest_run_node_breakdown()
+            br_show = br[["node_name", "resource_type", "status", "duration_ms", "rows_affected"]].copy()
+            br_show["duration_ms"] = br_show["duration_ms"].apply(lambda v: f"{v:,.0f}")
+            st.dataframe(br_show, use_container_width=True, hide_index=True, height=320)
 
 
 # ===== AI Insights =========================================================

@@ -53,3 +53,10 @@ models:
 vars:
   feedback_pre_churn_window_days: 90
   marketplace_return_window_days: 30
+
+# Audit hooks — make the audit table before any model reads from it,
+# then capture the run results once the build finishes.
+on-run-start:
+  - "{{ ensure_audit_table() }}"
+on-run-end:
+  - "{{ persist_run_results() }}"

@@ -306,6 +306,185 @@ def review_distribution_bar(df: pd.DataFrame) -> go.Figure:
 # Chargeback bar (kept, restyled)
 # =============================================================================
 
+# =============================================================================
+# Cohort retention heatmap
+# =============================================================================
+
+def cohort_heatmap(df: pd.DataFrame, value: str = "retention_pct",
+                    cohort_col: str = "cohort_month",
+                    period_col: str = "months_since_acquisition") -> go.Figure:
+    pivot = df.pivot_table(index=cohort_col, columns=period_col, values=value, aggfunc="mean")
+    pivot = pivot.iloc[-12:]   # last 12 cohorts only, for legibility
+    fig = go.Figure(data=go.Heatmap(
+        z=pivot.values * 100,
+        x=[f"M{int(c)}" for c in pivot.columns],
+        y=[c.strftime("%b %Y") if hasattr(c, "strftime") else str(c) for c in pivot.index],
+        colorscale=[[0, "#3A4150"], [0.3, ACCENT_BLUE], [1.0, ACCENT_GREEN]],
+        zmin=0, zmax=100,
+        hovertemplate="Cohort %{y}<br>Month %{x}<br>%{z:.1f}%<extra></extra>",
+        colorbar=dict(
+            title=dict(text="% retained", font=dict(color=TEXT_MUTED, size=10)),
+            tickfont=dict(color=TEXT_MUTED, size=9),
+            tickformat=".0f", ticksuffix="%", thickness=10,
+        ),
+    ))
+    layout = _layout(title="Cohort retention — % of cohort active in month N", height=380, show_legend=False)
+    layout["xaxis"]["title"] = dict(text="Months since acquisition", font=dict(color=TEXT_MUTED, size=10))
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# Pareto curve (cumulative GMV)
+# =============================================================================
+
+def pareto_curve(df: pd.DataFrame, rank_col: str = "rank",
+                  value_col: str = "gmv", cum_col: str = "cumulative_gmv_pct",
+                  bucket_col: str = "pareto_bucket") -> go.Figure:
+    df = df.head(200).copy()  # plot only first 200 sellers — beyond that the line plateaus
+    fig = go.Figure()
+    bucket_color = {"A": ACCENT_GREEN, "B": ACCENT_BLUE, "C": ACCENT_ORANGE}
+    fig.add_bar(
+        x=df[rank_col], y=df[value_col],
+        marker=dict(color=[bucket_color.get(b, ACCENT_BLUE) for b in df[bucket_col]]),
+        name="Seller GMV",
+        hovertemplate="Rank #%{x}<br>$%{y:,.0f}<extra></extra>",
+    )
+    fig.add_scatter(
+        x=df[rank_col], y=df[cum_col] * 100,
+        yaxis="y2", mode="lines",
+        line=dict(color=ACCENT_ORANGE, width=2),
+        name="Cumulative %",
+        hovertemplate="Rank #%{x}<br>Cumulative %{y:.1f}%<extra></extra>",
+    )
+    layout = _layout(title="Pareto curve — sellers ranked by GMV (top 200)", height=320)
+    layout["yaxis"]["title"] = dict(text="GMV ($)", font=dict(color=TEXT_MUTED, size=10))
+    layout["yaxis"]["tickformat"] = "$,.0f"
+    layout["yaxis2"] = dict(
+        overlaying="y", side="right", showgrid=False, range=[0, 100],
+        title=dict(text="Cumulative %", font=dict(color=TEXT_MUTED, size=10)),
+        tickfont=dict(color=TEXT_MUTED, size=10), ticksuffix="%",
+    )
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# Growth metrics (line chart with MoM and YoY)
+# =============================================================================
+
+def growth_lines(df: pd.DataFrame) -> go.Figure:
+    df = df.copy()
+    df["month"] = pd.to_datetime(df["month"])
+    fig = go.Figure()
+    fig.add_scatter(
+        x=df["month"], y=df["gmv"], name="GMV",
+        mode="lines", line=dict(color=ACCENT_BLUE, width=2),
+        hovertemplate="%{x|%b %Y}<br>$%{y:,.0f}<extra></extra>",
+    )
+    fig.add_scatter(
+        x=df["month"], y=df["mom_growth_pct"] * 100,
+        name="MoM growth %", yaxis="y2", mode="lines+markers",
+        line=dict(color=ACCENT_ORANGE, width=1.5, dash="dot"),
+        marker=dict(size=5),
+        hovertemplate="%{x|%b %Y}<br>MoM %{y:+.1f}%<extra></extra>",
+    )
+    fig.add_scatter(
+        x=df["month"], y=df["yoy_growth_pct"] * 100,
+        name="YoY growth %", yaxis="y2", mode="lines+markers",
+        line=dict(color=ACCENT_GREEN, width=1.5),
+        marker=dict(size=5),
+        hovertemplate="%{x|%b %Y}<br>YoY %{y:+.1f}%<extra></extra>",
+    )
+    layout = _layout(title="GMV with MoM and YoY growth rates", height=340)
+    layout["yaxis"]["title"] = dict(text="GMV ($)", font=dict(color=TEXT_MUTED, size=10))
+    layout["yaxis"]["tickformat"] = "$,.0f"
+    layout["yaxis2"] = dict(
+        overlaying="y", side="right", showgrid=False,
+        title=dict(text="Growth %", font=dict(color=TEXT_MUTED, size=10)),
+        tickfont=dict(color=TEXT_MUTED, size=10), ticksuffix="%",
+        zeroline=True, zerolinecolor=GRID_LINE,
+    )
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# LTV breakdown (grouped bars)
+# =============================================================================
+
+def ltv_breakdown_bars(df: pd.DataFrame) -> go.Figure:
+    """Avg net LTV by region × tenure_bucket."""
+    pivot = df.pivot_table(
+        index="region", columns="tenure_bucket", values="avg_net_ltv", aggfunc="mean"
+    ).fillna(0)
+    bucket_order = ["< 3mo", "3-12mo", "1-2y", "2y+"]
+    pivot = pivot[[c for c in bucket_order if c in pivot.columns]]
+    fig = go.Figure()
+    for i, col in enumerate(pivot.columns):
+        fig.add_bar(
+            x=pivot.index, y=pivot[col], name=col,
+            marker=dict(color=PALETTE[i]),
+            hovertemplate=f"{col}<br>%{{x}}<br>$%{{y:,.0f}}<extra></extra>",
+        )
+    layout = _layout(title="Avg Net LTV by region × tenure", height=320)
+    layout["barmode"] = "group"
+    layout["yaxis"]["tickformat"] = "$,.0f"
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# Pipeline timeline (horizontal lollipop / status badges)
+# =============================================================================
+
+def pipeline_runs_timeline(df: pd.DataFrame) -> go.Figure:
+    """Horizontal scatter of recent runs colored by overall status."""
+    df = df.iloc[::-1].copy()  # oldest at top
+    color_map = {"green": ACCENT_GREEN, "warning": ACCENT_ORANGE, "failed": ACCENT_RED}
+    colors = df["overall_status"].map(color_map).fillna(TEXT_MUTED)
+    fig = go.Figure()
+    fig.add_scatter(
+        x=df["invocation_at"], y=df["run_short"],
+        mode="markers",
+        marker=dict(size=14, color=colors, line=dict(color=BG_PANEL, width=2),
+                    symbol="circle"),
+        text=[f"PASS={p}, WARN={w}, ERROR={e}, {d:.1f}s"
+              for p, w, e, d in zip(df["pass_count"], df["warn_count"],
+                                     df["error_count"], df["total_duration_seconds"])],
+        hovertemplate="%{y}<br>%{x}<br>%{text}<extra></extra>",
+    )
+    layout = _layout(title="Recent dbt runs (last 25)", height=480, show_legend=False)
+    layout["yaxis"]["tickfont"] = dict(size=9, color=TEXT_PRIMARY, family="Consolas, monospace")
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# Test outcome history (stacked area)
+# =============================================================================
+
+def test_outcome_area(df: pd.DataFrame) -> go.Figure:
+    df = df.copy()
+    df["invocation_at"] = pd.to_datetime(df["invocation_at"])
+    fig = go.Figure()
+    fig.add_scatter(
+        x=df["invocation_at"], y=df["tests_pass"], name="PASS",
+        mode="lines", line=dict(width=0.5, color=ACCENT_GREEN), stackgroup="t",
+    )
+    fig.add_scatter(
+        x=df["invocation_at"], y=df["tests_warn"], name="WARN",
+        mode="lines", line=dict(width=0.5, color=ACCENT_ORANGE), stackgroup="t",
+    )
+    fig.add_scatter(
+        x=df["invocation_at"], y=df["tests_fail"], name="FAIL",
+        mode="lines", line=dict(width=0.5, color=ACCENT_RED), stackgroup="t",
+    )
+    layout = _layout(title="Test outcomes per run", height=240)
+    fig.update_layout(**layout)
+    return fig
+
+
 def chargeback_by_method_bar(df: pd.DataFrame) -> go.Figure:
     fig = px.bar(
         df.sort_values("chargeback_rate", ascending=True),
