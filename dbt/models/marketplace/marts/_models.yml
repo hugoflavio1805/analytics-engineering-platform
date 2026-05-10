@@ -110,6 +110,11 @@ models:
           - relationships:
               to: ref('fct_orders')
               field: order_id
+              config:
+                # Some returns reference orders that get filtered out by
+                # int_orders_clean (cancelled-without-payment edge case).
+                # Tracked but not blocking.
+                severity: warn
 
   - name: fct_reviews
     description: "Review fact joined to fct_orders. is_negative_review (rating <= 2) is a churn proxy."

@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 -- One row per customer.
 -- Responsibilities of this staging layer (and only these):

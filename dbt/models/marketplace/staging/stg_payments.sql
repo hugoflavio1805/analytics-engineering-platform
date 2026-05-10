@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 with src as (
     select * from {{ source('marketplace_raw', 'payments') }}

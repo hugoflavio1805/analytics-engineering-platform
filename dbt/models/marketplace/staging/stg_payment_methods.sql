@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     lower(method_code)                              as method_code,

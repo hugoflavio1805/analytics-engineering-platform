@@ -331,6 +331,67 @@ def gmv_by_promotion() -> pd.DataFrame:
 
 
 @st.cache_data(ttl=300, show_spinner=False)
+def gmv_by_promotion_type() -> pd.DataFrame:
+    """Aggregate by promotion_type — drives the type breakdown chart."""
+    return _q(
+        """
+        with p as (
+            select * from main_marketplace_analytics.gmv_by_promotion
+            where promotion_id <> 'NO_PROMOTION'
+        )
+        select
+            coalesce(promotion_type, 'unknown')           as promotion_type,
+            count(*)                                      as campaigns,
+            sum(orders_count)                             as orders,
+            sum(gmv)                                      as gmv,
+            avg(chargeback_rate)                          as avg_chargeback_rate,
+            avg(return_rate)                              as avg_return_rate
+        from p
+        group by 1
+        order by gmv desc
+        """
+    )
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def aggressive_vs_baseline() -> pd.DataFrame:
+    """Compare KPIs between aggressive promos, regular promos, and no promo (baseline)."""
+    return _q(
+        """
+        with promo as (
+            select * from main_marketplace_analytics.gmv_by_promotion
+        ),
+        bucketed as (
+            select
+                case
+                    when promotion_id = 'NO_PROMOTION' then 'baseline (no promo)'
+                    when is_aggressive = true          then 'aggressive (>=30% / BOGO)'
+                    else                                    'regular promo'
+                end                                                    as bucket,
+                orders_count, gmv, chargeback_rate, refund_rate, return_rate, avg_order_value
+            from promo
+        )
+        select
+            bucket,
+            count(*)                                                   as campaigns,
+            sum(orders_count)                                          as orders,
+            sum(gmv)                                                   as gmv,
+            sum(orders_count) * avg(avg_order_value)
+                / nullif(sum(orders_count), 0)                          as aov,
+            sum(gmv * chargeback_rate)  / nullif(sum(gmv), 0)          as weighted_chargeback_rate,
+            sum(gmv * return_rate)      / nullif(sum(gmv), 0)          as weighted_return_rate
+        from bucketed
+        group by bucket
+        order by case bucket
+            when 'baseline (no promo)'        then 1
+            when 'regular promo'              then 2
+            when 'aggressive (>=30% / BOGO)'  then 3
+        end
+        """
+    )
+
+
+@st.cache_data(ttl=300, show_spinner=False)
 def chargeback_by_method() -> pd.DataFrame:
     return _q(
         """

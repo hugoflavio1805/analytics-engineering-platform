@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 -- One row per subscription. Staging only normalizes — no derivations.
 

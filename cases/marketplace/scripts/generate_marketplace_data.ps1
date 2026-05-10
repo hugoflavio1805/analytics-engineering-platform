@@ -387,19 +387,24 @@ for ($i = 1; $i -le $Orders; $i++) {
     $cust = $customersList[$rng.Next(0, $customersList.Count)]
     $orderDate = GenerateOrderDate
     $isPromoDay = Is-PromoDay $orderDate
+
+    # Find active promotions for this date (any campaign whose [start,end] window covers it).
+    # Apply promotion to ~35% of orders on any active-promo day, and to ~80% of orders that
+    # land specifically on Black Friday / Cyber Monday.
     $promotionId = ''
-    if ($isPromoDay -and $rng.NextDouble() -lt 0.6) {
-        $activePromos = $promosList | Where-Object {
-            ([datetime]::ParseExact($_.starts_at, 'yyyy-MM-dd', $null) -le $orderDate) -and
-            ([datetime]::ParseExact($_.ends_at,   'yyyy-MM-dd', $null) -ge $orderDate)
-        }
-        if ($activePromos.Count -gt 0) {
+    $activePromos = $promosList | Where-Object {
+        ([datetime]::ParseExact($_.starts_at, 'yyyy-MM-dd', $null) -le $orderDate) -and
+        ([datetime]::ParseExact($_.ends_at,   'yyyy-MM-dd', $null) -ge $orderDate)
+    }
+    if ($activePromos.Count -gt 0) {
+        $threshold = if ($isPromoDay) { 0.80 } else { 0.35 }
+        if ($rng.NextDouble() -lt $threshold) {
             $promotionId = ($activePromos[$rng.Next(0, $activePromos.Count)]).promotion_id
         }
     }
 
     $itemCount = 1 + $rng.Next(0, 4)
-    if ($isPromoDay) { $itemCount = $itemCount + 1 }   # bigger baskets on promo days
+    if ($promotionId -ne '') { $itemCount = $itemCount + 1 }   # bigger baskets on promo orders
     $orderTotal = 0.0
     $orderCategories = @()
 

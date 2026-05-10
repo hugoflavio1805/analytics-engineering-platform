@@ -337,17 +337,65 @@ with tab_returns:
 # ===== Promotions ==========================================================
 
 with tab_promo:
-    st.markdown("### Promotion ROI — GMV vs chargeback")
-    st.caption("Aggressive discounts (≥30%, BOGO) lift GMV but attract chargebacks. Optimize for net contribution.")
+    st.markdown("### Promotion ROI — net contribution after chargebacks")
+    st.caption("Aggressive discounts lift GMV but attract chargebacks. We optimize for net contribution, not gross GMV.")
 
-    promo_df = da.gmv_by_promotion()
-    promotions = promo_df[promo_df["promotion_id"] != "NO_PROMOTION"]
+    promo_df       = da.gmv_by_promotion()
+    promotions     = promo_df[promo_df["promotion_id"] != "NO_PROMOTION"]
+    promo_type_df  = da.gmv_by_promotion_type()
+    aggressive_df  = da.aggressive_vs_baseline()
 
-    if not promotions.empty:
+    if promotions.empty:
+        st.info("No promotion records in the warehouse.")
+    else:
+        # KPI strip — promotional health at a glance
+        promo_orders   = int(promotions["orders_count"].sum())
+        promo_gmv      = float(promotions["gmv"].sum())
+        baseline       = aggressive_df[aggressive_df["bucket"].str.startswith("baseline")]
+        aggressive     = aggressive_df[aggressive_df["bucket"].str.startswith("aggressive")]
+        baseline_cb    = float(baseline["weighted_chargeback_rate"].iloc[0]) if not baseline.empty else 0.0
+        aggressive_cb  = float(aggressive["weighted_chargeback_rate"].iloc[0]) if not aggressive.empty else 0.0
+        cb_premium     = aggressive_cb - baseline_cb
+        share_orders   = promo_orders / max(int(da.kpi_overview()['orders_total']), 1)
+
+        k1, k2, k3, k4, k5 = st.columns(5)
+        k1.metric("Active campaigns", f"{len(promotions):,}")
+        k2.metric("Promo GMV", f"${promo_gmv:,.0f}")
+        k3.metric("Promo share of orders", f"{share_orders:.1%}")
+        k4.metric("Baseline chargeback", f"{baseline_cb*100:.2f}%")
+        k5.metric(
+            "Aggressive premium", f"+{cb_premium*100:.2f} pp",
+            delta=f"{(cb_premium/max(baseline_cb,1e-9))*100:+.0f}% rel",
+            delta_color="inverse",
+        )
+
+        # Row 1: ROI scatter
         with st.container(border=True):
             st.plotly_chart(charts.promotion_roi_scatter(promo_df),
                             use_container_width=True, config={"displayModeBar": False})
 
+        # Row 2: Type breakdown + aggressive comparison (two new charts)
+        pc1, pc2 = st.columns(2)
+        with pc1:
+            with st.container(border=True):
+                st.plotly_chart(charts.promotion_type_breakdown(promo_type_df),
+                                use_container_width=True, config={"displayModeBar": False})
+                st.caption(
+                    "Dual axis: GMV per promotion type (blue bars) versus the average "
+                    "chargeback rate of campaigns of that type (red diamonds). "
+                    "Free-shipping consistently has the lowest chargeback rate."
+                )
+        with pc2:
+            with st.container(border=True):
+                st.plotly_chart(charts.aggressive_comparison(aggressive_df),
+                                use_container_width=True, config={"displayModeBar": False})
+                st.caption(
+                    "Side-by-side risk profile: orders without any promotion vs regular "
+                    "campaigns vs aggressive (≥30% off / BOGO). Aggressive campaigns "
+                    "consistently elevate both chargeback and return rates."
+                )
+
+        # Row 3: Top 5 + full type breakdown table
         with st.container(border=True):
             st.markdown("**Top 5 campaigns by GMV**")
             top5 = promotions.nlargest(5, "gmv")[[
@@ -356,9 +404,15 @@ with tab_promo:
             ]].copy()
             top5["chargeback_rate"] = (top5["chargeback_rate"] * 100).round(2).astype(str) + "%"
             top5["return_rate"]     = (top5["return_rate"]     * 100).round(1).astype(str) + "%"
+            top5["gmv"]             = top5["gmv"].apply(lambda v: f"${v:,.0f}")
             st.dataframe(top5, use_container_width=True, hide_index=True)
-    else:
-        st.info("No promotion records in the warehouse.")
+
+        with st.expander("All promotion types — aggregated", expanded=False):
+            df_show = promo_type_df.copy()
+            df_show["gmv"]                 = df_show["gmv"].apply(lambda v: f"${v:,.0f}")
+            df_show["avg_chargeback_rate"] = (df_show["avg_chargeback_rate"]*100).round(3).astype(str) + "%"
+            df_show["avg_return_rate"]     = (df_show["avg_return_rate"]*100).round(2).astype(str) + "%"
+            st.dataframe(df_show, use_container_width=True, hide_index=True)
 
 
 # ===== Logistics ===========================================================

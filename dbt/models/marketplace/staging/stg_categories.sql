@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     category_id,

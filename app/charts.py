@@ -307,6 +307,71 @@ def review_distribution_bar(df: pd.DataFrame) -> go.Figure:
 # =============================================================================
 
 # =============================================================================
+# Promotion type breakdown — dual-axis: GMV bars + chargeback rate line
+# =============================================================================
+
+def promotion_type_breakdown(df: pd.DataFrame) -> go.Figure:
+    df = df.sort_values("gmv", ascending=True)
+    fig = go.Figure()
+    fig.add_bar(
+        x=df["gmv"], y=df["promotion_type"], orientation="h",
+        marker=dict(color=ACCENT_BLUE),
+        name="GMV",
+        text=df["gmv"].apply(lambda v: f"${v:,.0f}"),
+        textposition="outside", textfont=dict(size=10, color=TEXT_MUTED),
+        cliponaxis=False,
+        hovertemplate="%{y}<br>GMV $%{x:,.0f}<extra></extra>",
+    )
+    fig.add_scatter(
+        x=df["avg_chargeback_rate"] * 100, y=df["promotion_type"],
+        xaxis="x2", mode="markers",
+        marker=dict(size=12, color=ACCENT_RED, symbol="diamond",
+                    line=dict(color=BG_PANEL, width=1)),
+        name="Chargeback %",
+        hovertemplate="%{y}<br>Chargeback %{x:.2f}%<extra></extra>",
+    )
+    layout = _layout(title="GMV and chargeback rate by promotion type", height=320)
+    layout["xaxis"]["title"] = dict(text="GMV ($)", font=dict(color=TEXT_MUTED, size=10))
+    layout["xaxis"]["tickformat"] = "$,.0f"
+    layout["xaxis2"] = dict(
+        overlaying="x", side="top", showgrid=False,
+        title=dict(text="Chargeback rate %", font=dict(color=ACCENT_RED, size=10)),
+        tickfont=dict(color=ACCENT_RED, size=10), ticksuffix="%",
+    )
+    layout["yaxis"]["tickfont"] = dict(size=11, color=TEXT_PRIMARY)
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
+# Aggressive vs baseline — grouped horizontal bars
+# =============================================================================
+
+def aggressive_comparison(df: pd.DataFrame) -> go.Figure:
+    df = df.copy()
+    fig = go.Figure()
+    metrics = [
+        ("weighted_chargeback_rate", "Chargeback rate", ACCENT_RED),
+        ("weighted_return_rate",     "Return rate",     ACCENT_ORANGE),
+    ]
+    for col, label, color in metrics:
+        fig.add_bar(
+            x=df["bucket"], y=df[col] * 100,
+            name=label, marker=dict(color=color),
+            text=df[col].apply(lambda v: f"{v*100:.2f}%"),
+            textposition="outside", textfont=dict(size=10, color=TEXT_MUTED),
+            cliponaxis=False,
+            hovertemplate="%{x}<br>" + label + " %{y:.2f}%<extra></extra>",
+        )
+    layout = _layout(title="Aggressive promos vs baseline — risk metrics", height=320)
+    layout["barmode"] = "group"
+    layout["yaxis"]["ticksuffix"] = "%"
+    layout["yaxis"]["tickformat"] = ".2f"
+    fig.update_layout(**layout)
+    return fig
+
+
+# =============================================================================
 # Cohort retention heatmap
 # =============================================================================
 

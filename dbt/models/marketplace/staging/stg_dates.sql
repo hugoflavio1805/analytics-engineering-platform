@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     try_cast(date_key as date)              as date_key,

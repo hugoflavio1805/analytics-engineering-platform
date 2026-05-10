@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     upper(trim(country_code))   as country_code,

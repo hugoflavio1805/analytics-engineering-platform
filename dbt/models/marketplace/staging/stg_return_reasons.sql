@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     lower(reason_code)        as reason_code,

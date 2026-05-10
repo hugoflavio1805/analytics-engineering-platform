@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 -- Orders staging — handles the mixed-format order_date issue:
 --   most rows: yyyy-MM-dd ; ~4% rows: dd/MM/yyyy (legacy import).

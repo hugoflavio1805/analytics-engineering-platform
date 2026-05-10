@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 -- Sellers staging:
 --   - normalize seller_id casing/separator

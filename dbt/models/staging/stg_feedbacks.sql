@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 -- One row per feedback event. Staging only normalizes — no derivations.
 
