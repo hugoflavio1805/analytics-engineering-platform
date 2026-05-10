@@ -43,9 +43,13 @@ services:
     volumes:
       - aep_warehouse:/warehouse:ro
       - aep_ai_cache:/app/.ai_cache
+    # Reads from .env in the project root if present (git-ignored).
+    # Variables here override env_file values, and shell-exported values override these.
+    env_file:
+      - path: ./.env
+        required: false
     environment:
       DUCKDB_PATH: /warehouse/warehouse.duckdb
-      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-4-6}
 
 volumes:
