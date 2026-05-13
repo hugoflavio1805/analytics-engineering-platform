@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Analytics Engineering Platform — Documentação Final</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+  }
+  h1 {
+    color: #0B3D91;
+    font-size: 28pt;
+    border-bottom: 4px solid #0B3D91;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+  h1 + .subtitle {
+    color: #5c5c5c;
+    font-size: 13pt;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  h2 {
+    color: #0B3D91;
+    font-size: 18pt;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    background: linear-gradient(90deg, #E3F2FD 0%, #ffffff 100%);
+    border-left: 6px solid #0B3D91;
+    page-break-after: avoid;
+  }
+  h3 {
+    color: #1565C0;
+    font-size: 14pt;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #BBDEFB;
+    padding-bottom: 4px;
+    page-break-after: avoid;
+  }
+  h4 {
+    color: #1976D2;
+    font-size: 12pt;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  p { margin: 8px 0; text-align: justify; }
+  ul, ol { margin: 8px 0 8px 24px; padding: 0; }
+  li { margin: 4px 0; }
+  code {
+    background: #F5F5F5;
+    color: #C62828;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+  }
+  pre {
+    background: #263238;
+    color: #ECEFF1;
+    padding: 14px 18px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    page-break-inside: avoid;
+  }
+  pre code { background: transparent; color: #ECEFF1; padding: 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0;
+    font-size: 10.5pt;
+    page-break-inside: avoid;
+  }
+  th {
+    background: #0B3D91;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #E0E0E0;
+    vertical-align: top;
+  }
+  tbody tr:nth-child(even) { background: #F5F9FF; }
+  tbody tr:hover { background: #E3F2FD; }
+  .callout {
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+  .callout-info    { background: #E3F2FD; border-left: 5px solid #1976D2; color: #0D47A1; }
+  .callout-warn    { background: #FFF8E1; border-left: 5px solid #F57C00; color: #E65100; }
+  .callout-success { background: #E8F5E9; border-left: 5px solid #388E3C; color: #1B5E20; }
+  .callout-danger  { background: #FFEBEE; border-left: 5px solid #C62828; color: #B71C1C; }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 9pt;
+    font-weight: 600;
+    margin: 2px 4px 2px 0;
+  }
+  .tag-blue   { background: #1976D2; color: white; }
+  .tag-green  { background: #388E3C; color: white; }
+  .tag-orange { background: #F57C00; color: white; }
+  .tag-red    { background: #C62828; color: white; }
+  .tag-purple { background: #6A1B9A; color: white; }
+  .tag-gray   { background: #607D8B; color: white; }
+  .toc {
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 20px 0 30px 0;
+    page-break-after: always;
+  }
+  .toc h3 { border: none; margin-top: 0; color: #0B3D91; }
+  .toc ol { counter-reset: toc; list-style: none; margin-left: 0; padding-left: 0; }
+  .toc ol li {
+    counter-increment: toc;
+    padding: 4px 0;
+    border-bottom: 1px dotted #BDBDBD;
+  }
+  .toc ol li::before {
+    content: counter(toc, decimal-leading-zero) ". ";
+    color: #0B3D91;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .cover {
+    text-align: center;
+    padding: 60px 30px;
+    border: 3px double #0B3D91;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #E3F2FD 0%, #ffffff 50%, #E8F5E9 100%);
+    page-break-after: always;
+  }
+  .cover h1 { border: none; color: #0B3D91; font-size: 32pt; }
+  .cover .meta {
+    margin-top: 40px;
+    font-size: 12pt;
+    color: #424242;
+    text-align: left;
+    display: inline-block;
+  }
+  .cover .meta strong { color: #0B3D91; display: inline-block; width: 180px; }
+  .page-break { page-break-before: always; }
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #E8F5E9;
+    color: #1B5E20;
+    border: 1px solid #66BB6A;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  blockquote {
+    border-left: 4px solid #9C27B0;
+    background: #F3E5F5;
+    padding: 10px 16px;
+    margin: 12px 0;
+    color: #4A148C;
+    font-style: italic;
+  }
+  .architecture-diagram {
+    font-family: 'Consolas', monospace;
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    border-radius: 6px;
+    white-space: pre;
+    font-size: 9.5pt;
+    color: #263238;
+    margin: 12px 0;
+    overflow-x: auto;
+  }
+  .kv {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 8px 16px;
+    background: #FAFAFA;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .kv dt { font-weight: 600; color: #0B3D91; }
+  .kv dd { margin: 0; }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 14px 0;
+  }
+  .kpi-card {
+    background: linear-gradient(135deg, #E3F2FD 0%, #ffffff 100%);
+    border: 1px solid #BBDEFB;
+    border-radius: 6px;
+    padding: 12px 14px;
+    text-align: left;
+  }
+  .kpi-card .label {
+    font-size: 9pt;
+    color: #1976D2;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  .kpi-card .value {
+    font-size: 18pt;
+    color: #0B3D91;
+    font-weight: 700;
+    margin-top: 4px;
+    font-family: Consolas, monospace;
+  }
+</style>
+</head>
+<body>
+
+<!-- ======================= CAPA ======================= -->
+<section class="cover">
+  <h1>Analytics Engineering<br>Platform</h1>
+  <p class="subtitle" style="font-size: 16pt; color: #1565C0;">Documentação Técnica Final · Generic Marketplace</p>
+  <p style="font-size: 14pt; color: #424242; margin-top: 30px;">
+    <strong>Returns · Promotions · Logistics · Growth · Pipeline Health · AI Insights</strong>
+  </p>
+  <div class="meta">
+    <p><strong>Autor:</strong> Hugo Flávio Santos</p>
+    <p><strong>Cargo-alvo:</strong> Senior Data Engineer / Analytics Engineering</p>
+    <p><strong>Contato:</strong> hugoflavio1805@hotmail.com</p>
+    <p><strong>GitHub:</strong> github.com/hugoflavio1805/analytics-engineering-platform</p>
+    <p><strong>Data:</strong> 10 de maio de 2026</p>
+    <p><strong>Stack:</strong> dbt · DuckDB · Snowflake · Streamlit · Plotly · Anthropic Claude · Docker · GitHub Actions</p>
+  </div>
+</section>
+
+<!-- ======================= SUMÁRIO ======================= -->
+<nav class="toc">
+  <h3>Sumário</h3>
+  <ol>
+    <li>Resumo Executivo</li>
+    <li>Contexto de Negócio e Perguntas-Chave</li>
+    <li>Stack Técnica Detalhada</li>
+    <li>Arquitetura da Plataforma</li>
+    <li>Modelo Dimensional Kimball</li>
+    <li>Geração de Dados Sintéticos com Sinais de Negócio</li>
+    <li>Camada de Staging — Limpeza e Normalização</li>
+    <li>Camada Intermediária — Regras de Negócio</li>
+    <li>Marts Analíticos — Uma Pergunta por Mart</li>
+    <li>Pipeline Observability (Audit Infrastructure)</li>
+    <li>Dashboard Executivo — 7 Abas Estilo Amazon Seller Central</li>
+    <li>Aba Promotions — Análise Detalhada</li>
+    <li>AI Insights com Anthropic Claude</li>
+    <li>Containerização e Execução com Docker Compose</li>
+    <li>Qualidade de Dados e Testes Automatizados</li>
+    <li>CI/CD e GitHub Actions</li>
+    <li>Custo, Escala e Operação</li>
+    <li>Decisões Técnicas e Trade-offs</li>
+    <li>Limitações Conhecidas e Roadmap Futuro</li>
+    <li>Glossário Técnico</li>
+  </ol>
+</nav>
+
+<!-- ======================= 1. RESUMO EXECUTIVO ======================= -->
+<h2>1. Resumo Executivo</h2>
+
+<p>Este documento apresenta a <strong>Analytics Engineering Platform</strong>, uma plataforma de dados publicada em <code>github.com/hugoflavio1805/analytics-engineering-platform</code> que materializa, em código produtivo e versionado, o pipeline analítico de um <strong>marketplace genérico</strong> inspirado em padrões reais (Amazon, MercadoLivre, Shopee, Etsy, eBay).</p>
+
+<p>O princípio orientador é simples e aplicado em todas as camadas: <em>raw stays raw, dashboards stay dumb, every metric has one definition in dbt</em>. As fontes brutas nunca são tocadas; toda derivação é versionada nos modelos dbt; nenhum cálculo de negócio acontece dentro do dashboard.</p>
+
+<div class="callout callout-success">
+<strong>Headline final:</strong> <strong>131 testes dbt verdes</strong> em 11,6 segundos · <strong>10 dimensões + 6 fatos + 7 marts analíticos</strong> · <strong>7 abas</strong> no dashboard com tema dark profissional · <strong>tabela de auditoria</strong> capturando cada execução do pipeline · <strong>integração com Claude API</strong> para narrativas com guardrails anti-alucinação.
+</div>
+
+<h3>1.1. KPIs do Marketplace (dataset sintético calibrado)</h3>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="label">Orders</div>
+    <div class="value">7.458</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">GMV</div>
+    <div class="value">$8,1M</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Customers</div>
+    <div class="value">5.000</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Sellers</div>
+    <div class="value">1.000</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Return rate</div>
+    <div class="value">10,5%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Chargeback rate</div>
+    <div class="value">4,06%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">AOV</div>
+    <div class="value">$1.090</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Janela de dados</div>
+    <div class="value">2022-2026</div>
+  </div>
+</div>
+
+<!-- ======================= 2. CONTEXTO ======================= -->
+<h2>2. Contexto de Negócio e Perguntas-Chave</h2>
+
+<p>O cenário simulado é o de um marketplace global de médio porte com sellers em 15 países, catálogo de 5.000 produtos em 9 categorias, e ~7.500 pedidos no histórico de 4 anos.</p>
+
+<h3>2.1. As três perguntas operacionais que a plataforma responde</h3>
+
+<table>
+  <thead>
+    <tr><th>Pergunta</th><th>Quem usa</th><th>Mart que responde</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Quais categorias e regiões drenam mais GMV via devoluções?</td>
+      <td>VP Operations · Category managers</td>
+      <td><code>category_region_return_rate</code></td>
+    </tr>
+    <tr>
+      <td>Quais campanhas têm ROI positivo após chargebacks e devoluções?</td>
+      <td>Marketing · Finance · Risk</td>
+      <td><code>gmv_by_promotion</code></td>
+    </tr>
+    <tr>
+      <td>Quais transportadoras erram SLA e como isso correlaciona com devoluções por atraso?</td>
+      <td>Fulfillment · Last-mile ops</td>
+      <td><code>sla_by_carrier</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2.2. Perguntas estratégicas adicionais</h3>
+
+<table>
+  <thead>
+    <tr><th>Pergunta</th><th>Mart</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Como cohorts de aquisição retêm ao longo do tempo?</td><td><code>customer_cohort_retention</code></td></tr>
+    <tr><td>Qual % de sellers domina qual % de GMV (regra 80-20)?</td><td><code>pareto_sellers</code></td></tr>
+    <tr><td>Como o negócio cresce MoM e YoY?</td><td><code>growth_metrics_monthly</code></td></tr>
+    <tr><td>Qual o LTV líquido por segmento (região × prime × tenure)?</td><td><code>customer_ltv_by_segment</code></td></tr>
+    <tr><td>Como a própria pipeline está performando ao longo do tempo?</td><td><code>pipeline_health</code> (audit)</td></tr>
+  </tbody>
+</table>
+
+<!-- ======================= 3. STACK ======================= -->
+<h2>3. Stack Técnica Detalhada</h2>
+
+<p>Cada ferramenta foi escolhida com racional explícito. Toda a stack é gratuita ou tem tier gratuito viável; toda peça pensada para ter equivalência local (DuckDB) e produtiva (Snowflake) sem reescrita de código.</p>
+
+<h3>3.1. Visão geral da stack</h3>
+
+<table>
+  <thead>
+    <tr><th>Camada</th><th>Ferramenta</th><th>Versão</th><th>Papel na plataforma</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="tag tag-blue">Transformação</span></td><td><strong>dbt-core</strong></td><td>1.9.10</td><td>Modelagem SQL declarativa (staging → intermediate → marts)</td></tr>
+    <tr><td><span class="tag tag-blue">Warehouse (prod)</span></td><td><strong>Snowflake</strong></td><td>cloud</td><td>Compute/storage separados, Snowpipe, zero-copy clones</td></tr>
+    <tr><td><span class="tag tag-blue">Warehouse (dev)</span></td><td><strong>DuckDB</strong></td><td>1.5.2</td><td>Mesma SQL roda local sem infra</td></tr>
+    <tr><td><span class="tag tag-blue">Adaptador</span></td><td><strong>dbt-duckdb</strong></td><td>1.9.6</td><td>Plugin dbt + DuckDB com external_location</td></tr>
+    <tr><td><span class="tag tag-orange">Qualidade</span></td><td><strong>dbt tests</strong></td><td>—</td><td>89 schema tests + 3 singular + freshness</td></tr>
+    <tr><td><span class="tag tag-orange">CI/CD</span></td><td><strong>GitHub Actions</strong></td><td>—</td><td>Lint + dbt build + deploy de docs</td></tr>
+    <tr><td><span class="tag tag-orange">Lint SQL</span></td><td><strong>sqlfluff</strong></td><td>3.0</td><td>Padronização de estilo SQL no PR</td></tr>
+    <tr><td><span class="tag tag-green">Dashboard</span></td><td><strong>Streamlit</strong></td><td>1.57</td><td>App Python end-to-end com tema dark</td></tr>
+    <tr><td><span class="tag tag-green">Charts</span></td><td><strong>Plotly</strong></td><td>6.7</td><td>Heatmap, choropleth, donut, scatter, dual-axis</td></tr>
+    <tr><td><span class="tag tag-green">BI alternativo</span></td><td><strong>Tableau Public + Metabase</strong></td><td>—</td><td>Surfaces paralelas para outros stakeholders</td></tr>
+    <tr><td><span class="tag tag-purple">IA Generativa</span></td><td><strong>Anthropic Claude</strong></td><td>Sonnet 4.6</td><td>Narrativas executivas com guardrails anti-alucinação</td></tr>
+    <tr><td><span class="tag tag-gray">Container</span></td><td><strong>Docker Compose</strong></td><td>v5.1</td><td>Stack reproduzível: dbt-build + dashboard</td></tr>
+    <tr><td><span class="tag tag-gray">VCS</span></td><td><strong>Git + GitHub</strong></td><td>—</td><td>Versionamento, PRs, GitHub Pages</td></tr>
+    <tr><td><span class="tag tag-gray">Linguagem</span></td><td><strong>Python</strong></td><td>3.11.9</td><td>Módulos do dashboard + queries DuckDB</td></tr>
+    <tr><td><span class="tag tag-gray">Geração</span></td><td><strong>PowerShell</strong></td><td>5.1</td><td>Script de geração de dados sintéticos</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2. dbt-core 1.9 — coração da plataforma</h3>
+<p><strong>Papel:</strong> declarar todas as transformações em SQL versionado e testado, com lineage automático, documentação gerada e separação rigorosa entre <em>staging</em>, <em>intermediate</em> e <em>marts</em>.</p>
+<p><strong>Por que dbt e não scripts SQL soltos?</strong></p>
+<ul>
+  <li><strong>Lineage como subproduto</strong>: cada <code>ref()</code> declara dependência; o DAG é construído automaticamente.</li>
+  <li><strong>Testes próximos ao modelo</strong>: <code>schema.yml</code> ao lado do SQL declara <code>not_null</code>, <code>unique</code>, <code>relationships</code>, <code>accepted_values</code>.</li>
+  <li><strong>Materializações como configuração</strong>: alternar entre <code>view</code>, <code>table</code> e <code>incremental</code> é uma linha de YAML.</li>
+  <li><strong>Portabilidade</strong>: o mesmo modelo roda em Snowflake, DuckDB, Postgres e Redshift trocando o adapter.</li>
+  <li><strong>Hooks <code>on-run-start</code> e <code>on-run-end</code></strong>: permitem instrumentação da própria pipeline (usado para o audit log).</li>
+</ul>
+
+<h3>3.3. DuckDB 1.5 — warehouse analítico embutido</h3>
+<p><strong>Papel:</strong> banco de dados OLAP onde vive toda a camada gold. Executa queries da análise, aplica constraints, suporta transações ACID.</p>
+<p><strong>Por que DuckDB e não Postgres?</strong></p>
+<ul>
+  <li><strong>Zero infra</strong>: in-process (como SQLite). Sem servidor, sem porta.</li>
+  <li><strong>Performance OLAP</strong>: vetorizado em C++, lê Parquet/CSV nativos.</li>
+  <li><strong>Constraints reais</strong>: <code>FOREIGN KEY</code> validado, tipos ricos (DECIMAL, TIMESTAMP).</li>
+  <li><strong>Arquivo único</strong>: <code>warehouse.duckdb</code> compartilhável, versionável, backup trivial.</li>
+  <li><strong>QUALIFY nativo</strong>: deduplicação com window function em uma expressão.</li>
+</ul>
+
+<h3>3.4. Snowflake — destino de produção</h3>
+<p>O profile dbt já tem um target <code>snowflake</code> configurado via env vars. Mesmo SQL que roda local em DuckDB roda em Snowflake sem reescrita. As diferenças entre os dois adapters ficam isoladas em <code>macros/cross_warehouse/qualify_compat.sql</code>.</p>
+
+<h3>3.5. Streamlit 1.57 — dashboard interativo</h3>
+<p><strong>Papel:</strong> front-end web que consome diretamente as views <code>marts.*</code> do DuckDB. Sete abas (Overview, Growth, Returns, Promotions, Logistics, Pipeline Health, AI Insights), KPI strip global, tema dark customizado via CSS embutido.</p>
+<p><strong>Versão pinada a >=1.40</strong> para resolver conflito de protobuf com dbt-core 1.9 (anteriores travavam em <code>protobuf<6</code>; dbt exige <code>>=6</code>).</p>
+
+<h3>3.6. Plotly 6.7 — visualização</h3>
+<p><strong>Papel:</strong> render de todos os gráficos. Tema dark customizado em <code>charts.py</code> com paleta calibrada contra Amazon Seller Central / Grow.com:</p>
+
+<div class="kv">
+  <dt>Background</dt>
+  <dd><code>#1F2937</code> (página) · <code>#2A2F3A</code> (painéis)</dd>
+  <dt>Texto principal</dt>
+  <dd><code>#F9FAFB</code> · texto secundário <code>#9CA3AF</code></dd>
+  <dt>Accent primário</dt>
+  <dd><code>#3B82F6</code> (azul Amazon)</dd>
+  <dt>Accent secundário</dt>
+  <dd><code>#F59E0B</code> (laranja Amazon)</dd>
+  <dt>Estados</dt>
+  <dd><code>#10B981</code> verde (positivo) · <code>#EF4444</code> vermelho (alerta)</dd>
+</div>
+
+<h3>3.7. Anthropic Claude — IA com guardrails</h3>
+<p><strong>Papel:</strong> gerar narrativas executivas para a aba "AI Insights". Modelo padrão é <strong>Claude Sonnet 4.6</strong>; opcional Opus 4.7 para análises mais profundas.</p>
+<p><strong>Disciplina anti-alucinação:</strong></p>
+<ol>
+  <li>O modelo nunca recebe linhas raw — só recebe <strong>payload pré-agregado</strong> (top-5 offenders, anomalias, deltas vs baseline).</li>
+  <li>O <em>system prompt</em> proíbe expressamente: <em>"only cite numbers that appear verbatim in the input"</em>.</li>
+  <li>Cache em disco de 60 min por <em>signature</em> da query — economiza tokens e estabiliza output.</li>
+  <li>Degradação graciosa: sem <code>ANTHROPIC_API_KEY</code>, a aba mostra o JSON do payload com aviso "AI disabled". O dashboard inteiro continua funcional.</li>
+</ol>
+
+<h3>3.8. Docker Compose v5.1 — orquestração local</h3>
+<p>Dois serviços orquestrados:</p>
+<ol>
+  <li><code>dbt-build</code> — one-shot: roda <code>dbt build</code> e popula o volume nomeado <code>aep_warehouse</code>, então sai com exit 0.</li>
+  <li><code>dashboard</code> — Streamlit + Plotly + Claude. Depende de <code>dbt-build</code> ter terminado com sucesso (<code>service_completed_successfully</code>).</li>
+</ol>
+<p>Volumes nomeados <code>aep_warehouse</code> e <code>aep_ai_cache</code> evitam problemas de permissão de bind-mount no Windows.</p>
+
+<!-- ======================= 4. ARQUITETURA ======================= -->
+<h2>4. Arquitetura da Plataforma</h2>
+
+<div class="architecture-diagram">
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │                       SOURCE LAYER (raw CSVs)                          │
+  │                                                                         │
+  │  Facts:  orders · order_items · payments · returns · reviews ·          │
+  │          shipping_events                                                │
+  │  Dims:   sellers · products · customers · categories · geography ·     │
+  │          dates · carriers · payment_methods · return_reasons ·          │
+  │          promotions                                                      │
+  └────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │                  STAGING LAYER (stg_*) — table-materialized            │
+  │  Type-cast · Normalize ids · Trim/lowercase · Flag DQ issues           │
+  │  Self-contained: warehouse não depende mais dos CSVs em runtime        │
+  └────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │           INTERMEDIATE LAYER (int_*) — ephemeral                       │
+  │  int_orders_clean · int_returns_classified                             │
+  └────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │                MARTS LAYER (Kimball star schema)                       │
+  │                                                                         │
+  │  CORE — 10 dims + 6 fatos                                               │
+  │  ANALYTICS — 7 marts dedicados (1 por pergunta) + audit view            │
+  └────────────────────────────────────────────────────────────────────────┘
+                                    │
+                ┌───────────────────┼───────────────────┐
+                ▼                   ▼                   ▼
+         Streamlit Dashboard    Tableau Public      Metabase
+         (7 abas dark)          (executivo)          (drill-down)
+                │
+                └────► Anthropic Claude (AI Insights)
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │             AUDIT LAYER (main_audit.dbt_runs)                          │
+  │  Toda execução do dbt grava 1 row por nó (model/test/seed):            │
+  │  run_id · git_sha · started_at · duration_ms · status · message        │
+  │                                                                         │
+  │  Consumido por marts.analytics.pipeline_health (view)                  │
+  │  Renderizado na aba "Pipeline Health" do dashboard                     │
+  └────────────────────────────────────────────────────────────────────────┘
+</div>
+
+<h3>4.1. Princípios arquiteturais</h3>
+<table>
+  <thead>
+    <tr><th>Princípio</th><th>Implementação</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Raw stays raw</strong></td>
+      <td>Os CSVs em <code>data/raw/</code> são preservados em <code>data/raw_original/</code>. Nenhuma derivação acontece neles. Toda inteligência vive no dbt.</td>
+    </tr>
+    <tr>
+      <td><strong>Dashboards stay dumb</strong></td>
+      <td>O Streamlit roda apenas <code>SELECT * FROM mart_*</code>. Zero JOINs, zero agregações, zero lógica de negócio.</td>
+    </tr>
+    <tr>
+      <td><strong>One mart per question</strong></td>
+      <td>Cada pergunta de negócio tem seu próprio mart analítico. Quando a definição muda, muda em um lugar só.</td>
+    </tr>
+    <tr>
+      <td><strong>Pipeline observability is first-class</strong></td>
+      <td>Cada execução do dbt deixa rastro em <code>main_audit.dbt_runs</code>. A própria plataforma é monitorada como um produto.</td>
+    </tr>
+    <tr>
+      <td><strong>AI is a writer, not an analyst</strong></td>
+      <td>Claude recebe payloads pré-agregados e tem instrução explícita de não inventar números.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ======================= 5. KIMBALL ======================= -->
+<h2>5. Modelo Dimensional Kimball</h2>
+
+<p>A plataforma implementa um <strong>star schema completo</strong>. Esta é a peça arquitetural que diferencia uma plataforma analítica madura de um conjunto de dashboards ad-hoc.</p>
+
+<h3>5.1. As 10 dimensões</h3>
+
+<table>
+  <thead>
+    <tr><th>Dimensão</th><th>Grão</th><th>Atributos-chave</th><th>Rollups derivados</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>dim_mkt_customer</code></td><td>1 cliente</td><td>name, email, country, signup_date, is_prime</td><td>orders_count, lifetime_gmv, returned_orders_count, tenure_days</td></tr>
+    <tr><td><code>dim_seller</code></td><td>1 vendedor</td><td>seller_name, country, is_verified, join_date</td><td>products_count, orders_count, gmv, tenure_days</td></tr>
+    <tr><td><code>dim_product</code></td><td>1 produto</td><td>sku, product_name, category, unit_price, stock_qty</td><td>units_sold, revenue, returns_count, has_negative_price</td></tr>
+    <tr><td><code>dim_category</code></td><td>1 categoria</td><td>category_name, parent_category, return_window_days</td><td>products_count, units_sold, gross_sales</td></tr>
+    <tr><td><code>dim_geography</code></td><td>1 país</td><td>country_code, country_name, region, continent, currency, language, is_eu</td><td>—</td></tr>
+    <tr><td><code>dim_date</code></td><td>1 dia</td><td>year, month, day, day_of_week, quarter</td><td>is_weekend, is_black_friday, is_cyber_monday, is_christmas_eve, is_new_year, is_promo_peak_day</td></tr>
+    <tr><td><code>dim_carrier</code></td><td>1 transportadora</td><td>carrier_name, origin_country, sla_promised_days, reliability_score</td><td>orders_shipped, avg_transit_days, sla_miss_rate</td></tr>
+    <tr><td><code>dim_payment_method</code></td><td>1 método</td><td>method_name, processor_fee_pct, settlement_days, chargeback_risk</td><td>transactions, total_processed, chargeback_rate</td></tr>
+    <tr><td><code>dim_return_reason</code></td><td>1 motivo</td><td>reason_label, reason_category, is_actionable_by_seller</td><td>—</td></tr>
+    <tr><td><code>dim_promotion</code></td><td>1 campanha</td><td>promotion_name, promotion_type, discount_value, starts_at, ends_at, is_aggressive</td><td>orders_count, gmv, chargeback_rate</td></tr>
+  </tbody>
+</table>
+
+<h3>5.2. Os 6 fatos</h3>
+
+<table>
+  <thead>
+    <tr><th>Fato</th><th>Grão</th><th>Materialização</th><th>FKs</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fct_orders</code></td><td>1 pedido</td><td><strong>incremental</strong></td><td>customer, geography, carrier, promotion, category, payment_method, date</td></tr>
+    <tr><td><code>fct_order_items</code></td><td>1 linha de pedido</td><td>table</td><td>order, product, seller, category</td></tr>
+    <tr><td><code>fct_payments</code></td><td>1 evento de pagamento</td><td>table</td><td>order, payment_method</td></tr>
+    <tr><td><code>fct_returns</code></td><td>1 devolução</td><td>table</td><td>order, return_reason, customer (via order)</td></tr>
+    <tr><td><code>fct_reviews</code></td><td>1 review</td><td>table</td><td>order, customer</td></tr>
+    <tr><td><code>fct_shipping_events</code></td><td>1 evento logístico</td><td>table</td><td>order, carrier</td></tr>
+  </tbody>
+</table>
+
+<h3>5.3. Os 7 marts analíticos</h3>
+
+<table>
+  <thead>
+    <tr><th>Mart</th><th>Pergunta respondida</th><th>Grão da saída</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>category_region_return_rate</code></td><td>Onde devoluções drenam GMV?</td><td>1 row por (categoria × região)</td></tr>
+    <tr><td><code>gmv_by_promotion</code></td><td>Quais campanhas têm ROI positivo?</td><td>1 row por campanha</td></tr>
+    <tr><td><code>sla_by_carrier</code></td><td>Quais carriers erram SLA?</td><td>1 row por (carrier × país)</td></tr>
+    <tr><td><code>customer_cohort_retention</code></td><td>Como cohorts retêm ao longo do tempo?</td><td>1 row por (cohort × mês)</td></tr>
+    <tr><td><code>pareto_sellers</code></td><td>Quem domina o GMV (regra 80/20)?</td><td>1 row por seller, com bucket A/B/C</td></tr>
+    <tr><td><code>growth_metrics_monthly</code></td><td>Como o negócio cresce MoM/YoY?</td><td>1 row por mês</td></tr>
+    <tr><td><code>customer_ltv_by_segment</code></td><td>Qual o LTV por segmento?</td><td>1 row por (região × is_prime × tenure_bucket)</td></tr>
+    <tr><td><code>pipeline_health</code></td><td>Como a própria plataforma está performando?</td><td>1 row por execução do dbt</td></tr>
+  </tbody>
+</table>
+
+<!-- ======================= 6. GERAÇÃO DE DADOS ======================= -->
+<h2>6. Geração de Dados Sintéticos com Sinais de Negócio</h2>
+
+<p>O dataset não é aleatório — é <strong>calibrado contra benchmarks públicos da indústria</strong> e embute padrões de negócio realistas que a pipeline depois descobre como insights.</p>
+
+<h3>6.1. Volumes</h3>
+
+<table>
+  <thead>
+    <tr><th>Tabela</th><th>Linhas</th><th>Observação</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>orders.csv</td><td>7.500</td><td>Sazonalidade Q4 spike + julho dip + 15% YoY growth</td></tr>
+    <tr><td>order_items.csv</td><td>~19.000</td><td>1-4 itens por pedido; baskets +1 em promoções</td></tr>
+    <tr><td>payments.csv</td><td>~7.460</td><td>Pulado em ~5% de pedidos cancelados</td></tr>
+    <tr><td>returns.csv</td><td>~1.300</td><td>~17% dos pedidos delivered; calibrado por categoria</td></tr>
+    <tr><td>reviews.csv</td><td>~5.000</td><td>Rating 1-5 correlacionado com retorno</td></tr>
+    <tr><td>shipping_events.csv</td><td>~28.000</td><td>4 eventos por pedido em média</td></tr>
+    <tr><td>customers.csv</td><td>5.000</td><td>15 países, 18% prime, signup 2022-2026</td></tr>
+    <tr><td>sellers.csv</td><td>1.000</td><td>200+ verified, 3% com country code minúsculo (DQ)</td></tr>
+    <tr><td>products.csv</td><td>5.000</td><td>9 categorias, 26 marcas, 4% SKUs duplicados (DQ)</td></tr>
+    <tr><td>+ 7 dimensões pequenas</td><td>~1.700</td><td>categories, geography, dates, carriers, payment_methods, return_reasons, promotions</td></tr>
+  </tbody>
+</table>
+
+<h3>6.2. Sinais de negócio embutidos (calibrados)</h3>
+
+<table>
+  <thead>
+    <tr><th>Sinal</th><th>Como é codificado</th><th>Onde aparece como insight</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Q4 spike + Cyber-week pulse</td><td>30% dos pedidos em Nov 20-Dec 31, sub-pulse Nov 24-Dec 2</td><td>Aba Overview (time series), Aba Growth (MoM/YoY)</td></tr>
+    <tr><td>Julho dip</td><td>5% dos pedidos concentrados em julho (post-Prime cooldown)</td><td>Time series + cohort gaps</td></tr>
+    <tr><td>YoY growth ~15%</td><td>Anos mais novos (2024, 2025) com peso maior na distribuição</td><td><code>growth_metrics_monthly.yoy_growth_pct</code></td></tr>
+    <tr><td>Aggressive promo elevates chargeback</td><td>Campanhas com <code>is_aggressive=true</code> têm +14,46pp chargeback rate</td><td>Aba Promotions (comparativo)</td></tr>
+    <tr><td>Crypto + LATAM = fraude</td><td>Combo dispara 12% chargeback (vs 4% baseline)</td><td><code>dim_payment_method.chargeback_rate</code></td></tr>
+    <tr><td>Carrier reliability ↔ retornos</td><td>Carriers com <code>reliability_score</code> baixo geram mais 'arrived_late' returns</td><td><code>sla_by_carrier</code>, aba Logistics</td></tr>
+    <tr><td>Fashion + LATAM domina refunds</td><td>27% Fashion × 1.10× LATAM = 30% return rate</td><td><code>category_region_return_rate</code> (top row)</td></tr>
+    <tr><td>APAC retorna menos</td><td>0.85× modificador regional</td><td>Mesmo mart</td></tr>
+    <tr><td>Returned orders → low ratings</td><td>Reviews de pedidos retornados puxam para 1-3 estrelas</td><td>Aba Overview (review distribution)</td></tr>
+  </tbody>
+</table>
+
+<h3>6.3. DQ issues intencionais (e onde são detectadas)</h3>
+
+<table>
+  <thead>
+    <tr><th>Issue</th><th>Onde é injetada</th><th>Como é detectada/tratada</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mixed seller_id format (- vs _)</td><td>~5% das linhas em sellers/products/order_items</td><td>Normalizado em <code>stg_*</code> com <code>upper(replace(_,'-'))</code></td></tr>
+    <tr><td>Duplicate SKUs</td><td>~4% dos produtos</td><td>Tracked via <code>has_negative_price</code> flag</td></tr>
+    <tr><td>Lowercase country codes</td><td>~3% dos sellers</td><td>UPPER em todos os <code>stg_*</code></td></tr>
+    <tr><td>Missing/malformed emails</td><td>~5% dos clientes</td><td>Flag <code>has_valid_email</code> em <code>stg_customers</code></td></tr>
+    <tr><td>Mixed order_date formats</td><td>~4% em <code>dd/MM/yyyy</code></td><td>COALESCE de dois parsers em <code>stg_orders</code></td></tr>
+    <tr><td>Phantom cancelled orders</td><td>5% cancelados sem payment</td><td>Filtrado em <code>int_orders_clean</code></td></tr>
+  </tbody>
+</table>
+
+<!-- ======================= 7. STAGING ======================= -->
+<h2>7. Camada de Staging — Limpeza e Normalização</h2>
+
+<p>A camada <code>stg_*</code> tem responsabilidade <strong>limitada e bem definida</strong>: apenas casts de tipo, normalização de identificadores e flags de DQ. Nenhuma regra de negócio.</p>
+
+<h3>7.1. Decisões da camada</h3>
+
+<ul>
+  <li><strong>Materialização: <code>table</code></strong> (não <code>view</code>). Isso torna o warehouse <strong>self-contained</strong> — o arquivo <code>warehouse.duckdb</code> funciona sem precisar dos CSVs no path original. Crítico para Docker, onde mounts são read-only.</li>
+  <li><strong>Booleanos via <code>try_cast(X as boolean)</code></strong>: o <code>read_csv_auto</code> do DuckDB já infere booleans para colunas <code>true</code>/<code>false</code>. <code>case lower(trim(X))</code> falha porque trim/lower só aceitam VARCHAR.</li>
+  <li><strong>Normalização de IDs</strong>: <code>upper(replace(trim(id), '_', '-'))</code> aplicado consistentemente em todas as colunas FK.</li>
+  <li><strong>DQ flags</strong> (não filtros): valores problemáticos são marcados (ex: <code>has_negative_price</code>) e não eliminados — preserva o sinal para o singular test detectar.</li>
+</ul>
+
+<h3>7.2. Exemplo: <code>stg_orders</code> com parsing dual de datas</h3>
+
+<pre><code>{{ config(materialized='table') }}
+
+with src as (
+    select * from {{ source('marketplace_raw', 'orders') }}
+),
+parsed as (
+    select
+        *,
+        coalesce(
+            try_cast(order_date as date),
+            try_cast(strptime(order_date, '%d/%m/%Y') as date)
+        ) as order_date_parsed
+    from src
+)
+select
+    order_id, customer_id,
+    order_date_parsed                                as order_date,
+    lower(status)                                    as status,
+    upper(trim(ship_country))                        as ship_country,
+    nullif(trim(carrier_id), '')                     as carrier_id,
+    nullif(trim(promotion_id), '')                   as promotion_id,
+    try_cast(items_count as integer)                 as items_count,
+    try_cast(total as decimal(12, 2))                as total
+from parsed</code></pre>
+
+<!-- ======================= 8. INTERMEDIATE ======================= -->
+<h2>8. Camada Intermediária — Regras de Negócio</h2>
+
+<p>Materialização <code>ephemeral</code> — não cria tabela física, apenas CTE inline em modelos downstream. Use para regras compartilhadas entre marts.</p>
+
+<table>
+  <thead>
+    <tr><th>Modelo</th><th>Regra de negócio</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>int_orders_clean</code></td>
+      <td>Drop pedidos com <code>order_date</code> nulo (parsing falhou). Drop self-cancelled sem payment (phantom orders).</td>
+    </tr>
+    <tr>
+      <td><code>int_returns_classified</code></td>
+      <td>Calcula <code>days_to_return</code> e <code>is_within_policy</code> (janela de 30 dias). Mapeia <code>reason</code> → <code>reason_category</code> (product_issue / fit_issue / customer_driven / fulfillment_issue).</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ======================= 9. MARTS ANALÍTICOS ======================= -->
+<h2>9. Marts Analíticos — Uma Pergunta por Mart</h2>
+
+<p>Cada mart analítico responde a uma pergunta de negócio específica. O dashboard consome diretamente esses marts — <strong>não faz JOIN, não agrega, apenas pinta</strong>.</p>
+
+<h3>9.1. <code>category_region_return_rate</code></h3>
+<p><strong>Pergunta:</strong> quais (categoria × região) drenam mais GMV via devoluções?</p>
+<p><strong>Headline:</strong> <strong>Fashion + LATAM</strong> domina o refund total — alta taxa (27% × 1.10× = 30%) combinada com volume razoável. Books/APAC é o quadrante mais limpo.</p>
+
+<h3>9.2. <code>gmv_by_promotion</code></h3>
+<p><strong>Pergunta:</strong> quais campanhas têm ROI positivo após chargebacks/devoluções?</p>
+<p><strong>Headline:</strong> 31 campanhas no dataset; uma única campanha agressiva responde por mais GMV que toda a soma das free-shipping, mas com 18% de chargeback (vs 4% baseline). Net contribution é a métrica certa, não GMV bruto.</p>
+
+<h3>9.3. <code>sla_by_carrier</code></h3>
+<p><strong>Pergunta:</strong> qual carrier mais erra SLA, e como isso correlaciona com devoluções por atraso?</p>
+<p><strong>Headline:</strong> Correios (BR) tem reliability_score 0.72 e taxa de SLA miss alta. Substituir por Sedex (0.83) em rotas BR↔BR é a alavanca de retenção mais barata em fulfillment.</p>
+
+<h3>9.4. <code>customer_cohort_retention</code></h3>
+<p><strong>Pergunta:</strong> como cohorts de aquisição retêm ao longo do tempo?</p>
+<p><strong>Headline:</strong> matriz de 1.042 rows (cohort_month × months_since_acquisition). Renderizada como heatmap dos últimos 12 cohorts no dashboard.</p>
+
+<h3>9.5. <code>pareto_sellers</code></h3>
+<p><strong>Pergunta:</strong> qual % de sellers domina qual % de GMV?</p>
+<p><strong>Headline:</strong> 992 sellers ranqueados; <strong>bucket A</strong> (top sellers até 50% do GMV cumulativo) tipicamente é ~5% dos sellers. Validação clássica da regra 80/20.</p>
+
+<h3>9.6. <code>growth_metrics_monthly</code></h3>
+<p><strong>Pergunta:</strong> como o negócio cresce MoM/YoY?</p>
+<p><strong>Headline:</strong> 52 meses de série temporal (2022-2026). Inclui <code>mom_growth_pct</code>, <code>yoy_growth_pct</code>, <code>annualized_run_rate</code>.</p>
+
+<h3>9.7. <code>customer_ltv_by_segment</code></h3>
+<p><strong>Pergunta:</strong> qual o LTV líquido (lifetime_gmv menos refunds) por segmento?</p>
+<p><strong>Grão:</strong> 1 row por (região × is_prime × tenure_bucket). 32 segmentos no total.</p>
+
+<!-- ======================= 10. AUDIT ======================= -->
+<h2>10. Pipeline Observability (Audit Infrastructure)</h2>
+
+<p>Esta é a camada que diferencia uma plataforma analítica madura de um conjunto de notebooks. <strong>Cada execução do dbt deixa rastro auditável.</strong></p>
+
+<h3>10.1. Como funciona</h3>
+
+<p>Duas macros customizadas em <code>dbt/macros/audit/persist_run_results.sql</code>:</p>
+
+<ul>
+  <li><strong><code>ensure_audit_table()</code></strong> — roda em <code>on-run-start</code>. Cria a tabela <code>main_audit.dbt_runs</code> se não existir. Garante que mesmo o primeiro <code>dbt build</code> do projeto já tenha onde gravar.</li>
+  <li><strong><code>persist_run_results()</code></strong> — roda em <code>on-run-end</code>. Itera sobre os <code>results</code> da invocação e insere uma linha por nó executado.</li>
+</ul>
+
+<h3>10.2. Schema de <code>main_audit.dbt_runs</code></h3>
+
+<table>
+  <thead>
+    <tr><th>Coluna</th><th>Tipo</th><th>Descrição</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>run_id</code></td><td>varchar</td><td>Identificador único da execução (<code>invocation_id</code> do dbt)</td></tr>
+    <tr><td><code>git_sha</code></td><td>varchar</td><td>Commit SHA, lido da env var <code>GIT_SHA</code> (default 'unknown')</td></tr>
+    <tr><td><code>invocation_at</code></td><td>timestamp</td><td>Quando a execução do dbt começou</td></tr>
+    <tr><td><code>started_at</code> / <code>completed_at</code></td><td>timestamp</td><td>Janela de execução do nó</td></tr>
+    <tr><td><code>duration_ms</code></td><td>bigint</td><td>Duração em ms (granularidade por nó)</td></tr>
+    <tr><td><code>node_id</code> / <code>node_name</code></td><td>varchar</td><td>Identificador único e nome do modelo/test</td></tr>
+    <tr><td><code>resource_type</code></td><td>varchar</td><td>model · test · seed · source</td></tr>
+    <tr><td><code>status</code></td><td>varchar</td><td>success · pass · warn · fail · error · skipped</td></tr>
+    <tr><td><code>message</code></td><td>varchar</td><td>Mensagem de erro/warning, se houver</td></tr>
+    <tr><td><code>rows_affected</code></td><td>bigint</td><td>Linhas inseridas/afetadas (somente para models)</td></tr>
+  </tbody>
+</table>
+
+<h3>10.3. Mart de saúde da pipeline</h3>
+
+<p>O mart <code>pipeline_health</code> (view) agrupa o audit log por <code>run_id</code> e calcula:</p>
+
+<ul>
+  <li><code>pass_count</code>, <code>warn_count</code>, <code>error_count</code>, <code>skipped_count</code></li>
+  <li><code>total_duration_seconds</code></li>
+  <li><code>overall_status</code>: green · warning · failed</li>
+</ul>
+
+<h3>10.4. O que aparece no dashboard</h3>
+
+<p>A aba <strong>Pipeline Health</strong> renderiza:</p>
+
+<ul>
+  <li><strong>Hero card</strong> com a última execução: status colorido (verde/laranja/vermelho), PASS/WARN/ERROR como métricas, duração, git_sha</li>
+  <li><strong>Timeline</strong> dos últimos 25 runs como scatter horizontal colorido por status</li>
+  <li><strong>Stacked area</strong> de PASS/WARN/FAIL ao longo do tempo (test outcome history)</li>
+  <li><strong>Slowest models</strong> (top 10 por duração média)</li>
+  <li><strong>Last run breakdown</strong>: tabela completa node-by-node do último run</li>
+</ul>
+
+<div class="callout callout-info">
+<strong>Por que isso importa:</strong> em uma plataforma de produção, debugar pipeline lento ou test flaky exige histórico granular. <code>main_audit.dbt_runs</code> é exatamente como Datadog APM, Snowflake QUERY_HISTORY ou Airbyte logs funcionam — observabilidade da pipeline como cidadã de primeira classe.
+</div>
+
+<!-- ======================= 11. DASHBOARD ======================= -->
+<h2>11. Dashboard Executivo — 7 Abas Estilo Amazon Seller Central</h2>
+
+<h3>11.1. Header e KPI strip global</h3>
+
+<p>No topo da página, sempre visível:</p>
+
+<ul>
+  <li>Título "Marketplace Operations" + chip "LIVE"</li>
+  <li>6 scorecards horizontais: Orders · GMV · AOV · GMV this week · Return rate · Chargeback rate</li>
+  <li>Sidebar com data freshness (<code>orders: 7,458</code>) e botão "Clear AI cache"</li>
+</ul>
+
+<h3>11.2. Aba Overview</h3>
+
+<p>Layout em grid 12-colunas, 4 rows densas:</p>
+
+<ol>
+  <li><strong>Sales by Day</strong> (barras 14d) + <strong>Choropleth mundial</strong> (GMV por país)</li>
+  <li><strong>30-Day Summary strip</strong>: 5 KPIs inline (Sales · Units Sold · Returns · AOV · AUO)</li>
+  <li><strong>Monthly Sales + Ad Spend</strong> (barras empilhadas Google/FB/TikTok + linha Amazon Sales) + <strong>Donut Shipping Level</strong> + <strong>Top 10 Countries</strong> (barras horizontais)</li>
+  <li><strong>Avg Order Amount by Day</strong> (barras agrupadas Last vs This week + linha Goal) + <strong>Reviews × outcome</strong> (stacked bar)</li>
+</ol>
+
+<h3>11.3. Aba Growth</h3>
+
+<ul>
+  <li><strong>Growth lines</strong> (full-width): GMV + MoM growth % + YoY growth %, dual-axis</li>
+  <li><strong>Cohort heatmap</strong> (12 cohorts × N meses) — gradient verde para alta retenção</li>
+  <li><strong>Pareto curve</strong> (200 sellers) com bars coloridas por bucket A/B/C + linha cumulativa de %</li>
+  <li><strong>LTV breakdown</strong> grouped bars (região × tenure_bucket) + tabela completa</li>
+</ul>
+
+<h3>11.4. Aba Returns</h3>
+
+<ul>
+  <li><strong>Heatmap</strong> categoria × região colorido por return_rate (verde-laranja-vermelho)</li>
+  <li><strong>Tabela top-8</strong> por refund total</li>
+  <li><strong>Expander</strong> com mart completo</li>
+</ul>
+
+<h3>11.5. Aba Promotions (detalhada na seção 12)</h3>
+
+<h3>11.6. Aba Logistics</h3>
+
+<ul>
+  <li><strong>SLA bar</strong> horizontal por carrier + diamond markers de late-return rate</li>
+  <li><strong>Chargeback by method</strong> bar colorido por <code>chargeback_risk</code></li>
+</ul>
+
+<h3>11.7. Aba Pipeline Health</h3>
+<p>Detalhada na seção 10.4.</p>
+
+<h3>11.8. Aba AI Insights</h3>
+<p>Detalhada na seção 13.</p>
+
+<h3>11.9. Tema visual</h3>
+
+<table>
+  <thead>
+    <tr><th>Elemento</th><th>Estilo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Background página</td><td><code>#1F2937</code> (cinza escuro)</td></tr>
+    <tr><td>Painéis (cards)</td><td><code>#2A2F3A</code> com borda <code>#3A4150</code></td></tr>
+    <tr><td>Texto principal</td><td><code>#F9FAFB</code></td></tr>
+    <tr><td>Texto secundário</td><td><code>#9CA3AF</code></td></tr>
+    <tr><td>Tabs ativas</td><td>Background <code>#3B82F6</code>, texto branco</td></tr>
+    <tr><td>KPI scorecards</td><td>Background painel + métrica em 28pt bold</td></tr>
+    <tr><td>Tipografia</td><td>Inter (system fallback)</td></tr>
+    <tr><td>Charts</td><td>Plotly com <code>plot_bgcolor</code> = panel color, gridlines <code>#3A4150</code></td></tr>
+  </tbody>
+</table>
+
+<!-- ======================= 12. PROMOTIONS DETALHADO ======================= -->
+<h2>12. Aba Promotions — Análise Detalhada</h2>
+
+<p>Esta seção entra em detalhe na aba <strong>Promotions</strong>, que recebeu evolução específica para mostrar o sinal-chave do dataset: <em>aggressive promos lift GMV but raise chargebacks disproportionately</em>.</p>
+
+<h3>12.1. KPI strip da aba</h3>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="label">Active campaigns</div>
+    <div class="value">31</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Promo GMV</div>
+    <div class="value">$424K</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Promo share of orders</div>
+    <div class="value">3,9%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Baseline chargeback</div>
+    <div class="value">3,93%</div>
+  </div>
+</div>
+
+<p>O 5º KPI (full-width) mostra o <strong>aggressive premium</strong>: <code>+14,46pp absoluto</code> · <code>+367% relativo</code> ao baseline. Esse é o sinal central: promoções agressivas (≥30% off ou BOGO) atraem fraude na mesma proporção que atraem orders.</p>
+
+<h3>12.2. Painel 1 — Promotion ROI Scatter</h3>
+
+<p>Cada bolha é uma campanha. Eixos:</p>
+<ul>
+  <li><strong>X = GMV</strong> (escala $)</li>
+  <li><strong>Y = chargeback_rate</strong> (escala %)</li>
+  <li><strong>Tamanho = orders_count</strong></li>
+  <li><strong>Cor = is_aggressive</strong> (vermelho = agressiva, azul = regular)</li>
+</ul>
+
+<p>O quadrante superior direito (alto GMV, alta chargeback) é onde estão as campanhas BOGO. Quadrante inferior esquerdo é onde free-shipping mora.</p>
+
+<h3>12.3. Painel 2 — Promotion Type Breakdown (dual-axis)</h3>
+
+<p>Barras horizontais de GMV por tipo de promoção (azul) com diamantes vermelhos sobrepostos representando o avg_chargeback_rate de cada tipo. Eixo superior é a escala % do chargeback.</p>
+
+<table>
+  <thead>
+    <tr><th>Tipo</th><th>Campanhas</th><th>Orders</th><th>GMV</th><th>Avg chargeback</th><th>Avg return</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>BOGO</strong></td><td>7</td><td>95</td><td>$141K</td><td><span class="tag tag-red">28,3%</span></td><td>25,6%</td></tr>
+    <tr><td><strong>Percentage</strong></td><td>7</td><td>87</td><td>$125K</td><td><span class="tag tag-orange">14,5%</span></td><td>23,7%</td></tr>
+    <tr><td><strong>Free shipping</strong></td><td>10</td><td>70</td><td>$113K</td><td><span class="tag tag-green">7,8%</span></td><td>19,8%</td></tr>
+    <tr><td><strong>Flat amount</strong></td><td>7</td><td>38</td><td>$45K</td><td><span class="tag tag-green">1,6%</span></td><td>14,8%</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Insight:</strong> BOGO é a configuração mais cara em termos de fraude (28%). Free-shipping é o tipo mais limpo, e ainda assim drive volume razoável de GMV (~$113K). Recomendação operacional: <em>default Q4 deve ser free-shipping; aggressive types só com aprovação Finance</em>.</p>
+
+<h3>12.4. Painel 3 — Aggressive vs Baseline Comparison</h3>
+
+<p>Barras agrupadas mostrando lado a lado <strong>chargeback rate</strong> e <strong>return rate</strong> para três buckets:</p>
+
+<table>
+  <thead>
+    <tr><th>Bucket</th><th>Campanhas</th><th>Orders</th><th>GMV</th><th>AOV</th><th>Chargeback weighted</th><th>Return weighted</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Baseline (no promo)</td><td>—</td><td>7.151</td><td>$7,84M</td><td>$1.096</td><td><span class="tag tag-green">3,93%</span></td><td>17,79%</td></tr>
+    <tr><td>Regular promo</td><td>18</td><td>120</td><td>$170K</td><td>$1.416</td><td><span class="tag tag-orange">5,94%</span></td><td>21,84%</td></tr>
+    <tr><td>Aggressive (≥30% / BOGO)</td><td>13</td><td>170</td><td>$255K</td><td>$1.507</td><td><span class="tag tag-red">18,39%</span></td><td>17,54%</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Lift de chargeback de aggressive vs baseline = +14,46 pontos percentuais.</strong> Em termos relativos, é um aumento de <strong>367%</strong> na taxa de fraude.</p>
+
+<p><strong>AOV de aggressive é o maior</strong> ($1.507 vs $1.096 baseline) — fraudadores buscam pedidos grandes para maximizar valor por chargeback.</p>
+
+<div class="callout callout-warn">
+<strong>Recomendação operacional baseada nos 3 painéis:</strong>
+<ol>
+  <li>Aprovação obrigatória de Finance para qualquer campanha com <code>is_aggressive=true</code> rodando em janelas de Black Friday / Cyber Monday.</li>
+  <li>Default sazonal Q4 deve ser <em>free-shipping</em>, não percentage discount.</li>
+  <li>Bloquear <code>method=crypto</code> em checkout durante janelas de aggressive promos (combo dispara chargeback).</li>
+  <li>Monitorar AOV médio por bucket em tempo real — picos súbitos em aggressive são sinal de fraude organizada.</li>
+</ol>
+</div>
+
+<h3>12.5. Painel 4 — Top 5 campaigns</h3>
+
+<p>Tabela final com as 5 campanhas de maior GMV individual, mostrando: nome, tipo, discount value, is_aggressive, orders_count, GMV ($), chargeback rate (%), return rate (%).</p>
+
+<h3>12.6. Expander — All promotion types aggregated</h3>
+
+<p>Tabela completa dos 4 tipos com formatação $ e %. Disponível sob expander para não poluir o layout principal.</p>
+
+<!-- ======================= 13. AI INSIGHTS ======================= -->
+<h2>13. AI Insights com Anthropic Claude</h2>
+
+<p>A aba "AI Insights" usa a Claude API (modelo Sonnet 4.6 por padrão) para gerar narrativas executivas em estilo OP1 da Amazon. <strong>Esta é a peça mais sofisticada da plataforma do ponto de vista de safety.</strong></p>
+
+<h3>13.1. Disciplina anti-alucinação</h3>
+
+<p>Quatro guardrails complementares:</p>
+
+<ol>
+  <li><strong>Modelo nunca vê linhas raw.</strong> O <code>ai_insights.py</code> tem funções <code>payload_for_returns()</code>, <code>payload_for_promotions()</code>, etc. que extraem apenas top-N e agregados.</li>
+  <li><strong>System prompt explícito:</strong> <em>"Only cite numbers that appear verbatim in the input data. If a number isn't in the input, do not invent it."</em></li>
+  <li><strong>Estilo OP1:</strong> 4 parágrafos máximo, "so-what" primeiro, watch items no final, recomendação como hipótese testável.</li>
+  <li><strong>Cache em disco</strong> de 60 minutos por <code>signature</code> (hash do payload). Evita gastar tokens em renders repetidos do mesmo dado.</li>
+</ol>
+
+<h3>13.2. Custo</h3>
+
+<table>
+  <thead>
+    <tr><th>Métrica</th><th>Valor</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Tokens input (por seção)</td><td>~600</td></tr>
+    <tr><td>Tokens output (por seção)</td><td>~350</td></tr>
+    <tr><td>Seções por refresh</td><td>4 (Overview / Returns / Promotions / Logistics)</td></tr>
+    <tr><td>Custo por refresh (Sonnet 4.6)</td><td><strong>~$0,01</strong></td></tr>
+    <tr><td>Cache TTL</td><td>60 minutos</td></tr>
+    <tr><td>Custo típico de browsing session</td><td>centavos de dólar</td></tr>
+  </tbody>
+</table>
+
+<h3>13.3. Degradação graciosa</h3>
+
+<table>
+  <thead>
+    <tr><th>Cenário</th><th>O que acontece</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sem <code>ANTHROPIC_API_KEY</code></td><td>Aba mostra payload em JSON com aviso "AI disabled". Outras abas seguem funcionando.</td></tr>
+    <tr><td>Conta sem créditos</td><td>HTTP 400 do endpoint, exibido inline na aba. Outras abas inalteradas.</td></tr>
+    <tr><td>Rate limit</td><td>Mostra erro, tentativa subsequente após cache TTL.</td></tr>
+    <tr><td>Lib <code>anthropic</code> não instalada</td><td>Mensagem clara apontando para <code>requirements_dashboard.txt</code>.</td></tr>
+  </tbody>
+</table>
+
+<h3>13.4. Como configurar a chave</h3>
+
+<p>O compose lê automaticamente de um arquivo <code>.env</code> no root (que está no <code>.gitignore</code>):</p>
+
+<pre><code># /c/DataEngineer/.env
+ANTHROPIC_API_KEY=sk-ant-api03-...
+ANTHROPIC_MODEL=claude-sonnet-4-6</code></pre>
+
+<p>Configuração via <code>env_file</code> no compose com <code>required: false</code> — a stack continua subindo mesmo sem o arquivo.</p>
+
+<!-- ======================= 14. DOCKER ======================= -->
+<h2>14. Containerização e Execução com Docker Compose</h2>
+
+<h3>14.1. Arquitetura do compose</h3>
+
+<pre><code>services:
+  dbt-build:
+    image: dataengineer-dbt-build (built from docker/Dockerfile.dbt)
+    volumes:
+      - ./dbt:/workspace/dbt
+      - ./cases:/workspace/cases:ro
+      - aep_warehouse:/warehouse
+    environment:
+      DBT_DUCKDB_PATH:     /warehouse/warehouse.duckdb
+      MARKETPLACE_RAW_DIR: /workspace/cases/marketplace/data/raw
+    command: build --profiles-dir . --target duckdb
+
+  dashboard:
+    image: dataengineer-dashboard (built from app/Dockerfile)
+    depends_on:
+      dbt-build: { condition: service_completed_successfully }
+    ports: ["8501:8501"]
+    volumes:
+      - aep_warehouse:/warehouse:ro
+      - aep_ai_cache:/app/.ai_cache
+    env_file:
+      - path: ./.env
+        required: false
+    environment:
+      DUCKDB_PATH:      /warehouse/warehouse.duckdb
+      ANTHROPIC_MODEL:  ${ANTHROPIC_MODEL:-claude-sonnet-4-6}
+
+volumes:
+  aep_warehouse:
+  aep_ai_cache:</code></pre>
+
+<h3>14.2. Decisões de containerização</h3>
+
+<ul>
+  <li><strong>Volumes nomeados</strong> (não bind mounts) para o warehouse e cache. Resolve permissões no Windows.</li>
+  <li><strong>Compose v2 dependency condition</strong> (<code>service_completed_successfully</code>) garante que o dashboard só sobe depois do <code>dbt-build</code> terminar com exit 0.</li>
+  <li><strong>Source CSVs montados read-only</strong> — defesa contra escrita acidental.</li>
+  <li><strong>Mesma stack roda em desenvolvimento e em CI</strong> — diferença é apenas o target dbt (<code>duckdb</code> em dev, <code>snowflake</code> em prod).</li>
+</ul>
+
+<h3>14.3. Comando único de execução</h3>
+
+<pre><code>cd /c/DataEngineer && \
+docker compose -f docker-compose.dashboard.yml down && \
+docker compose -f docker-compose.dashboard.yml up -d</code></pre>
+
+<p>Abre <code>http://localhost:8501</code>. Stack <strong>~12s para build dbt + 4s para subir dashboard</strong>.</p>
+
+<!-- ======================= 15. QA & TESTES ======================= -->
+<h2>15. Qualidade de Dados e Testes Automatizados</h2>
+
+<p>A plataforma roda <strong>131 testes</strong> em cada execução do dbt, cobrindo schema, integridade referencial e invariantes de negócio.</p>
+
+<h3>15.1. Distribuição dos testes</h3>
+
+<table>
+  <thead>
+    <tr><th>Tipo</th><th>Quantidade</th><th>Cobertura</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>unique</code></td><td>~25</td><td>Toda PK de dimension e fact</td></tr>
+    <tr><td><code>not_null</code></td><td>~30</td><td>PKs e business keys</td></tr>
+    <tr><td><code>relationships</code></td><td>~8</td><td>FKs entre marts</td></tr>
+    <tr><td><code>accepted_values</code></td><td>~12</td><td>Enums (status, region, sentiment, etc.)</td></tr>
+    <tr><td>Singular tests</td><td>3</td><td>Invariantes de negócio (payment match, retorno na janela, no negative price)</td></tr>
+    <tr><td>Source freshness</td><td>—</td><td>Configurado mas dependente de <code>_loaded_at</code> populado em produção</td></tr>
+  </tbody>
+</table>
+
+<h3>15.2. Singular tests</h3>
+
+<table>
+  <thead>
+    <tr><th>Test</th><th>Invariante</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>marketplace_no_negative_unit_price</code></td><td><code>unit_price > 0</code> em todo produto</td></tr>
+    <tr><td><code>marketplace_payment_amount_matches_order_total</code></td><td>Para payments capturados, <code>abs(payment_amount - order_total) <= 0.01</code></td></tr>
+    <tr><td><code>marketplace_returns_within_policy</code></td><td>Devoluções devem ocorrer dentro de 30 dias do delivery</td></tr>
+  </tbody>
+</table>
+
+<h3>15.3. Resultado da última execução</h3>
+
+<div class="callout callout-success">
+<strong>Build status:</strong> <code>PASS=131 WARN=0 ERROR=0 SKIP=0 TOTAL=131</code> em <strong>11,6 segundos</strong>.<br>
+Todos os testes verdes; nenhuma DQ injection produzindo warning. Histórico de execuções persistido em <code>main_audit.dbt_runs</code>.
+</div>
+
+<!-- ======================= 16. CI/CD ======================= -->
+<h2>16. CI/CD e GitHub Actions</h2>
+
+<p>Workflow em <code>.github/workflows/ci.yml</code> roda em todo PR e em todo push para <code>main</code>:</p>
+
+<ol>
+  <li>Setup Python 3.11 + cache de pip</li>
+  <li>Install <code>requirements.txt</code></li>
+  <li><strong>SQL lint</strong> com sqlfluff (não-bloqueante hoje, pronto para virar bloqueante)</li>
+  <li><strong><code>dbt deps</code> + <code>dbt parse</code></strong> — captura erros Jinja antes da execução</li>
+  <li><strong><code>dbt build --target ci</code></strong> — full build + tests contra DuckDB efêmero</li>
+  <li><strong>Upload artifacts</strong> do <code>target/</code> para depuração</li>
+</ol>
+
+<p>No merge para <code>main</code>, job adicional roda <code>dbt docs generate</code> e publica em GitHub Pages.</p>
+
+<p><strong>Custo de CI:</strong> ~3 minutos por PR no tier gratuito (público). Suficiente para 600+ PRs/mês dentro dos 2.000 minutos gratuitos.</p>
+
+<!-- ======================= 17. CUSTO & ESCALA ======================= -->
+<h2>17. Custo, Escala e Operação</h2>
+
+<h3>17.1. Custos atuais</h3>
+
+<table>
+  <thead>
+    <tr><th>Componente</th><th>Cenário</th><th>Custo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Local DuckDB + Docker</td><td>Dev / portfólio</td><td><strong>$0</strong></td></tr>
+    <tr><td>Snowflake XS warehouse, build diário</td><td>Volume atual (7,5K orders)</td><td><strong>$15-25/mês</strong></td></tr>
+    <tr><td>Snowflake XS, volume 10×</td><td>75K orders/dia</td><td><strong>~$80/mês</strong></td></tr>
+    <tr><td>GitHub Actions</td><td>Repo público</td><td><strong>$0</strong> (2.000 min grátis)</td></tr>
+    <tr><td>Tableau Public + Metabase Docker</td><td>BI surfaces</td><td><strong>$0</strong></td></tr>
+    <tr><td>Anthropic Claude (Sonnet 4.6)</td><td>~$0.01 por refresh do dashboard</td><td>Variável</td></tr>
+    <tr><td>Build end-to-end (clone → dashboard up)</td><td>~16 segundos</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h3>17.2. Como escala para 10×</h3>
+
+<ul>
+  <li><strong>Compute</strong>: Snowflake XS aguenta sem trocar de tamanho até ~5M linhas/dia; depois sobe para S.</li>
+  <li><strong>Incremental models</strong> em <code>fct_orders</code> garantem que o custo cresce com <em>delta</em>, não com tamanho da tabela.</li>
+  <li><strong>BI</strong>: Streamlit, Tableau e Metabase escalam linearmente com cliques de usuário, não com tamanho do warehouse.</li>
+  <li><strong>AI cache</strong>: hit rate alto reduz custo Claude para ~zero em browsing sessions concentradas.</li>
+</ul>
+
+<!-- ======================= 18. DECISÕES & TRADE-OFFS ======================= -->
+<h2>18. Decisões Técnicas e Trade-offs</h2>
+
+<table>
+  <thead>
+    <tr><th>Decisão</th><th>Por que</th><th>Trade-off aceito</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dbt + DuckDB local, Snowflake prod</td>
+      <td>Zero custo em dev, mesma SQL roda em ambos</td>
+      <td>Dois adapters para manter testados em CI</td>
+    </tr>
+    <tr>
+      <td>Staging materializada como <code>table</code> (não view)</td>
+      <td>Warehouse self-contained — não depende dos CSVs em runtime</td>
+      <td>Build mais lento; precisa de <code>--full-refresh</code> ao mudar source</td>
+    </tr>
+    <tr>
+      <td>AI vê só payload pré-agregado</td>
+      <td>Anti-alucinação garantida</td>
+      <td>Modelo não pode "descobrir" insight novo — só comenta o que dbt já provou</td>
+    </tr>
+    <tr>
+      <td>Streamlit em vez de Tableau como BI principal</td>
+      <td>Python end-to-end, deploy simples, AI nativa</td>
+      <td>Menos polido visual que Tableau "out of the box"</td>
+    </tr>
+    <tr>
+      <td>Volumes nomeados Docker (não bind mounts)</td>
+      <td>Sem problemas de permissão Windows</td>
+      <td>Warehouse "preso" no volume — precisa <code>docker cp</code> para extrair</td>
+    </tr>
+    <tr>
+      <td>Audit em <code>main_audit.dbt_runs</code> (não em CSV)</td>
+      <td>Queryable como qualquer tabela do warehouse</td>
+      <td>Warehouse cresce indefinidamente — precisa retenção em produção</td>
+    </tr>
+    <tr>
+      <td>Gerador em PowerShell (não Python)</td>
+      <td>Roda nativo no Windows do dev sem dependências extras</td>
+      <td>Menos portável para Linux CI — precisa pwsh instalado</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ======================= 19. LIMITAÇÕES & ROADMAP ======================= -->
+<h2>19. Limitações Conhecidas e Roadmap Futuro</h2>
+
+<h3>19.1. Limitações</h3>
+
+<ul>
+  <li>Volume sintético — não substitui dados reais para análises causais rigorosas.</li>
+  <li><code>fct_orders</code> incremental requer <code>--full-refresh</code> ao regenerar dados (regra geral de incrementals).</li>
+  <li>Aba AI Insights depende de créditos Anthropic — sem eles a aba degrada para JSON.</li>
+  <li>Tableau Public ainda é placeholder — link aparece em <code>cases/marketplace/dashboards/</code> mas não tem dashboard publicado.</li>
+  <li>Geographic granularity para choropleth é por país — falta breakdown por estado/região.</li>
+  <li>Audit log não tem retenção configurada — em produção precisa <code>delete from main_audit.dbt_runs where invocation_at < current_date - 90 day</code>.</li>
+</ul>
+
+<h3>19.2. Roadmap próximos passos</h3>
+
+<ol>
+  <li><strong>Reverse ETL</strong> — exportar marts para CRM (HubSpot/Salesforce) via Hightouch ou Census.</li>
+  <li><strong>Great Expectations</strong> ao lado dos dbt tests, para monitorar distribuição (não só constraints).</li>
+  <li><strong>dbt Semantic Layer / MetricFlow</strong> — definição única de GMV, return-rate, churn-rate consumida por qualquer BI.</li>
+  <li><strong>Anomaly detection</strong> em volume de pedidos por canal — silêncio súbito é sinal por si só.</li>
+  <li><strong>Cohort retention curves</strong> materializadas e atualizadas diariamente.</li>
+  <li><strong>Tableau Public dashboard</strong> publicado de fato (executive view paralela ao Streamlit).</li>
+  <li><strong>Snowflake target</strong> testado de ponta a ponta — hoje só foi validado em DuckDB.</li>
+  <li><strong>RBAC no Streamlit</strong> — diferentes níveis de visualização por papel (Finance vê GMV, Ops vê SLA, etc.).</li>
+  <li><strong>Multi-tenant audit</strong> — separar runs por tenant em deployments com mais de 1 cliente.</li>
+</ol>
+
+<!-- ======================= 20. GLOSSÁRIO ======================= -->
+<h2>20. Glossário Técnico</h2>
+
+<dl class="kv">
+  <dt>GMV</dt><dd>Gross Merchandise Value — valor total transacionado, antes de descontos e devoluções.</dd>
+  <dt>AOV</dt><dd>Average Order Value — GMV ÷ número de pedidos.</dd>
+  <dt>AUO</dt><dd>Average Units per Order — total de unidades vendidas ÷ pedidos.</dd>
+  <dt>LTV</dt><dd>Lifetime Value — receita líquida estimada de um cliente ao longo de toda sua vida na plataforma.</dd>
+  <dt>Chargeback</dt><dd>Disputa de cartão de crédito iniciada pelo titular junto ao banco. Indicador clássico de fraude.</dd>
+  <dt>Cohort</dt><dd>Grupo de clientes adquiridos em um mesmo período (ex: cohort de Janeiro/2024). Usado para análise de retenção.</dd>
+  <dt>Pareto / 80-20</dt><dd>Princípio empírico de que ~80% do efeito vem de ~20% das causas. Em marketplaces, top 5% dos sellers tipicamente respondem por 50% do GMV.</dd>
+  <dt>MoM / YoY</dt><dd>Month-over-Month / Year-over-Year — taxas de crescimento.</dd>
+  <dt>Run rate</dt><dd>Receita anualizada projetada a partir do mês corrente (mês × 12).</dd>
+  <dt>Staging (dbt)</dt><dd>Camada 1:1 com a fonte raw. Apenas casts, normalização. Sem regra de negócio.</dd>
+  <dt>Mart (dbt)</dt><dd>Tabela final consumida por BI. Pode ser core (dims/facts conformados) ou analytics (uma por pergunta).</dd>
+  <dt>Incremental model</dt><dd>Materialização dbt que processa apenas linhas novas a cada execução. Reduz custo de warehouse.</dd>
+  <dt>Source freshness</dt><dd>Verificação de que a fonte de dados foi atualizada dentro de uma janela esperada (warn/error).</dd>
+  <dt>Singular test</dt><dd>Teste dbt escrito como SELECT — falha se retornar qualquer linha. Usado para invariantes complexas.</dd>
+  <dt>QUALIFY</dt><dd>Cláusula SQL (Snowflake/DuckDB) que filtra resultados de window functions sem CTE intermediário.</dd>
+  <dt>Lineage</dt><dd>Grafo de dependências entre modelos. dbt deriva automaticamente via <code>ref()</code>.</dd>
+  <dt>Choropleth</dt><dd>Mapa colorido por valor numérico de cada região geográfica.</dd>
+  <dt>Dual-axis chart</dt><dd>Gráfico com dois eixos Y (escalas diferentes) — comum para sobrepor métricas relacionadas mas em unidades diferentes.</dd>
+  <dt>BOGO</dt><dd>"Buy One Get One" — promoção em que o cliente leva 2 unidades pelo preço de 1.</dd>
+  <dt>OP1 / OP2</dt><dd>Operating Plan reviews na Amazon — documentos narrativos curtos com foco em "so-what" e ação.</dd>
+  <dt>Working Backwards</dt><dd>Princípio Amazon de partir da experiência do cliente final e desenhar para trás até a infraestrutura.</dd>
+</dl>
+
+<div class="callout callout-info" style="margin-top: 50px;">
+<strong>Repositório público:</strong> <code>https://github.com/hugoflavio1805/analytics-engineering-platform</code><br>
+<strong>Contato:</strong> hugoflavio1805@hotmail.com<br>
+<strong>Licença:</strong> MIT — código sob MIT, datasets para uso educacional/portfólio.<br>
+<strong>Build status atual:</strong> <code>PASS=131 WARN=0 ERROR=0 SKIP=0 TOTAL=131</code> · 11,6s.
+</div>
+
+</body>
+</html>
